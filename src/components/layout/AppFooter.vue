@@ -12,7 +12,8 @@ const quickLinks = computed(() => [
   { name: t('nav.home'), path: '/' },
   { name: t('nav.projects'), path: '/projects' },
   { name: t('nav.about'), path: '/about' },
-  { name: t('nav.contact'), path: '/contact' }
+  { name: t('nav.contact'), path: '/contact' },
+  { name: t('nav.fiverr'), path: '/fiverr' }
 ])
 
 const services = computed(() => [

@@ -11,6 +11,18 @@ export interface ContactInfo {
   location: string
 }
 
+export interface FiverrService {
+  id: string
+  url: string
+  image: string
+  price: string
+}
+
+export interface FiverrConfig {
+  profileUrl: string
+  services: FiverrService[]
+}
+
 export interface SiteConfig {
   name: string
   title: string
@@ -19,6 +31,7 @@ export interface SiteConfig {
   url: string
   contact: ContactInfo
   social: SocialLink[]
+  fiverr: FiverrConfig
 }
 
 export const siteConfig: SiteConfig = {
@@ -58,5 +71,35 @@ export const siteConfig: SiteConfig = {
       url: 'mailto:contact@killiandalcin.fr',
       icon: 'email'
     }
-  ]
+  ],
+
+  fiverr: {
+    profileUrl: 'https://www.fiverr.com/users/mr_kayjaydee',
+    services: [
+      {
+        id: 'discord-bot',
+        url: 'https://www.fiverr.com/s/rEDa84j',
+        image: '@/assets/images/fiverr/discord_bot.jpg',
+        price: '$25'
+      },
+      {
+        id: 'minecraft-plugin',
+        url: 'https://www.fiverr.com/s/xXVY20Q',
+        image: '@/assets/images/fiverr/minecraft_plugin.jpg',
+        price: '$50'
+      },
+      {
+        id: 'telegram-bot',
+        url: '#',
+        image: '@/assets/images/fiverr/telegram_bot.jpg',
+        price: '$20'
+      },
+      {
+        id: 'website-development',
+        url: '#',
+        image: '@/assets/images/fiverr/website.jpg',
+        price: '$50'
+      }
+    ]
+  }
 }

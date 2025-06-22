@@ -109,8 +109,7 @@ const approachCards = computed(() => [
           <div v-for="category in techCategories" :key="category.key" class="card animate-fade-in-up">
             <div class="card-body">
               <div class="flex items-center mb-lg">
-                <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-md"
-                  :style="{ background: category.color, color: 'var(--text-inverse)' }">
+                <div class="category-icon" :style="{ background: category.color, color: 'var(--text-inverse)' }">
                   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="category.icon"></path>
                   </svg>
@@ -129,8 +128,7 @@ const approachCards = computed(() => [
         <div class="card animate-fade-in-up">
           <div class="card-body">
             <div class="flex items-center mb-lg">
-              <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-md"
-                style="background: var(--color-primary); color: var(--text-inverse);">
+              <div class="category-icon" :style="{ background: 'var(--color-info)', color: 'var(--text-inverse)' }">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
@@ -149,7 +147,7 @@ const approachCards = computed(() => [
     </section>
 
     <!-- Approach Section -->
-    <section class="section" style="background: var(--bg-secondary);">
+    <section class="approach-section">
       <div class="container">
         <div class="text-center mb-2xl">
           <h2 class="mb-lg">{{ t('about.approach.title') }}</h2>
@@ -163,8 +161,7 @@ const approachCards = computed(() => [
             :style="{ 'animation-delay': `${index * 0.1}s` }">
             <div class="card-body">
               <div class="flex items-start">
-                <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-md flex-shrink-0"
-                  :style="{ background: card.color, color: 'var(--text-inverse)' }">
+                <div class="approach-icon" :style="{ background: card.color, color: 'var(--text-inverse)' }">
                   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="card.icon"></path>
                   </svg>
@@ -212,46 +209,5 @@ const approachCards = computed(() => [
 </template>
 
 <style scoped>
-/* Custom animations with delays */
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
-  opacity: 0;
-}
-
-/* Spacing utilities */
-.space-y-lg>*+* {
-  margin-top: var(--space-lg);
-}
-
-/* Responsive utilities */
-@media (min-width: 640px) {
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Custom utilities */
-.max-w-2xl {
-  max-width: 42rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
-}
+@import './styles/AboutPage.css';
 </style>

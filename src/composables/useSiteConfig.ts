@@ -11,6 +11,9 @@ export function useSiteConfig() {
     description: t('seo.home.description'),
     contact: {
       ...baseSiteConfig.contact
+    },
+    fiverr: {
+      ...baseSiteConfig.fiverr
     }
   }))
 

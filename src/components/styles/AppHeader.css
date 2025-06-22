@@ -1,0 +1,40 @@
+/* AppHeader Styles */
+
+/* Header actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Logo styling */
+.logo-image {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: var(--border-radius-md);
+}
+
+/* Mobile responsive utilities */
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Navigation active state */
+.nav-link.router-link-active {
+  color: var(--color-primary);
+}
+
+.nav-link.router-link-active::after {
+  width: 100%;
+}

@@ -4,7 +4,8 @@ export default {
     home: 'Home',
     projects: 'Projects',
     about: 'About',
-    contact: 'Contact'
+    contact: 'Contact',
+    fiverr: 'Fiverr Services'
   },
 
   // Home page
@@ -117,6 +118,80 @@ export default {
       title: 'Ready to work together?',
       description: 'I\'m always open to new opportunities and interesting collaborations.',
       button: 'Contact me'
+    }
+  },
+
+  // Fiverr page
+  fiverr: {
+    title: 'Fiverr Services',
+    subtitle: 'Professional freelance services on Fiverr. Get custom solutions for your Discord server, Minecraft server, or web development needs.',
+    profileCta: 'Visit My Fiverr Profile',
+    stats: {
+      rating: 'Rating'
+    },
+    pricing: {
+      startingAt: 'Starting at'
+    },
+    services: {
+      title: 'Available Services',
+      subtitle: 'Choose from a variety of professional services tailored to your needs.',
+      features: 'Features',
+      orderNow: 'Order Now',
+      learnMore: 'Learn More',
+      moreFeatures: 'more features',
+      comingSoon: 'Coming Soon',
+      available: 'Available'
+    },
+    serviceData: {
+      'discord-bot': {
+        title: 'Custom Discord Bot Creation',
+        description: 'Supercharge Your Discord Server with a Powerful, Fully Custom Bot',
+        features: [
+          'Advanced moderation & utility (Tickets, Leveling)',
+          'Engaging features (Minigames, Giveaways, Trackers)',
+          'Powerful API integrations (PayPal, YouTube, Twitch, etc.)',
+          'Fully custom – no templates'
+        ]
+      },
+      'minecraft-plugin': {
+        title: 'Minecraft Plugin Development',
+        description: 'Custom Minecraft plugins tailored for your server needs',
+        features: [
+          'Custom gameplay mechanics',
+          'Server management tools',
+          'Player engagement features',
+          'Performance optimized'
+        ]
+      },
+      'telegram-bot': {
+        title: 'Telegram Bot Development',
+        description: 'Professional Telegram bots for automation and engagement',
+        features: [
+          'Automated messaging',
+          'User management',
+          'API integrations',
+          'Custom commands'
+        ]
+      },
+      'website-development': {
+        title: 'Modern Website Development',
+        description: 'Beautiful, responsive websites built with latest technologies',
+        features: [
+          'Responsive design',
+          'Modern UI/UX',
+          'SEO optimized',
+          'Fast performance'
+        ]
+      }
+    },
+    testimonials: {
+      title: 'What Clients Say',
+      subtitle: 'Trusted by clients worldwide for quality and reliability.'
+    },
+    cta: {
+      title: 'Ready to Get Started?',
+      subtitle: 'Choose a service that fits your needs and let\'s bring your project to life.',
+      button: 'Browse All Services'
     }
   },
 
@@ -261,6 +336,10 @@ export default {
     contact: {
       title: 'Contact - Killian',
       description: 'Ready to discuss your next project? Let\'s create something amazing together.'
+    },
+    fiverr: {
+      title: 'Fiverr Services - Killian',
+      description: 'Professional freelance services on Fiverr. Custom Discord bots, Minecraft plugins, and web development solutions.'
     }
   }
 }

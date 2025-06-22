@@ -99,38 +99,5 @@ const getLevelColor = (level: Technology['level']) => {
 </template>
 
 <style scoped>
-.tech-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  padding: var(--space-sm) var(--space-md);
-  background: var(--bg-primary);
-  border: var(--border-width) solid var(--border-color);
-  border-radius: var(--border-radius-lg);
-  transition: all var(--transition-fast);
-  white-space: nowrap;
-}
-
-.tech-badge:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
-}
-
-.tech-image {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.tech-name {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--text-primary);
-}
-
-.tech-level {
-  font-size: var(--font-size-xs);
-  padding: var(--space-xs) var(--space-sm);
-}
+@import './styles/TechBadge.css';
 </style>

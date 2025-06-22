@@ -4,7 +4,8 @@ export default {
     home: 'Accueil',
     projects: 'Projets',
     about: 'À propos',
-    contact: 'Contact'
+    contact: 'Contact',
+    fiverr: 'Services Fiverr'
   },
 
   // Home page
@@ -117,6 +118,80 @@ export default {
       title: 'Prêt à travailler ensemble ?',
       description: 'Je suis toujours ouvert aux nouvelles opportunités et collaborations intéressantes.',
       button: 'Me contacter'
+    }
+  },
+
+  // Fiverr page
+  fiverr: {
+    title: 'Services Fiverr',
+    subtitle: 'Services de freelance professionnels sur Fiverr. Obtenez des solutions personnalisées pour votre serveur Discord, serveur Minecraft ou besoins de développement web.',
+    profileCta: 'Visiter Mon Profil Fiverr',
+    stats: {
+      rating: 'Évaluation'
+    },
+    pricing: {
+      startingAt: 'À partir de'
+    },
+    services: {
+      title: 'Services Disponibles',
+      subtitle: 'Choisissez parmi une variété de services professionnels adaptés à vos besoins.',
+      features: 'Fonctionnalités',
+      orderNow: 'Commander Maintenant',
+      learnMore: 'En Savoir Plus',
+      moreFeatures: 'fonctionnalités supplémentaires',
+      comingSoon: 'Bientôt Disponible',
+      available: 'Disponible'
+    },
+    serviceData: {
+      'discord-bot': {
+        title: 'Création de Bot Discord Personnalisé',
+        description: 'Boostez votre serveur Discord avec un bot puissant et entièrement personnalisé',
+        features: [
+          'Modération avancée et utilitaires (Tickets, Système de niveaux)',
+          'Fonctionnalités engageantes (Mini-jeux, Concours, Trackers)',
+          'Intégrations API puissantes (PayPal, YouTube, Twitch, etc.)',
+          'Entièrement personnalisé – pas de templates'
+        ]
+      },
+      'minecraft-plugin': {
+        title: 'Développement de Plugin Minecraft',
+        description: 'Plugins Minecraft personnalisés adaptés aux besoins de votre serveur',
+        features: [
+          'Mécaniques de jeu personnalisées',
+          'Outils de gestion de serveur',
+          'Fonctionnalités d\'engagement des joueurs',
+          'Optimisé pour les performances'
+        ]
+      },
+      'telegram-bot': {
+        title: 'Développement de Bot Telegram',
+        description: 'Bots Telegram professionnels pour l\'automatisation et l\'engagement',
+        features: [
+          'Messagerie automatisée',
+          'Gestion des utilisateurs',
+          'Intégrations API',
+          'Commandes personnalisées'
+        ]
+      },
+      'website-development': {
+        title: 'Développement de Site Web Moderne',
+        description: 'Sites web beaux et réactifs construits avec les dernières technologies',
+        features: [
+          'Design responsive',
+          'UI/UX moderne',
+          'Optimisé pour le SEO',
+          'Performances rapides'
+        ]
+      }
+    },
+    testimonials: {
+      title: 'Ce que disent les clients',
+      subtitle: 'Fait confiance par des clients du monde entier pour la qualité et la fiabilité.'
+    },
+    cta: {
+      title: 'Prêt à commencer ?',
+      subtitle: 'Choisissez un service qui correspond à vos besoins et donnons vie à votre projet.',
+      button: 'Parcourir tous les services'
     }
   },
 
@@ -261,6 +336,10 @@ export default {
     contact: {
       title: 'Contact - Killian',
       description: 'Prêt à discuter de votre prochain projet ? Créons ensemble quelque chose d\'incroyable.'
+    },
+    fiverr: {
+      title: 'Services Fiverr - Killian',
+      description: 'Services de freelance professionnels sur Fiverr. Bots Discord personnalisés, plugins Minecraft et solutions de développement web.'
     }
   }
 }

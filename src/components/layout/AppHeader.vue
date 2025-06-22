@@ -14,6 +14,7 @@ const navigation = computed(() => [
   { name: t('nav.projects'), path: '/projects' },
   { name: t('nav.about'), path: '/about' },
   { name: t('nav.contact'), path: '/contact' },
+  { name: t('nav.fiverr'), path: '/fiverr' },
 ])
 
 const toggleMenu = () => {
@@ -72,42 +73,5 @@ const toggleMenu = () => {
 </template>
 
 <style scoped>
-/* Header actions */
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-
-/* Logo styling */
-.logo-image {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  border-radius: var(--border-radius-md);
-}
-
-/* Mobile responsive utilities */
-@media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-}
-
-.hidden {
-  display: none;
-}
-
-/* Navigation active state */
-.nav-link.router-link-active {
-  color: var(--color-primary);
-}
-
-.nav-link.router-link-active::after {
-  width: 100%;
-}
+@import '../styles/AppHeader.css';
 </style>

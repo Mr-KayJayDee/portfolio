@@ -3,7 +3,7 @@
  */
 export function useAssets() {
   // Pre-load all images using Vite's import.meta.glob
-  const imageModules = import.meta.glob('../assets/images/*', { eager: true })
+  const imageModules = import.meta.glob('../assets/images/**/*', { eager: true })
 
   /**
    * Get image URL from assets folder

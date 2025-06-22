@@ -2,6 +2,7 @@
 import { useSeo } from '@/composables/useSeo'
 import { useI18n } from '@/composables/useI18n'
 import { useSiteConfig } from '@/composables/useSiteConfig'
+import ContactMethod from '@/components/ContactMethod.vue'
 
 const { t } = useI18n()
 const { siteConfig } = useSiteConfig()
@@ -55,60 +56,16 @@ useSeo({
             <div class="card-body">
               <h2 class="text-2xl font-bold mb-lg">{{ t('contact.quickContact') }}</h2>
               <div class="space-y-md">
-                <!-- Email -->
-                <div class="contact-method">
-                  <div class="contact-icon" style="background: var(--color-primary); color: var(--text-inverse);">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                      </path>
-                    </svg>
-                  </div>
-                  <div class="contact-info">
-                    <div class="contact-title">{{ t('contact.methods.email') }}</div>
-                    <a :href="siteConfig.social.find(s => s.icon === 'email')?.url" class="contact-link">
-                      {{ siteConfig.contact.email }}
-                    </a>
-                    <div class="contact-description">{{ t('contact.methods.responseTime') }}</div>
-                  </div>
-                </div>
+                <ContactMethod type="email" :title="t('contact.methods.email')" :text="siteConfig.contact.email"
+                  :description="t('contact.methods.responseTime')"
+                  :href="siteConfig.social.find(s => s.icon === 'email')?.url" />
 
-                <!-- Phone -->
-                <div class="contact-method">
-                  <div class="contact-icon" style="background: var(--color-info); color: var(--text-inverse);">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
-                      </path>
-                    </svg>
-                  </div>
-                  <div class="contact-info">
-                    <div class="contact-title">{{ t('contact.methods.phone') }}</div>
-                    <a :href="`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`" class="contact-link">
-                      {{ siteConfig.contact.phone }}
-                    </a>
-                    <div class="contact-description">{{ t('contact.methods.availability') }}</div>
-                  </div>
-                </div>
+                <ContactMethod type="phone" :title="t('contact.methods.phone')" :text="siteConfig.contact.phone"
+                  :description="t('contact.methods.availability')"
+                  :href="`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`" />
 
-                <!-- Location -->
-                <div class="contact-method">
-                  <div class="contact-icon" style="background: var(--color-secondary); color: var(--text-inverse);">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                      </path>
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z">
-                      </path>
-                    </svg>
-                  </div>
-                  <div class="contact-info">
-                    <div class="contact-title">{{ t('contact.methods.location') }}</div>
-                    <div class="contact-text">{{ siteConfig.contact.location }}</div>
-                    <div class="contact-description">{{ t('contact.methods.availability') }}</div>
-                  </div>
-                </div>
+                <ContactMethod type="location" :title="t('contact.methods.location')"
+                  :text="siteConfig.contact.location" :description="t('contact.methods.availability')" />
               </div>
             </div>
           </div>
@@ -153,7 +110,7 @@ useSeo({
     </section>
 
     <!-- FAQ Section -->
-    <section class="section" style="background: var(--bg-secondary);">
+    <section class="faq-section">
       <div class="container">
         <div class="text-center mb-2xl">
           <h2 class="mb-lg">{{ t('contact.faq.title') }}</h2>
@@ -165,8 +122,7 @@ useSeo({
         <div class="grid grid-cols-1 md:grid-cols-3 gap-xl">
           <div class="card text-center">
             <div class="card-body">
-              <div class="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-lg"
-                style="background: var(--color-success); color: var(--text-inverse);">
+              <div class="faq-icon faq-icon-success">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -179,8 +135,7 @@ useSeo({
 
           <div class="card text-center">
             <div class="card-body">
-              <div class="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-lg"
-                style="background: var(--color-primary); color: var(--text-inverse);">
+              <div class="faq-icon faq-icon-primary">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
@@ -194,8 +149,7 @@ useSeo({
 
           <div class="card text-center">
             <div class="card-body">
-              <div class="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-lg"
-                style="background: var(--color-secondary); color: var(--text-inverse);">
+              <div class="faq-icon faq-icon-secondary">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
@@ -213,290 +167,5 @@ useSeo({
 </template>
 
 <style scoped>
-/* Contact Page Styles */
-.contact-page {
-  min-height: 100vh;
-  background: var(--bg-primary);
-}
-
-/* Hero Section */
-.contact-hero {
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-  padding: var(--space-4xl) 0 var(--space-3xl);
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f3f4f6' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  opacity: 0.5;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-/* Stats Grid */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: var(--space-xl);
-  max-width: 500px;
-  margin: var(--space-2xl) auto 0;
-}
-
-.stat-item {
-  text-align: center;
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--color-primary);
-  line-height: 1;
-}
-
-.stat-label {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  margin-top: var(--space-xs);
-}
-
-/* Contact Methods */
-.contact-method {
-  display: flex;
-  align-items: flex-start;
-  padding: var(--space-md);
-  background: var(--bg-secondary);
-  border-radius: var(--border-radius-lg);
-  transition: all var(--transition-fast);
-}
-
-.contact-method:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
-
-.contact-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--border-radius-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: var(--space-md);
-  flex-shrink: 0;
-}
-
-.contact-info {
-  flex: 1;
-}
-
-.contact-title {
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: var(--space-xs);
-}
-
-.contact-link {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color var(--transition-fast);
-}
-
-.contact-link:hover {
-  color: var(--color-primary-dark);
-}
-
-.contact-text {
-  color: var(--text-primary);
-  font-weight: 500;
-}
-
-.contact-description {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  margin-top: var(--space-xs);
-}
-
-/* Social Links */
-.social-link {
-  display: flex;
-  align-items: center;
-  padding: var(--space-sm) var(--space-md);
-  background: var(--bg-secondary);
-  border-radius: var(--border-radius-lg);
-  text-decoration: none;
-  transition: all var(--transition-fast);
-  group: true;
-}
-
-.social-link:hover {
-  background: var(--color-primary);
-  color: var(--text-inverse);
-  transform: translateX(4px);
-}
-
-.social-icon {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: var(--space-sm);
-  color: var(--text-secondary);
-  transition: color var(--transition-fast);
-}
-
-.social-link:hover .social-icon {
-  color: var(--text-inverse);
-}
-
-.social-name {
-  flex: 1;
-  font-weight: 500;
-  color: var(--text-primary);
-  transition: color var(--transition-fast);
-}
-
-.social-link:hover .social-name {
-  color: var(--text-inverse);
-}
-
-.social-arrow {
-  width: 16px;
-  height: 16px;
-  color: var(--text-secondary);
-  transition: all var(--transition-fast);
-}
-
-.social-link:hover .social-arrow {
-  color: var(--text-inverse);
-  transform: translateX(2px);
-}
-
-/* Responsive */
-@media (min-width: 768px) {
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Utilities */
-.max-w-2xl {
-  max-width: 42rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.space-y-sm>*+* {
-  margin-top: var(--space-sm);
-}
-
-.space-y-md>*+* {
-  margin-top: var(--space-md);
-}
-
-.grid {
-  display: grid;
-}
-
-.gap-xl {
-  gap: var(--space-xl);
-}
-
-.gap-2xl {
-  gap: var(--space-2xl);
-}
-
-.flex {
-  display: flex;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.mb-lg {
-  margin-bottom: var(--space-lg);
-}
-
-.mb-md {
-  margin-bottom: var(--space-md);
-}
-
-.mb-2xl {
-  margin-bottom: var(--space-2xl);
-}
-
-.text-xl {
-  font-size: 1.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-/* Removed hardcoded colors - using CSS variables instead */
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.rounded-lg {
-  border-radius: var(--border-radius-lg);
-}
+@import './styles/ContactPage.css';
 </style>

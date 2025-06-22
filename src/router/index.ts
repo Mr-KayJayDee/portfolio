@@ -29,6 +29,11 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactPage.vue')
+    },
+    {
+      path: '/fiverr',
+      name: 'fiverr',
+      component: () => import('../views/FiverrPage.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {

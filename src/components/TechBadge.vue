@@ -18,8 +18,10 @@ const props = withDefaults(defineProps<Props>(), {
 const { getImageUrl } = useAssets()
 
 // Get the technology data (handle both string and object)
-const techData = computed(() => {
+const techData = computed((): Technology => {
   if (typeof props.tech === 'string') {
+    const techName = props.tech as string
+
     // Create a mapping for technologies that don't match exactly
     const techMapping: Record<string, string> = {
       'Three.js': 'JavaScript',
@@ -36,13 +38,14 @@ const techData = computed(() => {
     // Try to find the exact match first
     let foundTech = Object.values(techStack)
       .flat()
-      .find(t => t.name.toLowerCase() === props.tech.toLowerCase())
+      .find(t => t.name.toLowerCase() === techName.toLowerCase())
 
     // If not found, try the mapping
-    if (!foundTech && techMapping[props.tech]) {
+    if (!foundTech && techMapping[techName]) {
+      const mappedName = techMapping[techName]
       foundTech = Object.values(techStack)
         .flat()
-        .find(t => t.name.toLowerCase() === techMapping[props.tech].toLowerCase())
+        .find(t => t.name.toLowerCase() === mappedName.toLowerCase())
     }
 
     if (foundTech) {
@@ -51,13 +54,13 @@ const techData = computed(() => {
 
     // Fallback: create a basic tech object from string
     return {
-      name: props.tech,
+      name: techName,
       image: '', // No image for unknown techs
       level: 'Intermediate' as const
     }
   }
 
-  return props.tech
+  return props.tech as Technology
 })
 
 // Get the actual image URL
@@ -66,7 +69,7 @@ const imageUrl = computed(() => {
   return getImageUrl(techData.value.image)
 })
 
-const getLevelColor = (level: string) => {
+const getLevelColor = (level: Technology['level']) => {
   switch (level) {
     case 'Advanced':
       return 'badge-success'

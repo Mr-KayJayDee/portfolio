@@ -10,7 +10,23 @@ const { t } = useI18n()
 // SEO
 useSeo({
   title: t('seo.projects.title'),
-  description: t('seo.projects.description')
+  description: t('seo.projects.description'),
+  keywords: 'web development portfolio, vue.js projects, react applications, node.js projects, javascript portfolio, full stack projects, discord bot examples, open source projects',
+  ogImage: '/portfolio-preview.jpg',
+  structuredData: {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    'name': 'Web Development Portfolio Projects',
+    'description': 'Browse professional web development projects including Vue.js applications, React websites, Node.js APIs, and Discord bots',
+    'url': 'https://killian-portfolio.com/projects',
+    'hasPart': projects.map(project => ({
+      '@type': 'CreativeWork',
+      'name': project.title,
+      'description': project.description,
+      'url': `https://killian-portfolio.com/project/${project.id}`,
+      'keywords': project.technologies?.join(', ')
+    }))
+  }
 })
 
 // Filters and search

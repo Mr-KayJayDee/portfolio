@@ -34,36 +34,38 @@ const translatedCategory = computed(() => {
 </script>
 
 <template>
-  <article class="card group">
+  <article class="card group" itemscope itemtype="https://schema.org/CreativeWork">
     <!-- Image -->
     <div class="project-image">
-      <img :src="imageUrl" :alt="project.title" loading="lazy">
+      <img :src="imageUrl" :alt="`${translatedTitle} - ${translatedDescription.slice(0, 60)}...`" loading="lazy"
+        width="400" height="300" itemprop="image">
     </div>
 
     <!-- Content -->
     <div class="card-body">
       <!-- Category & Date -->
       <div class="project-meta">
-        <span v-if="project.category" class="badge badge-primary">
+        <span v-if="project.category" class="badge badge-primary" itemprop="genre">
           {{ translatedCategory }}
         </span>
-        <span v-if="project.date" class="text-sm text-secondary">
+        <time v-if="project.date" class="text-sm text-secondary" :datetime="project.date" itemprop="dateCreated">
           {{ project.date }}
-        </span>
+        </time>
       </div>
 
       <!-- Title -->
-      <h3 class="project-title">
+      <h3 class="project-title" itemprop="name">
         {{ translatedTitle }}
       </h3>
 
       <!-- Description -->
-      <p class="project-description">
+      <p class="project-description" itemprop="description">
         {{ translatedDescription }}
       </p>
 
       <!-- Technologies -->
-      <div v-if="project.technologies && project.technologies.length > 0" class="project-technologies">
+      <div v-if="project.technologies && project.technologies.length > 0" class="project-technologies"
+        itemprop="keywords">
         <span v-for="tech in project.technologies.slice(0, 3)" :key="tech" class="badge badge-secondary text-xs">
           {{ tech }}
         </span>
@@ -74,9 +76,10 @@ const translatedCategory = computed(() => {
 
       <!-- Action -->
       <div class="project-actions">
-        <RouterLink :to="`/project/${project.id}`" class="btn btn-secondary btn-sm">
+        <RouterLink :to="`/project/${project.id}`" class="btn btn-secondary btn-sm"
+          :aria-label="`View details about ${translatedTitle} project`" itemprop="url">
           {{ t('projects.buttons.viewProject') }}
-          <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
         </RouterLink>

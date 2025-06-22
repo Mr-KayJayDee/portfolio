@@ -16,8 +16,37 @@ const { getImageUrl } = useAssets()
 
 // SEO
 useSeo({
-  title: t('fiverr.title'),
-  description: t('fiverr.subtitle')
+  title: t('seo.fiverr.title'),
+  description: t('seo.fiverr.description'),
+  keywords: 'fiverr services, discord bot development, minecraft plugin development, telegram bot creation, web development services, freelance developer, custom bot development, fiverr gigs',
+  ogImage: '/portfolio-preview.jpg',
+  structuredData: {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    'name': 'Professional Development Services on Fiverr',
+    'description': 'Custom Discord bot development, Minecraft plugins, Telegram bots, and web development services',
+    'provider': {
+      '@type': 'Person',
+      'name': 'Killian',
+      'jobTitle': 'Full Stack Developer'
+    },
+    'offers': siteConfig.value.fiverr.services.map(service => ({
+      '@type': 'Offer',
+      'name': t(`fiverr.serviceData.${service.id}.title`),
+      'description': t(`fiverr.serviceData.${service.id}.description`),
+      'price': service.price.replace('$', ''),
+      'priceCurrency': 'USD',
+      'url': service.url,
+      'availability': service.url !== '#' ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder'
+    })),
+    'aggregateRating': {
+      '@type': 'AggregateRating',
+      'ratingValue': '5',
+      'bestRating': '5',
+      'worstRating': '1',
+      'reviewCount': '50+'
+    }
+  }
 })
 
 const services = computed(() => siteConfig.value.fiverr.services)

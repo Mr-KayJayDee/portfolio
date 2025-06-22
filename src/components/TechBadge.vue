@@ -84,15 +84,17 @@ const getLevelColor = (level: Technology['level']) => {
 </script>
 
 <template>
-  <div class="tech-badge">
+  <div class="tech-badge" itemscope itemtype="https://schema.org/ComputerLanguage">
     <!-- Tech image -->
-    <img v-if="showImage && imageUrl" :src="imageUrl" :alt="techData.name" class="tech-image" loading="lazy">
+    <img v-if="showImage && imageUrl" :src="imageUrl" :alt="`${techData.name} programming language logo`"
+      class="tech-image" loading="lazy" width="24" height="24" itemprop="image">
 
     <!-- Tech name -->
-    <span class="tech-name">{{ techData.name }}</span>
+    <span class="tech-name" itemprop="name">{{ techData.name }}</span>
 
     <!-- Level indicator -->
-    <span v-if="showLevel" :class="['badge', getLevelColor(techData.level)]" class="tech-level">
+    <span v-if="showLevel" :class="['badge', getLevelColor(techData.level)]" class="tech-level"
+      :aria-label="`Skill level: ${techData.level}`">
       {{ techData.level }}
     </span>
   </div>

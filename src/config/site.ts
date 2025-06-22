@@ -28,7 +28,6 @@ export interface SiteConfig {
   title: string
   description: string
   author: string
-  url: string
   contact: ContactInfo
   social: SocialLink[]
   fiverr: FiverrConfig
@@ -36,10 +35,9 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   name: 'Killian',
-  title: 'Killian - Full Stack Developer', // This will be overridden by translations
-  description: 'Full Stack Developer passionate about creating modern and performant web experiences.', // This will be overridden by translations
+  title: 'Killian - Full Stack Developer | Vue.js, React, Node.js Expert',
+  description: 'Professional Full Stack Developer specializing in modern web development with Vue.js, React, Node.js. Expert in Discord bots, web applications, and custom software solutions.',
   author: 'Killian',
-  url: 'https://killiandalcin.fr',
 
   contact: {
     email: 'contact@killiandalcin.fr',
@@ -52,11 +50,11 @@ export const siteConfig: SiteConfig = {
       name: 'Gitea',
       url: 'https://gitea.kamisama.ovh/kayjaydee',
       icon: 'github',
-      username: 'killiandalcin'
+      username: 'kayjaydee'
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/killian-dalcin',
+      url: 'https://linkedin.com/in/killian-dal-cin',
       icon: 'linkedin',
       username: 'killian-dalcin'
     },

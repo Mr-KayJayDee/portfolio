@@ -2,7 +2,7 @@ export default {
   // Navigation
   nav: {
     home: 'Home',
-    projects: 'Projects',
+    projects: 'Portfolio Projects',
     about: 'About',
     contact: 'Contact',
     fiverr: 'Fiverr Services'
@@ -10,63 +10,63 @@ export default {
 
   // Home page
   home: {
-    title: 'Hi, I\'m Killian',
-    subtitle: 'Full Stack Developer passionate about creating exceptional web experiences and innovative solutions to bring your projects to life.',
+    title: 'Hi, I\'m Killian - Full Stack Developer',
+    subtitle: 'Expert Full Stack Developer specializing in Vue.js, React, and Node.js. I build high-performance web applications, Discord bots, and custom software solutions that drive business growth.',
     cta: {
-      viewProjects: 'View my projects',
-      contactMe: 'Contact me'
+      viewProjects: 'View Portfolio Projects',
+      contactMe: 'Get Free Consultation'
     },
     featuredProjects: {
-      title: 'Featured Projects',
-      subtitle: 'Discover a selection of my most recent and innovative projects, showcasing my skills in modern web development.',
-      viewAll: 'View all projects'
+      title: 'Featured Web Development Projects',
+      subtitle: 'Explore my portfolio of modern web applications built with Vue.js, React, Node.js, and cutting-edge JavaScript technologies. Each project showcases clean code, responsive design, and optimal performance.',
+      viewAll: 'View All Projects'
     },
     services: {
-      title: 'My Services',
-      subtitle: 'I offer a complete range of services to support your projects from concept to completion.',
+      title: 'Professional Web Development Services',
+      subtitle: 'Comprehensive full stack development services from concept to deployment. Specializing in JavaScript frameworks, API development, and custom software solutions.',
       webDev: {
-        title: 'Web Dev',
-        description: 'Modern web applications with Vue.js, React and Node.js. Custom solutions tailored to your needs.'
+        title: 'Full Stack Web Development',
+        description: 'Modern web applications using Vue.js, React, Node.js, and TypeScript. Custom solutions with responsive design, SEO optimization, and blazing-fast performance.'
       },
       mobileApps: {
-        title: 'Mobile Applications',
-        description: 'Development of high-performance and intuitive cross-platform applications.'
+        title: 'Cross-Platform Mobile Development',
+        description: 'High-performance mobile applications with React Native and progressive web apps (PWA). Native-like experience across iOS and Android platforms.'
       },
       optimization: {
-        title: 'Optimization & Performance',
-        description: 'Performance improvement and SEO optimization for a better user experience.'
+        title: 'Performance & SEO Optimization',
+        description: 'Website speed optimization, Core Web Vitals improvement, and technical SEO implementation. Boost your search rankings and user experience.'
       },
       maintenance: {
-        title: 'Maintenance & Support',
-        description: 'Ongoing maintenance and technical support for your existing projects.'
+        title: 'Maintenance & Technical Support',
+        description: 'Reliable ongoing maintenance, security updates, and 24/7 technical support for your web applications. Keep your projects running smoothly.'
       }
     },
     cta2: {
-      title: 'Ready to start your project?',
-      subtitle: 'Let\'s discuss your vision and create something extraordinary together. I\'m here to turn your ideas into reality.',
-      startProject: 'Start a project',
-      learnMore: 'Learn more'
+      title: 'Ready to Build Your Next Web Project?',
+      subtitle: 'Let\'s transform your ideas into powerful web applications. Free consultation for your Vue.js, React, or Node.js project.',
+      startProject: 'Start Your Project',
+      learnMore: 'Learn More'
     }
   },
 
   // Projects page
   projects: {
-    title: 'My Projects',
-    subtitle: 'Explore my portfolio of web applications, tools, and innovative solutions. Each project represents a unique challenge solved with creativity and technical expertise.',
+    title: 'Web Development Portfolio',
+    subtitle: 'Browse my full stack development projects featuring Vue.js applications, React websites, Node.js APIs, Discord bots, and enterprise software solutions. Real-world examples of clean code and modern architecture.',
     categories: {
-      all: 'All',
+      all: 'All Projects',
       'webdevelopment': 'Web Development',
       'botdevelopment': 'Bot Development',
       'opensource': 'Open Source',
       'enterprisesoftware': 'Enterprise Software',
-      'socialmediabot': 'Social Media Bot',
-      'automation': 'Automation'
+      'socialmediabot': 'Social Media Bots',
+      'automation': 'Automation Tools'
     },
     buttons: {
-      website: 'Website',
-      repository: 'Repository',
+      website: 'Live Website',
+      repository: 'Source Code',
       npmpackage: 'NPM Package',
-      viewProject: 'View Project'
+      viewProject: 'View Details'
     },
     noResults: {
       title: 'No projects found',
@@ -76,225 +76,237 @@ export default {
 
   // About page
   about: {
-    title: 'About Me',
-    subtitle: 'Learn more about my journey, skills, and passion for web development.',
+    title: 'About Killian - Full Stack Developer',
+    subtitle: 'Experienced web developer passionate about Vue.js, React, Node.js, and modern JavaScript technologies.',
     intro: {
-      title: 'Who am I?',
-      content: 'I\'m Killian, a passionate full-stack developer with several years of experience in web development. I specialize in creating modern, performant, and user-friendly applications using the latest technologies.'
+      title: 'Professional Full Stack Developer',
+      content: 'I\'m Killian, an experienced full stack developer specializing in JavaScript technologies. With expertise in Vue.js, React, Node.js, and TypeScript, I create scalable web applications, RESTful APIs, and real-time systems that exceed client expectations.'
     },
     skills: {
-      title: 'My Skills',
-      programming: 'Programming',
-      frontend: 'Frontend',
-      backend: 'Backend',
-      tools: 'Tools & Others',
+      title: 'Technical Skills & Expertise',
+      programming: 'Programming Languages',
+      frontend: 'Frontend Technologies',
+      backend: 'Backend Technologies',
+      tools: 'DevOps & Tools',
       systems: 'Operating Systems'
     },
     experience: {
-      title: 'Experience',
-      content: 'With years of experience in web development, I\'ve worked on various projects ranging from simple websites to complex web applications. I\'m always eager to learn new technologies and improve my skills.'
+      title: 'Professional Experience',
+      content: 'Years of professional web development experience building enterprise applications, e-commerce platforms, SaaS products, and custom software solutions. Proven track record of delivering high-quality code on time and within budget.'
     },
     approach: {
-      title: 'My Approach',
-      subtitle: 'My development philosophy is built on four fundamental pillars that ensure the success of every project.',
+      title: 'Development Philosophy',
+      subtitle: 'My approach to full stack development focuses on clean code, scalable architecture, and exceptional user experience.',
       performance: {
-        title: 'Performance',
-        description: 'I place particular importance on performance and optimization, using best practices to ensure fast and responsive applications.'
+        title: 'Performance-First Development',
+        description: 'Optimized code, lazy loading, code splitting, and caching strategies. Achieving perfect Lighthouse scores and Core Web Vitals metrics.'
       },
       architecture: {
-        title: 'Architecture',
-        description: 'I design modular and maintainable architectures, facilitating the evolution and scalability of projects in the long term.'
+        title: 'Scalable Architecture',
+        description: 'Microservices, serverless functions, and modular design patterns. Building applications that scale effortlessly with your business growth.'
       },
       quality: {
-        title: 'Quality',
-        description: 'Automated testing, code reviews, and continuous integration are integral parts of my development process to ensure optimal quality.'
+        title: 'Code Quality & Testing',
+        description: 'Test-driven development (TDD), automated testing, continuous integration (CI/CD), and comprehensive code reviews ensuring bug-free deployments.'
       },
       collaboration: {
-        title: 'Collaboration',
-        description: 'I prioritize clear communication and close collaboration with teams to ensure project success.'
+        title: 'Agile Collaboration',
+        description: 'Excellent communication, agile methodologies, and transparent project management. Regular updates and collaborative problem-solving.'
       }
     },
     cta: {
-      title: 'Ready to work together?',
-      description: 'I\'m always open to new opportunities and interesting collaborations.',
-      button: 'Contact me'
+      title: 'Looking for a Full Stack Developer?',
+      description: 'Let\'s discuss your project requirements and build something amazing together.',
+      button: 'Start a Conversation'
     }
   },
 
   // Fiverr page
   fiverr: {
-    title: 'Fiverr Services',
-    subtitle: 'Professional freelance services on Fiverr. Get custom solutions for your Discord server, Minecraft server, or web development needs.',
-    profileCta: 'Visit My Fiverr Profile',
+    title: 'Professional Freelance Services on Fiverr',
+    subtitle: 'Hire an expert developer for Discord bot development, Minecraft plugin creation, Telegram bot programming, and custom web development. Top-rated seller with 100% satisfaction guarantee.',
+    profileCta: 'View My Fiverr Profile',
     stats: {
-      rating: 'Rating'
+      rating: '5-Star Rating'
     },
     pricing: {
       startingAt: 'Starting at'
     },
     services: {
-      title: 'Available Services',
-      subtitle: 'Choose from a variety of professional services tailored to your needs.',
-      features: 'Features',
-      orderNow: 'Order Now',
-      learnMore: 'Learn More',
-      moreFeatures: 'more features',
+      title: 'Available Development Services',
+      subtitle: 'Professional programming services with fast delivery and unlimited revisions. Custom solutions tailored to your specific needs.',
+      features: 'Key Features',
+      orderNow: 'Order on Fiverr',
+      learnMore: 'View Details',
+      moreFeatures: 'additional features',
       comingSoon: 'Coming Soon',
-      available: 'Available'
+      available: 'Available Now'
     },
     serviceData: {
       'discord-bot': {
-        title: 'Custom Discord Bot Creation',
-        description: 'Supercharge Your Discord Server with a Powerful, Fully Custom Bot',
+        title: 'Custom Discord Bot Development',
+        description: 'Professional Discord bot development with advanced features, custom commands, and seamless integration. Transform your Discord server with powerful automation.',
         features: [
-          'Advanced moderation & utility (Tickets, Leveling)',
-          'Engaging features (Minigames, Giveaways, Trackers)',
-          'Powerful API integrations (PayPal, YouTube, Twitch, etc.)',
-          'Fully custom – no templates'
+          'Advanced moderation system with auto-mod and logging',
+          'Custom leveling system, economy, and role rewards',
+          'Music player, games, and entertainment features',
+          'API integrations (Twitter, YouTube, Twitch, OpenAI)',
+          'Dashboard panel for easy configuration',
+          'Database integration and data persistence',
+          '24/7 hosting setup assistance included'
         ]
       },
       'minecraft-plugin': {
-        title: 'Minecraft Plugin Development',
-        description: 'Custom Minecraft plugins tailored for your server needs',
+        title: 'Minecraft Plugin Development (Spigot/Paper)',
+        description: 'Custom Minecraft plugin development for Spigot, Paper, and Bukkit servers. Professional Java programming for unique gameplay features.',
         features: [
-          'Custom gameplay mechanics',
-          'Server management tools',
-          'Player engagement features',
-          'Performance optimized'
+          'Custom gameplay mechanics and minigames',
+          'Economy systems and shop integrations',
+          'Advanced permissions and rank systems',
+          'Custom GUIs and inventory menus',
+          'Database integration (MySQL/SQLite)',
+          'Performance optimized for large servers',
+          'Compatible with latest Minecraft versions'
         ]
       },
       'telegram-bot': {
-        title: 'Telegram Bot Development',
-        description: 'Professional Telegram bots for automation and engagement',
+        title: 'Telegram Bot Development Services',
+        description: 'Professional Telegram bot creation with inline keyboards, automated responses, and API integrations. Perfect for businesses and communities.',
         features: [
-          'Automated messaging',
-          'User management',
-          'API integrations',
-          'Custom commands'
+          'Custom commands and inline keyboards',
+          'Automated messaging and broadcasting',
+          'User management and analytics',
+          'Payment integration (Stripe, PayPal)',
+          'Multi-language support',
+          'Webhook and long polling support',
+          'Admin panel for bot management'
         ]
       },
       'website-development': {
         title: 'Modern Website Development',
-        description: 'Beautiful, responsive websites built with latest technologies',
+        description: 'Professional web development using Vue.js, React, and Node.js. Responsive design, SEO optimization, and lightning-fast performance.',
         features: [
-          'Responsive design',
-          'Modern UI/UX',
-          'SEO optimized',
-          'Fast performance'
+          'Responsive design for all devices',
+          'SEO optimization and Core Web Vitals',
+          'Modern UI/UX with smooth animations',
+          'API integration and backend development',
+          'E-commerce and payment processing',
+          'Content Management System (CMS)',
+          'Free hosting setup and deployment'
         ]
       }
     },
     testimonials: {
-      title: 'What Clients Say',
-      subtitle: 'Trusted by clients worldwide for quality and reliability.'
+      title: 'Client Reviews & Testimonials',
+      subtitle: 'Join hundreds of satisfied clients who trust my development services. 100% satisfaction rate with 5-star reviews.'
     },
     cta: {
-      title: 'Ready to Get Started?',
-      subtitle: 'Choose a service that fits your needs and let\'s bring your project to life.',
-      button: 'Browse All Services'
+      title: 'Ready to Start Your Project?',
+      subtitle: 'Professional development services with fast delivery, unlimited revisions, and ongoing support. Let\'s bring your ideas to life.',
+      button: 'Browse All Services on Fiverr'
     }
   },
 
   // Contact page
   contact: {
-    title: 'Contact Me',
-    subtitle: 'Ready to discuss your next project? I\'d love to hear from you. Let\'s create something amazing together.',
+    title: 'Contact Full Stack Developer',
+    subtitle: 'Get in touch for web development projects, freelance work, or technical consultation. Free project estimation and consultation available.',
     stats: {
-      responseTime: 'Response Time',
+      responseTime: 'Quick Response',
       satisfaction: 'Client Satisfaction',
-      collaboration: 'Collaboration'
+      collaboration: 'Global Reach'
     },
     quickContact: 'Quick Contact',
-    findMeOn: 'Find me on',
+    findMeOn: 'Connect on Social Media',
     methods: {
-      email: 'Email',
-      phone: 'Phone',
+      email: 'Email Address',
+      phone: 'Phone Number',
       location: 'Location',
-      responseTime: 'Response within 24-48h',
-      availability: 'Remote & on-site'
+      responseTime: 'Response within 24 hours',
+      availability: 'Available for remote & freelance'
     },
     faq: {
       title: 'Frequently Asked Questions',
-      subtitle: 'Here are the answers to the most common questions about my services and working method.',
+      subtitle: 'Common questions about my web development services and working process.',
       responseTime: {
-        title: 'Response Time',
-        description: 'I generally respond within 24-48h to all messages received.'
+        title: 'What\'s your typical response time?',
+        description: 'I respond to all inquiries within 24 hours. For urgent projects, I\'m available for immediate consultation.'
       },
       projectTypes: {
-        title: 'Project Types',
-        description: 'Web applications, APIs, automation, consulting and custom solutions.'
+        title: 'What types of projects do you handle?',
+        description: 'Full stack web applications, REST APIs, Discord bots, e-commerce sites, SaaS platforms, and custom software solutions using modern technologies.'
       },
       collaboration: {
-        title: 'Collaboration',
-        description: 'Remote or on-site work according to your needs and preferences.'
+        title: 'Do you work remotely?',
+        description: 'Yes, I work with clients worldwide. Remote collaboration via Slack, Discord, Zoom, and project management tools. Flexible timezone availability.'
       }
     },
     form: {
-      name: 'Name',
-      email: 'Email',
-      subject: 'Subject',
-      message: 'Message',
+      name: 'Your Name',
+      email: 'Email Address',
+      subject: 'Project Subject',
+      message: 'Project Details',
       send: 'Send Message',
       sending: 'Sending...',
-      success: 'Message sent successfully!',
-      error: 'Error sending message. Please try again.',
+      success: 'Message sent successfully! I\'ll respond within 24 hours.',
+      error: 'Error sending message. Please try again or email directly.',
       required: 'This field is required',
       invalidEmail: 'Please enter a valid email address'
     },
     info: {
-      title: 'Get in Touch',
-      description: 'Feel free to reach out to me for any questions, project discussions, or collaboration opportunities.',
+      title: 'Let\'s Build Something Great',
+      description: 'Whether you need a Vue.js application, React website, Node.js API, or custom software solution, I\'m here to help bring your vision to life.',
       email: 'Email',
-      social: 'Social Media'
+      social: 'Social Profiles'
     }
   },
 
   // Project data
   projectData: {
     'virtual-tour': {
-      title: 'Virtual Tour',
-      description: 'Development of an interactive and immersive virtual tour platform.',
-      longDescription: 'Virtual Tour is an innovative platform for creating interactive and immersive virtual tours. Developed with the latest web technologies, it offers a smooth and engaging user experience for exploring 3D spaces.'
+      title: 'Virtual Tour Platform - 3D Interactive Experience',
+      description: 'Interactive virtual tour platform built with Vue.js and Three.js. Immersive 3D experiences for real estate, museums, and businesses.',
+      longDescription: 'Advanced virtual tour platform featuring 360-degree panoramas, interactive hotspots, and smooth navigation. Built with Vue.js for the frontend, Three.js for 3D rendering, and Node.js backend. Optimized for performance with lazy loading and WebGL acceleration. Perfect for real estate showcases, virtual museums, and business tours.'
     },
     'xinko': {
-      title: 'Xinko',
-      description: 'Xinko is a multiplatform bot that can be used to create primary with ease and fun in it.',
-      longDescription: 'Xinko is an innovative multiplatform bot designed to simplify primary content creation. With an intuitive interface and advanced features, it allows users to generate quality content with ease and fun.'
+      title: 'Xinko - Multi-Platform Bot Framework',
+      description: 'Versatile bot framework supporting Discord, Telegram, and Slack. Built with Node.js and TypeScript for scalable bot development.',
+      longDescription: 'Xinko is a powerful multi-platform bot framework designed for developers. Features include unified API across platforms, plugin system, database abstraction, and comprehensive documentation. Built with Node.js, TypeScript, and modern JavaScript practices. Supports Discord.js, Telegram Bot API, and Slack SDK with a single codebase.'
     },
     'image-manipulation': {
-      title: 'Image Manipulation',
-      description: 'Discord Image Generation: NPM package for code-based image manipulation. Originally an API, now open-source.',
-      longDescription: 'A complete NPM package for image generation and manipulation in Discord. This open-source project offers a simple API for creating memes, applying filters, and generating dynamic images. Used by many Discord bots with over 100k downloads.'
+      title: 'Image Manipulation API - NPM Package',
+      description: 'Popular NPM package for programmatic image manipulation. Canvas-based image generation with 100k+ downloads and active community.',
+      longDescription: 'Comprehensive image manipulation library for Node.js applications. Features include meme generation, filters, effects, text overlay, and format conversion. Originally developed as a REST API, now available as an open-source NPM package. Used by Discord bots, web applications, and automation tools. Supports JPG, PNG, GIF, and WebP formats with streaming capabilities.'
     },
     'primate-web-admin': {
-      title: 'Primate Web Admin',
-      description: 'Primate Web Admin is a Web interface to manage Primate that is a Munki-like deployment tool for Windows.',
-      longDescription: 'Modern web interface for managing Primate, a Windows deployment tool inspired by Munki. This web application allows system administrators to deploy and manage software on a Windows computer fleet in a centralized manner.'
+      title: 'Primate Web Admin - Enterprise Deployment Tool',
+      description: 'Modern web interface for Primate deployment system. Enterprise-grade software deployment and management for Windows infrastructure.',
+      longDescription: 'Professional web administration panel for Primate, a Munki-like deployment tool for Windows environments. Built with Vue.js frontend and RESTful API backend. Features include package management, deployment scheduling, client monitoring, and detailed reporting. Designed for IT administrators managing large Windows deployments with role-based access control and audit logging.'
     },
     'instagram-bot': {
-      title: 'Instagram Bot',
-      description: 'Fully functional Instagram bot using Insta.js by androz2091. It has many commands. Generate images with commands like: !stonk or !invert.',
-      longDescription: 'Fully functional Instagram bot developed with Insta.js. It offers many commands to generate custom images, memes, and visual effects. Perfect for animating your Instagram stories and posts with original content.'
+      title: 'Instagram Bot - Automated Content Generation',
+      description: 'Feature-rich Instagram bot with image generation commands. Built with Insta.js for stories, posts, and DM automation.',
+      longDescription: 'Advanced Instagram automation bot developed with Insta.js framework. Features custom image generation commands (!stonk, !invert, !meme), story interactions, automated posting, and DM management. Includes rate limiting, proxy support, and account safety features. Perfect for content creators and social media managers looking to automate their Instagram presence.'
     },
     'crowdin-status-bot': {
-      title: 'Crowdin Status Bot',
-      description: 'A bot that fetches Crowdin translation status and updates Discord messages with the latest status. Stay informed on progress!',
-      longDescription: 'Automated Discord bot that fetches Crowdin translation status and updates Discord messages with the latest information. Ideal for translation teams who want to stay informed about their project progress in real-time.'
+      title: 'Crowdin Status Bot - Translation Progress Tracker',
+      description: 'Discord bot for real-time Crowdin translation monitoring. Automated status updates and progress tracking for localization teams.',
+      longDescription: 'Specialized Discord bot that integrates with Crowdin API to provide real-time translation progress updates. Features include automated status messages, progress bars, contributor leaderboards, and milestone notifications. Essential tool for open-source projects and localization teams managing translations across multiple languages. Supports webhooks and custom notification rules.'
     }
   },
 
   // Footer
   footer: {
-    navigation: 'Navigation',
+    navigation: 'Quick Links',
     services: 'Services',
     copyright: 'All rights reserved.',
     legalNotices: 'Legal Notices',
     privacyPolicy: 'Privacy Policy',
     servicesList: {
-      webDev: 'Web Dev',
+      webDev: 'Web Development',
       mobileApps: 'Mobile Apps',
-      apiBackend: 'API & Backend',
-      consulting: 'Consulting'
+      apiBackend: 'API Development',
+      consulting: 'Tech Consulting'
     }
   },
 
@@ -322,24 +334,24 @@ export default {
   // SEO
   seo: {
     home: {
-      title: 'Killian - Full Stack Developer',
-      description: 'Portfolio of Killian, full stack developer specialized in Vue.js, React and Node.js. Discover my projects and services.'
+      title: 'Killian - Full Stack Developer | Vue.js, React, Node.js Expert',
+      description: 'Professional Full Stack Developer specializing in Vue.js, React, Node.js. Expert in web applications, Discord bots, and custom software. Hire me for your next project.'
     },
     projects: {
-      title: 'Projects - Killian',
-      description: 'Explore my portfolio of web applications, tools, and innovative solutions.'
+      title: 'Web Development Portfolio - Killian | Full Stack Projects',
+      description: 'Browse my portfolio of Vue.js applications, React websites, Node.js APIs, and Discord bots. Real examples of modern web development and clean code architecture.'
     },
     about: {
-      title: 'About - Killian',
-      description: 'Learn more about my journey, skills, and passion for web development.'
+      title: 'About Killian - Experienced Full Stack Developer',
+      description: 'Learn about my expertise in Vue.js, React, Node.js, and modern web development. Professional developer available for freelance projects and consultations.'
     },
     contact: {
-      title: 'Contact - Killian',
-      description: 'Ready to discuss your next project? Let\'s create something amazing together.'
+      title: 'Contact Full Stack Developer - Killian | Hire Web Developer',
+      description: 'Contact me for web development projects, Vue.js applications, React websites, or Node.js APIs. Free consultation and project estimation available.'
     },
     fiverr: {
-      title: 'Fiverr Services - Killian',
-      description: 'Professional freelance services on Fiverr. Custom Discord bots, Minecraft plugins, and web development solutions.'
+      title: 'Fiverr Services - Discord Bot & Web Development | Killian',
+      description: 'Professional freelance services on Fiverr. Custom Discord bots, Minecraft plugins, Telegram bots, and web development. Top-rated seller with 100% satisfaction.'
     }
   }
 }

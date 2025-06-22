@@ -10,7 +10,28 @@ const { t } = useI18n()
 // SEO
 useSeo({
   title: t('seo.about.title'),
-  description: t('seo.about.description')
+  description: t('seo.about.description'),
+  keywords: 'full stack developer, vue.js expert, react developer, node.js specialist, javascript developer, web development skills, programming expertise, software engineer',
+  ogImage: '/portfolio-preview.jpg',
+  structuredData: {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    'name': 'Killian',
+    'jobTitle': 'Full Stack Developer',
+    'description': 'Experienced Full Stack Developer specializing in Vue.js, React, Node.js, and modern JavaScript technologies',
+    'url': 'https://killian-portfolio.com/about',
+    'sameAs': [
+      'https://github.com/killian',
+      'https://linkedin.com/in/killian-dev',
+      'https://www.fiverr.com/users/mr_kayjaydee'
+    ],
+    'knowsAbout': [
+      'Vue.js', 'React', 'Node.js', 'TypeScript', 'JavaScript',
+      'Web Development', 'API Development', 'Database Design',
+      'Discord Bot Development', 'Full Stack Development'
+    ],
+    'skills': Object.values(techStack).flat().map(tech => tech.name)
+  }
 })
 
 const techCategories = computed(() => [

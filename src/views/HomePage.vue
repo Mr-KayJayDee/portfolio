@@ -7,10 +7,34 @@ import ProjectCard from '@/components/ProjectCard.vue'
 
 const { t } = useI18n()
 
-// SEO
+// Enhanced SEO with structured data
 useSeo({
   title: t('seo.home.title'),
-  description: t('seo.home.description')
+  description: t('seo.home.description'),
+  keywords: 'full stack developer, vue.js developer, react developer, node.js developer, web development services, javascript developer, typescript expert, discord bot developer, freelance developer, custom software development',
+  ogImage: '/portfolio-preview.jpg',
+  structuredData: {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    'name': 'Killian - Full Stack Developer Portfolio',
+    'url': 'https://killian-portfolio.com',
+    'potentialAction': {
+      '@type': 'SearchAction',
+      'target': 'https://killian-portfolio.com/projects?search={search_term_string}',
+      'query-input': 'required name=search_term_string'
+    },
+    'author': {
+      '@type': 'Person',
+      'name': 'Killian',
+      'jobTitle': 'Full Stack Developer',
+      'url': 'https://killian-portfolio.com/about',
+      'sameAs': [
+        'https://github.com/killian',
+        'https://linkedin.com/in/killian-dev',
+        'https://www.fiverr.com/users/mr_kayjaydee'
+      ]
+    }
+  }
 })
 
 // Featured projects

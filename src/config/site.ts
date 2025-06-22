@@ -77,25 +77,25 @@ export const siteConfig: SiteConfig = {
       {
         id: 'discord-bot',
         url: 'https://www.fiverr.com/s/rEDa84j',
-        image: '@/assets/images/fiverr/discord_bot.jpg',
+        image: '@/assets/images/fiverr/discord_bot.webp',
         price: '$25'
       },
       {
         id: 'minecraft-plugin',
         url: 'https://www.fiverr.com/s/xXVY20Q',
-        image: '@/assets/images/fiverr/minecraft_plugin.jpg',
+        image: '@/assets/images/fiverr/minecraft_plugin.webp',
         price: '$50'
       },
       {
         id: 'telegram-bot',
         url: '#',
-        image: '@/assets/images/fiverr/telegram_bot.jpg',
+        image: '@/assets/images/fiverr/telegram_bot.webp',
         price: '$20'
       },
       {
         id: 'website-development',
         url: '#',
-        image: '@/assets/images/fiverr/website.jpg',
+        image: '@/assets/images/fiverr/website.webp',
         price: '$50'
       }
     ]

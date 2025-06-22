@@ -12,7 +12,7 @@ useSeo({
   title: t('seo.about.title'),
   description: t('seo.about.description'),
   keywords: 'full stack developer, vue.js expert, react developer, node.js specialist, javascript developer, web development skills, programming expertise, software engineer',
-  ogImage: '/portfolio-preview.jpg',
+  ogImage: '/portfolio-preview.webp',
   structuredData: {
     '@context': 'https://schema.org',
     '@type': 'Person',

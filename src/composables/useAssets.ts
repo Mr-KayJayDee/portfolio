@@ -7,7 +7,7 @@ export function useAssets() {
 
   /**
    * Get image URL from assets folder
-   * @param path - Path like '@/assets/images/filename.png' or 'filename.png'
+   * @param path - Path like '@/assets/images/filename.webp' or 'filename.webp'
    * @returns string - The image URL
    */
   const getImageUrl = (path: string | undefined): string => {

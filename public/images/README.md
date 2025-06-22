@@ -6,19 +6,19 @@ Ce dossier doit contenir les images pour votre portfolio :
 
 ```
 images/
-├── virtualtour.png    # Image du projet Virtual Tour
-├── xinko.png          # Image du projet Xinko
-├── dig.png            # Image du projet Image Manipulation
-├── primate.png        # Image du projet Primate Web Admin
-├── instagram.png      # Image du projet Instagram Bot
-├── crowdin.png        # Image du projet Crowdin Status Bot
+├── virtualtour.webp   # Image du projet Virtual Tour
+├── xinko.webp         # Image du projet Xinko
+├── dig.webp           # Image du projet Image Manipulation
+├── primate.webp       # Image du projet Primate Web Admin
+├── instagram.webp     # Image du projet Instagram Bot
+├── crowdin.webp       # Image du projet Crowdin Status Bot
 └── tech/              # Dossier pour les logos des technologies
-    ├── javascript.png
-    ├── typescript.png
-    ├── nodejs.png
-    ├── vuejs.png
-    ├── react.png
-    ├── angular.png
+    ├── javascript.webp
+    ├── typescript.webp
+    ├── nodejs.webp
+    ├── vuejs.webp
+    ├── react.webp
+    ├── angular.webp
     └── ...            # Autres logos de technologies
 ```
 

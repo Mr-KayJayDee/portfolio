@@ -19,7 +19,7 @@ useSeo({
   title: t('seo.fiverr.title'),
   description: t('seo.fiverr.description'),
   keywords: 'fiverr services, discord bot development, minecraft plugin development, telegram bot creation, web development services, freelance developer, custom bot development, fiverr gigs',
-  ogImage: '/portfolio-preview.jpg',
+  ogImage: '/portfolio-preview.webp',
   structuredData: {
     '@context': 'https://schema.org',
     '@type': 'Service',

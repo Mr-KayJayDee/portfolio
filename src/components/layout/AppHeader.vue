@@ -28,7 +28,7 @@ const toggleMenu = () => {
       <div class="header-content">
         <!-- Logo -->
         <RouterLink to="/" class="logo" aria-label="Killian - Full Stack Developer Homepage">
-          <img :src="getImageUrl('@/assets/images/logo.png')" alt="Killian - Full Stack Developer Logo"
+          <img :src="getImageUrl('@/assets/images/logo.webp')" alt="Killian - Full Stack Developer Logo"
             class="logo-image" width="40" height="40" loading="eager">
           <span>Killian</span>
         </RouterLink>

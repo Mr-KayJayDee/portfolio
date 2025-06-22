@@ -32,7 +32,7 @@ const services = computed(() => [
         <!-- Brand -->
         <div class="md:col-span-2">
           <div class="flex items-center gap-md mb-lg">
-            <img :src="getImageUrl('@/assets/images/logo.png')" alt="Killian - Full Stack Developer" class="footer-logo"
+            <img :src="getImageUrl('@/assets/images/logo.webp')" alt="Killian - Full Stack Developer" class="footer-logo"
               width="32" height="32" loading="lazy">
             <span class="text-xl font-bold footer-brand">{{ siteConfig.name }}</span>
           </div>

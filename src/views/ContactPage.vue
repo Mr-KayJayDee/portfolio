@@ -11,8 +11,38 @@ const { siteConfig } = useSiteConfig()
 useSeo({
   title: t('seo.contact.title'),
   description: t('seo.contact.description'),
-  ogTitle: t('seo.contact.title'),
-  ogDescription: t('seo.contact.description')
+  keywords: 'hire full stack developer, contact web developer, freelance developer, vue.js consultant, react developer for hire, node.js expert, web development services',
+  ogImage: '/portfolio-preview.jpg',
+  structuredData: {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    'name': 'Contact Full Stack Developer',
+    'description': 'Get in touch for web development projects, freelance work, or technical consultation',
+    'url': 'https://killian-portfolio.com/contact',
+    'mainEntity': {
+      '@type': 'Person',
+      'name': 'Killian',
+      'jobTitle': 'Full Stack Developer',
+      'email': siteConfig.value.contact.email,
+      'telephone': siteConfig.value.contact.phone,
+      'address': {
+        '@type': 'PostalAddress',
+        'addressCountry': 'France'
+      },
+      'contactPoint': {
+        '@type': 'ContactPoint',
+        'contactType': 'customer service',
+        'availableLanguage': ['English', 'French'],
+        'areaServed': 'Worldwide',
+        'hoursAvailable': {
+          '@type': 'OpeningHoursSpecification',
+          'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          'opens': '09:00',
+          'closes': '18:00'
+        }
+      }
+    }
+  }
 })
 
 </script>

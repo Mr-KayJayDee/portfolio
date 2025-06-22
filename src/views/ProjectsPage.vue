@@ -12,7 +12,7 @@ useSeo({
   title: t('seo.projects.title'),
   description: t('seo.projects.description'),
   keywords: 'web development portfolio, vue.js projects, react applications, node.js projects, javascript portfolio, full stack projects, discord bot examples, open source projects',
-  ogImage: '/portfolio-preview.jpg',
+  ogImage: '/portfolio-preview.webp',
   structuredData: {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',

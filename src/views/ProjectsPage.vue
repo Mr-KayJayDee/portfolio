@@ -2,10 +2,11 @@
 import { ref, computed } from 'vue'
 import { useSeo } from '@/composables/useSeo'
 import { useI18n } from '@/composables/useI18n'
-import { projects } from '@/data/projects'
+import { useProjects } from '@/composables/useProjects'
 import ProjectCard from '@/components/ProjectCard.vue'
 
 const { t } = useI18n()
+const { projects } = useProjects()
 
 // SEO
 useSeo({
@@ -19,7 +20,7 @@ useSeo({
     'name': 'Web Development Portfolio Projects',
     'description': 'Browse professional web development projects including Vue.js applications, React websites, Node.js APIs, and Discord bots',
     'url': 'https://killiandalcin.fr/projects',
-    'hasPart': projects.map(project => ({
+    'hasPart': projects.value.map(project => ({
       '@type': 'CreativeWork',
       'name': project.title,
       'description': project.description,
@@ -36,13 +37,13 @@ const sortBy = ref('date')
 
 // Get unique categories
 const categories = computed(() => {
-  const cats = ['all', ...new Set(projects.map(p => p.category).filter(Boolean))]
+  const cats = ['all', ...new Set(projects.value.map(p => p.category).filter(Boolean))]
   return cats
 })
 
 // Filtered and sorted projects
 const filteredProjects = computed(() => {
-  let filtered = projects
+  let filtered = projects.value
 
   // Filter by search query
   if (searchQuery.value) {
@@ -74,8 +75,8 @@ const filteredProjects = computed(() => {
 })
 
 // Stats
-const totalProjects = computed(() => projects.length)
-const featuredProjects = computed(() => projects.filter(p => p.featured).length)
+const totalProjects = computed(() => projects.value.length)
+const featuredProjects = computed(() => projects.value.filter(p => p.featured).length)
 </script>
 
 <template>

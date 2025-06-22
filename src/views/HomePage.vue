@@ -2,10 +2,11 @@
 import { computed } from 'vue'
 import { useSeo } from '@/composables/useSeo'
 import { useI18n } from '@/composables/useI18n'
-import { projects } from '@/data/projects'
+import { useProjects } from '@/composables/useProjects'
 import ProjectCard from '@/components/ProjectCard.vue'
 
 const { t } = useI18n()
+const { projects } = useProjects()
 
 // Enhanced SEO with structured data
 useSeo({
@@ -39,7 +40,7 @@ useSeo({
 
 // Featured projects
 const featuredProjects = computed(() => {
-  return projects.filter(project => project.featured).slice(0, 3)
+  return projects.value.filter(project => project.featured).slice(0, 3)
 })
 
 // Services data

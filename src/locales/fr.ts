@@ -68,6 +68,21 @@ export default {
       npmpackage: 'Package NPM',
       viewProject: 'Voir les Détails'
     },
+    projectDetail: {
+      backToProjects: 'Retour aux Projets',
+      viewDemo: 'Voir la Démo',
+      sourceCode: 'Code Source',
+      share: 'Partager',
+      aboutProject: 'À propos du Projet',
+      keyFeatures: 'Fonctionnalités Principales',
+      technologiesUsed: 'Technologies Utilisées',
+      gallery: 'Galerie',
+      projectInfo: 'Informations du Projet',
+      date: 'Date',
+      category: 'Catégorie',
+      status: 'Statut',
+      relatedProjects: 'Projets Similaires'
+    },
     noResults: {
       title: 'Aucun projet trouvé',
       description: 'Essayez de modifier vos critères de recherche ou de filtrage.'
@@ -264,34 +279,57 @@ export default {
   // Project data
   projectData: {
     'virtual-tour': {
-      title: 'Plateforme Virtual Tour - Expérience 3D Interactive',
-      description: 'Plateforme de visite virtuelle interactive construite avec Vue.js et Three.js. Expériences 3D immersives pour l\'immobilier, les musées et les entreprises.',
-      longDescription: 'Plateforme de visite virtuelle avancée avec panoramas à 360 degrés, points chauds interactifs et navigation fluide. Construite avec Vue.js pour le frontend, Three.js pour le rendu 3D et backend Node.js. Optimisée pour les performances avec lazy loading et accélération WebGL. Parfaite pour les présentations immobilières, musées virtuels et visites d\'entreprise.'
+      title: 'Visite Virtuelle - Expérience 360° Interactive',
+      description: 'Mon professeur de lycée et moi avons eu l\'idée de créer une visite virtuelle avec des vidéos 360° pour permettre à tous de visiter l\'école depuis le web.',
+      longDescription: 'Projet collaboratif avec mon professeur de lycée pour créer une expérience de visite virtuelle immersive de notre établissement. Utilise des vidéos 360° pour offrir une navigation interactive et permettre aux futurs étudiants et parents de découvrir les installations scolaires à distance. Interface intuitive permettant d\'explorer les différents espaces : salles de classe, laboratoires, espaces communs et installations sportives.',
+      buttons: {
+        visit: 'Visiter'
+      }
     },
     'xinko': {
-      title: 'Xinko - Framework Bot Multi-Plateforme',
-      description: 'Framework bot polyvalent supportant Discord, Telegram et Slack. Construit avec Node.js et TypeScript pour un développement de bot évolutif.',
-      longDescription: 'Xinko est un framework bot multi-plateforme puissant conçu pour les développeurs. Les fonctionnalités incluent une API unifiée sur toutes les plateformes, système de plugins, abstraction de base de données et documentation complète. Construit avec Node.js, TypeScript et pratiques JavaScript modernes. Supporte Discord.js, Telegram Bot API et Slack SDK avec une seule base de code.'
+      title: 'Xinko - Bot Discord Polyvalent',
+      description: 'Xinko est un bot polyvalent qui peut vous aider à créer et gérer vos serveurs Discord avec facilité et plaisir. Il possède de nombreuses commandes et fonctionnalités.',
+      longDescription: 'Bot Discord complet conçu pour simplifier la gestion des serveurs. Xinko offre une large gamme de commandes pour la modération, le divertissement, l\'utilitaire et la gestion communautaire. Interface conviviale avec système de permissions avancé, commandes slash modernes et intégration avec diverses APIs. Parfait pour les communautés de toutes tailles cherchant à automatiser et enrichir leur expérience Discord.',
+      buttons: {
+        invite: 'Inviter'
+      }
     },
     'image-manipulation': {
-      title: 'API Manipulation d\'Images - Package NPM',
-      description: 'Package NPM populaire pour la manipulation d\'images programmatique. Génération d\'images basée sur Canvas avec 100k+ téléchargements et communauté active.',
-      longDescription: 'Bibliothèque complète de manipulation d\'images pour applications Node.js. Les fonctionnalités incluent génération de memes, filtres, effets, superposition de texte et conversion de format. Développé à l\'origine comme API REST, maintenant disponible en package NPM open-source. Utilisé par des bots Discord, applications web et outils d\'automatisation. Supporte JPG, PNG, GIF et WebP avec capacités de streaming.'
+      title: 'Manipulation d\'Images - Package NPM',
+      description: 'Discord Image Generation : Package NPM pour la manipulation d\'images basée sur le code. Initialement une API, maintenant open-source.',
+      longDescription: 'Package NPM open-source pour la génération et manipulation d\'images programmatique. Développé initialement comme API propriétaire, puis rendu disponible à la communauté. Offre des fonctionnalités avancées de traitement d\'images : génération de memes, filtres, effets visuels et compositions personnalisées. Particulièrement populaire dans l\'écosystème des bots Discord pour créer du contenu visuel dynamique et interactif.',
+      buttons: {
+        repository: 'Dépôt',
+        'npm package': 'Package NPM'
+      }
     },
     'primate-web-admin': {
-      title: 'Primate Web Admin - Outil de Déploiement Entreprise',
-      description: 'Interface web moderne pour système de déploiement Primate. Déploiement et gestion de logiciels de qualité entreprise pour infrastructure Windows.',
-      longDescription: 'Panneau d\'administration web professionnel pour Primate, un outil de déploiement type Munki pour environnements Windows. Construit avec frontend Vue.js et backend API RESTful. Les fonctionnalités incluent gestion de packages, planification de déploiement, surveillance des clients et rapports détaillés. Conçu pour les administrateurs IT gérant de grands déploiements Windows avec contrôle d\'accès basé sur les rôles et journalisation d\'audit.'
+      title: 'Primate Web Admin - Interface de Gestion',
+      description: 'Primate Web Admin est une interface Web pour gérer Primate qui est un outil de déploiement similaire à Munki pour Windows.',
+      longDescription: 'Interface d\'administration web moderne pour Primate, un système de déploiement de logiciels pour environnements Windows. Inspiré de Munki (solution macOS), Primate Web Admin offre une gestion centralisée des déploiements logiciels sur infrastructure Windows. Interface intuitive pour la gestion des packages, planification des mises à jour, surveillance des clients et génération de rapports détaillés.',
+      buttons: {}
     },
     'instagram-bot': {
-      title: 'Bot Instagram - Génération de Contenu Automatisée',
-      description: 'Bot Instagram riche en fonctionnalités avec commandes de génération d\'images. Construit avec Insta.js pour stories, posts et automatisation DM.',
-      longDescription: 'Bot d\'automatisation Instagram avancé développé avec le framework Insta.js. Comprend des commandes de génération d\'images personnalisées (!stonk, !invert, !meme), interactions stories, publication automatisée et gestion DM. Inclut limitation de débit, support proxy et fonctionnalités de sécurité du compte. Parfait pour les créateurs de contenu et gestionnaires de médias sociaux cherchant à automatiser leur présence Instagram.'
+      title: 'Bot Instagram - Automatisation Complète',
+      description: 'Bot Instagram entièrement fonctionnel utilisant Insta.js par androz2091. Il possède de nombreuses commandes. Génère des images avec des commandes comme : !stonk ou !invert.',
+      longDescription: 'Bot d\'automatisation Instagram développé avec la bibliothèque Insta.js d\'androz2091. Offre une gamme complète de fonctionnalités d\'automatisation : publication de contenu, interaction avec les followers, génération d\'images personnalisées et gestion des messages directs. Inclut des commandes spécialisées pour la création de memes et effets visuels (!stonk, !invert) ainsi que des outils de modération et d\'analyse des performances.',
+      buttons: {
+        repository: 'Dépôt'
+      }
     },
     'crowdin-status-bot': {
-      title: 'Bot de Statut Crowdin - Suivi de Progression des Traductions',
-      description: 'Bot Discord pour surveillance en temps réel des traductions Crowdin. Mises à jour automatiques du statut et suivi de progression pour équipes de localisation.',
-      longDescription: 'Bot Discord spécialisé qui s\'intègre avec l\'API Crowdin pour fournir des mises à jour de progression de traduction en temps réel. Les fonctionnalités incluent messages de statut automatisés, barres de progression, classements des contributeurs et notifications de jalons. Outil essentiel pour les projets open-source et équipes de localisation gérant des traductions dans plusieurs langues. Supporte webhooks et règles de notification personnalisées.'
+      title: 'Bot de Statut Crowdin - Suivi des Traductions',
+      description: 'Un bot qui récupère le statut des traductions Crowdin et met à jour les messages Discord avec le dernier statut. Restez informé des progrès !',
+      longDescription: 'Bot Discord spécialisé dans le suivi automatique des projets de traduction Crowdin. Se connecte à l\'API Crowdin pour récupérer les statistiques de progression en temps réel et met à jour automatiquement les messages Discord avec les dernières informations. Outil essentiel pour les équipes de localisation et projets open-source multilingues, permettant de maintenir la communauté informée des avancées de traduction et d\'encourager la participation des contributeurs.',
+      buttons: {
+        repository: 'Dépôt'
+      }
+    },
+    'flowboard': {
+      title: 'FlowBoard - Clone de Trello	',
+      description: 'Clone de Trello moderne pour la gestion de projet et la collaboration d\'équipe. Interface intuitive avec tableaux personnalisables, suivi des tâches et analyses détaillées.',
+      longDescription: 'FlowBoard révolutionne la collaboration d\'équipe et la gestion de projet avec sa suite complète d\'outils. Construite avec des technologies web modernes, elle offre une interface intuitive pour organiser les tâches, gérer les délais et suivre les progrès. La plateforme propose des tableaux personnalisables, une collaboration en temps réel, des analyses avancées et des outils de communication transparents. Parfaite pour les équipes de toutes tailles cherchant à booster leur productivité et rationaliser leurs processus de travail.',
+      buttons: {}
     }
   },
 

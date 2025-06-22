@@ -68,6 +68,21 @@ export default {
       npmpackage: 'NPM Package',
       viewProject: 'View Details'
     },
+    projectDetail: {
+      backToProjects: 'Back to Projects',
+      viewDemo: 'View Demo',
+      sourceCode: 'Source Code',
+      share: 'Share',
+      aboutProject: 'About the Project',
+      keyFeatures: 'Key Features',
+      technologiesUsed: 'Technologies Used',
+      gallery: 'Gallery',
+      projectInfo: 'Project Information',
+      date: 'Date',
+      category: 'Category',
+      status: 'Status',
+      relatedProjects: 'Related Projects'
+    },
     noResults: {
       title: 'No projects found',
       description: 'Try modifying your search or filter criteria.'
@@ -264,34 +279,57 @@ export default {
   // Project data
   projectData: {
     'virtual-tour': {
-      title: 'Virtual Tour Platform - 3D Interactive Experience',
-      description: 'Interactive virtual tour platform built with Vue.js and Three.js. Immersive 3D experiences for real estate, museums, and businesses.',
-      longDescription: 'Advanced virtual tour platform featuring 360-degree panoramas, interactive hotspots, and smooth navigation. Built with Vue.js for the frontend, Three.js for 3D rendering, and Node.js backend. Optimized for performance with lazy loading and WebGL acceleration. Perfect for real estate showcases, virtual museums, and business tours.'
+      title: 'Virtual Tour - Interactive 360° Experience',
+      description: 'My high school teacher and me had an idea to create a Virtual tour with 360° videos to allow everyone to visit the school from the web.',
+      longDescription: 'Collaborative project with my high school teacher to create an immersive virtual tour experience of our school. Uses 360° videos to provide interactive navigation and allow prospective students and parents to explore the school facilities remotely. Intuitive interface enabling exploration of different spaces: classrooms, laboratories, common areas, and sports facilities.',
+      buttons: {
+        visit: 'Visit'
+      }
     },
     'xinko': {
-      title: 'Xinko - Multi-Platform Bot Framework',
-      description: 'Versatile bot framework supporting Discord, Telegram, and Slack. Built with Node.js and TypeScript for scalable bot development.',
-      longDescription: 'Xinko is a powerful multi-platform bot framework designed for developers. Features include unified API across platforms, plugin system, database abstraction, and comprehensive documentation. Built with Node.js, TypeScript, and modern JavaScript practices. Supports Discord.js, Telegram Bot API, and Slack SDK with a single codebase.'
+      title: 'Xinko - Multipurpose Discord Bot',
+      description: 'Xinko is a multipurpose bot that can help you create and manage your discord servers with ease and fun. It has many commands and features.',
+      longDescription: 'Comprehensive Discord bot designed to simplify server management. Xinko offers a wide range of commands for moderation, entertainment, utility, and community management. User-friendly interface with advanced permission system, modern slash commands, and integration with various APIs. Perfect for communities of all sizes looking to automate and enhance their Discord experience.',
+      buttons: {
+        invite: 'Invite'
+      }
     },
     'image-manipulation': {
-      title: 'Image Manipulation API - NPM Package',
-      description: 'Popular NPM package for programmatic image manipulation. Canvas-based image generation with 100k+ downloads and active community.',
-      longDescription: 'Comprehensive image manipulation library for Node.js applications. Features include meme generation, filters, effects, text overlay, and format conversion. Originally developed as a REST API, now available as an open-source NPM package. Used by Discord bots, web applications, and automation tools. Supports JPG, PNG, GIF, and WebP formats with streaming capabilities.'
+      title: 'Image Manipulation - NPM Package',
+      description: 'Discord Image Generation: NPM package for code-based image manipulation. Originally an API, now open-source.',
+      longDescription: 'Open-source NPM package for programmatic image generation and manipulation. Originally developed as a proprietary API, then made available to the community. Offers advanced image processing features: meme generation, filters, visual effects, and custom compositions. Particularly popular in the Discord bot ecosystem for creating dynamic and interactive visual content.',
+      buttons: {
+        repository: 'Repository',
+        'npm package': 'NPM Package'
+      }
     },
     'primate-web-admin': {
-      title: 'Primate Web Admin - Enterprise Deployment Tool',
-      description: 'Modern web interface for Primate deployment system. Enterprise-grade software deployment and management for Windows infrastructure.',
-      longDescription: 'Professional web administration panel for Primate, a Munki-like deployment tool for Windows environments. Built with Vue.js frontend and RESTful API backend. Features include package management, deployment scheduling, client monitoring, and detailed reporting. Designed for IT administrators managing large Windows deployments with role-based access control and audit logging.'
+      title: 'Primate Web Admin - Management Interface',
+      description: 'Primate Web Admin is a Web interface to manage Primate that is a Munki-like deployment tool for Windows.',
+      longDescription: 'Modern web administration interface for Primate, a software deployment system for Windows environments. Inspired by Munki (macOS solution), Primate Web Admin offers centralized management of software deployments on Windows infrastructure. Intuitive interface for package management, update scheduling, client monitoring, and detailed reporting generation.',
+      buttons: {}
     },
     'instagram-bot': {
-      title: 'Instagram Bot - Automated Content Generation',
-      description: 'Feature-rich Instagram bot with image generation commands. Built with Insta.js for stories, posts, and DM automation.',
-      longDescription: 'Advanced Instagram automation bot developed with Insta.js framework. Features custom image generation commands (!stonk, !invert, !meme), story interactions, automated posting, and DM management. Includes rate limiting, proxy support, and account safety features. Perfect for content creators and social media managers looking to automate their Instagram presence.'
+      title: 'Instagram Bot - Full Automation',
+      description: 'Fully functional Instagram bot using Insta.js by androz2091. It has many commands. Generate images with commands like: !stonk or !invert.',
+      longDescription: 'Instagram automation bot developed with androz2091\'s Insta.js library. Offers a complete range of automation features: content publishing, follower interaction, custom image generation, and direct message management. Includes specialized commands for meme creation and visual effects (!stonk, !invert) as well as moderation tools and performance analytics.',
+      buttons: {
+        repository: 'Repository'
+      }
     },
     'crowdin-status-bot': {
-      title: 'Crowdin Status Bot - Translation Progress Tracker',
-      description: 'Discord bot for real-time Crowdin translation monitoring. Automated status updates and progress tracking for localization teams.',
-      longDescription: 'Specialized Discord bot that integrates with Crowdin API to provide real-time translation progress updates. Features include automated status messages, progress bars, contributor leaderboards, and milestone notifications. Essential tool for open-source projects and localization teams managing translations across multiple languages. Supports webhooks and custom notification rules.'
+      title: 'Crowdin Status Bot - Translation Tracker',
+      description: 'A bot that fetches Crowdin translation status and updates Discord messages with the latest status. Stay informed on progress!',
+      longDescription: 'Discord bot specialized in automatic monitoring of Crowdin translation projects. Connects to Crowdin API to retrieve real-time progress statistics and automatically updates Discord messages with the latest information. Essential tool for localization teams and multilingual open-source projects, keeping the community informed about translation progress and encouraging contributor participation.',
+      buttons: {
+        repository: 'Repository'
+      }
+    },
+    'flowboard': {
+      title: 'FlowBoard - Trello clone',
+      description: 'FlowBoard is a complete project management solution for streamlining tasks, team collaboration, timeline management, and progress tracking with detailed analytics.',
+      longDescription: 'FlowBoard revolutionizes team collaboration and project management with its comprehensive suite of tools. Built with modern web technologies, it offers an intuitive interface for organizing tasks, managing timelines, and tracking progress. The platform features customizable boards, real-time collaboration, advanced analytics, and seamless communication tools. Perfect for teams of all sizes looking to boost productivity and streamline their workflow processes.',
+      buttons: {}
     }
   },
 

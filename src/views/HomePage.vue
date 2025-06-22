@@ -17,17 +17,17 @@ useSeo({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     'name': 'Killian - Full Stack Developer Portfolio',
-    'url': 'https://killian-portfolio.com',
+    'url': 'https://killiandalcin.fr',
     'potentialAction': {
       '@type': 'SearchAction',
-      'target': 'https://killian-portfolio.com/projects?search={search_term_string}',
+      'target': 'https://killiandalcin.fr/projects?search={search_term_string}',
       'query-input': 'required name=search_term_string'
     },
     'author': {
       '@type': 'Person',
       'name': 'Killian',
       'jobTitle': 'Full Stack Developer',
-      'url': 'https://killian-portfolio.com/about',
+      'url': 'https://killiandalcin.fr/about',
       'sameAs': [
         'https://github.com/killian',
         'https://linkedin.com/in/killian-dev',

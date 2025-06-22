@@ -5,7 +5,7 @@
 
     <!-- Homepage -->
     <url>
-        <loc>https://killian-portfolio.com/</loc>
+        <loc>https://killiandalcin.fr/</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -13,7 +13,7 @@
 
     <!-- Projects Page -->
     <url>
-        <loc>https://killian-portfolio.com/projects</loc>
+        <loc>https://killiandalcin.fr/projects</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -21,7 +21,7 @@
 
     <!-- About Page -->
     <url>
-        <loc>https://killian-portfolio.com/about</loc>
+        <loc>https://killiandalcin.fr/about</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -29,7 +29,7 @@
 
     <!-- Contact Page -->
     <url>
-        <loc>https://killian-portfolio.com/contact</loc>
+        <loc>https://killiandalcin.fr/contact</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -37,7 +37,7 @@
 
     <!-- Fiverr Services Page -->
     <url>
-        <loc>https://killian-portfolio.com/fiverr</loc>
+        <loc>https://killiandalcin.fr/fiverr</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -45,42 +45,42 @@
 
     <!-- Individual Project Pages -->
     <url>
-        <loc>https://killian-portfolio.com/project/virtual-tour</loc>
+        <loc>https://killiandalcin.fr/project/virtual-tour</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://killian-portfolio.com/project/xinko</loc>
+        <loc>https://killiandalcin.fr/project/xinko</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://killian-portfolio.com/project/image-manipulation</loc>
+        <loc>https://killiandalcin.fr/project/image-manipulation</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://killian-portfolio.com/project/primate-web-admin</loc>
+        <loc>https://killiandalcin.fr/project/primate-web-admin</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://killian-portfolio.com/project/instagram-bot</loc>
+        <loc>https://killiandalcin.fr/project/instagram-bot</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://killian-portfolio.com/project/crowdin-status-bot</loc>
+        <loc>https://killiandalcin.fr/project/crowdin-status-bot</loc>
         <lastmod>2025-06-22T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

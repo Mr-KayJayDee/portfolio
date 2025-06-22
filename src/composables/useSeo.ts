@@ -100,7 +100,7 @@ export function useSeo(options: SeoOptions = {}) {
     }
 
     if (options.ogUrl || route) {
-      const url = options.ogUrl || `https://killian-portfolio.com${route.path}`
+      const url = options.ogUrl || `https://killiandalcin.fr${route.path}`
       setMetaTag('og:url', url, true)
       setMetaTag('twitter:url', url, true)
     }
@@ -110,7 +110,7 @@ export function useSeo(options: SeoOptions = {}) {
 
     // Set canonical URL
     if (options.canonicalUrl || route) {
-      const canonicalUrl = options.canonicalUrl || `https://killian-portfolio.com${route.path}`
+      const canonicalUrl = options.canonicalUrl || `https://killiandalcin.fr${route.path}`
       setLinkTag('canonical', canonicalUrl)
     }
 
@@ -140,13 +140,13 @@ export function useSeo(options: SeoOptions = {}) {
             '@type': 'ListItem',
             'position': 1,
             'name': 'Home',
-            'item': 'https://killian-portfolio.com'
+            'item': 'https://killiandalcin.fr'
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': options.title || route.name,
-            'item': `https://killian-portfolio.com${route.path}`
+            'item': `https://killiandalcin.fr${route.path}`
           }
         ]
       }

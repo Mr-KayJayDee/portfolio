@@ -1,5 +1,5 @@
 # Robots.txt for Killian Portfolio
-# https://killian-portfolio.com
+# https://killiandalcin.fr
 
 # Allow all crawlers
 User-agent: *
@@ -10,7 +10,7 @@ Disallow: /.git/
 Disallow: /node_modules/
 
 # Sitemap location
-Sitemap: https://killian-portfolio.com/sitemap.xml
+Sitemap: https://killiandalcin.fr/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

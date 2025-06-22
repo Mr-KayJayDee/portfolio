@@ -18,12 +18,12 @@ useSeo({
     '@type': 'CollectionPage',
     'name': 'Web Development Portfolio Projects',
     'description': 'Browse professional web development projects including Vue.js applications, React websites, Node.js APIs, and Discord bots',
-    'url': 'https://killian-portfolio.com/projects',
+    'url': 'https://killiandalcin.fr/projects',
     'hasPart': projects.map(project => ({
       '@type': 'CreativeWork',
       'name': project.title,
       'description': project.description,
-      'url': `https://killian-portfolio.com/project/${project.id}`,
+      'url': `https://killiandalcin.fr/project/${project.id}`,
       'keywords': project.technologies?.join(', ')
     }))
   }

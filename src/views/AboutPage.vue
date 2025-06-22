@@ -19,7 +19,7 @@ useSeo({
     'name': 'Killian',
     'jobTitle': 'Full Stack Developer',
     'description': 'Experienced Full Stack Developer specializing in Vue.js, React, Node.js, and modern JavaScript technologies',
-    'url': 'https://killian-portfolio.com/about',
+    'url': 'https://killiandalcin.fr/about',
     'sameAs': [
       'https://github.com/killian',
       'https://linkedin.com/in/killian-dev',

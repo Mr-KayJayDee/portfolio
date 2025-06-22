@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { nextTick } from 'vue'
 import HomePage from '../views/HomePage.vue'
 
 const router = createRouter({
@@ -30,18 +31,39 @@ const router = createRouter({
       component: () => import('../views/ContactPage.vue')
     }
   ],
-  scrollBehavior() {
-    // Always scroll to top for consistent navigation
-    return { top: 0 }
+  scrollBehavior(to, from, savedPosition) {
+    // If there's a saved position (back/forward navigation), use it
+    if (savedPosition) {
+      return savedPosition
+    }
+
+    // If navigating to a hash anchor, scroll to that element
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth'
+      }
+    }
+
+    // For all other navigation, scroll to top
+    return {
+      top: 0,
+      behavior: 'smooth'
+    }
   }
 })
 
-// Force scroll to top on every navigation
+// Additional scroll to top handler for better compatibility
 router.afterEach(() => {
-  // Use nextTick to ensure DOM is updated
-  setTimeout(() => {
-    window.scrollTo(0, 0)
-  }, 0)
+  // Use nextTick to ensure the DOM is fully updated
+  nextTick(() => {
+    // Smooth scroll to top
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  })
 })
 
 export default router

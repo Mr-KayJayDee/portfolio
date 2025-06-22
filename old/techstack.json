@@ -1,0 +1,279 @@
+{
+    "programming": [
+        {
+            "name": "JavaScript",
+            "level": "Intermediate",
+            "image": "javascript.png"
+        },
+        {
+            "name": "Bash",
+            "level": "Intermediate",
+            "image": "bash.png"
+        },
+        {
+            "name": "Markdown",
+            "level": "Beginner",
+            "image": "markdown.png"
+        },
+        {
+            "name": "TypeScript",
+            "level": "Intermediate",
+            "image": "typescript.png"
+        },
+        {
+            "name": "Node.js",
+            "level": "Intermediate",
+            "image": "nodejs.png"
+        },
+        {
+            "name": "Nginx",
+            "level": "Intermediate",
+            "image": "nginx.png"
+        }
+    ],
+    "front": [
+        {
+            "name": "Angular",
+            "level": "Intermediate",
+            "image": "angular.png"
+        },
+        {
+            "name": "HTML",
+            "level": "Intermediate",
+            "image": "HTML.png"
+        },
+        {
+            "name": "CSS",
+            "level": "Beginner",
+            "image": "css.png"
+        },
+        {
+            "name": "React",
+            "level": "Intermediate",
+            "image": "react.png"
+        },
+        {
+            "name": "Vue.JS",
+            "level": "Intermediate",
+            "image": "vuejs.png"
+        },
+        {
+            "name": "Figma",
+            "level": "Intermediate",
+            "image": "figma.png"
+        },
+        {
+            "name": "Wordpress",
+            "level": "Intermediate",
+            "image": "wordpress.png"
+        }
+    ],
+    "database": [
+        {
+            "name": "MongoDB",
+            "level": "Intermediate",
+            "image": "mongodb.png"
+        },
+        {
+            "name": "Redis",
+            "level": "Intermediate",
+            "image": "redis.png"
+        },
+        {
+            "name": "MYSQL",
+            "level": "Intermediate",
+            "image": "mysql.png"
+        },
+        {
+            "name": "SQLite",
+            "level": "Intermediate",
+            "image": "sqlite.png"
+        }
+    ],
+    "devtools": [
+        {
+            "name": "Docker",
+            "level": "Intermediate",
+            "image": "docker.png"
+        },
+        {
+            "name": "Discord Bot",
+            "level": "Intermediate",
+            "image": "discordbot.png"
+        },
+        {
+            "name": "Postman",
+            "level": "Intermediate",
+            "image": "postman.png"
+        },
+        {
+            "name": "FileZilla",
+            "level": "Beginner",
+            "image": "filezilla.png"
+        },
+        {
+            "name": "Termius",
+            "level": "Intermediate",
+            "image": "termius.png"
+        },
+        {
+            "name": "GitHub",
+            "level": "Intermediate",
+            "image": "github.png"
+        },
+        {
+            "name": "Git",
+            "level": "Intermediate",
+            "image": "git.png"
+        },
+        {
+            "name": "npm",
+            "level": "Intermediate",
+            "image": "npm.png"
+        },
+        {
+            "name": "GitLab",
+            "level": "Intermediate",
+            "image": "gitlab.png"
+        },
+        {
+            "name": "Visual Studio Code",
+            "level": "Intermediate",
+            "image": "vscode.png"
+        },
+        {
+            "name": "Atom",
+            "level": "Intermediate",
+            "image": "atom.png"
+        },
+        {
+            "name": "DB Browser for SQLite",
+            "level": "Beginner",
+            "image": "sqlitebrowser.png"
+        },
+        {
+            "name": "HeidiSQL",
+            "level": "Intermediate",
+            "image": "heidisql.png"
+        },
+        {
+            "name": "MySQL Workbench",
+            "level": "Intermediate",
+            "image": "mysqlworkbench.png"
+        },
+        {
+            "name": "GitKraken",
+            "level": "Intermediate",
+            "image": "gitkraken.png"
+        }
+    ],
+    "operating_systems": [
+        {
+            "name": "Linux",
+            "level": "Intermediate",
+            "image": "linux.png"
+        },
+        {
+            "name": "Debian",
+            "level": "Intermediate",
+            "image": "debian.png"
+        },
+        {
+            "name": "Arch Linux",
+            "level": "Intermediate",
+            "image": "archlinux.png"
+        },
+        {
+            "name": "Ubuntu",
+            "level": "Intermediate",
+            "image": "ubuntu.png"
+        },
+        {
+            "name": "Kali Linux",
+            "level": "Intermediate",
+            "image": "kalilinux.png"
+        },
+        {
+            "name": "macOS",
+            "level": "Intermediate",
+            "image": "macos.png"
+        },
+        {
+            "name": "Windows",
+            "level": "Intermediate",
+            "image": "windows.png"
+        },
+        {
+            "name": "Deepin",
+            "level": "Intermediate",
+            "image": "deepin.png"
+        },
+        {
+            "name": "Android",
+            "level": "Intermediate",
+            "image": "android.png"
+        },
+        {
+            "name": "Wear OS",
+            "level": "Intermediate",
+            "image": "wearos.png"
+        },
+        {
+            "name": "watchOS",
+            "level": "Intermediate",
+            "image": "watchos.png"
+        },
+        {
+            "name": "iOS",
+            "level": "Intermediate",
+            "image": "ios.png"
+        }
+    ],
+    "socials": [
+        {
+            "name": "Discord",
+            "level": "Intermediate",
+            "image": "discord.png"
+        },
+        {
+            "name": "Instagram",
+            "level": "Intermediate",
+            "image": "instagram.png"
+        },
+        {
+            "name": "LinkedIn",
+            "level": "Intermediate",
+            "image": "linkedin.png"
+        },
+        {
+            "name": "Twitter",
+            "level": "Intermediate",
+            "image": "twitter.png"
+        },
+        {
+            "name": "Reddit",
+            "level": "Intermediate",
+            "image": "reddit.png"
+        },
+        {
+            "name": "Messenger",
+            "level": "Intermediate",
+            "image": "messenger.png"
+        },
+        {
+            "name": "WhatsApp",
+            "level": "Intermediate",
+            "image": "whatsapp.png"
+        },
+        {
+            "name": "Facebook",
+            "level": "Intermediate",
+            "image": "facebook.png"
+        },
+        {
+            "name": "Telegram",
+            "level": "Intermediate",
+            "image": "telegram.png"
+        }
+    ]
+}

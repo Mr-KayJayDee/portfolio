@@ -1,0 +1,70 @@
+cards = [
+        {
+            title: "Virtual Tour",
+            image: require("../assets/images/virtualtour.png"),
+            description: "My high school teacher and me had an idea to create a Virtual tour with 360° vidéos to allow everyone to visit the school from the web.",
+            buttons: [
+                {
+                    title: "Visit",
+                    link: "https://www.lycee-chabanne16.fr/visites/BACSN/index.htm",
+                },
+            ],
+        },
+        {
+            title: "Xinko",
+            image: require("../assets/images/xinko.png"),
+            description: "Xinko is a multipurpose bot that can help you create and manage your discord servers with ease and fun. It has many commands and features.",
+            buttons: [
+                {
+                    title: "Website",
+                    link: "https://google.com",
+                },
+                {
+                    title: "Invite",
+                    link: "https://discord.com/api/oauth2/authorize?client_id=1035571329866407976&permissions=292288982151&scope=applications.commands%20bot",
+                },
+            ],
+        },
+        {
+            title: "Image Manipulation",
+            image: require("../assets/images/dig.png"),
+            description: "Discord Image Generation: NPM package for code-based image manipulation. Originally an API, now open-source.",
+            buttons: [
+                {
+                    title: "Repository",
+                    link: "https://git.mrkayjaydee.xyz/Mr-KayJayDee/discord-image-generation",
+                },
+                {
+                    title: "NPM Package",
+                    link: "https://www.npmjs.com/package/discord-image-generation",
+                },
+            ],
+        },
+        {
+            title: "Primate Web Admin",
+            image: require("../assets/images/primate.png"),
+            description: "Primate Web Admin is a Web interface to manage Primate that is a Munki-like deployment tool for Windows.",
+        },
+        {
+            title: "Instagram Bot",
+            image: require("../assets/images/instagram.png"),
+            description: "Fully functional Instagram bot using Insta.js by androz2091. It has many commands. Generate images with commands like: !stonk or !invert.",
+            buttons: [
+                {
+                    title: "Repository",
+                    link: "https://git.mrkayjaydee.xyz/Mr-KayJayDee/instagram-bot",
+                },
+            ],
+        },
+        {
+            title: "Crowdin Status Bot",
+            image: require("../assets/images/crowdin.png"),
+            description: "A bot that fetches Crowdin translation status and updates Discord messages with the latest status. Stay informed on progress!",
+            buttons: [
+                {
+                    title: "Repository",
+                    link: "https://git.mrkayjaydee.xyz/Mr-KayJayDee/discord-crowdin-status",
+                },
+            ],
+        },
+    ];

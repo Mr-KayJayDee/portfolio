@@ -8,6 +8,7 @@ import { useI18n } from '@/composables/useI18n'
 import { useGallery } from '@/composables/useGallery'
 import TechBadge from '@/components/TechBadge.vue'
 import GalleryModal from '@/components/GalleryModal.vue'
+import CTAButtons from '@/components/shared/CTAButtons.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -100,7 +101,7 @@ onMounted(() => {
               <p class="project-description">{{ project.description }}</p>
 
               <!-- Actions -->
-              <div class="project-actions">
+              <CTAButtons layout="row">
                 <a v-if="project.demoUrl" :href="project.demoUrl" target="_blank" rel="noopener noreferrer"
                   class="btn btn-primary">
                   <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -137,7 +138,7 @@ onMounted(() => {
                   </svg>
                   {{ t('projects.projectDetail.share') }}
                 </button>
-              </div>
+              </CTAButtons>
             </div>
           </div>
         </div>
@@ -196,7 +197,8 @@ onMounted(() => {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                        </path>
                       </svg>
                     </div>
                   </div>
@@ -225,11 +227,6 @@ onMounted(() => {
                   <span class="info-label">{{ t('projects.projectDetail.status') }}</span>
                   <span class="info-value">{{ project.status }}</span>
                 </div>
-
-                <!-- <div v-if="project.duration" class="info-item">
-                  <span class="info-label">Durée</span>
-                  <span class="info-value">{{ project.duration }}</span>
-                </div> -->
               </div>
             </div>
 

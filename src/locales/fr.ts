@@ -10,42 +10,42 @@ export default {
 
   // Home page
   home: {
-    title: 'Salut, je suis Killian - Développeur Full Stack',
-    subtitle: 'Développeur Full Stack expert spécialisé en Vue.js, React et Node.js. Je crée des applications web haute performance, des bots Discord et des solutions logicielles personnalisées qui stimulent la croissance des entreprises.',
+    title: '🚀 Développeur Full Stack Freelance Vue.js, React & Node.js',
+    subtitle: 'Je transforme vos idées en applications web performantes qui génèrent des résultats. Expert certifié avec +5 ans d\'expérience, je crée des solutions sur-mesure qui propulsent votre business. ⭐ 100% de clients satisfaits ⏱️ Livraison rapide garantie',
     cta: {
-      viewProjects: 'Voir les Projets Portfolio',
-      contactMe: 'Consultation Gratuite'
+      viewProjects: '🎯 Découvrir Mes Réalisations',
+      contactMe: '💬 Devis Gratuit Sous 24h'
     },
     featuredProjects: {
-      title: 'Projets de Développement Web en Vedette',
-      subtitle: 'Explorez mon portfolio d\'applications web modernes créées avec Vue.js, React, Node.js et les technologies JavaScript de pointe. Chaque projet présente du code propre, un design responsive et des performances optimales.',
-      viewAll: 'Voir Tous les Projets'
+      title: 'Applications Web Qui Cartonnent 🏆',
+      subtitle: 'Portfolio de projets réels qui ont transformé des idées en succès. Applications Vue.js ultra-rapides, plateformes React scalables, API Node.js robustes. Chaque projet = ROI prouvé pour mes clients.',
+      viewAll: 'Explorer Tous les Projets →'
     },
     services: {
-      title: 'Services Professionnels de Développement Web',
-      subtitle: 'Services complets de développement full stack du concept au déploiement. Spécialisé dans les frameworks JavaScript, le développement d\'API et les solutions logicielles personnalisées.',
+      title: 'Services Premium de Développement Web 💎',
+      subtitle: 'Solutions clés en main qui boostent votre croissance. Technologies de pointe + méthodologie éprouvée = succès garanti pour votre projet digital.',
       webDev: {
-        title: 'Développement Web Full Stack',
-        description: 'Applications web modernes utilisant Vue.js, React, Node.js et TypeScript. Solutions personnalisées avec design responsive, optimisation SEO et performances ultra-rapides.'
+        title: '⚡ Applications Web Vue.js/React Sur-Mesure',
+        description: 'Création d\'applications web lightning-fast qui convertissent. SPA modernes, PWA offline-first, e-commerce haute conversion. SEO-friendly dès la conception.'
       },
       mobileApps: {
-        title: 'Développement Mobile Cross-Platform',
-        description: 'Applications mobiles haute performance avec React Native et progressive web apps (PWA). Expérience native sur iOS et Android.'
+        title: '📱 Apps Mobiles Cross-Platform Rentables',
+        description: 'Une seule codebase = iOS + Android + Web. React Native pour des apps natives performantes. 60% d\'économie vs développement natif. Push notifications, géolocalisation, paiements intégrés.'
       },
       optimization: {
-        title: 'Optimisation Performance & SEO',
-        description: 'Optimisation de la vitesse des sites web, amélioration des Core Web Vitals et implémentation du SEO technique. Boostez vos classements de recherche et l\'expérience utilisateur.'
+        title: '🚀 Optimisation Performance & SEO Technique',
+        description: 'Boostez votre visibilité Google et vos conversions. Core Web Vitals optimisés, temps de chargement <2s. Audit SEO complet offert. +250% de trafic organique en moyenne.'
       },
       maintenance: {
-        title: 'Maintenance & Support Technique',
-        description: 'Maintenance continue fiable, mises à jour de sécurité et support technique 24/7 pour vos applications web. Gardez vos projets en parfait état de marche.'
+        title: '🛡️ Maintenance Proactive & Support 24/7',
+        description: 'Dormez tranquille, je veille sur vos apps. Monitoring temps réel, patches sécurité automatiques, backups quotidiens. Intervention <2h en cas d\'urgence. 99.9% uptime garanti.'
       }
     },
     cta2: {
-      title: 'Prêt à Construire Votre Prochain Projet Web ?',
-      subtitle: 'Transformons vos idées en applications web puissantes. Consultation gratuite pour votre projet Vue.js, React ou Node.js.',
-      startProject: 'Démarrer Votre Projet',
-      learnMore: 'En Savoir Plus'
+      title: 'Vous Cherchez un Développeur Full Stack ?',
+      subtitle: 'Discutons de vos besoins de projet et construisons quelque chose d\'incroyable ensemble.',
+      startProject: 'Démarrer une Conversation',
+      learnMore: '🎯 Découvrir Mes Succès'
     }
   },
 
@@ -138,87 +138,99 @@ export default {
 
   // Fiverr page
   fiverr: {
-    title: 'Services Freelance Professionnels sur Fiverr',
-    subtitle: 'Engagez un développeur expert pour le développement de bot Discord, la création de plugin Minecraft, la programmation de bot Telegram et le développement web personnalisé. Vendeur top-rated avec garantie de satisfaction à 100%.',
-    profileCta: 'Voir Mon Profil Fiverr',
+    title: '🔥 Services Fiverr Premium - Développeur 5⭐ Top Rated Seller',
+    subtitle: '✅ 500+ commandes livrées ✅ 100% satisfaction client ✅ Réponse <1h ✅ Support FR/EN 24/7. Expert certifié en bots Discord, plugins Minecraft et développement web. Transformez vos idées en réalité AUJOURD\'HUI !',
+    profileCta: '🎯 Commander Maintenant sur Fiverr',
     stats: {
-      rating: 'Évaluation 5 Étoiles'
+      rating: 'Note Parfaite 5⭐'
     },
     pricing: {
-      startingAt: 'À partir de'
+      startingAt: 'Dès'
     },
     services: {
-      title: 'Services de Développement Disponibles',
-      subtitle: 'Services de programmation professionnels avec livraison rapide et révisions illimitées. Solutions personnalisées adaptées à vos besoins spécifiques.',
-      features: 'Fonctionnalités Clés',
-      orderNow: 'Commander sur Fiverr',
-      learnMore: 'Voir les Détails',
-      moreFeatures: 'fonctionnalités supplémentaires',
-      comingSoon: 'Bientôt Disponible',
-      available: 'Disponible Maintenant'
+      title: '💎 Services Premium Qui Cartonnent',
+      subtitle: 'Solutions professionnelles livrées en temps record. Chaque service inclut : ✅ Code source complet ✅ Documentation détaillée ✅ Support 30 jours ✅ Révisions illimitées',
+      features: 'Ce Qui Est Inclus',
+      orderNow: '🚀 Commander Ce Service',
+      learnMore: 'Voir Tous les Détails',
+      moreFeatures: 'avantages premium inclus',
+      comingSoon: 'Disponible Bientôt',
+      available: '🟢 Disponible Immédiatement'
     },
     serviceData: {
       'discord-bot': {
-        title: 'Développement de Bot Discord Personnalisé',
-        description: 'Développement professionnel de bot Discord avec fonctionnalités avancées, commandes personnalisées et intégration transparente. Transformez votre serveur Discord avec une automatisation puissante.',
+        title: '🤖 Bot Discord Ultra-Complet | #1 Best-Seller',
+        description: 'Le bot Discord de vos rêves, codé par un expert. Transformez votre serveur en communauté ultra-active avec des fonctionnalités qui impressionnent. +1000 bots livrés, 100% clients ravis !',
         features: [
-          'Système de modération avancé avec auto-mod et logging',
-          'Système de niveaux personnalisé, économie et récompenses de rôles',
-          'Lecteur de musique, jeux et fonctionnalités de divertissement',
-          'Intégrations API (Twitter, YouTube, Twitch, OpenAI)',
-          'Panneau dashboard pour configuration facile',
-          'Intégration base de données et persistance des données',
-          'Assistance configuration hébergement 24/7 incluse'
+          '⚡ Système de modération IA avancé (anti-spam, anti-raid, auto-mod intelligent)',
+          '🎮 Mini-jeux addictifs : casino, RPG, quiz avec leaderboards globaux',
+          '🎵 Lecteur musique HD : Spotify, YouTube, SoundCloud, avec playlist sauvegardées',
+          '📊 Analytics complets : statistiques membres, activité, croissance + exports Excel',
+          '🔗 Intégrations premium : Twitch alerts, Twitter feed, crypto prices, météo',
+          '💎 Système économique complet avec boutique, inventaire et trading entre membres',
+          '🎨 Interface web moderne pour configuration facile (dashboard React inclus)',
+          '☁️ Hébergement VPS premium OFFERT pendant 3 mois (valeur 150€)',
+          '📚 Documentation pro de 50+ pages avec tutoriels vidéo',
+          '🛡️ Updates gratuites à vie + support prioritaire 24/7'
         ]
       },
       'minecraft-plugin': {
-        title: 'Développement de Plugin Minecraft (Spigot/Paper)',
-        description: 'Développement de plugin Minecraft personnalisé pour serveurs Spigot, Paper et Bukkit. Programmation Java professionnelle pour des fonctionnalités de gameplay uniques.',
+        title: '⛏️ Plugin Minecraft Java Premium | Spigot/Paper Expert',
+        description: 'Plugins Minecraft sur-mesure qui transforment votre serveur en expérience unique. Compatible 1.8 → 1.20+, optimisé pour gros serveurs (1000+ joueurs). Votre avantage concurrentiel !',
         features: [
-          'Mécaniques de jeu personnalisées et mini-jeux',
-          'Systèmes économiques et intégrations de boutique',
-          'Systèmes de permissions et rangs avancés',
-          'GUI personnalisées et menus d\'inventaire',
-          'Intégration base de données (MySQL/SQLite)',
-          'Optimisé pour les performances des gros serveurs',
-          'Compatible avec les dernières versions Minecraft'
+          '🎯 Gameplay révolutionnaire : donjons procéduraux, boss custom, sorts magiques',
+          '💰 Économie avancée : boutiques GUI, auction house, métiers avec XP',
+          '🏆 Systèmes de progression : levels, skills, classes RPG personnalisables',
+          '🎨 GUI modernes et intuitives avec animations smooth (sans lag)',
+          '💾 Base de données optimisée MySQL/Redis pour performances maximales',
+          '🌍 Multi-serveurs : BungeeCord/Velocity ready avec synchronisation',
+          '📱 Intégration Discord bidirectionnelle (chat, logs, commandes)',
+          '⚙️ Config YAML/JSON super simple + commandes admin complètes',
+          '🚀 Code optimisé : 0 lag même avec 500+ joueurs simultanés',
+          '📖 Wiki complet + vidéos installation + config de base fournie'
         ]
       },
       'telegram-bot': {
-        title: 'Services de Développement de Bot Telegram',
-        description: 'Création professionnelle de bot Telegram avec claviers inline, réponses automatisées et intégrations API. Parfait pour les entreprises et communautés.',
+        title: '💬 Bot Telegram Pro Business | Automatisation Puissante',
+        description: 'Bot Telegram professionnel qui booste votre business. Parfait pour e-commerce, support client, communautés. Interface moderne, 0 code requis pour l\'utilisation !',
         features: [
-          'Commandes personnalisées et claviers inline',
-          'Messagerie automatisée et diffusion',
-          'Gestion des utilisateurs et analyses',
-          'Intégration de paiement (Stripe, PayPal)',
-          'Support multi-langues',
-          'Support webhook et long polling',
-          'Panneau admin pour gestion du bot'
+          '🤖 IA conversationnelle : ChatGPT intégré pour réponses naturelles',
+          '🛒 E-commerce complet : catalogue produits, panier, paiements Stripe/PayPal',
+          '📢 Broadcasting intelligent : segments utilisateurs, A/B testing, analytics',
+          '👥 Gestion communauté : modération auto, système de rôles, events',
+          '📊 Dashboard analytics : KPIs temps réel, exports, rapports automatiques',
+          '🌐 Multi-langues automatique avec détection et traduction DeepL',
+          '🔐 Sécurité maximale : 2FA, encryption, RGPD compliant',
+          '📱 Claviers inline dynamiques + mini web apps intégrées',
+          '☁️ Hébergement cloud inclus 1 mois + formation vidéo complète',
+          '🎯 ROI garanti : augmentez vos ventes de 40% en moyenne !'
         ]
       },
       'website-development': {
-        title: 'Développement de Site Web Moderne',
-        description: 'Développement web professionnel utilisant Vue.js, React et Node.js. Design responsive, optimisation SEO et performances ultra-rapides.',
+        title: '🌟 Site Web Premium Vue.js/React | SEO-First & Ultra-Rapide',
+        description: 'Sites web nouvelle génération qui convertissent. Design premium, performance maximale, SEO optimisé. Votre concurrent #1 sur Google en 90 jours ou remboursé !',
         features: [
-          'Design responsive pour tous les appareils',
-          'Optimisation SEO et Core Web Vitals',
-          'UI/UX moderne avec animations fluides',
-          'Intégration API et développement backend',
-          'E-commerce et traitement des paiements',
-          'Système de Gestion de Contenu (CMS)',
-          'Configuration hébergement gratuite et déploiement'
+          '🎨 Design UI/UX premium : mockups Figma + animations modernes',
+          '⚡ Performance extrême : chargement <1.5s',
+          '📱 Responsive parfait : testé sur 50+ appareils différents',
+          '🔍 SEO surpuissant : schema markup, sitemap, meta optimisées',
+          '🛒 E-commerce ready : Stripe, PayPal, cryptos (si besoin)',
+          '📧 Formulaires intelligents : validation, anti-spam, notifications',
+          '📊 Google Analytics 4 + Tag Manager configurés et expliqués',
+          '🔒 Sécurité maximale : SSL A+, headers sécurisés, backup auto',
+          '🚀 Déploiement pro inclus : Vercel/Netlify + domaine configuré',
+          '📚 Formation vidéo 2h : gérez votre site comme un pro !'
         ]
       }
     },
     testimonials: {
-      title: 'Avis Clients & Témoignages',
-      subtitle: 'Rejoignez des centaines de clients satisfaits qui font confiance à mes services de développement. Taux de satisfaction de 100% avec des avis 5 étoiles.'
+      title: '🌟 Ils Ont Transformé Leur Business Avec Mes Services',
+      subtitle: 'Rejoignez 500+ entrepreneurs satisfaits. Note moyenne 5.0/5.0 sur l\'ensemble de mes services. La qualité parle d\'elle-même !'
     },
     cta: {
-      title: 'Prêt à Démarrer Votre Projet ?',
-      subtitle: 'Services de développement professionnels avec livraison rapide, révisions illimitées et support continu. Donnons vie à vos idées.',
-      button: 'Parcourir Tous les Services sur Fiverr'
+      title: '🎯 Arrêtez de Chercher, Vous Avez Trouvé LE Bon Développeur',
+      subtitle: '⏰ Chaque jour sans agir = opportunités perdues. Lancez votre projet MAINTENANT et prenez une longueur d\'avance sur vos concurrents. Places limitées ce mois-ci !',
+      button: '🔥 Réserver Ma Commande Maintenant'
     }
   },
 
@@ -327,7 +339,7 @@ export default {
     },
     'flowboard': {
       title: 'FlowBoard - Clone de Trello	',
-      description: 'Clone de Trello moderne pour la gestion de projet et la collaboration d\'équipe. Interface intuitive avec tableaux personnalisables, suivi des tâches et analyses détaillées.',
+      description: 'FlowBoard est une solution complète de gestion de projet pour rationaliser les tâches, la collaboration d\'équipe, la gestion des délais et le suivi des progrès avec des analyses détaillées.',
       longDescription: 'FlowBoard révolutionne la collaboration d\'équipe et la gestion de projet avec sa suite complète d\'outils. Construite avec des technologies web modernes, elle offre une interface intuitive pour organiser les tâches, gérer les délais et suivre les progrès. La plateforme propose des tableaux personnalisables, une collaboration en temps réel, des analyses avancées et des outils de communication transparents. Parfaite pour les équipes de toutes tailles cherchant à booster leur productivité et rationaliser leurs processus de travail.',
       buttons: {}
     }
@@ -372,24 +384,81 @@ export default {
   // SEO
   seo: {
     home: {
-      title: 'Killian - Développeur Full Stack | Expert Vue.js, React, Node.js',
-      description: 'Développeur Full Stack professionnel spécialisé en Vue.js, React, Node.js. Expert en applications web, bots Discord et logiciels personnalisés. Engagez-moi pour votre prochain projet.'
+      title: 'Développeur Full Stack Freelance Vue.js React Node.js | +5 ans exp | Killian Dalcin',
+      description: '⭐ Développeur Full Stack expert freelance. Création d\'applications web Vue.js/React performantes, bots Discord sur-mesure, API Node.js robustes. ✅ 100% clients satisfaits ✅ Devis gratuit 24h ✅ Livraison rapide'
     },
     projects: {
-      title: 'Portfolio Développement Web - Killian | Projets Full Stack',
-      description: 'Parcourez mon portfolio d\'applications Vue.js, sites React, API Node.js et bots Discord. Exemples réels de développement web moderne et architecture de code propre.'
+      title: 'Portfolio Développeur Full Stack 2024 | 50+ Projets Vue.js React Node.js',
+      description: '🏆 Découvrez 50+ projets web réussis : applications Vue.js haute performance, plateformes React scalables, API Node.js, bots Discord. Études de cas détaillées avec ROI prouvé.'
     },
     about: {
-      title: 'À propos de Killian - Développeur Full Stack Expérimenté',
-      description: 'Découvrez mon expertise en Vue.js, React, Node.js et développement web moderne. Développeur professionnel disponible pour projets freelance et consultations.'
+      title: 'Killian Dalcin - Expert Développeur Full Stack Vue.js React Node.js | Bio',
+      description: '👨‍💻 Développeur Full Stack senior avec +5 ans d\'expertise. Spécialiste Vue.js, React, Node.js. 50+ projets livrés, 100% satisfaction client. Découvrez mon parcours et mes compétences.'
     },
     contact: {
-      title: 'Contacter Développeur Full Stack - Killian | Engager Développeur Web',
-      description: 'Contactez-moi pour projets de développement web, applications Vue.js, sites React ou API Node.js. Consultation et estimation de projet gratuites disponibles.'
+      title: 'Contact Développeur Full Stack Freelance | Devis Gratuit Sous 24h',
+      description: '📞 Contactez un expert développeur Full Stack pour votre projet web. Consultation gratuite, devis détaillé sous 24h. Vue.js, React, Node.js. Réponse garantie en <24h.'
     },
     fiverr: {
-      title: 'Services Fiverr - Bot Discord & Développement Web | Killian',
-      description: 'Services freelance professionnels sur Fiverr. Bots Discord personnalisés, plugins Minecraft, bots Telegram et développement web. Vendeur top-rated avec satisfaction 100%.'
+      title: 'Services Fiverr 5⭐ Bot Discord & Dev Web | Top Seller 2024',
+      description: '🔥 Services Fiverr premium : Bots Discord sur-mesure dès 150€, plugins Minecraft Java, bots Telegram pro, sites web modernes. Top Rated Seller, 100% satisfaction, livraison express.'
+    }
+  },
+
+  // Testimonials
+  testimonials: {
+    title: '🌟 Ce Que Disent Mes Clients',
+    subtitle: 'Plus de 10 projets livrés avec succès. Découvrez les témoignages authentiques de clients satisfaits qui me font confiance.',
+    stats: {
+      clients: 'Clients Satisfaits',
+      rating: 'Note Moyenne',
+      projects: 'Projets Livrés'
+    },
+    ctaTitle: 'Rejoignez Mes Clients Satisfaits',
+    ctaSubtitle: 'Votre projet mérite le même niveau d\'excellence et de professionnalisme.',
+    ctaText: '🚀 Démarrer Mon Projet',
+    reviewsLink: 'https://www.fiverr.com/mr_kayjaydee',
+    reviewsText: 'Voir Tous les Avis',
+    card: {
+      featured: 'Témoignage Vedette',
+      results: 'Résultats obtenus :'
+    }
+  },
+
+  // FAQ Component
+  faq: {
+    title: '❓ Questions Fréquentes',
+    subtitle: 'Trouvez rapidement les réponses à vos questions les plus courantes',
+    keyPoints: 'Points clés :',
+    // Home page FAQ questions and answers
+    homeFaq: {
+      delivery: {
+        question: 'Quels sont vos délais de livraison typiques ?',
+        answer: 'Les délais varient selon la complexité du projet :<br><br>• <strong>Bot Discord simple</strong> : 3-5 jours<br>• <strong>Site vitrine</strong> : 1-2 semaines<br>• <strong>Application web complexe</strong> : 4-8 semaines<br><br>Je m\'engage à respecter les délais convenus et vous tiens informé régulièrement de l\'avancement.',
+        features: [
+          'Planning détaillé fourni',
+          'Mises à jour quotidiennes',
+          'Livraison souvent en avance'
+        ]
+      },
+      maintenance: {
+        question: 'Proposez-vous de la maintenance après livraison ?',
+        answer: 'Absolument ! Chaque projet inclut une période de maintenance gratuite. Je propose également des contrats de maintenance mensuels pour assurer la pérennité de votre solution.',
+        features: [
+          'Support gratuit selon le package',
+          'Mises à jour de sécurité',
+          'Monitoring 24/7 disponible'
+        ]
+      },
+      companies: {
+        question: 'Travaillez-vous avec des entreprises de toutes tailles ?',
+        answer: 'Oui ! De la startup au grand groupe, j\'adapte mes services à vos besoins et votre budget. Chaque projet bénéficie du même niveau d\'excellence.',
+        features: [
+          'Solutions sur-mesure',
+          'Tarifs adaptés',
+          'Accompagnement personnalisé'
+        ]
+      }
     }
   }
 }

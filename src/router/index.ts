@@ -34,6 +34,16 @@ const router = createRouter({
       path: '/fiverr',
       name: 'fiverr',
       component: () => import('../views/FiverrPage.vue')
+    },
+    // TODO: page 404
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: HomePage,
+      meta: {
+        title: 'Page non trouvée - 404',
+        description: 'La page que vous recherchez n\'existe pas. Retournez à l\'accueil pour découvrir mes services.'
+      }
     }
   ],
   scrollBehavior(to, from, savedPosition) {
@@ -56,6 +66,27 @@ const router = createRouter({
       behavior: 'smooth'
     }
   }
+})
+
+// SEO Meta tags handler
+router.beforeEach((to, from, next) => {
+  // Update document title
+  if (to.meta?.title) {
+    document.title = to.meta.title as string
+  }
+
+  // Update meta description
+  if (to.meta?.description) {
+    let metaDescription = document.querySelector('meta[name="description"]')
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta')
+      metaDescription.setAttribute('name', 'description')
+      document.head.appendChild(metaDescription)
+    }
+    metaDescription.setAttribute('content', to.meta.description as string)
+  }
+
+  next()
 })
 
 // Additional scroll to top handler for better compatibility

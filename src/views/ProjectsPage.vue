@@ -4,6 +4,7 @@ import { useSeo } from '@/composables/useSeo'
 import { useI18n } from '@/composables/useI18n'
 import { useProjects } from '@/composables/useProjects'
 import ProjectCard from '@/components/ProjectCard.vue'
+import CTAButtons from '@/components/shared/CTAButtons.vue'
 
 const { t } = useI18n()
 const { projects } = useProjects()
@@ -176,9 +177,11 @@ const featuredProjects = computed(() => projects.value.filter(p => p.featured).l
             <p class="no-results-description">
               {{ t('projects.noResults.description') }}
             </p>
-            <button @click="searchQuery = ''; selectedCategory = 'all'" class="btn btn-primary">
-              {{ t('common.reset') }}
-            </button>
+            <CTAButtons layout="stack">
+              <button @click="searchQuery = ''; selectedCategory = 'all'" class="btn btn-primary">
+                {{ t('common.reset') }}
+              </button>
+            </CTAButtons>
           </div>
         </div>
       </div>

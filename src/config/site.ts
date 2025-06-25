@@ -31,6 +31,34 @@ export interface SiteConfig {
   contact: ContactInfo
   social: SocialLink[]
   fiverr: FiverrConfig
+  url: string
+  seo: {
+    defaultImage: string
+    twitterHandle: string
+    locale: string
+    alternateLocales: string[]
+    internalLinks: {
+      priority: { url: string; text: string; priority: number }[]
+      services: { url: string; text: string }[]
+    }
+    organization: {
+      '@type': string
+      name: string
+      logo: string
+      priceRange: string
+      aggregateRating: {
+        ratingValue: string
+        reviewCount: string
+      }
+    }
+  }
+  performance: {
+    enablePrefetch: boolean
+    enablePreconnect: boolean
+    criticalCSS: boolean
+    lazyLoadImages: boolean
+    webpSupport: boolean
+  }
 }
 
 export const siteConfig: SiteConfig = {
@@ -38,6 +66,7 @@ export const siteConfig: SiteConfig = {
   title: 'Killian - Full Stack Developer | Vue.js, React, Node.js Expert',
   description: 'Professional Full Stack Developer specializing in modern web development with Vue.js, React, Node.js. Expert in Discord bots, web applications, and custom software solutions.',
   author: 'Killian',
+  url: 'https://killiandalcin.fr',
 
   contact: {
     email: 'contact@killiandalcin.fr',
@@ -99,5 +128,43 @@ export const siteConfig: SiteConfig = {
         price: '$50'
       }
     ]
+  },
+
+  seo: {
+    defaultImage: '/portfolio-preview.webp',
+    twitterHandle: '@killiandalcin',
+    locale: 'fr_FR',
+    alternateLocales: ['en_US'],
+    internalLinks: {
+      priority: [
+        { url: '/fiverr', text: 'Services Fiverr', priority: 0.9 },
+        { url: '/projects', text: 'Portfolio', priority: 0.8 },
+        { url: '/contact', text: 'Contact', priority: 0.8 }
+      ],
+      services: [
+        { url: '/fiverr#discord-bot', text: 'Bot Discord' },
+        { url: '/fiverr#minecraft-plugin', text: 'Plugin Minecraft' },
+        { url: '/fiverr#telegram-bot', text: 'Bot Telegram' },
+        { url: '/fiverr#website-development', text: 'Développement Web' }
+      ]
+    },
+    organization: {
+      '@type': 'ProfessionalService',
+      name: 'Killian Dalcin - Développeur Full Stack',
+      logo: 'https://killiandalcin.fr/logo.webp',
+      priceRange: '€€€',
+      aggregateRating: {
+        ratingValue: '5',
+        reviewCount: '50'
+      }
+    }
+  },
+
+  performance: {
+    enablePrefetch: true,
+    enablePreconnect: true,
+    criticalCSS: true,
+    lazyLoadImages: true,
+    webpSupport: true
   }
 }

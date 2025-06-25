@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useSeo } from '@/composables/useSeo'
 import { useI18n } from '@/composables/useI18n'
 import TechBadge from '@/components/TechBadge.vue'
+import SectionCTA from '@/components/shared/SectionCTA.vue'
 import { techStack } from '@/data/techstack'
 
 const { t } = useI18n()
@@ -201,29 +202,9 @@ const approachCards = computed(() => [
     <!-- CTA Section -->
     <section class="section">
       <div class="container">
-        <div class="text-center">
-          <h2 class="mb-lg">{{ t('about.cta.title') }}</h2>
-          <p class="text-xl text-secondary max-w-2xl mx-auto mb-2xl">
-            {{ t('about.cta.description') }}
-          </p>
-          <div class="flex flex-col sm:flex-row gap-md justify-center">
-            <RouterLink to="/contact" class="btn btn-primary btn-lg">
-              {{ t('about.cta.button') }}
-              <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                </path>
-              </svg>
-            </RouterLink>
-            <RouterLink to="/projects" class="btn btn-secondary btn-lg">
-              {{ t('home.cta.viewProjects') }}
-              <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6">
-                </path>
-              </svg>
-            </RouterLink>
-          </div>
-        </div>
+        <SectionCTA :question="t('about.cta.title')" :description="t('about.cta.description')"
+          :primary-text="t('about.cta.button')" primary-link="/contact" :secondary-text="t('home.cta.viewProjects')"
+          secondary-link="/projects" />
       </div>
     </section>
   </main>

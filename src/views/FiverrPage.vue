@@ -41,10 +41,14 @@ useSeo({
     })),
     'aggregateRating': {
       '@type': 'AggregateRating',
+      'itemReviewed': {
+        '@type': 'Service',
+        'name': 'Professional Development Services on Fiverr'
+      },
       'ratingValue': '5',
       'bestRating': '5',
       'worstRating': '1',
-      'reviewCount': '50+'
+      'reviewCount': '50'
     }
   }
 })

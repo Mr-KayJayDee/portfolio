@@ -165,13 +165,8 @@ export default {
           '⚡ Système de modération IA avancé (anti-spam, anti-raid, auto-mod intelligent)',
           '🎮 Mini-jeux addictifs : casino, RPG, quiz avec leaderboards globaux',
           '🎵 Lecteur musique HD : Spotify, YouTube, SoundCloud, avec playlist sauvegardées',
-          '📊 Analytics complets : statistiques membres, activité, croissance + exports Excel',
-          '🔗 Intégrations premium : Twitch alerts, Twitter feed, crypto prices, météo',
-          '💎 Système économique complet avec boutique, inventaire et trading entre membres',
           '🎨 Interface web moderne pour configuration facile (dashboard React inclus)',
-          '☁️ Hébergement VPS premium OFFERT pendant 3 mois (valeur 150€)',
-          '📚 Documentation pro de 50+ pages avec tutoriels vidéo',
-          '🛡️ Updates gratuites à vie + support prioritaire 24/7'
+          '☁️ Hébergement VPS premium OFFERT pendant 3 mois (valeur 150€)'
         ]
       },
       'minecraft-plugin': {
@@ -181,13 +176,8 @@ export default {
           '🎯 Gameplay révolutionnaire : donjons procéduraux, boss custom, sorts magiques',
           '💰 Économie avancée : boutiques GUI, auction house, métiers avec XP',
           '🏆 Systèmes de progression : levels, skills, classes RPG personnalisables',
-          '🎨 GUI modernes et intuitives avec animations smooth (sans lag)',
           '💾 Base de données optimisée MySQL/Redis pour performances maximales',
-          '🌍 Multi-serveurs : BungeeCord/Velocity ready avec synchronisation',
-          '📱 Intégration Discord bidirectionnelle (chat, logs, commandes)',
-          '⚙️ Config YAML/JSON super simple + commandes admin complètes',
-          '🚀 Code optimisé : 0 lag même avec 500+ joueurs simultanés',
-          '📖 Wiki complet + vidéos installation + config de base fournie'
+          '🌍 Multi-serveurs : BungeeCord/Velocity ready avec synchronisation'
         ]
       },
       'telegram-bot': {
@@ -197,13 +187,8 @@ export default {
           '🤖 IA conversationnelle : ChatGPT intégré pour réponses naturelles',
           '🛒 E-commerce complet : catalogue produits, panier, paiements Stripe/PayPal',
           '📢 Broadcasting intelligent : segments utilisateurs, A/B testing, analytics',
-          '👥 Gestion communauté : modération auto, système de rôles, events',
-          '📊 Dashboard analytics : KPIs temps réel, exports, rapports automatiques',
           '🌐 Multi-langues automatique avec détection et traduction DeepL',
-          '🔐 Sécurité maximale : 2FA, encryption, RGPD compliant',
-          '📱 Claviers inline dynamiques + mini web apps intégrées',
-          '☁️ Hébergement cloud inclus 1 mois + formation vidéo complète',
-          '🎯 ROI garanti : augmentez vos ventes de 40% en moyenne !'
+          '🔐 Sécurité maximale : 2FA, encryption, RGPD compliant'
         ]
       },
       'website-development': {
@@ -214,12 +199,7 @@ export default {
           '⚡ Performance extrême : chargement <1.5s',
           '📱 Responsive parfait : testé sur 50+ appareils différents',
           '🔍 SEO surpuissant : schema markup, sitemap, meta optimisées',
-          '🛒 E-commerce ready : Stripe, PayPal, cryptos (si besoin)',
-          '📧 Formulaires intelligents : validation, anti-spam, notifications',
-          '📊 Google Analytics 4 + Tag Manager configurés et expliqués',
-          '🔒 Sécurité maximale : SSL A+, headers sécurisés, backup auto',
-          '🚀 Déploiement pro inclus : Vercel/Netlify + domaine configuré',
-          '📚 Formation vidéo 2h : gérez votre site comme un pro !'
+          '🛒 E-commerce ready : Stripe, PayPal, cryptos (si besoin)'
         ]
       }
     },

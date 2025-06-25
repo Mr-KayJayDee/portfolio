@@ -165,13 +165,8 @@ export default {
           '⚡ Advanced AI moderation system (anti-spam, anti-raid, smart auto-mod)',
           '🎮 Addictive mini-games: casino, RPG, quiz with global leaderboards',
           '🎵 HD music player: Spotify, YouTube, SoundCloud with saved playlists',
-          '📊 Complete analytics: member stats, activity, growth + Excel exports',
-          '🔗 Premium integrations: Twitch alerts, Twitter feed, crypto prices, weather',
-          '💎 Full economy system with shop, inventory and member-to-member trading',
           '🎨 Modern web interface for easy configuration (React dashboard included)',
-          '☁️ FREE premium VPS hosting for 3 months ($150 value)',
-          '📚 Professional 50+ page documentation with video tutorials',
-          '🛡️ Lifetime free updates + 24/7 priority support'
+          '☁️ FREE premium VPS hosting for 3 months ($150 value)'
         ]
       },
       'minecraft-plugin': {
@@ -181,13 +176,8 @@ export default {
           '🎯 Revolutionary gameplay: procedural dungeons, custom bosses, magic spells',
           '💰 Advanced economy: GUI shops, auction house, jobs with XP system',
           '🏆 Progression systems: levels, skills, customizable RPG classes',
-          '🎨 Modern intuitive GUIs with smooth animations (lag-free)',
           '💾 Optimized MySQL/Redis database for maximum performance',
-          '🌍 Multi-server ready: BungeeCord/Velocity with synchronization',
-          '📱 Bidirectional Discord integration (chat, logs, commands)',
-          '⚙️ Super simple YAML/JSON config + complete admin commands',
-          '🚀 Optimized code: 0 lag even with 500+ simultaneous players',
-          '📖 Complete wiki + installation videos + base config provided'
+          '🌍 Multi-server ready: BungeeCord/Velocity with synchronization'
         ]
       },
       'telegram-bot': {
@@ -197,13 +187,8 @@ export default {
           '🤖 Conversational AI: integrated ChatGPT for natural responses',
           '🛒 Complete e-commerce: product catalog, cart, Stripe/PayPal payments',
           '📢 Smart broadcasting: user segments, A/B testing, analytics',
-          '👥 Community management: auto moderation, role system, events',
-          '📊 Analytics dashboard: real-time KPIs, exports, automatic reports',
           '🌐 Automatic multi-language with DeepL detection and translation',
-          '🔐 Maximum security: 2FA, encryption, GDPR compliant',
-          '📱 Dynamic inline keyboards + integrated mini web apps',
-          '☁️ Cloud hosting included 1 month + complete video training',
-          '🎯 Guaranteed ROI: increase your sales by 40% on average!'
+          '🔐 Maximum security: 2FA, encryption, GDPR compliant'
         ]
       },
       'website-development': {
@@ -214,12 +199,7 @@ export default {
           '⚡ Extreme performance: <1.5s load time',
           '📱 Perfect responsive: tested on 50+ different devices',
           '🔍 Supercharged SEO: schema markup, sitemap, optimized meta',
-          '🛒 E-commerce ready: Stripe, PayPal, crypto (if needed)',
-          '📧 Smart forms: validation, anti-spam, notifications',
-          '📊 Google Analytics 4 + Tag Manager configured and explained',
-          '🔒 Maximum security: A+ SSL, secure headers, auto backup',
-          '🚀 Professional deployment included: Vercel/Netlify + domain setup',
-          '📚 2h video training: manage your site like a pro!'
+          '🛒 E-commerce ready: Stripe, PayPal, crypto (if needed)'
         ]
       }
     },

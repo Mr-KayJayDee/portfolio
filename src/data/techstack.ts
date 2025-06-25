@@ -7,7 +7,6 @@ export const techStack: TechStack = {
     { name: 'Node.js', level: 'Advanced', image: '@/assets/images/nodejs.webp' },
     { name: 'Bash', level: 'Intermediate', image: '@/assets/images/bash.webp' },
     { name: 'Markdown', level: 'Advanced', image: '@/assets/images/markdown.webp' },
-    // TODO: Add Ruby image
     { name: 'Ruby', level: 'Intermediate', image: '@/assets/images/ruby.webp' },
     { name: 'Ruby on Rails', level: 'Intermediate', image: '@/assets/images/rubyonrails.webp' },
   ],

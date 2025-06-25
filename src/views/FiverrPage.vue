@@ -20,37 +20,42 @@ useSeo({
   description: t('seo.fiverr.description'),
   keywords: 'fiverr services, discord bot development, minecraft plugin development, telegram bot creation, web development services, freelance developer, custom bot development, fiverr gigs',
   ogImage: '/portfolio-preview.webp',
-  structuredData: {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    'name': 'Professional Development Services on Fiverr',
-    'description': 'Custom Discord bot development, Minecraft plugins, Telegram bots, and web development services',
-    'provider': {
-      '@type': 'Person',
-      'name': 'Killian',
-      'jobTitle': 'Full Stack Developer'
+  structuredData: [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      'name': 'Professional Development Services on Fiverr',
+      'description': 'Custom Discord bot development, Minecraft plugins, Telegram bots, and web development services',
+      'url': 'https://killiandalcin.fr/fiverr',
+      'provider': {
+        '@type': 'Person',
+        'name': 'Killian',
+        'jobTitle': 'Full Stack Developer',
+        'url': 'https://killiandalcin.fr'
+      },
+      'offers': siteConfig.value.fiverr.services.map(service => ({
+        '@type': 'Offer',
+        'name': t(`fiverr.serviceData.${service.id}.title`),
+        'description': t(`fiverr.serviceData.${service.id}.description`),
+        'price': service.price.replace('$', ''),
+        'priceCurrency': 'USD',
+        'url': service.url,
+        'availability': service.url !== '#' ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder'
+      }))
     },
-    'offers': siteConfig.value.fiverr.services.map(service => ({
-      '@type': 'Offer',
-      'name': t(`fiverr.serviceData.${service.id}.title`),
-      'description': t(`fiverr.serviceData.${service.id}.description`),
-      'price': service.price.replace('$', ''),
-      'priceCurrency': 'USD',
-      'url': service.url,
-      'availability': service.url !== '#' ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder'
-    })),
-    'aggregateRating': {
+    {
       '@type': 'AggregateRating',
       'itemReviewed': {
-        '@type': 'Service',
+        '@type': 'LocalBusiness',
         'name': 'Professional Development Services on Fiverr'
       },
-      'ratingValue': '5',
-      'bestRating': '5',
-      'worstRating': '1',
-      'reviewCount': '50'
+      'ratingValue': 5,
+      'bestRating': 5,
+      'worstRating': 1,
+      'ratingCount': 50,
+      'reviewCount': 50
     }
-  }
+  ]
 })
 
 const services = computed(() => siteConfig.value.fiverr.services)

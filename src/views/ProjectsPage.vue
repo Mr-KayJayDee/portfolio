@@ -81,11 +81,11 @@ const featuredProjects = computed(() => projects.value.filter(p => p.featured).l
 </script>
 
 <template>
-  <main class="projects-page">
+  <main class="projects-page page-enter">
     <!-- Hero Section -->
     <section class="projects-hero">
       <div class="container">
-        <div class="hero-content text-center">
+        <div class="hero-content text-center animate-fade-in-up">
           <h1 class="hero-title">{{ t('projects.title') }}</h1>
           <p class="hero-subtitle">
             {{ t('projects.subtitle') }}
@@ -113,7 +113,7 @@ const featuredProjects = computed(() => projects.value.filter(p => p.featured).l
     <!-- Filters Section -->
     <section class="filters-section">
       <div class="container">
-        <div class="filters-container">
+        <div class="filters-container animate-fade-in-up" style="animation-delay: 0.2s;">
           <!-- Search -->
           <div class="search-container">
             <div class="search-input-wrapper">
@@ -152,7 +152,7 @@ const featuredProjects = computed(() => projects.value.filter(p => p.featured).l
     <section class="projects-grid-section">
       <div class="container">
         <!-- Results Info -->
-        <div class="results-info">
+        <div class="results-info animate-fade-in-up" style="animation-delay: 0.3s;">
           <p class="results-text">
             {{ filteredProjects.length }} {{ t('nav.projects').toLowerCase() }}{{ filteredProjects.length > 1 ? 's' : ''
             }} {{ t('common.search').toLowerCase() }}{{ filteredProjects.length > 1 ? 's' : '' }}

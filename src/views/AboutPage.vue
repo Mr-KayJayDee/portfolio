@@ -91,7 +91,7 @@ const approachCards = computed(() => [
 </script>
 
 <template>
-  <main>
+  <main class="page-enter">
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">

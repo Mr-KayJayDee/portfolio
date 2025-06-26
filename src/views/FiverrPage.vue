@@ -99,30 +99,37 @@ const getServiceCardProps = (service: { id: string; price: string; url: string; 
 </script>
 
 <template>
-  <main class="fiverr-page">
+  <main class="fiverr-page page-enter">
     <!-- Hero Section -->
-    <FiverrHero :title="t('fiverr.title')" :subtitle="t('fiverr.subtitle')" :stats="heroStats"
-      :cta-url="siteConfig.fiverr.profileUrl" :cta-text="t('fiverr.profileCta')" />
+    <div class="animate-fade-in-up">
+      <FiverrHero :title="t('fiverr.title')" :subtitle="t('fiverr.subtitle')" :stats="heroStats"
+        :cta-url="siteConfig.fiverr.profileUrl" :cta-text="t('fiverr.profileCta')" />
+    </div>
 
     <!-- Services Section -->
     <section class="services-grid-section">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header text-center">
+        <div class="section-header text-center animate-fade-in-up" style="animation-delay: 0.2s;">
           <h2 class="section-title">{{ t('fiverr.services.title') }}</h2>
           <p class="section-subtitle">{{ t('fiverr.services.subtitle') }}</p>
         </div>
 
         <!-- Services Grid -->
         <div class="services-grid">
-          <FiverrServiceCard v-for="service in services" :key="service.id" v-bind="getServiceCardProps(service)" />
+          <div v-for="(service, index) in services" :key="service.id" class="animate-fade-in-up"
+            :style="{ 'animation-delay': `${0.3 + index * 0.1}s` }">
+            <FiverrServiceCard v-bind="getServiceCardProps(service)" />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <FiverrCta :title="t('fiverr.cta.title')" :subtitle="t('fiverr.cta.subtitle')"
-      :cta-url="siteConfig.fiverr.profileUrl" :cta-text="t('fiverr.cta.button')" />
+    <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
+      <FiverrCta :title="t('fiverr.cta.title')" :subtitle="t('fiverr.cta.subtitle')"
+        :cta-url="siteConfig.fiverr.profileUrl" :cta-text="t('fiverr.cta.button')" />
+    </div>
   </main>
 </template>
 

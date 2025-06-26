@@ -5,6 +5,7 @@ export default {
     projects: 'Portfolio Projects',
     about: 'About',
     contact: 'Contact',
+    formation: 'Training',
     fiverr: 'Fiverr Services'
   },
 
@@ -438,6 +439,78 @@ export default {
           'Adapted pricing',
           'Personalized support'
         ]
+      }
+    }
+  },
+  pricing: {
+    title: 'Choose your learning plan',
+    subtitle: 'Access comprehensive web development training with our flexible plans tailored for all levels',
+    monthly: 'Monthly',
+    annual: 'Annual',
+    mostPopular: 'Most Popular',
+    startTrial: 'Start Free Trial',
+    trialInfo: '14-day free trial, then billing',
+    plans: {
+      starter: {
+        name: 'Starter',
+        description: 'Perfect to begin your web development journey'
+      },
+      pro: {
+        name: 'Pro',
+        description: 'Ideal for developers who want to accelerate their learning'
+      },
+      expert: {
+        name: 'Expert',
+        description: 'For those aiming for excellence and a professional career'
+      }
+    },
+    features: {
+      basicCourses: 'Access to basic courses (HTML, CSS, JavaScript)',
+      communityAccess: 'Access to learning community',
+      mobileApp: 'Mobile app to learn anywhere',
+      basicSupport: 'Email support',
+      certificates: 'Completion certificates',
+      allCourses: 'Access to all courses and technologies',
+      liveWorkshops: 'Live workshops every week',
+      mentorship: 'Monthly mentorship sessions',
+      prioritySupport: '24/7 priority support',
+      jobBoard: 'Access to exclusive job board',
+      portfolioReview: 'Portfolio review by experts',
+      everythingPro: 'Everything in Pro plan included',
+      oneOnOneCoaching: 'Weekly one-on-one coaching',
+      customProjects: 'Custom projects based on your goals',
+      internshipPlacement: 'Internship placement assistance',
+      careerGuidance: 'Personalized career guidance',
+      exclusiveContent: 'Exclusive and early-access content',
+      networkingEvents: 'Networking events with professionals'
+    },
+    faq: {
+      title: 'Frequently Asked Questions',
+      items: {
+        trial: {
+          question: 'How does the free trial work?',
+          answer: 'Enjoy 14 days of full access to your chosen plan. No commitment, you can cancel anytime during the trial period.'
+        },
+        cancel: {
+          question: 'Can I cancel my subscription anytime?',
+          answer: 'Yes, you can cancel your subscription anytime from your dashboard. Access remains active until the end of your billing period.'
+        },
+        refund: {
+          question: 'Do you offer a money-back guarantee?',
+          answer: 'We offer a 30-day money-back guarantee if you\'re not satisfied with your training.'
+        },
+        upgrade: {
+          question: 'Can I change plans during my subscription?',
+          answer: 'Absolutely! You can upgrade to a higher plan anytime. The difference will be prorated.'
+        },
+        certificates: {
+          question: 'Are the certificates recognized?',
+          answer: 'Our certificates are recognized by many tech companies and can be added to your LinkedIn profile.'
+        },
+        support: {
+          question: 'What type of support is available?',
+          answer: 'Depending on your plan, you have access to email support, live chat, or personalized mentorship sessions.'
+        }
       }
     }
   }

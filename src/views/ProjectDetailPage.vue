@@ -68,11 +68,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <main v-if="project" class="project-detail-page">
+  <main v-if="project" class="project-detail-page page-enter">
     <!-- Hero Section - Redesigned -->
     <section class="project-hero">
       <div class="container">
-        <div class="hero-content">
+        <div class="hero-content animate-fade-in-up">
           <!-- Navigation -->
           <nav class="breadcrumb">
             <button @click="goBack" class="breadcrumb-link">

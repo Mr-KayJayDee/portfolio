@@ -48,11 +48,11 @@ useSeo({
 </script>
 
 <template>
-  <main class="contact-page">
+  <main class="contact-page page-enter">
     <!-- Hero Section -->
     <section class="contact-hero">
       <div class="container">
-        <div class="hero-content text-center">
+        <div class="hero-content text-center animate-fade-in-up">
           <h1 class="hero-title">{{ t('contact.title') }}</h1>
           <p class="hero-subtitle">
             {{ t('contact.subtitle') }}
@@ -82,7 +82,7 @@ useSeo({
       <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-2xl max-w-4xl mx-auto">
           <!-- Contact Methods -->
-          <div class="card">
+          <div class="card animate-fade-in-up" style="animation-delay: 0.2s;">
             <div class="card-body">
               <h2 class="text-2xl font-bold mb-lg">{{ t('contact.quickContact') }}</h2>
               <div class="space-y-md">
@@ -101,7 +101,7 @@ useSeo({
           </div>
 
           <!-- Social Links -->
-          <div class="card">
+          <div class="card animate-fade-in-up" style="animation-delay: 0.3s;">
             <div class="card-body">
               <h2 class="text-2xl font-bold mb-lg">{{ t('contact.findMeOn') }}</h2>
               <div class="space-y-sm">
@@ -142,7 +142,7 @@ useSeo({
     <!-- FAQ Section -->
     <section class="faq-section">
       <div class="container">
-        <div class="text-center mb-2xl">
+        <div class="text-center mb-2xl animate-fade-in-up" style="animation-delay: 0.4s;">
           <h2 class="mb-lg">{{ t('contact.faq.title') }}</h2>
           <p class="text-xl text-secondary max-w-2xl mx-auto">
             {{ t('contact.faq.subtitle') }}
@@ -150,7 +150,7 @@ useSeo({
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-xl">
-          <div class="card text-center">
+          <div class="card text-center animate-fade-in-up" style="animation-delay: 0.5s;">
             <div class="card-body">
               <div class="faq-icon faq-icon-success">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +163,7 @@ useSeo({
             </div>
           </div>
 
-          <div class="card text-center">
+          <div class="card text-center animate-fade-in-up" style="animation-delay: 0.6s;">
             <div class="card-body">
               <div class="faq-icon faq-icon-primary">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -177,7 +177,7 @@ useSeo({
             </div>
           </div>
 
-          <div class="card text-center">
+          <div class="card text-center animate-fade-in-up" style="animation-delay: 0.7s;">
             <div class="card-body">
               <div class="faq-icon faq-icon-secondary">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

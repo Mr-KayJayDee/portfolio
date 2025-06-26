@@ -70,7 +70,7 @@ useSeo({
 </script>
 
 <template>
-  <main>
+  <main class="page-enter">
     <!-- Hero Section -->
     <HeroSection />
 

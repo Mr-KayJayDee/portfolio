@@ -35,6 +35,11 @@ const router = createRouter({
       name: 'fiverr',
       component: () => import('../views/FiverrPage.vue')
     },
+    {
+      path: '/formation',
+      name: 'formation',
+      component: () => import('../views/FormationPage.vue')
+    },
     // TODO: page 404
     {
       path: '/:pathMatch(.*)*',

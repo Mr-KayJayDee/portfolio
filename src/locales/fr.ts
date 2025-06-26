@@ -5,6 +5,7 @@ export default {
     projects: 'Projets Portfolio',
     about: 'À propos',
     contact: 'Contact',
+    formation: 'Formation',
     fiverr: 'Services Fiverr'
   },
 
@@ -438,6 +439,78 @@ export default {
           'Tarifs adaptés',
           'Accompagnement personnalisé'
         ]
+      }
+    }
+  },
+  pricing: {
+    title: 'Choisissez votre plan de formation',
+    subtitle: 'Accédez à une formation complète en développement web avec nos plans flexibles adaptés à tous les niveaux',
+    monthly: 'Mensuel',
+    annual: 'Annuel',
+    mostPopular: 'Le plus populaire',
+    startTrial: 'Commencer l\'essai gratuit',
+    trialInfo: '14 jours d\'essai gratuit, puis facturation',
+    plans: {
+      starter: {
+        name: 'Débutant',
+        description: 'Parfait pour commencer votre parcours en développement web'
+      },
+      pro: {
+        name: 'Pro',
+        description: 'Idéal pour les développeurs qui veulent accélérer leur apprentissage'
+      },
+      expert: {
+        name: 'Expert',
+        description: 'Pour ceux qui visent l\'excellence et une carrière professionnelle'
+      }
+    },
+    features: {
+      basicCourses: 'Accès aux cours de base (HTML, CSS, JavaScript)',
+      communityAccess: 'Accès à la communauté d\'apprentissage',
+      mobileApp: 'Application mobile pour apprendre partout',
+      basicSupport: 'Support par email',
+      certificates: 'Certificats de completion',
+      allCourses: 'Accès à tous les cours et technologies',
+      liveWorkshops: 'Ateliers en direct chaque semaine',
+      mentorship: 'Sessions de mentorat mensuel',
+      prioritySupport: 'Support prioritaire 24/7',
+      jobBoard: 'Accès au tableau d\'emploi exclusif',
+      portfolioReview: 'Révision de portfolio par des experts',
+      everythingPro: 'Tout du plan Pro inclus',
+      oneOnOneCoaching: 'Coaching individuel hebdomadaire',
+      customProjects: 'Projets personnalisés selon vos objectifs',
+      internshipPlacement: 'Aide au placement en stage',
+      careerGuidance: 'Conseils carrière personnalisés',
+      exclusiveContent: 'Contenu exclusif et avant-première',
+      networkingEvents: 'Événements de networking avec les pros'
+    },
+    faq: {
+      title: 'Questions fréquentes',
+      items: {
+        trial: {
+          question: 'Comment fonctionne l\'essai gratuit ?',
+          answer: 'Profitez de 14 jours d\'accès complet à votre plan choisi. Aucun engagement, vous pouvez annuler à tout moment pendant la période d\'essai.'
+        },
+        cancel: {
+          question: 'Puis-je annuler mon abonnement à tout moment ?',
+          answer: 'Oui, vous pouvez annuler votre abonnement à tout moment depuis votre tableau de bord. L\'accès reste actif jusqu\'à la fin de votre période de facturation.'
+        },
+        refund: {
+          question: 'Offrez-vous une garantie de remboursement ?',
+          answer: 'Nous offrons une garantie de remboursement de 30 jours si vous n\'êtes pas satisfait de votre formation.'
+        },
+        upgrade: {
+          question: 'Puis-je changer de plan en cours d\'abonnement ?',
+          answer: 'Absolument ! Vous pouvez passer à un plan supérieur à tout moment. La différence sera calculée au prorata.'
+        },
+        certificates: {
+          question: 'Les certificats sont-ils reconnus ?',
+          answer: 'Nos certificats sont reconnus par de nombreuses entreprises tech et peuvent être ajoutés à votre profil LinkedIn.'
+        },
+        support: {
+          question: 'Quel type de support est disponible ?',
+          answer: 'Selon votre plan, vous avez accès au support par email, chat en direct, ou sessions de mentorat personnalisées.'
+        }
       }
     }
   }

@@ -3,129 +3,110 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <!-- Page d'accueil - Priorité maximale -->
+    <!-- Home Page - Maximum Priority -->
     <url>
         <loc>https://killiandalcin.fr/</loc>
-        <lastmod>2025-06-25</lastmod>
+        <lastmod>2025-01-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Page Services Fiverr - Haute priorité (conversions) -->
+    <!-- Fiverr Services Page - High Priority (Business Focus) -->
     <url>
         <loc>https://killiandalcin.fr/fiverr</loc>
-        <lastmod>2025-06-25</lastmod>
+        <lastmod>2025-01-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- Page Projets/Portfolio -->
+    <!-- Projects Portfolio Page -->
     <url>
         <loc>https://killiandalcin.fr/projects</loc>
-        <lastmod>2025-06-25</lastmod>
+        <lastmod>2025-01-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Page Contact -->
+    <!-- Contact Page -->
     <url>
         <loc>https://killiandalcin.fr/contact</loc>
-        <lastmod>2025-06-25</lastmod>
+        <lastmod>2025-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Page À Propos -->
+    <!-- About Page -->
     <url>
         <loc>https://killiandalcin.fr/about</loc>
-        <lastmod>2025-06-25</lastmod>
+        <lastmod>2025-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
-    <!-- Pages de projets individuels -->
+    <!-- Formation/Training Page -->
     <url>
-        <loc>https://killiandalcin.fr/projects/xinko</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://killiandalcin.fr/projects/flowboard</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://killiandalcin.fr/projects/virtual-tour</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://killiandalcin.fr/projects/image-manipulation</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://killiandalcin.fr/projects/primate-web-admin</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://killiandalcin.fr/projects/instagram-bot</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://killiandalcin.fr/projects/crowdin-status-bot</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <!-- Version anglaise -->
-    <url>
-        <loc>https://killiandalcin.fr/en</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
-        <loc>https://killiandalcin.fr/en/fiverr</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://killiandalcin.fr/en/projects</loc>
-        <lastmod>2025-06-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://killiandalcin.fr/en/contact</loc>
-        <lastmod>2025-06-25</lastmod>
+        <loc>https://killiandalcin.fr/formation</loc>
+        <lastmod>2025-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
+    <!-- Dynamic Project Detail Pages -->
+
+    <!-- Virtual Tour Project -->
     <url>
-        <loc>https://killiandalcin.fr/en/about</loc>
-        <lastmod>2025-06-25</lastmod>
+        <loc>https://killiandalcin.fr/project/virtual-tour</loc>
+        <lastmod>2025-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+
+    <!-- Xinko Discord Bot Project (Featured) -->
+    <url>
+        <loc>https://killiandalcin.fr/project/xinko</loc>
+        <lastmod>2025-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Image Manipulation NPM Package (Featured) -->
+    <url>
+        <loc>https://killiandalcin.fr/project/image-manipulation</loc>
+        <lastmod>2025-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Flowboard Project Management App (Featured) -->
+    <url>
+        <loc>https://killiandalcin.fr/project/flowboard</loc>
+        <lastmod>2025-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Primate Web Admin Project -->
+    <url>
+        <loc>https://killiandalcin.fr/project/primate-web-admin</loc>
+        <lastmod>2025-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Instagram Bot Project -->
+    <url>
+        <loc>https://killiandalcin.fr/project/instagram-bot</loc>
+        <lastmod>2025-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Crowdin Status Bot Project -->
+    <url>
+        <loc>https://killiandalcin.fr/project/crowdin-status-bot</loc>
+        <lastmod>2025-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
 </urlset> 

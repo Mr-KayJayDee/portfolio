@@ -133,8 +133,8 @@ export const siteConfig: SiteConfig = {
   seo: {
     defaultImage: '/portfolio-preview.webp',
     twitterHandle: '@killiandalcin',
-    locale: 'fr_FR',
-    alternateLocales: ['en_US'],
+    locale: 'en_US',
+    alternateLocales: ['fr_FR'],
     internalLinks: {
       priority: [
         { url: '/fiverr', text: 'Services Fiverr', priority: 0.9 },

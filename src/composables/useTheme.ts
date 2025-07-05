@@ -32,7 +32,7 @@ export function useTheme() {
     }
   }
 
-  // Load theme from localStorage or system preference
+  // Load theme from localStorage or default to dark mode
   const loadTheme = () => {
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme') as Theme | null
@@ -40,9 +40,8 @@ export function useTheme() {
       if (savedTheme) {
         setTheme(savedTheme)
       } else {
-        // Use system preference
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-        setTheme(prefersDark ? 'dark' : 'light')
+        // Default to dark mode instead of system preference
+        setTheme('dark')
       }
     }
   }

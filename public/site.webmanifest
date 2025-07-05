@@ -4,8 +4,8 @@
     "description": "Professional Full Stack Developer specializing in Vue.js, React, Node.js. Expert in Discord bots, web applications, and custom software solutions.",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#2563eb",
+    "background_color": "#111827",
+    "theme_color": "#111827",
     "orientation": "portrait-primary",
     "icons": [
         {

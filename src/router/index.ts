@@ -1,6 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, type RouteLocationNormalized } from 'vue-router'
 import { nextTick } from 'vue'
 import HomePage from '../views/HomePage.vue'
+
+// Google Analytics gtag types
+declare global {
+  interface Window {
+    dataLayer: unknown[]
+    gtag: (...args: unknown[]) => void
+  }
+}
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -94,9 +102,20 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
-// Additional scroll to top handler for better compatibility
-router.afterEach(() => {
-  // Use nextTick to ensure the DOM is fully updated
+// Google Analytics page view tracking function
+const trackPageView = (route: RouteLocationNormalized) => {
+  // Track page view with gtag
+  if (window.gtag) {
+    window.gtag('config', 'G-CDVVNFY6MV', {
+      page_path: route.path,
+      page_title: document.title,
+      page_location: window.location.href
+    })
+  }
+}
+
+// Track page views on route changes
+router.afterEach((to) => {
   nextTick(() => {
     // Smooth scroll to top
     window.scrollTo({
@@ -104,7 +123,16 @@ router.afterEach(() => {
       left: 0,
       behavior: 'smooth'
     })
+
+    // Track page view for GTM
+    trackPageView(to)
   })
+})
+
+// Track initial page load
+router.isReady().then(() => {
+  // Track the initial route after router is ready
+  trackPageView(router.currentRoute.value)
 })
 
 export default router

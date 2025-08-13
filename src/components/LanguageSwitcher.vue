@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from '@/composables/useI18n'
 
-const { currentLocale, switchLocale, isEnglish, isFrench } = useI18n()
+const { currentLocale, switchLocale } = useI18n()
 
 const languages = [
     { code: 'fr', name: 'Français', flag: '🇫🇷' },

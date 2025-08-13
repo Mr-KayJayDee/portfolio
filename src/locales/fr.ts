@@ -269,6 +269,13 @@ export default {
     }
   },
 
+  // Not Found page
+  notFound: {
+    title: 'Page non trouvée',
+    description: 'La page que vous recherchez n\'existe pas.',
+    goHome: 'Retourner à l\'accueil'
+  },
+
   // Project data
   projectData: {
     'virtual-tour': {
@@ -383,6 +390,10 @@ export default {
     fiverr: {
       title: 'Services Fiverr 5⭐ Bot Discord & Dev Web | Top Seller 2024',
       description: '🔥 Services Fiverr premium : Bots Discord sur-mesure dès 150€, plugins Minecraft Java, bots Telegram pro, sites web modernes. Top Rated Seller, 100% satisfaction, livraison express.'
+    },
+    notFound: {
+      title: 'Page non trouvée - 404',
+      description: 'La page que vous recherchez n\'existe pas. Retournez à l\'accueil.'
     }
   },
 

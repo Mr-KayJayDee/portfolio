@@ -48,15 +48,10 @@ const router = createRouter({
       name: 'formation',
       component: () => import('../views/FormationPage.vue')
     },
-    // TODO: page 404
     {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
-      component: HomePage,
-      meta: {
-        title: 'Page non trouvée - 404',
-        description: 'La page que vous recherchez n\'existe pas. Retournez à l\'accueil pour découvrir mes services.'
-      }
+      component: () => import('../views/NotFoundPage.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {

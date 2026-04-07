@@ -27,7 +27,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. All static data files exist under `data/` and are importable with TypeScript strict — no `any` types
   3. `useProjects()` composable returns typed project list and supports filtering by category and search
   4. `npx nuxi typecheck` and `npx eslint .` exit with 0 errors
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Nuxt 4, modules, TypeScript strict, interfaces
+- [ ] 01-02-PLAN.md — Migration donnees statiques + useProjects()
 
 ### Phase 2: SSR Shell
 **Goal**: Every route renders the correct language, theme, and SEO metadata on the server — confirmed by `curl` with no JavaScript
@@ -39,7 +42,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Toggling dark/light mode in the header persists across page reload with no flash on cold load
   4. `curl http://localhost:3000` response includes `<title>`, `og:title`, `og:description`, and JSON-LD script tag
   5. `http://localhost:3000/sitemap.xml` returns a valid XML sitemap with `hreflang` alternates for FR and EN URLs
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Nuxt 4, modules, TypeScript strict, interfaces
+- [ ] 01-02-PLAN.md — Migration donnees statiques + useProjects()
 **UI hint**: yes
 
 ### Phase 3: Pages & Ship
@@ -52,7 +58,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Submitting the contact form with valid data shows a success toast; EmailJS delivers the email
   4. `docker build` completes and `docker run` serves the SSR app on port 3000
   5. Google Analytics 4 events appear in GA4 DebugView when browsing in production mode
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Nuxt 4, modules, TypeScript strict, interfaces
+- [ ] 01-02-PLAN.md — Migration donnees statiques + useProjects()
 **UI hint**: yes
 
 ## Progress

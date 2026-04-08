@@ -52,11 +52,11 @@ Plans:
 ### Phase 3: Pages & Ship
 **Goal**: All portfolio pages are live, forms work, analytics fire in production, and the Docker image builds and runs
 **Depends on**: Phase 2
-**Requirements**: PAGE-01, PAGE-02, PAGE-03, PAGE-04, PAGE-05, PAGE-06, PAGE-07, PAGE-08, COMP-01, COMP-02, COMP-03, COMP-04, INFRA-01, INFRA-04
+**Requirements**: PAGE-01, PAGE-02, PAGE-03, PAGE-04, PAGE-05, PAGE-06, PAGE-08, COMP-01, COMP-02, COMP-03, COMP-04, INFRA-01, INFRA-04
 **Success Criteria** (what must be TRUE):
-  1. All 8 routes (`/`, `/projects`, `/project/[id]`, `/about`, `/contact`, `/fiverr`, `/formation`, 404) return complete HTML when fetched with `curl`
+  1. All 7 routes (`/`, `/projects`, `/project/[id]`, `/about`, `/contact`, `/fiverr`, 404) return complete HTML when fetched with `curl`
   2. Clicking an image in a project detail page opens a modal carousel with keyboard navigation (arrow keys + Escape closes)
-  3. Submitting the contact form with valid data shows a success toast; EmailJS delivers the email
+  3. Submitting the contact form with valid data shows a success toast; SMTP delivers the email via nodemailer
   4. `docker build` completes and `docker run` serves the SSR app on port 3000
   5. Google Analytics 4 events appear in GA4 DebugView when browsing in production mode
 **Plans**: 4 plans
@@ -64,7 +64,7 @@ Plans:
 - [ ] 03-01-PLAN.md — Composants partages + deps + ContactForm + nodemailer server route
 - [ ] 03-02-PLAN.md — Landing + Projects + Project Detail pages
 - [ ] 03-03-PLAN.md — About + Contact + Fiverr + 404 pages
-- [ ] 03-04-PLAN.md — Dockerfile SSR + GA4 config + docker-compose + formation redirect
+- [ ] 03-04-PLAN.md — Dockerfile SSR + GA4 config + docker-compose + legacy cleanup
 **UI hint**: yes
 
 ## Progress

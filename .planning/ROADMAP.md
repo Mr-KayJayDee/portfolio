@@ -63,7 +63,7 @@ Plans:
 Plans:
 - [x] 03-01-PLAN.md — Composants partages + deps + ContactForm + nodemailer server route
 - [x] 03-02-PLAN.md — Landing + Projects + Project Detail pages
-- [ ] 03-03-PLAN.md — About + Contact + Fiverr + 404 pages
+- [x] 03-03-PLAN.md — About + Contact + Fiverr + 404 pages
 - [ ] 03-04-PLAN.md — Dockerfile SSR + GA4 config + docker-compose + legacy cleanup
 **UI hint**: yes
 
@@ -76,4 +76,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-08 |
 | 2. SSR Shell | 3/3 | Complete | 2026-04-08 |
-| 3. Pages & Ship | 2/4 | In Progress|  |
+| 3. Pages & Ship | 3/4 | In Progress|  |

@@ -37,11 +37,11 @@
 - [x] **PAGE-01**: Page Landing `/` — hero, projets vedettes, services, CTA
 - [x] **PAGE-02**: Page Projects `/projects` — liste de projets avec filtres (recherche + catégorie)
 - [x] **PAGE-03**: Page Project Detail `/project/[id]` — détail projet avec galerie modale d'images
-- [ ] **PAGE-04**: Page About `/about` — biographie, tech stack badges
-- [ ] **PAGE-05**: Page Contact `/contact` — formulaire avec validation + envoi EmailJS
-- [ ] **PAGE-06**: Page Fiverr `/fiverr` — landing services, cards, FAQ accordion, CTA
+- [x] **PAGE-04**: Page About `/about` — biographie, tech stack badges
+- [x] **PAGE-05**: Page Contact `/contact` — formulaire avec validation + envoi EmailJS
+- [x] **PAGE-06**: Page Fiverr `/fiverr` — landing services, cards, FAQ accordion, CTA
 - [ ] **PAGE-07**: Page Formation `/formation` — page formations/cours
-- [ ] **PAGE-08**: Page 404 — `error.vue` avec redirection vers home
+- [x] **PAGE-08**: Page 404 — `error.vue` avec redirection vers home
 
 ### Components
 
@@ -125,11 +125,11 @@
 | PAGE-01 | Phase 3 | Complete |
 | PAGE-02 | Phase 3 | Complete |
 | PAGE-03 | Phase 3 | Complete |
-| PAGE-04 | Phase 3 | Pending |
-| PAGE-05 | Phase 3 | Pending |
-| PAGE-06 | Phase 3 | Pending |
+| PAGE-04 | Phase 3 | Complete |
+| PAGE-05 | Phase 3 | Complete |
+| PAGE-06 | Phase 3 | Complete |
 | PAGE-07 | Phase 3 | Pending |
-| PAGE-08 | Phase 3 | Pending |
+| PAGE-08 | Phase 3 | Complete |
 | COMP-01 | Phase 3 | Complete |
 | COMP-02 | Phase 3 | Complete |
 | COMP-03 | Phase 3 | Complete |

@@ -44,7 +44,7 @@ Plans:
   5. `http://localhost:3000/sitemap.xml` returns a valid XML sitemap with `hreflang` alternates for FR and EN URLs
 **Plans**: 3 plans
 Plans:
-- [ ] 02-01-PLAN.md — Design system, color-mode, i18n translations, sitemap config
+- [x] 02-01-PLAN.md — Design system, color-mode, i18n translations, sitemap config
 - [ ] 02-02-PLAN.md — Header, footer, default layout with nav and toggles
 - [ ] 02-03-PLAN.md — Per-route SEO metadata and JSON-LD structured data
 **UI hint**: yes
@@ -70,5 +70,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-08 |
-| 2. SSR Shell | 0/3 | Planning complete | - |
+| 2. SSR Shell | 1/3 | In Progress|  |
 | 3. Pages & Ship | 0/TBD | Not started | - |

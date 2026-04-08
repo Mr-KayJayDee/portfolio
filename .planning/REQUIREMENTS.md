@@ -13,23 +13,23 @@
 
 ### Internationalization
 
-- [ ] **I18N-01**: Le site supporte FR et EN avec stratégie `prefix_except_default` (FR à `/`, EN à `/en/*`)
-- [ ] **I18N-02**: La locale est détectée depuis le navigateur au premier accès et persistée en cookie
+- [x] **I18N-01**: Le site supporte FR et EN avec stratégie `prefix_except_default` (FR à `/`, EN à `/en/*`)
+- [x] **I18N-02**: La locale est détectée depuis le navigateur au premier accès et persistée en cookie
 - [ ] **I18N-03**: L'utilisateur peut changer de langue via un switcher dans le header
-- [ ] **I18N-04**: Le serveur lit le cookie et rend la bonne langue sans hydration mismatch
-- [ ] **I18N-05**: Les fichiers de traduction FR/EN sont migrés depuis les locales existantes
+- [x] **I18N-04**: Le serveur lit le cookie et rend la bonne langue sans hydration mismatch
+- [x] **I18N-05**: Les fichiers de traduction FR/EN sont migrés depuis les locales existantes
 
 ### Theme
 
 - [ ] **THEME-01**: L'utilisateur peut basculer entre dark et light mode via un toggle dans le header
-- [ ] **THEME-02**: Le thème est persisté en cookie SSR-safe (pas localStorage)
-- [ ] **THEME-03**: Aucun FOUC au chargement — le serveur rend le bon thème dès la première requête
+- [x] **THEME-02**: Le thème est persisté en cookie SSR-safe (pas localStorage)
+- [x] **THEME-03**: Aucun FOUC au chargement — le serveur rend le bon thème dès la première requête
 
 ### SEO
 
 - [ ] **SEO-01**: Chaque page a un `<title>`, `<meta description>`, `og:title`, `og:description` uniques via `useSeoMeta()`
 - [ ] **SEO-02**: La page d'accueil inclut du JSON-LD structuré (Person / CreativeWork)
-- [ ] **SEO-03**: Le sitemap.xml est généré automatiquement avec les alternates i18n (hreflang)
+- [x] **SEO-03**: Le sitemap.xml est généré automatiquement avec les alternates i18n (hreflang)
 - [ ] **SEO-04**: Les og:image utilisent des URLs absolues et sont présentes sur chaque page
 
 ### Pages
@@ -108,17 +108,17 @@
 | DATA-05 | Phase 1 | Pending |
 | INFRA-02 | Phase 1 | Pending |
 | INFRA-03 | Phase 1 | Pending |
-| I18N-01 | Phase 2 | Pending |
-| I18N-02 | Phase 2 | Pending |
+| I18N-01 | Phase 2 | Complete |
+| I18N-02 | Phase 2 | Complete |
 | I18N-03 | Phase 2 | Pending |
-| I18N-04 | Phase 2 | Pending |
-| I18N-05 | Phase 2 | Pending |
+| I18N-04 | Phase 2 | Complete |
+| I18N-05 | Phase 2 | Complete |
 | THEME-01 | Phase 2 | Pending |
-| THEME-02 | Phase 2 | Pending |
-| THEME-03 | Phase 2 | Pending |
+| THEME-02 | Phase 2 | Complete |
+| THEME-03 | Phase 2 | Complete |
 | SEO-01 | Phase 2 | Pending |
 | SEO-02 | Phase 2 | Pending |
-| SEO-03 | Phase 2 | Pending |
+| SEO-03 | Phase 2 | Complete |
 | SEO-04 | Phase 2 | Pending |
 | COMP-05 | Phase 2 | Pending |
 | COMP-06 | Phase 2 | Pending |

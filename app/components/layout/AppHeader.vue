@@ -3,7 +3,7 @@ const { t, locale, setLocale } = useI18n()
 const localePath = useLocalePath()
 const colorMode = useColorMode()
 const route = useRoute()
-const drawerOpen = ref(false)
+const mobileOpen = ref(false)
 
 const navLinks = computed(() => [
   { key: 'home', path: '/' },
@@ -27,121 +27,135 @@ function isActive(path: string): boolean {
 </script>
 
 <template>
-  <header class="sticky top-0 z-[1020] bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <!-- Logo -->
-      <NuxtLink :to="localePath('/')" :aria-label="t('a11y.logoLabel')" class="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded">
-        <NuxtImg src="/images/logo.webp" alt="Killian Dalcin" width="40" height="40" loading="eager" class="rounded" />
-        <span class="text-lg font-semibold text-gray-900 dark:text-white">Killian</span>
-      </NuxtLink>
-
-      <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-gray-950/80 border-b border-gray-200/50 dark:border-gray-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
         <NuxtLink
-          v-for="link in navLinks"
-          :key="link.key"
-          :to="localePath(link.path)"
-          :aria-current="isActive(link.path) ? 'page' : undefined"
-          class="text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded px-1 py-2"
-          :class="[
-            isActive(link.path)
-              ? 'border-b-2 border-primary-500 text-gray-900 dark:text-white'
-              : 'text-gray-700 dark:text-gray-300 hover:text-primary-500'
-          ]"
+          :to="localePath('/')"
+          :aria-label="t('a11y.logoLabel')"
+          class="flex items-center gap-2.5 shrink-0"
         >
-          {{ t(`nav.${link.key}`) }}
+          <NuxtImg
+            src="/images/logo.webp"
+            alt="Killian Dalcin"
+            width="36"
+            height="36"
+            loading="eager"
+            class="rounded-lg"
+          />
+          <span class="text-base font-semibold tracking-tight text-gray-900 dark:text-white">Killian</span>
         </NuxtLink>
-      </nav>
 
-      <!-- Toggles -->
-      <div class="flex items-center gap-1">
-        <!-- Language toggle -->
-        <button
-          type="button"
-          :aria-label="t('a11y.langToggle')"
-          class="min-w-11 min-h-11 inline-flex items-center justify-center text-gray-700 dark:text-gray-300 font-medium hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded transition-colors"
-          @click="toggleLocale"
-        >
-          {{ locale === 'fr' ? 'EN' : 'FR' }}
-        </button>
-
-        <!-- Theme toggle -->
-        <button
-          type="button"
-          :aria-label="colorMode.value === 'dark' ? t('a11y.themeDark') : t('a11y.themeLight')"
-          class="min-w-11 min-h-11 inline-flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded transition-colors duration-300"
-          @click="toggleTheme"
-        >
-          <UIcon :name="colorMode.value === 'dark' ? 'heroicons:sun' : 'heroicons:moon'" class="w-5 h-5" />
-        </button>
-
-        <!-- Hamburger (mobile) -->
-        <button
-          type="button"
-          :aria-label="t('a11y.openMenu')"
-          class="md:hidden min-w-11 min-h-11 inline-flex items-center justify-center text-gray-700 dark:text-gray-300 hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded transition-colors"
-          @click="drawerOpen = true"
-        >
-          <UIcon name="heroicons:bars-3" class="w-6 h-6" />
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Drawer -->
-    <UDrawer v-model:open="drawerOpen" side="left">
-      <div class="p-6 flex flex-col h-full">
-        <!-- Close button -->
-        <div class="flex justify-end mb-4">
-          <button
-            type="button"
-            :aria-label="t('a11y.closeDrawer')"
-            class="min-w-11 min-h-11 inline-flex items-center justify-center text-gray-700 dark:text-gray-300 hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded transition-colors"
-            @click="drawerOpen = false"
-          >
-            <UIcon name="heroicons:x-mark" class="w-6 h-6" />
-          </button>
-        </div>
-
-        <!-- Nav links -->
-        <nav class="flex flex-col gap-2 flex-1" aria-label="Mobile navigation">
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
           <NuxtLink
             v-for="link in navLinks"
             :key="link.key"
             :to="localePath(link.path)"
             :aria-current="isActive(link.path) ? 'page' : undefined"
-            class="min-h-11 flex items-center px-4 py-3 text-base rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            class="px-3 py-2 text-sm font-medium rounded-lg transition-colors"
             :class="[
               isActive(link.path)
-                ? 'text-primary-500 font-medium bg-primary-50 dark:bg-primary-900/20'
-                : 'text-gray-700 dark:text-gray-300 hover:text-primary-500 hover:bg-gray-50 dark:hover:bg-gray-800'
+                ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/40'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800/60'
             ]"
-            @click="drawerOpen = false"
           >
             {{ t(`nav.${link.key}`) }}
           </NuxtLink>
         </nav>
 
-        <!-- Toggles at bottom -->
-        <div class="flex items-center gap-2 pt-4 border-t border-gray-200 dark:border-gray-700">
-          <button
-            type="button"
+        <!-- Right actions -->
+        <div class="flex items-center gap-1">
+          <!-- Language toggle -->
+          <UButton
+            variant="ghost"
+            color="neutral"
+            size="sm"
             :aria-label="t('a11y.langToggle')"
-            class="min-w-11 min-h-11 inline-flex items-center justify-center text-gray-700 dark:text-gray-300 font-medium hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded transition-colors"
             @click="toggleLocale"
           >
             {{ locale === 'fr' ? 'EN' : 'FR' }}
-          </button>
+          </UButton>
 
-          <button
-            type="button"
+          <!-- Theme toggle -->
+          <UButton
+            variant="ghost"
+            color="neutral"
+            size="sm"
+            :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
             :aria-label="colorMode.value === 'dark' ? t('a11y.themeDark') : t('a11y.themeLight')"
-            class="min-w-11 min-h-11 inline-flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded transition-colors duration-300"
             @click="toggleTheme"
-          >
-            <UIcon :name="colorMode.value === 'dark' ? 'heroicons:sun' : 'heroicons:moon'" class="w-5 h-5" />
-          </button>
+          />
+
+          <!-- Mobile hamburger -->
+          <UButton
+            variant="ghost"
+            color="neutral"
+            size="sm"
+            icon="i-lucide-menu"
+            class="md:hidden"
+            :aria-label="t('a11y.openMenu')"
+            @click="mobileOpen = true"
+          />
         </div>
       </div>
-    </UDrawer>
+    </div>
+
+    <!-- Mobile slideover -->
+    <USlideover v-model:open="mobileOpen" side="left" class="md:hidden">
+      <template #header>
+        <div class="flex items-center gap-2.5">
+          <NuxtImg
+            src="/images/logo.webp"
+            alt="Killian Dalcin"
+            width="32"
+            height="32"
+            class="rounded-lg"
+          />
+          <span class="text-base font-semibold text-gray-900 dark:text-white">Killian</span>
+        </div>
+      </template>
+
+      <template #body>
+        <nav class="flex flex-col gap-1" aria-label="Mobile navigation">
+          <NuxtLink
+            v-for="link in navLinks"
+            :key="link.key"
+            :to="localePath(link.path)"
+            :aria-current="isActive(link.path) ? 'page' : undefined"
+            class="px-4 py-3 text-base font-medium rounded-lg transition-colors"
+            :class="[
+              isActive(link.path)
+                ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/40'
+                : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800/60'
+            ]"
+            @click="mobileOpen = false"
+          >
+            {{ t(`nav.${link.key}`) }}
+          </NuxtLink>
+        </nav>
+      </template>
+
+      <template #footer>
+        <div class="flex items-center gap-2">
+          <UButton
+            variant="ghost"
+            color="neutral"
+            :aria-label="t('a11y.langToggle')"
+            @click="toggleLocale"
+          >
+            {{ locale === 'fr' ? 'EN' : 'FR' }}
+          </UButton>
+          <UButton
+            variant="ghost"
+            color="neutral"
+            :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
+            :aria-label="colorMode.value === 'dark' ? t('a11y.themeDark') : t('a11y.themeLight')"
+            @click="toggleTheme"
+          />
+        </div>
+      </template>
+    </USlideover>
   </header>
 </template>

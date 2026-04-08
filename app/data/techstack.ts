@@ -18,6 +18,8 @@ export const techStack: TechStack = {
     { name: 'CSS', level: 'Advanced', image: '/images/css.webp' },
     { name: 'Figma', level: 'Advanced', image: '/images/figma.webp' },
     { name: 'WordPress', level: 'Intermediate', image: '/images/wordpress.webp' },
+    { name: 'Bootstrap', level: 'Intermediate', image: '/images/bootstrap.webp' },
+    { name: 'Tailwind CSS', level: 'Intermediate', image: '/images/tailwindcss.webp' },
   ],
   database: [
     { name: 'MongoDB', level: 'Advanced', image: '/images/mongodb.webp' },
@@ -25,8 +27,6 @@ export const techStack: TechStack = {
     { name: 'Redis', level: 'Advanced', image: '/images/redis.webp' },
     { name: 'SQLite', level: 'Advanced', image: '/images/sqlite.webp' },
     { name: 'PostgreSQL', level: 'Advanced', image: '/images/postgresql.webp' },
-    { name: 'Bootstrap', level: 'Intermediate', image: '/images/bootstrap.webp' },
-    { name: 'Tailwind CSS', level: 'Intermediate', image: '/images/tailwindcss.webp' },
   ],
   devtools: [
     { name: 'Git', level: 'Advanced', image: '/images/git.webp' },

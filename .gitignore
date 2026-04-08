@@ -29,3 +29,8 @@ coverage
 
 *.tsbuildinfo
 .claude
+
+# Nuxt
+.nuxt
+.output
+.env

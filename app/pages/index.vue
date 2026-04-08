@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { homeFAQs } from '~/data/faq'
+
 const { t } = useI18n()
 
 useSeoMeta({
@@ -47,8 +49,29 @@ useHead({
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h1 class="text-2xl font-bold">{{ t('nav.home') }}</h1>
-    <p class="text-gray-600 dark:text-gray-400 mt-4">Phase 3 content placeholder</p>
+  <div>
+    <!-- Hero Section -->
+    <HeroSection />
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Featured Projects Section -->
+      <FeaturedProjectsSection />
+
+      <!-- Services Section -->
+      <ServicesSection />
+
+      <!-- Testimonials Section -->
+      <TestimonialsSection />
+
+      <!-- FAQ Section -->
+      <FAQSection
+        :faqs="homeFAQs"
+        :title="t('faq.title')"
+        :subtitle="t('faq.subtitle')"
+      />
+    </div>
+
+    <!-- CTA Section -->
+    <CTASection />
   </div>
 </template>

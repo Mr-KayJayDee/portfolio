@@ -59,7 +59,12 @@ Plans:
   3. Submitting the contact form with valid data shows a success toast; EmailJS delivers the email
   4. `docker build` completes and `docker run` serves the SSR app on port 3000
   5. Google Analytics 4 events appear in GA4 DebugView when browsing in production mode
-**Plans**: TBD
+**Plans**: 4 plans
+Plans:
+- [ ] 03-01-PLAN.md — Composants partages + deps + ContactForm + nodemailer server route
+- [ ] 03-02-PLAN.md — Landing + Projects + Project Detail pages
+- [ ] 03-03-PLAN.md — About + Contact + Fiverr + 404 pages
+- [ ] 03-04-PLAN.md — Dockerfile SSR + GA4 config + docker-compose + formation redirect
 **UI hint**: yes
 
 ## Progress
@@ -71,4 +76,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-08 |
 | 2. SSR Shell | 3/3 | Complete | 2026-04-08 |
-| 3. Pages & Ship | 0/TBD | Not started | - |
+| 3. Pages & Ship | 0/4 | Not started | - |

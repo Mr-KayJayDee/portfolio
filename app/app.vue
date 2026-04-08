@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { locale } = useI18n()
-const head = useLocaleHead({ addSeoAttributes: true })
+const head = useLocaleHead({ seo: true })
 
 useHead({
   htmlAttrs: { lang: locale },

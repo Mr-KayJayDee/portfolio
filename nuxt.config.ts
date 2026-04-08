@@ -35,7 +35,7 @@ export default defineNuxtConfig({
       { code: 'fr', language: 'fr-FR', file: 'fr.json' },
       { code: 'en', language: 'en-US', file: 'en.json' },
     ],
-    langDir: 'locales/',
+    langDir: 'app/locales/',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -51,6 +51,6 @@ export default defineNuxtConfig({
   },
   gtag: {
     id: '',
-    enabled: process.env.NODE_ENV === 'production',
+    enabled: import.meta.env.NODE_ENV === 'production',
   }
 })

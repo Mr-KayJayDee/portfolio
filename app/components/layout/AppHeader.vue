@@ -1,7 +1,6 @@
 <script setup lang="ts">
-const { t, locale } = useI18n()
+const { t, locale, setLocale } = useI18n()
 const localePath = useLocalePath()
-const setLocale = useSetLocale()
 const colorMode = useColorMode()
 const route = useRoute()
 const drawerOpen = ref(false)

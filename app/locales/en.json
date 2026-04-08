@@ -1,1 +1,509 @@
-{}
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "fiverr": "Fiverr",
+    "formation": "Training"
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Killian Dalcin",
+    "navigation": "Quick Links",
+    "services": "Services",
+    "legalNotices": "Legal Notices",
+    "privacyPolicy": "Privacy Policy",
+    "servicesList": {
+      "webDev": "Web Development",
+      "mobileApps": "Mobile Apps",
+      "apiBackend": "API Development",
+      "consulting": "Tech Consulting"
+    }
+  },
+  "a11y": {
+    "logoLabel": "Killian Dalcin \u2014 Full Stack Developer \u2014 Back to homepage",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "closeDrawer": "Close menu",
+    "langToggle": "Change language \u2014 currently English",
+    "themeDark": "Switch to light mode",
+    "themeLight": "Switch to dark mode",
+    "github": "Killian Dalcin on GitHub (opens in new tab)",
+    "linkedin": "Killian Dalcin on LinkedIn (opens in new tab)",
+    "fiverr": "Killian Dalcin on Fiverr (opens in new tab)"
+  },
+  "seo": {
+    "home": {
+      "title": "Killian Dalcin \u2014 Freelance Full Stack Developer",
+      "description": "Portfolio of Killian Dalcin, freelance full stack developer specializing in Vue.js, React and Node.js. High-performance web applications and custom solutions."
+    },
+    "projects": {
+      "title": "Projects \u2014 Killian Dalcin",
+      "description": "Discover my web development projects: Vue.js applications, Node.js APIs, Discord bots and enterprise solutions."
+    },
+    "about": {
+      "title": "About \u2014 Killian Dalcin",
+      "description": "Biography and skills of Killian Dalcin, freelance full stack developer based in France."
+    },
+    "contact": {
+      "title": "Contact \u2014 Killian Dalcin",
+      "description": "Contact Killian Dalcin to discuss your web development project."
+    },
+    "fiverr": {
+      "title": "Fiverr Services \u2014 Killian Dalcin",
+      "description": "Development services available on Fiverr: Discord bots, Minecraft plugins, web applications."
+    },
+    "formation": {
+      "title": "Training \u2014 Killian Dalcin",
+      "description": "Training and courses offered by Killian Dalcin in web development."
+    }
+  },
+  "home": {
+    "title": "Expert Full Stack Developer for Hire | Vue.js, React & Node.js Specialist",
+    "subtitle": "I turn your ideas into high-performance web apps that drive real results. Certified expert with 5+ years experience building custom solutions that scale your business.",
+    "cta": {
+      "viewProjects": "Explore My Success Stories",
+      "contactMe": "Get Free Quote in 24h"
+    },
+    "featuredProjects": {
+      "title": "Web Applications That Deliver Results",
+      "subtitle": "Portfolio of real projects that transformed ideas into success. Lightning-fast Vue.js apps, scalable React platforms, robust Node.js APIs.",
+      "viewAll": "Explore All Projects"
+    },
+    "services": {
+      "title": "Premium Web Development Services",
+      "subtitle": "Turnkey solutions that boost your growth. Cutting-edge technologies + proven methodology = guaranteed success for your digital project.",
+      "webDev": {
+        "title": "Custom Vue.js/React Web Applications",
+        "description": "Lightning-fast web apps that convert visitors into customers. Modern SPAs, offline-first PWAs, high-conversion e-commerce. SEO-friendly from day one."
+      },
+      "mobileApps": {
+        "title": "Cost-Effective Cross-Platform Mobile Apps",
+        "description": "One codebase = iOS + Android + Web. React Native for performant native apps. 60% cost savings vs native development."
+      },
+      "optimization": {
+        "title": "Performance & Technical SEO Optimization",
+        "description": "Boost your Google visibility and conversions. Optimized Core Web Vitals, <2s load time. Average +250% organic traffic growth."
+      },
+      "maintenance": {
+        "title": "Proactive Maintenance & 24/7 Support",
+        "description": "Sleep well while I watch over your apps. Real-time monitoring, automatic security patches, daily backups. 99.9% uptime guaranteed."
+      }
+    },
+    "cta2": {
+      "title": "Looking for a Full Stack Developer?",
+      "subtitle": "Let's discuss your project requirements and build something amazing together.",
+      "startProject": "Start a Conversation",
+      "learnMore": "Explore My Success Stories"
+    }
+  },
+  "projects": {
+    "title": "Web Development Portfolio",
+    "subtitle": "Browse my full stack development projects featuring Vue.js applications, React websites, Node.js APIs, Discord bots, and enterprise software solutions.",
+    "categories": {
+      "all": "All Projects",
+      "webdevelopment": "Web Development",
+      "botdevelopment": "Bot Development",
+      "opensource": "Open Source",
+      "enterprisesoftware": "Enterprise Software",
+      "socialmediabot": "Social Media Bots",
+      "automation": "Automation Tools"
+    },
+    "buttons": {
+      "website": "Live Website",
+      "repository": "Source Code",
+      "npmpackage": "NPM Package",
+      "viewProject": "View Details"
+    },
+    "projectDetail": {
+      "backToProjects": "Back to Projects",
+      "viewDemo": "View Demo",
+      "sourceCode": "Source Code",
+      "share": "Share",
+      "aboutProject": "About the Project",
+      "keyFeatures": "Key Features",
+      "technologiesUsed": "Technologies Used",
+      "gallery": "Gallery",
+      "projectInfo": "Project Information",
+      "date": "Date",
+      "category": "Category",
+      "status": "Status",
+      "relatedProjects": "Related Projects"
+    },
+    "noResults": {
+      "title": "No projects found",
+      "description": "Try modifying your search or filter criteria."
+    }
+  },
+  "about": {
+    "title": "About Killian - Full Stack Developer",
+    "subtitle": "Experienced web developer passionate about Vue.js, React, Node.js, and modern JavaScript technologies.",
+    "intro": {
+      "title": "Professional Full Stack Developer",
+      "content": "I'm Killian, an experienced full stack developer specializing in JavaScript technologies. With expertise in Vue.js, React, Node.js, and TypeScript, I create scalable web applications, RESTful APIs, and real-time systems."
+    },
+    "skills": {
+      "title": "Technical Skills & Expertise",
+      "programming": "Programming Languages",
+      "frontend": "Frontend Technologies",
+      "backend": "Backend Technologies",
+      "tools": "DevOps & Tools",
+      "systems": "Operating Systems"
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "content": "Years of professional web development experience building enterprise applications, e-commerce platforms, SaaS products, and custom software solutions."
+    },
+    "approach": {
+      "title": "Development Philosophy",
+      "subtitle": "My approach to full stack development focuses on clean code, scalable architecture, and exceptional user experience.",
+      "performance": {
+        "title": "Performance-First Development",
+        "description": "Optimized code, lazy loading, code splitting, and caching strategies. Achieving perfect Lighthouse scores and Core Web Vitals metrics."
+      },
+      "architecture": {
+        "title": "Scalable Architecture",
+        "description": "Microservices, serverless functions, and modular design patterns. Building applications that scale effortlessly with your business growth."
+      },
+      "quality": {
+        "title": "Code Quality & Testing",
+        "description": "Test-driven development (TDD), automated testing, continuous integration (CI/CD), and comprehensive code reviews ensuring bug-free deployments."
+      },
+      "collaboration": {
+        "title": "Agile Collaboration",
+        "description": "Excellent communication, agile methodologies, and transparent project management. Regular updates and collaborative problem-solving."
+      }
+    },
+    "cta": {
+      "title": "Looking for a Full Stack Developer?",
+      "description": "Let's discuss your project requirements and build something amazing together.",
+      "button": "Start a Conversation"
+    }
+  },
+  "fiverr": {
+    "title": "Premium Fiverr Services - Top Rated Developer",
+    "subtitle": "500+ orders delivered. 100% satisfaction rate. <1h response time. 24/7 support. Certified expert in Discord bots, Minecraft plugins & web development.",
+    "profileCta": "Order Now on Fiverr",
+    "stats": {
+      "rating": "Perfect 5/5 Rating"
+    },
+    "pricing": {
+      "startingAt": "From"
+    },
+    "services": {
+      "title": "Premium Services",
+      "subtitle": "Professional solutions delivered in record time. Every service includes: full source code, detailed documentation, 30-day support, unlimited revisions.",
+      "features": "What's Included",
+      "orderNow": "Order This Service",
+      "learnMore": "View All Details",
+      "moreFeatures": "premium benefits included",
+      "comingSoon": "Available Soon",
+      "available": "Available Now"
+    },
+    "serviceData": {
+      "discord-bot": {
+        "title": "All-In-One Discord Bot | #1 Best-Seller",
+        "description": "The Discord bot of your dreams, coded by an expert. Transform your server into an ultra-active community.",
+        "features": [
+          "Advanced AI moderation system (anti-spam, anti-raid, smart auto-mod)",
+          "Addictive mini-games: casino, RPG, quiz with global leaderboards",
+          "HD music player: Spotify, YouTube, SoundCloud with saved playlists",
+          "Modern web interface for easy configuration (React dashboard included)",
+          "FREE premium VPS hosting for 3 months"
+        ]
+      },
+      "minecraft-plugin": {
+        "title": "Premium Minecraft Java Plugin | Spigot/Paper Expert",
+        "description": "Custom Minecraft plugins that transform your server into a unique experience. Compatible 1.8 to 1.20+, optimized for large servers (1000+ players).",
+        "features": [
+          "Revolutionary gameplay: procedural dungeons, custom bosses, magic spells",
+          "Advanced economy: GUI shops, auction house, jobs with XP system",
+          "Progression systems: levels, skills, customizable RPG classes",
+          "Optimized MySQL/Redis database for maximum performance",
+          "Multi-server ready: BungeeCord/Velocity with synchronization"
+        ]
+      },
+      "telegram-bot": {
+        "title": "Pro Business Telegram Bot | Powerful Automation",
+        "description": "Professional Telegram bot that boosts your business. Perfect for e-commerce, customer support, communities.",
+        "features": [
+          "Conversational AI: integrated ChatGPT for natural responses",
+          "Complete e-commerce: product catalog, cart, Stripe/PayPal payments",
+          "Smart broadcasting: user segments, A/B testing, analytics",
+          "Automatic multi-language with DeepL detection and translation",
+          "Maximum security: 2FA, encryption, GDPR compliant"
+        ]
+      },
+      "website-development": {
+        "title": "Premium Vue.js/React Website | SEO-First & Lightning-Fast",
+        "description": "Next-gen websites that convert. Premium design, maximum performance, SEO optimized.",
+        "features": [
+          "Premium UI/UX design: Figma mockups + modern animations",
+          "Extreme performance: <1.5s load time",
+          "Perfect responsive: tested on 50+ different devices",
+          "Supercharged SEO: schema markup, sitemap, optimized meta",
+          "E-commerce ready: Stripe, PayPal, crypto (if needed)"
+        ]
+      }
+    },
+    "testimonials": {
+      "title": "They Transformed Their Business With My Services",
+      "subtitle": "Join 500+ satisfied entrepreneurs. Average rating 5.0/5.0 across all my services."
+    },
+    "cta": {
+      "title": "Stop Searching, You Found THE Right Developer",
+      "subtitle": "Every day without action = lost opportunities. Launch your project NOW.",
+      "button": "Book My Order Now"
+    }
+  },
+  "contact": {
+    "title": "Contact Full Stack Developer",
+    "subtitle": "Get in touch for web development projects, freelance work, or technical consultation. Free project estimation and consultation available.",
+    "stats": {
+      "responseTime": "Quick Response",
+      "satisfaction": "Client Satisfaction",
+      "collaboration": "Global Reach"
+    },
+    "quickContact": "Quick Contact",
+    "findMeOn": "Connect on Social Media",
+    "methods": {
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "location": "Location",
+      "responseTime": "Response within 24 hours",
+      "availability": "Available for remote & freelance"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Common questions about my web development services and working process.",
+      "responseTime": {
+        "title": "What's your typical response time?",
+        "description": "I respond to all inquiries within 24 hours. For urgent projects, I'm available for immediate consultation."
+      },
+      "projectTypes": {
+        "title": "What types of projects do you handle?",
+        "description": "Full stack web applications, REST APIs, Discord bots, e-commerce sites, SaaS platforms, and custom software solutions."
+      },
+      "collaboration": {
+        "title": "Do you work remotely?",
+        "description": "Yes, I work with clients worldwide. Remote collaboration via Slack, Discord, Zoom, and project management tools."
+      }
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Project Subject",
+      "message": "Project Details",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! I'll respond within 24 hours.",
+      "error": "Error sending message. Please try again or email directly.",
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address"
+    },
+    "info": {
+      "title": "Let's Build Something Great",
+      "description": "Whether you need a Vue.js application, React website, Node.js API, or custom software solution, I'm here to help bring your vision to life.",
+      "email": "Email",
+      "social": "Social Profiles"
+    }
+  },
+  "projectData": {
+    "virtual-tour": {
+      "title": "Virtual Tour - Interactive 360\u00b0 Experience",
+      "description": "My high school teacher and me had an idea to create a Virtual tour with 360\u00b0 videos to allow everyone to visit the school from the web.",
+      "longDescription": "Collaborative project with my high school teacher to create an immersive virtual tour experience of our school. Uses 360\u00b0 videos to provide interactive navigation.",
+      "buttons": {
+        "visit": "Visit"
+      }
+    },
+    "xinko": {
+      "title": "Xinko - Multipurpose Discord Bot",
+      "description": "Xinko is a multipurpose bot that can help you create and manage your discord servers with ease and fun.",
+      "longDescription": "Comprehensive Discord bot designed to simplify server management. Xinko offers a wide range of commands for moderation, entertainment, utility, and community management.",
+      "buttons": {
+        "invite": "Invite"
+      }
+    },
+    "image-manipulation": {
+      "title": "Image Manipulation - NPM Package",
+      "description": "Discord Image Generation: NPM package for code-based image manipulation. Originally an API, now open-source.",
+      "longDescription": "Open-source NPM package for programmatic image generation and manipulation.",
+      "buttons": {
+        "repository": "Repository",
+        "npm package": "NPM Package"
+      }
+    },
+    "primate-web-admin": {
+      "title": "Primate Web Admin - Management Interface",
+      "description": "Primate Web Admin is a Web interface to manage Primate that is a Munki-like deployment tool for Windows.",
+      "longDescription": "Modern web administration interface for Primate, a software deployment system for Windows environments.",
+      "buttons": {}
+    },
+    "instagram-bot": {
+      "title": "Instagram Bot - Full Automation",
+      "description": "Fully functional Instagram bot using Insta.js by androz2091. It has many commands.",
+      "longDescription": "Instagram automation bot developed with androz2091's Insta.js library.",
+      "buttons": {
+        "repository": "Repository"
+      }
+    },
+    "crowdin-status-bot": {
+      "title": "Crowdin Status Bot - Translation Tracker",
+      "description": "A bot that fetches Crowdin translation status and updates Discord messages with the latest status.",
+      "longDescription": "Discord bot specialized in automatic monitoring of Crowdin translation projects.",
+      "buttons": {
+        "repository": "Repository"
+      }
+    },
+    "flowboard": {
+      "title": "FlowBoard - Trello clone",
+      "description": "FlowBoard is a complete project management solution for streamlining tasks, team collaboration, and progress tracking.",
+      "longDescription": "FlowBoard revolutionizes team collaboration and project management with its comprehensive suite of tools.",
+      "buttons": {}
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "reset": "Reset"
+  },
+  "testimonials": {
+    "title": "What My Clients Say",
+    "subtitle": "Over 10 successfully delivered projects. Discover authentic testimonials from satisfied clients.",
+    "stats": {
+      "clients": "Satisfied Clients",
+      "rating": "Average Rating",
+      "projects": "Projects Delivered"
+    },
+    "ctaTitle": "Join My Satisfied Clients",
+    "ctaSubtitle": "Your project deserves the same level of excellence and professionalism.",
+    "ctaText": "Start My Project",
+    "reviewsLink": "https://www.fiverr.com/mr_kayjaydee",
+    "reviewsText": "View All Reviews",
+    "card": {
+      "featured": "Featured Testimonial",
+      "results": "Results achieved:"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quickly find answers to your most common questions",
+    "keyPoints": "Key Points:",
+    "homeFaq": {
+      "delivery": {
+        "question": "What are your typical delivery timelines?",
+        "answer": "Timelines vary based on project complexity. Simple Discord Bot: 3-5 days. Showcase Website: 1-2 weeks. Complex Web Application: 4-8 weeks.",
+        "features": [
+          "Detailed planning provided",
+          "Daily updates",
+          "Often delivered early"
+        ]
+      },
+      "maintenance": {
+        "question": "Do you offer maintenance after delivery?",
+        "answer": "Absolutely! Every project includes a free maintenance period. I also offer monthly maintenance contracts.",
+        "features": [
+          "Free support based on package",
+          "Security updates",
+          "24/7 monitoring available"
+        ]
+      },
+      "companies": {
+        "question": "Do you work with companies of all sizes?",
+        "answer": "Yes! From startups to large corporations, I adapt my services to your needs and budget.",
+        "features": [
+          "Custom solutions",
+          "Adapted pricing",
+          "Personalized support"
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "title": "Choose your learning plan",
+    "subtitle": "Access comprehensive web development training with our flexible plans tailored for all levels",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "mostPopular": "Most Popular",
+    "startTrial": "Start Free Trial",
+    "trialInfo": "14-day free trial, then billing",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Perfect to begin your web development journey"
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Ideal for developers who want to accelerate their learning"
+      },
+      "expert": {
+        "name": "Expert",
+        "description": "For those aiming for excellence and a professional career"
+      }
+    },
+    "features": {
+      "basicCourses": "Access to basic courses (HTML, CSS, JavaScript)",
+      "communityAccess": "Access to learning community",
+      "mobileApp": "Mobile app to learn anywhere",
+      "basicSupport": "Email support",
+      "certificates": "Completion certificates",
+      "allCourses": "Access to all courses and technologies",
+      "liveWorkshops": "Live workshops every week",
+      "mentorship": "Monthly mentorship sessions",
+      "prioritySupport": "24/7 priority support",
+      "jobBoard": "Access to exclusive job board",
+      "portfolioReview": "Portfolio review by experts",
+      "everythingPro": "Everything in Pro plan included",
+      "oneOnOneCoaching": "Weekly one-on-one coaching",
+      "customProjects": "Custom projects based on your goals",
+      "internshipPlacement": "Internship placement assistance",
+      "careerGuidance": "Personalized career guidance",
+      "exclusiveContent": "Exclusive and early-access content",
+      "networkingEvents": "Networking events with professionals"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": {
+        "trial": {
+          "question": "How does the free trial work?",
+          "answer": "Enjoy 14 days of full access to your chosen plan. No commitment, you can cancel anytime."
+        },
+        "cancel": {
+          "question": "Can I cancel my subscription anytime?",
+          "answer": "Yes, you can cancel your subscription anytime from your dashboard."
+        },
+        "refund": {
+          "question": "Do you offer a money-back guarantee?",
+          "answer": "We offer a 30-day money-back guarantee if you're not satisfied."
+        },
+        "upgrade": {
+          "question": "Can I change plans during my subscription?",
+          "answer": "Absolutely! You can upgrade to a higher plan anytime. The difference will be prorated."
+        },
+        "certificates": {
+          "question": "Are the certificates recognized?",
+          "answer": "Our certificates are recognized by many tech companies and can be added to your LinkedIn profile."
+        },
+        "support": {
+          "question": "What type of support is available?",
+          "answer": "Depending on your plan, you have access to email support, live chat, or personalized mentorship sessions."
+        }
+      }
+    }
+  }
+}

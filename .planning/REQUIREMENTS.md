@@ -45,10 +45,10 @@
 
 ### Components
 
-- [ ] **COMP-01**: Galerie modale d'images — UModal + UCarousel avec navigation clavier (flèches + Escape)
-- [ ] **COMP-02**: Formulaire contact — UForm + UFormField + UInput + UTextarea + validation Zod + envoi EmailJS
-- [ ] **COMP-03**: FAQ accordion — UAccordion pour la page Fiverr, localisé FR/EN
-- [ ] **COMP-04**: Section témoignages clients — UCard pour chaque témoignage
+- [x] **COMP-01**: Galerie modale d'images — UModal + UCarousel avec navigation clavier (flèches + Escape)
+- [x] **COMP-02**: Formulaire contact — UForm + UFormField + UInput + UTextarea + validation Zod + envoi EmailJS
+- [x] **COMP-03**: FAQ accordion — UAccordion pour la page Fiverr, localisé FR/EN
+- [x] **COMP-04**: Section témoignages clients — UCard pour chaque témoignage
 - [x] **COMP-05**: Header avec navigation desktop (UNavigationMenu) + mobile (UDrawer) + toggles langue/thème
 - [x] **COMP-06**: Footer avec liens et informations
 
@@ -130,10 +130,10 @@
 | PAGE-06 | Phase 3 | Pending |
 | PAGE-07 | Phase 3 | Pending |
 | PAGE-08 | Phase 3 | Pending |
-| COMP-01 | Phase 3 | Pending |
-| COMP-02 | Phase 3 | Pending |
-| COMP-03 | Phase 3 | Pending |
-| COMP-04 | Phase 3 | Pending |
+| COMP-01 | Phase 3 | Complete |
+| COMP-02 | Phase 3 | Complete |
+| COMP-03 | Phase 3 | Complete |
+| COMP-04 | Phase 3 | Complete |
 | INFRA-01 | Phase 3 | Pending |
 | INFRA-04 | Phase 3 | Pending |
 

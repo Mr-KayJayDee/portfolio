@@ -60,3 +60,66 @@ export interface FAQ {
   answerKey: string
   featuresKey: string
 }
+
+export interface ContactInfo {
+  email: string
+  phone: string
+  location: string
+}
+
+export interface SocialLink {
+  name: string
+  url: string
+  icon: string
+  username?: string
+}
+
+export interface FiverrService {
+  id: string
+  url: string
+  image: string
+  price: string
+}
+
+export interface FiverrConfig {
+  profileUrl: string
+  services: FiverrService[]
+}
+
+export interface SiteConfig {
+  name: string
+  title: string
+  description: string
+  author: string
+  contact: ContactInfo
+  social: SocialLink[]
+  fiverr: FiverrConfig
+  url: string
+  seo: {
+    defaultImage: string
+    twitterHandle: string
+    locale: string
+    alternateLocales: string[]
+    internalLinks: {
+      priority: { url: string; text: string; priority: number }[]
+      services: { url: string; text: string }[]
+    }
+    organization: {
+      '@type': string
+      name: string
+      logo: string
+      priceRange: string
+      aggregateRating: {
+        ratingValue: string
+        reviewCount: string
+      }
+    }
+  }
+  performance: {
+    enablePrefetch: boolean
+    enablePreconnect: boolean
+    criticalCSS: boolean
+    lazyLoadImages: boolean
+    webpSupport: boolean
+  }
+}

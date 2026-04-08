@@ -43,6 +43,10 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
+    smtpHost: '',
+    smtpUser: '',
+    smtpPass: '',
+    smtpTo: '',
     public: {
       gtag: {
         id: '',

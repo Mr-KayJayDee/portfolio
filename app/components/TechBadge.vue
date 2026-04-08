@@ -57,18 +57,22 @@ const levelColor = computed(() => {
 </script>
 
 <template>
-  <div class="flex items-center gap-2" itemscope itemtype="https://schema.org/ComputerLanguage">
+  <div
+    class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700/50 transition-colors hover:border-brand-500/30"
+    itemscope
+    itemtype="https://schema.org/ComputerLanguage"
+  >
     <NuxtImg
       v-if="showImage && techData.image"
       :src="techData.image"
       :alt="`${techData.name} logo`"
-      width="24"
-      height="24"
+      width="20"
+      height="20"
       loading="lazy"
       class="shrink-0"
       itemprop="image"
     />
-    <span class="text-sm font-medium" itemprop="name">{{ techData.name }}</span>
+    <span class="text-sm font-medium text-gray-700 dark:text-gray-300" itemprop="name">{{ techData.name }}</span>
     <UBadge v-if="showLevel" :color="levelColor" variant="subtle" size="xs">
       {{ techData.level }}
     </UBadge>

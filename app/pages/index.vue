@@ -53,23 +53,25 @@ useHead({
     <!-- Hero Section -->
     <HeroSection />
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Featured Projects Section -->
+    <!-- Featured Projects Section -->
+    <div class="bg-gray-50 dark:bg-gray-900/30">
       <FeaturedProjectsSection />
-
-      <!-- Services Section -->
-      <ServicesSection />
-
-      <!-- Testimonials Section -->
-      <TestimonialsSection />
-
-      <!-- FAQ Section -->
-      <FAQSection
-        :faqs="homeFAQs"
-        :title="t('faq.title')"
-        :subtitle="t('faq.subtitle')"
-      />
     </div>
+
+    <!-- Services Section -->
+    <ServicesSection />
+
+    <!-- Testimonials Section -->
+    <div class="bg-gray-50 dark:bg-gray-900/30">
+      <TestimonialsSection />
+    </div>
+
+    <!-- FAQ Section -->
+    <FAQSection
+      :faqs="homeFAQs"
+      :title="t('faq.title')"
+      :subtitle="t('faq.subtitle')"
+    />
 
     <!-- CTA Section -->
     <CTASection />

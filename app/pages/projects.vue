@@ -51,64 +51,79 @@ function resetFilters() {
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div>
     <!-- Hero -->
-    <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold mb-4">{{ t('projects.title') }}</h1>
-      <p class="text-lg text-muted max-w-2xl mx-auto">{{ t('projects.subtitle') }}</p>
+    <section class="pt-16 pb-12 px-4 bg-gray-50 dark:bg-gray-900/30">
+      <div class="max-w-7xl mx-auto text-center">
+        <span class="text-sm font-semibold text-brand-500 dark:text-brand-400 uppercase tracking-wider">Portfolio</span>
+        <h1 class="text-4xl sm:text-5xl font-bold mt-2 mb-4 text-gray-900 dark:text-white">{{ t('projects.title') }}</h1>
+        <p class="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">{{ t('projects.subtitle') }}</p>
 
-      <!-- Stats -->
-      <div class="flex justify-center gap-8 mt-8">
-        <div class="text-center">
-          <p class="text-3xl font-bold text-primary">{{ totalProjects }}</p>
-          <p class="text-sm text-muted">{{ t('nav.projects') }}</p>
-        </div>
-        <div class="text-center">
-          <p class="text-3xl font-bold text-primary">{{ featuredCount }}</p>
-          <p class="text-sm text-muted">{{ t('home.featuredProjects.title') }}</p>
-        </div>
-        <div class="text-center">
-          <p class="text-3xl font-bold text-primary">{{ categories.length - 1 }}</p>
-          <p class="text-sm text-muted">{{ t('projects.categories.all') }}</p>
+        <!-- Stats -->
+        <div class="flex justify-center gap-10 mt-10">
+          <div class="text-center">
+            <p class="text-3xl font-extrabold text-brand-500 dark:text-brand-400">{{ totalProjects }}</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ t('nav.projects') }}</p>
+          </div>
+          <div class="w-px bg-gray-200 dark:bg-gray-800" />
+          <div class="text-center">
+            <p class="text-3xl font-extrabold text-brand-500 dark:text-brand-400">{{ featuredCount }}</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ t('home.featuredProjects.title') }}</p>
+          </div>
+          <div class="w-px bg-gray-200 dark:bg-gray-800" />
+          <div class="text-center">
+            <p class="text-3xl font-extrabold text-brand-500 dark:text-brand-400">{{ categories.length - 1 }}</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ t('projects.categories.all') }}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Filters -->
-    <div class="flex flex-col sm:flex-row gap-4 items-center mb-8">
-      <UInput
-        v-model="searchQuery"
-        icon="i-lucide-search"
-        :placeholder="t('common.search') + '...'"
-        class="w-full sm:w-80"
-      />
+    <!-- Filters & Grid -->
+    <section class="py-12 px-4">
+      <div class="max-w-7xl mx-auto">
+        <!-- Filter bar -->
+        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-10 p-4 rounded-2xl bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800">
+          <UInput
+            v-model="searchQuery"
+            icon="i-lucide-search"
+            :placeholder="t('common.search') + '...'"
+            class="w-full sm:w-72"
+            size="md"
+          />
 
-      <div class="flex flex-wrap gap-2">
-        <UButton
-          v-for="category in categories"
-          :key="category"
-          :variant="selectedCategory === category ? 'solid' : 'soft'"
-          size="sm"
-          @click="selectedCategory = category"
-        >
-          {{ category === 'all' ? t('projects.categories.all') : t(`projects.categories.${category.replace(/\s+/g, '').toLowerCase()}`) || category }}
-        </UButton>
+          <div class="flex flex-wrap gap-2">
+            <UButton
+              v-for="category in categories"
+              :key="category"
+              :variant="selectedCategory === category ? 'solid' : 'soft'"
+              :color="selectedCategory === category ? 'primary' : 'neutral'"
+              size="sm"
+              class="font-medium"
+              @click="selectedCategory = category"
+            >
+              {{ category === 'all' ? t('projects.categories.all') : t(`projects.categories.${category.replace(/\s+/g, '').toLowerCase()}`) || category }}
+            </UButton>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div v-if="filteredProjects.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <ProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" />
+        </div>
+
+        <!-- Empty State -->
+        <div v-else class="text-center py-24">
+          <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+            <UIcon name="i-lucide-search-x" class="text-2xl text-gray-400" />
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">{{ t('projects.noResults.title') }}</h3>
+          <p class="text-gray-500 dark:text-gray-400 mb-8 max-w-md mx-auto">{{ t('projects.noResults.description') }}</p>
+          <UButton @click="resetFilters" variant="soft" size="md">
+            {{ t('common.reset') }}
+          </UButton>
+        </div>
       </div>
-    </div>
-
-    <!-- Projects Grid -->
-    <div v-if="filteredProjects.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <ProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" />
-    </div>
-
-    <!-- Empty State -->
-    <div v-else class="text-center py-16">
-      <UIcon name="i-lucide-search-x" class="text-4xl text-muted mb-4" />
-      <h3 class="text-lg font-semibold mb-2">{{ t('projects.noResults.title') }}</h3>
-      <p class="text-muted mb-6">{{ t('projects.noResults.description') }}</p>
-      <UButton @click="resetFilters" variant="soft">
-        {{ t('common.reset') }}
-      </UButton>
-    </div>
+    </section>
   </div>
 </template>

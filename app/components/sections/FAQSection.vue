@@ -20,13 +20,17 @@ const items = computed(() =>
 </script>
 
 <template>
-  <section class="py-16 px-4">
+  <section class="py-20 md:py-28 px-4">
     <div class="max-w-3xl mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold mb-4">{{ title }}</h2>
-        <p class="text-lg text-muted">{{ subtitle }}</p>
+      <div class="text-center mb-14">
+        <span class="text-sm font-semibold text-brand-500 dark:text-brand-400 uppercase tracking-wider">FAQ</span>
+        <h2 class="text-3xl sm:text-4xl font-bold mt-2 text-gray-900 dark:text-white">{{ title }}</h2>
+        <p class="text-lg text-gray-500 dark:text-gray-400 mt-3">{{ subtitle }}</p>
       </div>
-      <UAccordion :items="items" type="single" collapsible />
+
+      <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-2">
+        <UAccordion :items="items" type="single" collapsible />
+      </div>
     </div>
   </section>
 </template>

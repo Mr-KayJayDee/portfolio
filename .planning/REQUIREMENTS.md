@@ -15,13 +15,13 @@
 
 - [x] **I18N-01**: Le site supporte FR et EN avec stratégie `prefix_except_default` (FR à `/`, EN à `/en/*`)
 - [x] **I18N-02**: La locale est détectée depuis le navigateur au premier accès et persistée en cookie
-- [ ] **I18N-03**: L'utilisateur peut changer de langue via un switcher dans le header
+- [x] **I18N-03**: L'utilisateur peut changer de langue via un switcher dans le header
 - [x] **I18N-04**: Le serveur lit le cookie et rend la bonne langue sans hydration mismatch
 - [x] **I18N-05**: Les fichiers de traduction FR/EN sont migrés depuis les locales existantes
 
 ### Theme
 
-- [ ] **THEME-01**: L'utilisateur peut basculer entre dark et light mode via un toggle dans le header
+- [x] **THEME-01**: L'utilisateur peut basculer entre dark et light mode via un toggle dans le header
 - [x] **THEME-02**: Le thème est persisté en cookie SSR-safe (pas localStorage)
 - [x] **THEME-03**: Aucun FOUC au chargement — le serveur rend le bon thème dès la première requête
 
@@ -49,8 +49,8 @@
 - [ ] **COMP-02**: Formulaire contact — UForm + UFormField + UInput + UTextarea + validation Zod + envoi EmailJS
 - [ ] **COMP-03**: FAQ accordion — UAccordion pour la page Fiverr, localisé FR/EN
 - [ ] **COMP-04**: Section témoignages clients — UCard pour chaque témoignage
-- [ ] **COMP-05**: Header avec navigation desktop (UNavigationMenu) + mobile (UDrawer) + toggles langue/thème
-- [ ] **COMP-06**: Footer avec liens et informations
+- [x] **COMP-05**: Header avec navigation desktop (UNavigationMenu) + mobile (UDrawer) + toggles langue/thème
+- [x] **COMP-06**: Footer avec liens et informations
 
 ### Data
 
@@ -110,18 +110,18 @@
 | INFRA-03 | Phase 1 | Pending |
 | I18N-01 | Phase 2 | Complete |
 | I18N-02 | Phase 2 | Complete |
-| I18N-03 | Phase 2 | Pending |
+| I18N-03 | Phase 2 | Complete |
 | I18N-04 | Phase 2 | Complete |
 | I18N-05 | Phase 2 | Complete |
-| THEME-01 | Phase 2 | Pending |
+| THEME-01 | Phase 2 | Complete |
 | THEME-02 | Phase 2 | Complete |
 | THEME-03 | Phase 2 | Complete |
 | SEO-01 | Phase 2 | Complete |
 | SEO-02 | Phase 2 | Complete |
 | SEO-03 | Phase 2 | Complete |
 | SEO-04 | Phase 2 | Complete |
-| COMP-05 | Phase 2 | Pending |
-| COMP-06 | Phase 2 | Pending |
+| COMP-05 | Phase 2 | Complete |
+| COMP-06 | Phase 2 | Complete |
 | PAGE-01 | Phase 3 | Pending |
 | PAGE-02 | Phase 3 | Pending |
 | PAGE-03 | Phase 3 | Pending |

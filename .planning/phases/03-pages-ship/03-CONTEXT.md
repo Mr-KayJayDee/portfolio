@@ -30,7 +30,7 @@ Toutes les 8 pages du portfolio sont construites avec contenu réel, les composa
 - **D-08:** 3 champs seulement : Nom, Email, Message — friction minimale
 - **D-09:** Validation Zod côté client avant envoi
 - **D-10:** Feedback via UToast (notification Nuxt UI) en haut à droite — succès ou erreur
-- **D-11:** Envoi via EmailJS (plugin côté client, clés dans runtimeConfig)
+- **D-11:** Envoi via SMTP direct (OVH) — API route serveur Nuxt (`server/api/contact.post.ts`) avec nodemailer, credentials dans runtimeConfig privé (NUXT_SMTP_HOST, NUXT_SMTP_USER, NUXT_SMTP_PASS)
 
 ### Dockerfile & déploiement
 - **D-12:** SSR avec Node.js — node:22-alpine build + node:22-alpine runtime, copie `.output/`
@@ -38,11 +38,11 @@ Toutes les 8 pages du portfolio sont construites avec contenu réel, les composa
 - **D-14:** docker-compose.yml existant avec Traefik — mettre à jour le port loadbalancer de 80 vers 3000
 - **D-15:** GA4 via nuxt-gtag, activé uniquement en production via runtimeConfig
 
-### Pages restantes (About, Fiverr, Formation, 404)
+### Pages restantes (About, Fiverr, 404)
 - **D-16:** Migration fidèle des pages existantes depuis src/views/ — mêmes sections et contenu, composants Nuxt UI
 - **D-17:** Page About : bio + tech stack badges (TechBadge.vue à migrer)
 - **D-18:** Page Fiverr : hero + service cards + FAQ accordion (UAccordion) + CTA
-- **D-19:** Page Formation : contenu formations comme l'actuel
+- **D-19:** Page Formation SUPPRIMÉE — contenu pricing SaaS non pertinent pour un portfolio freelance
 - **D-20:** Page 404 : error.vue Nuxt avec message et lien retour accueil
 
 ### Claude's Discretion

@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
   ssr: true,
+  css: ['~/assets/css/main.css'],
   modules: [
     '@nuxt/ui',
     '@nuxtjs/i18n',
@@ -14,9 +15,22 @@ export default defineNuxtConfig({
   typescript: {
     strict: true
   },
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+    storage: 'cookie',
+    storageKey: 'nuxt-color-mode',
+    cookieName: 'nuxt-color-mode',
+    classSuffix: ''
+  },
+  site: {
+    url: 'https://killiandalcin.fr',
+    name: 'Killian Dalcin - Developpeur Full Stack'
+  },
   i18n: {
     strategy: 'prefix_except_default',
     defaultLocale: 'fr',
+    baseUrl: 'https://killiandalcin.fr',
     locales: [
       { code: 'fr', language: 'fr-FR', file: 'fr.json' },
       { code: 'en', language: 'en-US', file: 'en.json' },

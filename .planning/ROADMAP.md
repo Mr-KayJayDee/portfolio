@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Nuxt 4 project scaffold, all modules configured, static data migrated, composables ported
 - [ ] **Phase 2: SSR Shell** - i18n FR/EN, dark/light theme, SEO per route, header + footer layout
-- [ ] **Phase 3: Pages & Ship** - All 8 pages, interactive components, EmailJS plugin, GA4, Dockerfile
+- [x] **Phase 3: Pages & Ship** - All 8 pages, interactive components, EmailJS plugin, GA4, Dockerfile (completed 2026-04-08)
 
 ## Phase Details
 
@@ -64,7 +64,7 @@ Plans:
 - [x] 03-01-PLAN.md — Composants partages + deps + ContactForm + nodemailer server route
 - [x] 03-02-PLAN.md — Landing + Projects + Project Detail pages
 - [x] 03-03-PLAN.md — About + Contact + Fiverr + 404 pages
-- [ ] 03-04-PLAN.md — Dockerfile SSR + GA4 config + docker-compose + legacy cleanup
+- [x] 03-04-PLAN.md — Dockerfile SSR + GA4 config + docker-compose + legacy cleanup
 **UI hint**: yes
 
 ## Progress
@@ -76,4 +76,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-04-08 |
 | 2. SSR Shell | 3/3 | Complete | 2026-04-08 |
-| 3. Pages & Ship | 3/4 | In Progress|  |
+| 3. Pages & Ship | 4/4 | Complete   | 2026-04-08 |

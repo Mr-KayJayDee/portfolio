@@ -62,10 +62,10 @@
 
 ### Infrastructure
 
-- [ ] **INFRA-01**: Dockerfile production multi-stage (node:22-alpine build → node:22-alpine runtime, copie `.output/` uniquement)
+- [x] **INFRA-01**: Dockerfile production multi-stage (node:22-alpine build → node:22-alpine runtime, copie `.output/` uniquement)
 - [ ] **INFRA-02**: TypeScript en mode strict avec interfaces pour toutes les données
 - [ ] **INFRA-03**: ESLint + Prettier configurés via @nuxt/eslint
-- [ ] **INFRA-04**: Google Analytics 4 via nuxt-gtag, actif uniquement en production
+- [x] **INFRA-04**: Google Analytics 4 via nuxt-gtag, actif uniquement en production
 
 ## v2 Requirements
 
@@ -134,8 +134,8 @@
 | COMP-02 | Phase 3 | Complete |
 | COMP-03 | Phase 3 | Complete |
 | COMP-04 | Phase 3 | Complete |
-| INFRA-01 | Phase 3 | Pending |
-| INFRA-04 | Phase 3 | Pending |
+| INFRA-01 | Phase 3 | Complete |
+| INFRA-04 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 38 total

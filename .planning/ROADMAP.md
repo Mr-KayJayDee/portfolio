@@ -12,7 +12,7 @@ Three phases following the strict build order from research: first lay the Nuxt 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Nuxt 4 project scaffold, all modules configured, static data migrated, composables ported
+- [x] **Phase 1: Foundation** - Nuxt 4 project scaffold, all modules configured, static data migrated, composables ported
 - [ ] **Phase 2: SSR Shell** - i18n FR/EN, dark/light theme, SEO per route, header + footer layout
 - [ ] **Phase 3: Pages & Ship** - All 8 pages, interactive components, EmailJS plugin, GA4, Dockerfile
 
@@ -42,10 +42,11 @@ Plans:
   3. Toggling dark/light mode in the header persists across page reload with no flash on cold load
   4. `curl http://localhost:3000` response includes `<title>`, `og:title`, `og:description`, and JSON-LD script tag
   5. `http://localhost:3000/sitemap.xml` returns a valid XML sitemap with `hreflang` alternates for FR and EN URLs
-**Plans**: 2 plans
+**Plans**: 3 plans
 Plans:
-- [x] 01-01-PLAN.md — Scaffold Nuxt 4, modules, TypeScript strict, interfaces
-- [x] 01-02-PLAN.md — Migration donnees statiques + useProjects()
+- [ ] 02-01-PLAN.md — Design system, color-mode, i18n translations, sitemap config
+- [ ] 02-02-PLAN.md — Header, footer, default layout with nav and toggles
+- [ ] 02-03-PLAN.md — Per-route SEO metadata and JSON-LD structured data
 **UI hint**: yes
 
 ### Phase 3: Pages & Ship
@@ -58,10 +59,7 @@ Plans:
   3. Submitting the contact form with valid data shows a success toast; EmailJS delivers the email
   4. `docker build` completes and `docker run` serves the SSR app on port 3000
   5. Google Analytics 4 events appear in GA4 DebugView when browsing in production mode
-**Plans**: 2 plans
-Plans:
-- [ ] 01-01-PLAN.md — Scaffold Nuxt 4, modules, TypeScript strict, interfaces
-- [ ] 01-02-PLAN.md — Migration donnees statiques + useProjects()
+**Plans**: TBD
 **UI hint**: yes
 
 ## Progress
@@ -71,6 +69,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
-| 2. SSR Shell | 0/TBD | Not started | - |
+| 1. Foundation | 2/2 | Complete | 2026-04-08 |
+| 2. SSR Shell | 0/3 | Planning complete | - |
 | 3. Pages & Ship | 0/TBD | Not started | - |

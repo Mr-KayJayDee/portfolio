@@ -11,7 +11,6 @@ const navLinks = computed(() => [
   { key: 'about', path: '/about' },
   { key: 'contact', path: '/contact' },
   { key: 'fiverr', path: '/fiverr' },
-  { key: 'formation', path: '/formation' },
 ])
 
 function toggleLocale() {

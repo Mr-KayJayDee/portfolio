@@ -4,8 +4,7 @@
     "projects": "Projets",
     "about": "A propos",
     "contact": "Contact",
-    "fiverr": "Fiverr",
-    "formation": "Formation"
+    "fiverr": "Fiverr"
   },
   "footer": {
     "copyright": "\u00a9 2026 Killian Dalcin",
@@ -52,10 +51,6 @@
     "fiverr": {
       "title": "Services Fiverr \u2014 Killian Dalcin",
       "description": "Services de developpement disponibles sur Fiverr : bots Discord, plugins Minecraft, applications web."
-    },
-    "formation": {
-      "title": "Formation \u2014 Killian Dalcin",
-      "description": "Formations et cours proposes par Killian Dalcin en developpement web."
     }
   },
   "home": {
@@ -431,78 +426,6 @@
           "Tarifs adapt\u00e9s",
           "Accompagnement personnalis\u00e9"
         ]
-      }
-    }
-  },
-  "pricing": {
-    "title": "Choisissez votre plan de formation",
-    "subtitle": "Acc\u00e9dez \u00e0 une formation compl\u00e8te en d\u00e9veloppement web avec nos plans flexibles adapt\u00e9s \u00e0 tous les niveaux",
-    "monthly": "Mensuel",
-    "annual": "Annuel",
-    "mostPopular": "Le plus populaire",
-    "startTrial": "Commencer l'essai gratuit",
-    "trialInfo": "14 jours d'essai gratuit, puis facturation",
-    "plans": {
-      "starter": {
-        "name": "D\u00e9butant",
-        "description": "Parfait pour commencer votre parcours en d\u00e9veloppement web"
-      },
-      "pro": {
-        "name": "Pro",
-        "description": "Id\u00e9al pour les d\u00e9veloppeurs qui veulent acc\u00e9l\u00e9rer leur apprentissage"
-      },
-      "expert": {
-        "name": "Expert",
-        "description": "Pour ceux qui visent l'excellence et une carri\u00e8re professionnelle"
-      }
-    },
-    "features": {
-      "basicCourses": "Acc\u00e8s aux cours de base (HTML, CSS, JavaScript)",
-      "communityAccess": "Acc\u00e8s \u00e0 la communaut\u00e9 d'apprentissage",
-      "mobileApp": "Application mobile pour apprendre partout",
-      "basicSupport": "Support par email",
-      "certificates": "Certificats de completion",
-      "allCourses": "Acc\u00e8s \u00e0 tous les cours et technologies",
-      "liveWorkshops": "Ateliers en direct chaque semaine",
-      "mentorship": "Sessions de mentorat mensuel",
-      "prioritySupport": "Support prioritaire 24/7",
-      "jobBoard": "Acc\u00e8s au tableau d'emploi exclusif",
-      "portfolioReview": "R\u00e9vision de portfolio par des experts",
-      "everythingPro": "Tout du plan Pro inclus",
-      "oneOnOneCoaching": "Coaching individuel hebdomadaire",
-      "customProjects": "Projets personnalis\u00e9s selon vos objectifs",
-      "internshipPlacement": "Aide au placement en stage",
-      "careerGuidance": "Conseils carri\u00e8re personnalis\u00e9s",
-      "exclusiveContent": "Contenu exclusif et avant-premi\u00e8re",
-      "networkingEvents": "\u00c9v\u00e9nements de networking avec les pros"
-    },
-    "faq": {
-      "title": "Questions fr\u00e9quentes",
-      "items": {
-        "trial": {
-          "question": "Comment fonctionne l'essai gratuit ?",
-          "answer": "Profitez de 14 jours d'acc\u00e8s complet \u00e0 votre plan choisi. Aucun engagement, vous pouvez annuler \u00e0 tout moment."
-        },
-        "cancel": {
-          "question": "Puis-je annuler mon abonnement \u00e0 tout moment ?",
-          "answer": "Oui, vous pouvez annuler votre abonnement \u00e0 tout moment depuis votre tableau de bord."
-        },
-        "refund": {
-          "question": "Offrez-vous une garantie de remboursement ?",
-          "answer": "Nous offrons une garantie de remboursement de 30 jours si vous n'\u00eates pas satisfait."
-        },
-        "upgrade": {
-          "question": "Puis-je changer de plan en cours d'abonnement ?",
-          "answer": "Absolument ! Vous pouvez passer \u00e0 un plan sup\u00e9rieur \u00e0 tout moment. La diff\u00e9rence sera calcul\u00e9e au prorata."
-        },
-        "certificates": {
-          "question": "Les certificats sont-ils reconnus ?",
-          "answer": "Nos certificats sont reconnus par de nombreuses entreprises tech et peuvent \u00eatre ajout\u00e9s \u00e0 votre profil LinkedIn."
-        },
-        "support": {
-          "question": "Quel type de support est disponible ?",
-          "answer": "Selon votre plan, vous avez acc\u00e8s au support par email, chat en direct, ou sessions de mentorat personnalis\u00e9es."
-        }
       }
     }
   }

@@ -1,6 +1,6 @@
 # Research Summary
 
-**Project:** Portfolio Killian Dalcin — Vue 3 SPA → Nuxt 4 SSR Migration
+**Project:** Portfolio Killian' DAL-CIN — Vue 3 SPA → Nuxt 4 SSR Migration
 **Date:** 2026-04-07
 **Sources:** STACK.md, FEATURES.md, ARCHITECTURE.md, PITFALLS.md
 

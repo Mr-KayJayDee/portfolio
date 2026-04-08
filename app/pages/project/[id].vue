@@ -30,107 +30,113 @@ useSeoMeta({
 
 <template>
   <div v-if="project">
-    <!-- Back navigation -->
-    <div class="bg-gray-50 dark:bg-gray-900/30 border-b border-gray-200 dark:border-gray-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <UButton
-          variant="ghost"
-          icon="i-lucide-arrow-left"
-          to="/projects"
-          size="sm"
-          class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-        >
-          {{ t('projects.projectDetail.backToProjects') }}
-        </UButton>
-      </div>
-    </div>
+    <!-- Full-width hero image -->
+    <section class="relative overflow-hidden">
+      <!-- Hero image with overlay -->
+      <div class="relative h-[40vh] sm:h-[50vh] lg:h-[60vh]">
+        <NuxtImg
+          v-if="project.image"
+          :src="project.image"
+          :alt="project.title"
+          class="w-full h-full object-cover"
+          format="webp"
+          loading="eager"
+        />
+        <!-- Gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent dark:from-gray-950 dark:via-gray-950/40 dark:to-transparent" />
+        <div class="absolute inset-0 bg-gradient-to-r from-white/60 to-transparent dark:from-gray-950/60 dark:to-transparent" />
 
-    <!-- Hero section -->
-    <section class="bg-gray-50 dark:bg-gray-900/30 pb-16 pt-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <!-- Project Image -->
-          <div class="rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-lg">
-            <NuxtImg
-              v-if="project.image"
-              :src="project.image"
-              :alt="project.title"
-              class="w-full h-auto object-cover"
-              format="webp"
-              loading="lazy"
-            />
-          </div>
+        <!-- Back button (floating) -->
+        <div class="absolute top-6 left-4 sm:left-6 lg:left-8 z-20">
+          <UButton
+            variant="solid"
+            color="neutral"
+            icon="i-lucide-arrow-left"
+            to="/projects"
+            size="sm"
+            class="shadow-lg backdrop-blur-sm"
+          >
+            {{ t('projects.projectDetail.backToProjects') }}
+          </UButton>
+        </div>
 
-          <!-- Project Info -->
-          <div class="flex flex-col justify-center space-y-6">
-            <div class="flex items-center gap-3">
+        <!-- Title overlay at bottom -->
+        <div class="absolute bottom-0 left-0 right-0 z-10 px-4 sm:px-6 lg:px-8 pb-10">
+          <div class="max-w-7xl mx-auto">
+            <div class="flex items-center gap-3 mb-4">
               <UBadge v-if="project.category" variant="subtle" size="md">{{ project.category }}</UBadge>
-              <span v-if="project.date" class="text-sm text-gray-400 dark:text-gray-500 font-medium">{{ project.date }}</span>
+              <span v-if="project.date" class="text-sm text-gray-500 dark:text-gray-400 font-mono">{{ project.date }}</span>
             </div>
-
-            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">{{ project.title }}</h1>
-            <p class="text-lg text-gray-500 dark:text-gray-400 leading-relaxed">{{ project.description }}</p>
-
-            <!-- CTA Buttons -->
-            <div class="flex flex-wrap gap-3 pt-2">
-              <UButton
-                v-if="project.demoUrl"
-                :to="project.demoUrl"
-                target="_blank"
-                icon="i-lucide-external-link"
-                size="lg"
-                class="font-semibold"
-              >
-                {{ t('projects.projectDetail.viewDemo') }}
-              </UButton>
-
-              <UButton
-                v-if="project.githubUrl"
-                :to="project.githubUrl"
-                target="_blank"
-                variant="soft"
-                icon="i-lucide-github"
-                size="lg"
-              >
-                {{ t('projects.projectDetail.sourceCode') }}
-              </UButton>
-
-              <UButton
-                v-for="button in project.buttons"
-                :key="button.title"
-                :to="button.link"
-                target="_blank"
-                variant="outline"
-                icon="i-lucide-external-link"
-                size="lg"
-              >
-                {{ button.title }}
-              </UButton>
-            </div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white max-w-3xl tracking-tight">{{ project.title }}</h1>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Content -->
-    <section class="py-16 px-4">
+    <!-- Content area -->
+    <section class="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16">
           <!-- Main Content -->
-          <div class="lg:col-span-2 space-y-16">
-            <!-- About -->
+          <div class="lg:col-span-2 space-y-14">
+            <!-- Description -->
             <div>
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-5">{{ t('projects.projectDetail.aboutProject') }}</h2>
+              <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">{{ project.description }}</p>
+
+              <!-- CTA Buttons -->
+              <div class="flex flex-wrap gap-3">
+                <UButton
+                  v-if="project.demoUrl"
+                  :to="project.demoUrl"
+                  target="_blank"
+                  icon="i-lucide-external-link"
+                  size="lg"
+                  class="font-semibold"
+                >
+                  {{ t('projects.projectDetail.viewDemo') }}
+                </UButton>
+
+                <UButton
+                  v-if="project.githubUrl"
+                  :to="project.githubUrl"
+                  target="_blank"
+                  variant="soft"
+                  icon="i-lucide-github"
+                  size="lg"
+                >
+                  {{ t('projects.projectDetail.sourceCode') }}
+                </UButton>
+
+                <UButton
+                  v-for="button in project.buttons"
+                  :key="button.title"
+                  :to="button.link"
+                  target="_blank"
+                  variant="outline"
+                  icon="i-lucide-external-link"
+                  size="lg"
+                >
+                  {{ button.title }}
+                </UButton>
+              </div>
+            </div>
+
+            <!-- About -->
+            <div class="rounded-2xl border border-gray-200/80 dark:border-gray-800/50 bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm p-7 sm:p-8">
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-5 flex items-center gap-3">
+                <div class="w-1 h-6 rounded-full bg-brand-500" />
+                {{ t('projects.projectDetail.aboutProject') }}
+              </h2>
               <p class="text-gray-500 dark:text-gray-400 leading-relaxed text-lg">
                 {{ project.longDescription || project.description }}
               </p>
 
               <!-- Features -->
               <div v-if="project.features" class="mt-8">
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">{{ t('projects.projectDetail.keyFeatures') }}</h3>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-5">{{ t('projects.projectDetail.keyFeatures') }}</h3>
                 <ul class="space-y-3">
-                  <li v-for="feature in project.features" :key="feature" class="flex items-start gap-3">
-                    <div class="w-6 h-6 rounded-full bg-brand-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <li v-for="feature in project.features" :key="feature" class="flex items-start gap-3 group">
+                    <div class="w-6 h-6 rounded-lg bg-brand-500/10 dark:bg-brand-500/15 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-brand-500/20 transition-colors">
                       <UIcon name="i-lucide-check" class="text-brand-500 w-3.5 h-3.5" />
                     </div>
                     <span class="text-gray-600 dark:text-gray-300">{{ feature }}</span>
@@ -140,27 +146,33 @@ useSeoMeta({
             </div>
 
             <!-- Technologies -->
-            <div v-if="project.technologies.length">
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-5">{{ t('projects.projectDetail.technologiesUsed') }}</h2>
+            <div v-if="project.technologies.length" class="rounded-2xl border border-gray-200/80 dark:border-gray-800/50 bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm p-7 sm:p-8">
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-5 flex items-center gap-3">
+                <div class="w-1 h-6 rounded-full bg-brand-500" />
+                {{ t('projects.projectDetail.technologiesUsed') }}
+              </h2>
               <div class="flex flex-wrap gap-2">
                 <TechBadge v-for="tech in project.technologies" :key="tech" :tech="tech" />
               </div>
             </div>
 
             <!-- Gallery Thumbnails -->
-            <div v-if="project.gallery?.length">
-              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-5">{{ t('projects.projectDetail.gallery') }}</h2>
-              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div v-if="project.gallery?.length" class="rounded-2xl border border-gray-200/80 dark:border-gray-800/50 bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm p-7 sm:p-8">
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-5 flex items-center gap-3">
+                <div class="w-1 h-6 rounded-full bg-brand-500" />
+                {{ t('projects.projectDetail.gallery') }}
+              </h2>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 <button
                   v-for="(image, index) in project.gallery"
                   :key="index"
-                  class="relative rounded-xl overflow-hidden group cursor-pointer border border-gray-200 dark:border-gray-800"
+                  class="relative rounded-xl overflow-hidden group cursor-pointer border border-gray-200/80 dark:border-gray-800/50 aspect-video"
                   @click="galleryRef?.openGallery(index)"
                 >
                   <NuxtImg
                     :src="image"
                     :alt="`${project.title} - Image ${index + 1}`"
-                    class="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-105"
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
                     format="webp"
                   />
@@ -173,17 +185,20 @@ useSeoMeta({
           </div>
 
           <!-- Sidebar -->
-          <aside class="space-y-6">
+          <aside class="sticky top-24 space-y-6">
             <!-- Project Info Card -->
-            <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-6 sticky top-24">
-              <h3 class="font-bold text-gray-900 dark:text-white mb-5">{{ t('projects.projectDetail.projectInfo') }}</h3>
+            <div class="rounded-2xl border border-gray-200/80 dark:border-gray-800/50 bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm p-6">
+              <h3 class="font-bold text-gray-900 dark:text-white mb-5 flex items-center gap-2">
+                <UIcon name="i-lucide-info" class="text-brand-500 w-4 h-4" />
+                {{ t('projects.projectDetail.projectInfo') }}
+              </h3>
 
               <div class="space-y-4 text-sm">
-                <div v-if="project.date" class="flex justify-between items-center py-2 border-b border-gray-200 dark:border-gray-800">
+                <div v-if="project.date" class="flex justify-between items-center py-3 border-b border-gray-200/60 dark:border-gray-800/40">
                   <span class="text-gray-500 dark:text-gray-400">{{ t('projects.projectDetail.date') }}</span>
-                  <span class="font-semibold text-gray-900 dark:text-white">{{ project.date }}</span>
+                  <span class="font-semibold text-gray-900 dark:text-white font-mono text-xs">{{ project.date }}</span>
                 </div>
-                <div v-if="project.category" class="flex justify-between items-center py-2">
+                <div v-if="project.category" class="flex justify-between items-center py-3">
                   <span class="text-gray-500 dark:text-gray-400">{{ t('projects.projectDetail.category') }}</span>
                   <UBadge variant="subtle" size="xs">{{ project.category }}</UBadge>
                 </div>
@@ -191,14 +206,17 @@ useSeoMeta({
             </div>
 
             <!-- Related Projects -->
-            <div v-if="relatedProjects.length > 0" class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-6">
-              <h3 class="font-bold text-gray-900 dark:text-white mb-5">{{ t('projects.projectDetail.relatedProjects') }}</h3>
-              <div class="space-y-4">
+            <div v-if="relatedProjects.length > 0" class="rounded-2xl border border-gray-200/80 dark:border-gray-800/50 bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm p-6">
+              <h3 class="font-bold text-gray-900 dark:text-white mb-5 flex items-center gap-2">
+                <UIcon name="i-lucide-layers" class="text-brand-500 w-4 h-4" />
+                {{ t('projects.projectDetail.relatedProjects') }}
+              </h3>
+              <div class="space-y-3">
                 <NuxtLink
                   v-for="related in relatedProjects"
                   :key="related.id"
                   :to="`/project/${related.id}`"
-                  class="flex gap-3 p-3 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors group"
+                  class="flex gap-3 p-3 rounded-xl border border-transparent hover:border-brand-500/20 hover:bg-brand-500/5 transition-all duration-200 group"
                 >
                   <NuxtImg
                     v-if="related.image"
@@ -211,7 +229,7 @@ useSeoMeta({
                   />
                   <div class="min-w-0">
                     <p class="font-semibold text-sm text-gray-900 dark:text-white truncate group-hover:text-brand-500 transition-colors">{{ related.title }}</p>
-                    <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mt-0.5">{{ related.description }}</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mt-1">{{ related.description }}</p>
                   </div>
                 </NuxtLink>
               </div>

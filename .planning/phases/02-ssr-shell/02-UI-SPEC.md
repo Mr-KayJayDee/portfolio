@@ -145,7 +145,7 @@ Components delivered in this phase only:
 ### AppFooter (COMP-06)
 - Single band: `py-6 bg-gray-100 dark:bg-gray-800`
 - Layout: flex row on md+, flex column on mobile — `items-center justify-between gap-4`
-- Left: copyright text — "© 2026 Killian Dalcin"
+- Left: copyright text — "© 2026 Killian' DAL-CIN"
 - Right: social icon links — GitHub (`simple-icons:github`), LinkedIn (`simple-icons:linkedin`), Fiverr (`simple-icons:fiverr`)
 - Icon size: 20px (w-5 h-5). Hover: accent color with `transition-colors duration-150`
 - All links open in `_blank` with `rel="noopener noreferrer"` and `aria-label`
@@ -175,7 +175,7 @@ Phase 2 scope: header nav labels, footer copyright, mobile drawer, language/them
 
 | Element | Copy (FR) | Copy (EN) |
 |---------|-----------|-----------|
-| Logo aria-label | "Killian Dalcin — Développeur Full Stack — Retour à l'accueil" | "Killian Dalcin — Full Stack Developer — Back to homepage" |
+| Logo aria-label | "Killian' DAL-CIN — Développeur Full Stack — Retour à l'accueil" | "Killian' DAL-CIN — Full Stack Developer — Back to homepage" |
 | Nav: Home | "Accueil" | "Home" |
 | Nav: Projects | "Projets" | "Projects" |
 | Nav: About | "À propos" | "About" |
@@ -188,10 +188,10 @@ Phase 2 scope: header nav labels, footer copyright, mobile drawer, language/them
 | Language toggle aria-label | "Changer la langue — actuellement Français" | "Change language — currently English" |
 | Theme toggle aria-label (dark) | "Activer le mode clair" | "Switch to light mode" |
 | Theme toggle aria-label (light) | "Activer le mode sombre" | "Switch to dark mode" |
-| Footer copyright | "© 2026 Killian Dalcin" | "© 2026 Killian Dalcin" |
-| GitHub icon aria-label | "GitHub de Killian Dalcin (nouvelle fenêtre)" | "Killian Dalcin on GitHub (opens in new tab)" |
-| LinkedIn icon aria-label | "LinkedIn de Killian Dalcin (nouvelle fenêtre)" | "Killian Dalcin on LinkedIn (opens in new tab)" |
-| Fiverr icon aria-label | "Fiverr de Killian Dalcin (nouvelle fenêtre)" | "Killian Dalcin on Fiverr (opens in new tab)" |
+| Footer copyright | "© 2026 Killian' DAL-CIN" | "© 2026 Killian' DAL-CIN" |
+| GitHub icon aria-label | "GitHub de Killian' DAL-CIN (nouvelle fenêtre)" | "Killian' DAL-CIN on GitHub (opens in new tab)" |
+| LinkedIn icon aria-label | "LinkedIn de Killian' DAL-CIN (nouvelle fenêtre)" | "Killian' DAL-CIN on LinkedIn (opens in new tab)" |
+| Fiverr icon aria-label | "Fiverr de Killian' DAL-CIN (nouvelle fenêtre)" | "Killian' DAL-CIN on Fiverr (opens in new tab)" |
 
 Destructive confirmation: none — Phase 2 has no destructive actions.
 Empty state: none — Phase 2 has no data-driven content.

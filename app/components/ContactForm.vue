@@ -14,10 +14,10 @@ const schema = z.object({
 
 type Schema = z.output<typeof schema>
 
-const state = reactive<Partial<Schema>>({
-  name: undefined,
-  email: undefined,
-  message: undefined,
+const state = reactive({
+  name: '',
+  email: '',
+  message: '',
 })
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
@@ -29,10 +29,9 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       color: 'success',
       icon: 'i-lucide-check',
     })
-    // Reset form
-    state.name = undefined
-    state.email = undefined
-    state.message = undefined
+    state.name = ''
+    state.email = ''
+    state.message = ''
   } catch {
     toast.add({
       title: t('contact.form.error'),
@@ -46,21 +45,49 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 </script>
 
 <template>
-  <UForm :schema="schema" :state="state" class="flex flex-col gap-4" @submit="onSubmit">
+  <UForm :schema="schema" :state="state" class="space-y-5" @submit="onSubmit">
     <UFormField :label="t('contact.form.name')" name="name">
-      <UInput v-model="state.name" :placeholder="t('contact.form.name')" class="w-full" />
+      <UInput
+        v-model="state.name"
+        :placeholder="t('contact.form.name')"
+        icon="i-lucide-user"
+        size="lg"
+        class="w-full"
+      />
     </UFormField>
 
     <UFormField :label="t('contact.form.email')" name="email">
-      <UInput v-model="state.email" type="email" :placeholder="t('contact.form.email')" class="w-full" />
+      <UInput
+        v-model="state.email"
+        type="email"
+        :placeholder="t('contact.form.email')"
+        icon="i-lucide-mail"
+        size="lg"
+        class="w-full"
+      />
     </UFormField>
 
     <UFormField :label="t('contact.form.message')" name="message">
-      <UTextarea v-model="state.message" :rows="5" :placeholder="t('contact.form.message')" class="w-full" />
+      <UTextarea
+        v-model="state.message"
+        :rows="6"
+        :placeholder="t('contact.form.message')"
+        size="lg"
+        class="w-full"
+      />
     </UFormField>
 
-    <UButton type="submit" :loading="loading" size="lg" class="self-start">
-      {{ t('contact.form.submit') }}
-    </UButton>
+    <button
+      type="submit"
+      :disabled="loading"
+      class="inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold text-sm transition-all duration-200 shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40"
+    >
+      <UIcon v-if="loading" name="i-lucide-loader-2" class="w-4 h-4 animate-spin" />
+      <template v-if="loading">{{ t('contact.form.sending') }}</template>
+      <template v-else>
+        {{ t('contact.form.submit') }}
+        <UIcon name="i-lucide-send" class="w-4 h-4" />
+      </template>
+    </button>
   </UForm>
 </template>

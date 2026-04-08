@@ -1,6 +1,6 @@
 # Architecture Patterns
 
-**Project:** Portfolio Killian Dalcin — Nuxt 4 SSR Migration
+**Project:** Portfolio Killian' DAL-CIN — Nuxt 4 SSR Migration
 **Researched:** 2026-04-07
 **Confidence:** HIGH (based on official Nuxt 4 conventions + existing codebase analysis)
 

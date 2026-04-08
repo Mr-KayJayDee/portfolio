@@ -26,41 +26,40 @@ export default defineNuxtConfig({
     fallback: 'dark',
     storage: 'cookie',
     storageKey: 'nuxt-color-mode',
-    cookieName: 'nuxt-color-mode',
     classSuffix: ''
   },
   site: {
     url: 'https://killiandalcin.fr',
-    name: 'Killian Dalcin - Developpeur Full Stack'
+    name: "Killian' DAL-CIN - Developpeur Full Stack"
   },
   i18n: {
-    strategy: 'prefix_except_default',
-    defaultLocale: 'fr',
-    baseUrl: 'https://killiandalcin.fr',
-    locales: [
-      { code: 'fr', language: 'fr-FR', file: 'fr.json' },
-      { code: 'en', language: 'en-US', file: 'en.json' },
-    ],
-    langDir: 'locales/',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-    },
+  strategy: 'prefix_except_default',
+  defaultLocale: 'fr',
+  baseUrl: 'https://killiandalcin.fr',
+  locales: [
+    { code: 'fr', language: 'fr-FR', file: 'fr.json' },
+    { code: 'en', language: 'en-US', file: 'en.json' },
+  ],
+  langDir: 'locales/',
+  detectBrowserLanguage: {
+    useCookie: true,
+    cookieKey: 'i18n_redirected',
+    redirectOn: 'root',
   },
+},
   runtimeConfig: {
-    smtpHost: '',
-    smtpUser: '',
-    smtpPass: '',
-    smtpTo: '',
-    public: {
-      gtag: {
-        id: '',
-      },
+  smtpHost: '',
+  smtpUser: '',
+  smtpPass: '',
+  smtpTo: '',
+  public: {
+    gtag: {
+      id: '',
     },
   },
+},
   gtag: {
-    id: '',
-    enabled: import.meta.env.NODE_ENV === 'production',
-  }
+  id: '',
+  enabled: import.meta.env.NODE_ENV === 'production',
+}
 })

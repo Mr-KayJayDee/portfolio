@@ -1,9 +1,9 @@
 <!-- GSD:project-start source:PROJECT.md -->
 ## Project
 
-**Portfolio Killian Dalcin — Migration Nuxt 4**
+**Portfolio Killian' Dalcin — Migration Nuxt 4**
 
-Migration complète d'un portfolio freelance de Vue 3 SPA vers Nuxt 4 avec SSR complet. Le site présente les projets, services et compétences de Killian Dalcin, développeur freelance, avec support bilingue FR/EN. L'objectif est un SEO parfait et un développement rapide via des composants prêts à l'emploi (Nuxt UI v3).
+Migration complète d'un portfolio freelance de Vue 3 SPA vers Nuxt 4 avec SSR complet. Le site présente les projets, services et compétences de Killian' Dalcin, développeur freelance, avec support bilingue FR/EN. L'objectif est un SEO parfait et un développement rapide via des composants prêts à l'emploi (Nuxt UI v3).
 
 **Core Value:** Chaque page du portfolio doit être crawlable par les moteurs de recherche sans JavaScript côté client — le SSR est la raison d'être de cette migration.
 

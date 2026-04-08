@@ -7,18 +7,22 @@ const localePath = useLocalePath()
   <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-white dark:bg-gray-950">
     <!-- Dot grid background pattern -->
     <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]" aria-hidden="true">
-      <div class="absolute inset-0" style="background-image: radial-gradient(circle, currentColor 1px, transparent 1px); background-size: 32px 32px;" />
+      <div class="absolute inset-0"
+        style="background-image: radial-gradient(circle, currentColor 1px, transparent 1px); background-size: 32px 32px;" />
     </div>
 
     <!-- Gradient glow -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-brand-500/5 dark:bg-brand-500/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-brand-500/5 dark:bg-brand-500/10 rounded-full blur-3xl pointer-events-none"
+      aria-hidden="true" />
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 md:py-24">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <!-- Left: Content -->
         <div class="space-y-8">
           <!-- Status badge -->
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 dark:bg-brand-500/15 border border-brand-500/20">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 dark:bg-brand-500/15 border border-brand-500/20">
             <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75" />
               <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500" />
@@ -28,8 +32,11 @@ const localePath = useLocalePath()
 
           <div class="space-y-4">
             <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
-              <span class="text-gray-900 dark:text-white">{{ t('home.title').split(' ').slice(0, -2).join(' ') }} </span>
-              <span class="bg-gradient-to-r from-brand-500 via-brand-400 to-emerald-400 bg-clip-text text-transparent">{{ t('home.title').split(' ').slice(-2).join(' ') }}</span>
+              <span class="text-gray-900 dark:text-white">{{ t('home.title').split(' ').slice(0, -2).join(' ') }}
+              </span>
+              <span
+                class="bg-gradient-to-r from-brand-500 via-brand-400 to-emerald-400 bg-clip-text text-transparent">{{
+                  t('home.title').split(' ').slice(-2).join(' ') }}</span>
             </h1>
             <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed">
               {{ t('home.subtitle') }}
@@ -38,15 +45,27 @@ const localePath = useLocalePath()
 
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-3">
-            <UButton :to="localePath('/projects')" size="xl" icon="i-lucide-arrow-right" trailing class="font-semibold">
+            <NuxtLink
+              :to="localePath('/projects')"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm transition-all duration-200 shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40"
+            >
               {{ t('home.cta.viewProjects') }}
-            </UButton>
-            <UButton :to="localePath('/fiverr')" size="xl" variant="outline" icon="i-lucide-dollar-sign" trailing class="font-semibold">
+              <UIcon name="i-lucide-arrow-right" class="w-4 h-4" />
+            </NuxtLink>
+            <NuxtLink
+              :to="localePath('/fiverr')"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-brand-500/50 hover:text-brand-500 font-semibold text-sm transition-all duration-200"
+            >
               {{ t('nav.fiverr') }}
-            </UButton>
-            <UButton :to="localePath('/contact')" size="xl" variant="ghost" icon="i-lucide-message-circle" trailing class="font-semibold">
+              <UIcon name="i-lucide-external-link" class="w-4 h-4" />
+            </NuxtLink>
+            <NuxtLink
+              :to="localePath('/contact')"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-gray-600 dark:text-gray-400 hover:text-brand-500 font-semibold text-sm transition-all duration-200"
+            >
               {{ t('home.cta.contactMe') }}
-            </UButton>
+              <UIcon name="i-lucide-message-circle" class="w-4 h-4" />
+            </NuxtLink>
           </div>
         </div>
 
@@ -54,9 +73,11 @@ const localePath = useLocalePath()
         <div class="hidden lg:block" aria-hidden="true">
           <div class="relative">
             <!-- Terminal window -->
-            <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 shadow-2xl shadow-brand-500/5 overflow-hidden">
+            <div
+              class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 shadow-2xl shadow-brand-500/5 overflow-hidden">
               <!-- Title bar -->
-              <div class="flex items-center gap-2 px-4 py-3 bg-gray-100 dark:bg-gray-800/80 border-b border-gray-200 dark:border-gray-700/50">
+              <div
+                class="flex items-center gap-2 px-4 py-3 bg-gray-100 dark:bg-gray-800/80 border-b border-gray-200 dark:border-gray-700/50">
                 <div class="flex gap-1.5">
                   <div class="w-3 h-3 rounded-full bg-red-400/80" />
                   <div class="w-3 h-3 rounded-full bg-yellow-400/80" />
@@ -75,11 +96,13 @@ const localePath = useLocalePath()
                 </div>
                 <div class="pl-6">
                   <span class="text-purple-500 dark:text-purple-400">name</span><span class="text-gray-500">: </span>
-                  <span class="text-amber-600 dark:text-amber-400">'Killian Dalcin'</span><span class="text-gray-500">,</span>
+                  <span class="text-amber-600 dark:text-amber-400">'Killian\' DAL-CIN'</span><span
+                    class="text-gray-500">,</span>
                 </div>
                 <div class="pl-6">
                   <span class="text-purple-500 dark:text-purple-400">role</span><span class="text-gray-500">: </span>
-                  <span class="text-amber-600 dark:text-amber-400">'Full Stack Dev'</span><span class="text-gray-500">,</span>
+                  <span class="text-amber-600 dark:text-amber-400">'Full Stack Dev'</span><span
+                    class="text-gray-500">,</span>
                 </div>
                 <div class="pl-6">
                   <span class="text-purple-500 dark:text-purple-400">skills</span><span class="text-gray-500">: [</span>
@@ -91,7 +114,8 @@ const localePath = useLocalePath()
                 </div>
                 <div class="pl-10">
                   <span class="text-amber-600 dark:text-amber-400">'Java'</span><span class="text-gray-500">, </span>
-                  <span class="text-amber-600 dark:text-amber-400">'Hytale Plugins'</span><span class="text-gray-500">,</span>
+                  <span class="text-amber-600 dark:text-amber-400">'Hytale Plugins'</span><span
+                    class="text-gray-500">,</span>
                 </div>
                 <div class="pl-10">
                   <span class="text-amber-600 dark:text-amber-400">'Docker'</span><span class="text-gray-500">, </span>
@@ -101,7 +125,8 @@ const localePath = useLocalePath()
                   <span class="text-gray-500">],</span>
                 </div>
                 <div class="pl-6">
-                  <span class="text-purple-500 dark:text-purple-400">available</span><span class="text-gray-500">: </span>
+                  <span class="text-purple-500 dark:text-purple-400">available</span><span class="text-gray-500">:
+                  </span>
                   <span class="text-brand-500">true</span>
                 </div>
                 <div>
@@ -116,11 +141,13 @@ const localePath = useLocalePath()
             </div>
 
             <!-- Floating decoration cards -->
-            <div class="absolute -top-4 -right-4 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg text-xs font-medium flex items-center gap-2">
+            <div
+              class="absolute -top-4 -right-4 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg text-xs font-medium flex items-center gap-2">
               <span class="w-2 h-2 rounded-full bg-brand-500" />
               <span class="text-gray-700 dark:text-gray-300">50+ projects</span>
             </div>
-            <div class="absolute -bottom-3 -left-3 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg text-xs font-medium flex items-center gap-2">
+            <div
+              class="absolute -bottom-3 -left-3 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg text-xs font-medium flex items-center gap-2">
               <UIcon name="i-lucide-star" class="text-yellow-400 w-3.5 h-3.5" />
               <span class="text-gray-700 dark:text-gray-300">5.0 rating</span>
             </div>

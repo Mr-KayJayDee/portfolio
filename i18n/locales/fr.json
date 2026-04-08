@@ -7,7 +7,7 @@
     "fiverr": "Fiverr"
   },
   "footer": {
-    "copyright": "\u00a9 2026 Killian Dalcin",
+    "copyright": "\u00a9 2026 Killian' DAL-CIN",
     "navigation": "Liens Rapides",
     "services": "Services",
     "legalNotices": "Mentions L\u00e9gales",
@@ -20,36 +20,36 @@
     }
   },
   "a11y": {
-    "logoLabel": "Killian Dalcin \u2014 Developpeur Full Stack \u2014 Retour a l'accueil",
+    "logoLabel": "Killian' DAL-CIN \u2014 Developpeur Full Stack \u2014 Retour a l'accueil",
     "openMenu": "Ouvrir le menu de navigation",
     "closeMenu": "Fermer le menu de navigation",
     "closeDrawer": "Fermer le menu",
     "langToggle": "Changer la langue \u2014 actuellement Francais",
     "themeDark": "Activer le mode clair",
     "themeLight": "Activer le mode sombre",
-    "gitea": "Gitea de Killian Dalcin (nouvelle fenetre)",
-    "linkedin": "LinkedIn de Killian Dalcin (nouvelle fenetre)",
-    "fiverr": "Fiverr de Killian Dalcin (nouvelle fenetre)"
+    "gitea": "Gitea de Killian' DAL-CIN (nouvelle fenetre)",
+    "linkedin": "LinkedIn de Killian' DAL-CIN (nouvelle fenetre)",
+    "fiverr": "Fiverr de Killian' DAL-CIN (nouvelle fenetre)"
   },
   "seo": {
     "home": {
-      "title": "Killian Dalcin \u2014 Developpeur Full Stack Freelance",
-      "description": "Portfolio de Killian Dalcin, developpeur full stack freelance specialise en Vue.js, React et Node.js. Applications web performantes et solutions sur-mesure."
+      "title": "Killian' DAL-CIN \u2014 Developpeur Full Stack Freelance",
+      "description": "Portfolio de Killian' DAL-CIN, developpeur full stack freelance specialise en Vue.js, React et Node.js. Applications web performantes et solutions sur-mesure."
     },
     "projects": {
-      "title": "Projets \u2014 Killian Dalcin",
+      "title": "Projets \u2014 Killian' DAL-CIN",
       "description": "Decouvrez mes realisations en developpement web : applications Vue.js, API Node.js, bots Discord et solutions d'entreprise."
     },
     "about": {
-      "title": "A propos \u2014 Killian Dalcin",
-      "description": "Biographie et competences de Killian Dalcin, developpeur full stack freelance base en France."
+      "title": "A propos \u2014 Killian' DAL-CIN",
+      "description": "Biographie et competences de Killian' DAL-CIN, developpeur full stack freelance base en France."
     },
     "contact": {
-      "title": "Contact \u2014 Killian Dalcin",
-      "description": "Contactez Killian Dalcin pour discuter de votre projet de developpement web."
+      "title": "Contact \u2014 Killian' DAL-CIN",
+      "description": "Contactez Killian' DAL-CIN pour discuter de votre projet de developpement web."
     },
     "fiverr": {
-      "title": "Services Fiverr \u2014 Killian Dalcin",
+      "title": "Services Fiverr \u2014 Killian' DAL-CIN",
       "description": "Services de developpement disponibles sur Fiverr : bots Discord, plugins Minecraft, applications web."
     }
   },
@@ -131,7 +131,7 @@
     }
   },
   "about": {
-    "title": "\u00c0 propos de Killian - D\u00e9veloppeur Full Stack",
+    "title": "\u00c0 propos de Killian'- D\u00e9veloppeur Full Stack",
     "subtitle": "D\u00e9veloppeur web exp\u00e9riment\u00e9 passionn\u00e9 par Vue.js, React, Node.js et les technologies JavaScript modernes.",
     "intro": {
       "title": "D\u00e9veloppeur Full Stack Professionnel",
@@ -245,6 +245,10 @@
       "title": "Ils Ont Transform\u00e9 Leur Business Avec Mes Services",
       "subtitle": "Rejoignez 500+ entrepreneurs satisfaits. Note moyenne 5.0/5.0 sur l'ensemble de mes services."
     },
+    "faq": {
+      "title": "Questions Frequentes Fiverr",
+      "subtitle": "Tout ce que vous devez savoir avant de commander mes services sur Fiverr."
+    },
     "cta": {
       "title": "Arr\u00eatez de Chercher, Vous Avez Trouv\u00e9 LE Bon D\u00e9veloppeur",
       "subtitle": "Chaque jour sans agir = opportunit\u00e9s perdues. Lancez votre projet MAINTENANT.",
@@ -263,7 +267,6 @@
     "findMeOn": "Connectez-vous sur les R\u00e9seaux Sociaux",
     "methods": {
       "email": "Adresse Email",
-      "phone": "Num\u00e9ro de T\u00e9l\u00e9phone",
       "location": "Localisation",
       "responseTime": "R\u00e9ponse sous 24 heures",
       "availability": "Disponible pour remote & freelance"
@@ -285,16 +288,23 @@
       }
     },
     "form": {
+      "title": "Envoyez-moi un message",
       "name": "Votre Nom",
       "email": "Adresse Email",
       "subject": "Sujet du Projet",
       "message": "D\u00e9tails du Projet",
+      "submit": "Envoyer le Message",
       "send": "Envoyer le Message",
       "sending": "Envoi en cours...",
       "success": "Message envoy\u00e9 avec succ\u00e8s ! Je r\u00e9pondrai dans les 24 heures.",
       "error": "Erreur lors de l'envoi du message. Veuillez r\u00e9essayer ou envoyer un email directement.",
       "required": "Ce champ est requis",
-      "invalidEmail": "Veuillez entrer une adresse email valide"
+      "invalidEmail": "Veuillez entrer une adresse email valide",
+      "validation": {
+        "nameMin": "Le nom doit contenir au moins 2 caracteres",
+        "emailInvalid": "Veuillez entrer une adresse email valide",
+        "messageMin": "Le message doit contenir au moins 10 caracteres"
+      }
     },
     "info": {
       "title": "Construisons Quelque Chose de Grand",

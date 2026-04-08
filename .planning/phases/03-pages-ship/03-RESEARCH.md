@@ -640,7 +640,7 @@ if (!name || !email || !message || message.length > 5000) {
 |---|-------|---------|-------------|
 | A1 | `@types/nodemailer` est le package de types correct pour nodemailer 8.x | Standard Stack | Types manquants — TypeScript strict échouera ; vérifier avec `npm view @types/nodemailer` |
 | A2 | OVH SMTP fonctionne sur ssl0.ovh.net:465 avec auth PLAIN | Pattern 3 | L'envoi échoue — tester avec les vraies credentials avant de fermer la phase |
-| A3 | Docker est disponible sur la machine de déploiement de Killian | Environment Availability | INFRA-01 bloqué — confirmer avec `docker --version` |
+| A3 | Docker est disponible sur la machine de déploiement de Killian'| Environment Availability | INFRA-01 bloqué — confirmer avec `docker --version` |
 | A4 | `UCarousel` expose `emblaApi` directement via `useTemplateRef` dans Nuxt UI v3 | Pattern 1 | Navigation thumbnail cassée — fallback : gérer index manuellement avec `watch` |
 
 ---

@@ -1,6 +1,6 @@
 # Technology Stack
 
-**Project:** Portfolio Killian Dalcin — Nuxt 4 SSR Migration
+**Project:** Portfolio Killian' DAL-CIN — Nuxt 4 SSR Migration
 **Researched:** 2026-04-07
 **Knowledge cutoff:** August 2025 — all versions marked LOW confidence must be verified against npm before pinning
 

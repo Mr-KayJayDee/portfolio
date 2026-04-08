@@ -33,21 +33,24 @@ const heroStats = computed(() => [
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="pt-16 pb-16 px-4 bg-gray-50 dark:bg-gray-900/30">
-      <div class="max-w-4xl mx-auto text-center">
-        <span class="text-sm font-semibold text-brand-500 dark:text-brand-400 uppercase tracking-wider">Fiverr</span>
-        <h1 class="text-4xl sm:text-5xl font-bold mt-2 mb-6 text-gray-900 dark:text-white">
+    <section class="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div class="absolute inset-0 bg-gray-50/80 dark:bg-gray-900/40" aria-hidden="true" />
+      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-500/5 dark:bg-brand-500/8 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" aria-hidden="true" />
+
+      <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <span class="font-mono text-sm text-brand-500 dark:text-brand-400 tracking-wider">// fiverr</span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mt-3 mb-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-500 bg-clip-text text-transparent">
           {{ t('fiverr.title') }}
         </h1>
-        <p class="text-xl text-gray-500 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+        <p class="text-xl text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
           {{ t('fiverr.subtitle') }}
         </p>
 
         <!-- Stats -->
-        <div class="flex flex-wrap justify-center gap-10 mb-10">
+        <div class="flex flex-wrap justify-center gap-8 sm:gap-12 mb-12">
           <div v-for="stat in heroStats" :key="stat.label" class="text-center">
-            <div class="text-4xl font-extrabold text-brand-500 dark:text-brand-400">{{ stat.number }}</div>
-            <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ stat.label }}</div>
+            <div class="text-4xl sm:text-5xl font-black bg-gradient-to-b from-brand-400 to-brand-600 bg-clip-text text-transparent">{{ stat.number }}</div>
+            <div class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-medium">{{ stat.label }}</div>
           </div>
         </div>
 
@@ -65,19 +68,19 @@ const heroStats = computed(() => [
     </section>
 
     <!-- Services Section -->
-    <section class="py-20 md:py-28 px-4">
+    <section class="py-24 md:py-32 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-14">
-          <span class="text-sm font-semibold text-brand-500 dark:text-brand-400 uppercase tracking-wider">Services</span>
-          <h2 class="text-3xl sm:text-4xl font-bold mt-2 text-gray-900 dark:text-white">{{ t('fiverr.services.title') }}</h2>
-          <p class="text-lg text-gray-500 dark:text-gray-400 mt-3">{{ t('fiverr.services.subtitle') }}</p>
+        <div class="text-center mb-16">
+          <span class="font-mono text-sm text-brand-500 dark:text-brand-400 tracking-wider">// services</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-500 bg-clip-text text-transparent">{{ t('fiverr.services.title') }}</h2>
+          <p class="text-lg text-gray-500 dark:text-gray-400 mt-4 leading-relaxed">{{ t('fiverr.services.subtitle') }}</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
           <div
             v-for="service in services"
             :key="service.id"
-            class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 overflow-hidden transition-all duration-300 hover:border-brand-500/30 hover:shadow-xl hover:shadow-brand-500/5 hover:-translate-y-1"
+            class="group rounded-2xl border border-gray-200/80 dark:border-gray-800/50 bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-brand-500/40 hover:shadow-xl hover:shadow-brand-500/10 hover:-translate-y-1.5"
           >
             <!-- Service Image -->
             <div class="relative overflow-hidden">
@@ -87,10 +90,10 @@ const heroStats = computed(() => [
                 class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <!-- Price badge overlay -->
               <div class="absolute bottom-3 left-3">
-                <span class="px-3 py-1.5 rounded-lg bg-brand-500 text-white text-sm font-bold shadow-lg">
+                <span class="px-3 py-1.5 rounded-lg bg-brand-500 text-white text-sm font-bold shadow-lg backdrop-blur-sm">
                   {{ t('fiverr.pricing.startingAt') }} {{ service.price }}
                 </span>
               </div>
@@ -98,8 +101,8 @@ const heroStats = computed(() => [
               <div class="absolute top-3 right-3">
                 <span
                   :class="service.url !== '#'
-                    ? 'bg-green-500/90 text-white'
-                    : 'bg-yellow-500/90 text-white'"
+                    ? 'bg-green-500/90 text-white backdrop-blur-sm'
+                    : 'bg-yellow-500/90 text-white backdrop-blur-sm'"
                   class="px-2.5 py-1 rounded-lg text-xs font-semibold shadow-lg"
                 >
                   {{ service.url !== '#' ? t('fiverr.services.available') : t('fiverr.services.comingSoon') }}
@@ -108,11 +111,11 @@ const heroStats = computed(() => [
             </div>
 
             <!-- Content -->
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-brand-500 transition-colors">
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
                 {{ t(`fiverr.serviceData.${service.id}.title`) }}
               </h3>
-              <p class="text-gray-500 dark:text-gray-400 mb-5 leading-relaxed">
+              <p class="text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
                 {{ t(`fiverr.serviceData.${service.id}.description`) }}
               </p>
 
@@ -142,7 +145,7 @@ const heroStats = computed(() => [
     </section>
 
     <!-- FAQ Section -->
-    <div class="bg-gray-50 dark:bg-gray-900/30">
+    <div class="relative bg-gray-50/50 dark:bg-gray-900/20">
       <FAQSection
         :faqs="homeFAQs"
         :title="t('fiverr.faq.title')"
@@ -151,29 +154,14 @@ const heroStats = computed(() => [
     </div>
 
     <!-- CTA Section -->
-    <section class="py-20 md:py-28 px-4">
-      <div class="max-w-5xl mx-auto">
-        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 via-brand-500 to-emerald-500 px-8 py-16 sm:px-16 sm:py-20 text-center">
-          <div class="absolute top-0 left-0 w-72 h-72 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-2xl" aria-hidden="true" />
-          <div class="absolute bottom-0 right-0 w-96 h-96 bg-black/10 rounded-full translate-x-1/3 translate-y-1/3 blur-2xl" aria-hidden="true" />
-
-          <div class="relative z-10">
-            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">{{ t('fiverr.cta.title') }}</h2>
-            <p class="text-lg text-white/80 mb-10 max-w-2xl mx-auto">{{ t('fiverr.cta.subtitle') }}</p>
-            <UButton
-              :to="siteConfig.fiverr.profileUrl"
-              target="_blank"
-              external
-              size="xl"
-              color="white"
-              trailing-icon="i-lucide-external-link"
-              class="font-semibold"
-            >
-              {{ t('fiverr.cta.button') }}
-            </UButton>
-          </div>
-        </div>
-      </div>
-    </section>
+    <CTASection
+      :title="t('fiverr.cta.title')"
+      :subtitle="t('fiverr.cta.subtitle')"
+      :primary-text="t('fiverr.cta.button')"
+      :primary-to="siteConfig.fiverr.profileUrl"
+      :secondary-text="t('fiverr.profileCta')"
+      secondary-to="/contact"
+      external
+    />
   </div>
 </template>

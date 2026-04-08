@@ -20,7 +20,7 @@ Chaque route rend la bonne langue (FR/EN), le bon thème (dark/light), et les bo
 - **D-04:** Switch langue = bouton texte simple FR/EN (toggle au clic), pas de dropdown ni drapeaux
 
 ### Footer
-- **D-05:** Footer minimaliste — une seule bande : copyright © 2026 Killian Dalcin + icônes réseaux sociaux (Gitea, LinkedIn, Fiverr). Note : siteConfig pointe vers gitea.kamisama.ovh, pas GitHub.
+- **D-05:** Footer minimaliste — une seule bande : copyright © 2026 Killian' DAL-CIN + icônes réseaux sociaux (Gitea, LinkedIn, Fiverr). Note : siteConfig pointe vers gitea.kamisama.ovh, pas GitHub.
 
 ### i18n SSR
 - **D-06:** Enrichir les fichiers existants fr.json/en.json avec les clés navigation, footer et SEO — un seul fichier par langue
@@ -32,7 +32,7 @@ Chaque route rend la bonne langue (FR/EN), le bon thème (dark/light), et les bo
 
 ### SEO & Métadonnées
 - **D-10:** useSeoMeta() par route — title, description, og:title, og:description uniques
-- **D-11:** JSON-LD sur la page d'accueil : schéma Person + ProfessionalService pour Killian Dalcin
+- **D-11:** JSON-LD sur la page d'accueil : schéma Person + ProfessionalService pour Killian' DAL-CIN
 - **D-12:** og:image statique dans public/ (og-image.png 1200x630) — nuxt-og-image dynamique reporté à Phase 3 suite aux risques Windows identifiés en recherche
 
 ### Sitemap

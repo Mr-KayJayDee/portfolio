@@ -23,7 +23,7 @@ useHead({
         '@graph': [
           {
             '@type': 'Person',
-            name: 'Killian Dalcin',
+            name: "Killian' DAL-CIN",
             url: 'https://killiandalcin.fr',
             jobTitle: 'Developpeur Full Stack Freelance',
             email: 'contact@killiandalcin.fr',
@@ -35,14 +35,14 @@ useHead({
           },
           {
             '@type': 'ProfessionalService',
-            name: 'Killian Dalcin - Developpeur Full Stack',
+            name: "Killian' DAL-CIN - Developpeur Full Stack",
             url: 'https://killiandalcin.fr',
-            logo: 'https://killiandalcin.fr/images/logo.webp',
-            priceRange: '$$$',
-            areaServed: 'Worldwide',
+          logo: 'https://killiandalcin.fr/images/logo.webp',
+          priceRange: '$$$',
+          areaServed: 'Worldwide',
           },
         ],
-      }),
+}),
     },
   ],
 })
@@ -54,7 +54,7 @@ useHead({
     <HeroSection />
 
     <!-- Featured Projects Section -->
-    <div class="bg-gray-50 dark:bg-gray-900/30">
+    <div class="relative bg-gray-50/50 dark:bg-gray-900/20">
       <FeaturedProjectsSection />
     </div>
 
@@ -62,16 +62,12 @@ useHead({
     <ServicesSection />
 
     <!-- Testimonials Section -->
-    <div class="bg-gray-50 dark:bg-gray-900/30">
+    <div class="relative bg-gray-50/50 dark:bg-gray-900/20">
       <TestimonialsSection />
     </div>
 
     <!-- FAQ Section -->
-    <FAQSection
-      :faqs="homeFAQs"
-      :title="t('faq.title')"
-      :subtitle="t('faq.subtitle')"
-    />
+    <FAQSection :faqs="homeFAQs" :title="t('faq.title')" :subtitle="t('faq.subtitle')" />
 
     <!-- CTA Section -->
     <CTASection />

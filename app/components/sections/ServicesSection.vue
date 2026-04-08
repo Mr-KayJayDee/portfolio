@@ -26,27 +26,36 @@ const services = computed(() => [
 </script>
 
 <template>
-  <section class="py-20 md:py-28 px-4 bg-gray-50 dark:bg-gray-900/50 rounded-3xl mx-2 md:mx-0">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-14">
-        <span class="text-sm font-semibold text-brand-500 dark:text-brand-400 uppercase tracking-wider">Services</span>
-        <h2 class="text-3xl sm:text-4xl font-bold mt-2 text-gray-900 dark:text-white">{{ t('home.services.title') }}</h2>
-        <p class="text-lg text-gray-500 dark:text-gray-400 mt-3 max-w-2xl mx-auto">{{ t('home.services.subtitle') }}</p>
+  <section class="py-24 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <!-- Subtle background gradient -->
+    <div class="absolute inset-0 bg-gray-50/80 dark:bg-gray-900/40" aria-hidden="true" />
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-500/5 dark:bg-brand-500/8 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" aria-hidden="true" />
+
+    <div class="relative z-10 max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="font-mono text-sm text-brand-500 dark:text-brand-400 tracking-wider">// services</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-500 bg-clip-text text-transparent">{{ t('home.services.title') }}</h2>
+        <p class="text-lg text-gray-500 dark:text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">{{ t('home.services.subtitle') }}</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
         <div
           v-for="(service, index) in services"
           :key="index"
-          class="group relative rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 sm:p-8 transition-all duration-300 hover:border-brand-500/30 hover:shadow-lg hover:shadow-brand-500/5 hover:-translate-y-0.5"
+          class="group relative rounded-2xl border border-gray-200/80 dark:border-gray-800/50 bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-7 sm:p-8 transition-all duration-300 hover:border-brand-500/40 hover:shadow-xl hover:shadow-brand-500/10 hover:-translate-y-1"
         >
-          <!-- Icon -->
-          <div class="w-12 h-12 rounded-xl bg-brand-500/10 dark:bg-brand-500/15 flex items-center justify-center mb-5 transition-colors group-hover:bg-brand-500/20">
-            <UIcon :name="service.icon" class="text-brand-600 dark:text-brand-400 text-xl" />
-          </div>
+          <!-- Hover glow effect -->
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-500/0 to-emerald-500/0 group-hover:from-brand-500/5 group-hover:to-emerald-500/5 transition-all duration-500 pointer-events-none" aria-hidden="true" />
 
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">{{ service.title }}</h3>
-          <p class="text-gray-500 dark:text-gray-400 leading-relaxed">{{ service.description }}</p>
+          <div class="relative z-10">
+            <!-- Icon -->
+            <div class="w-12 h-12 rounded-xl bg-brand-500/10 dark:bg-brand-500/15 flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-brand-500/20 group-hover:scale-110">
+              <UIcon :name="service.icon" class="text-brand-600 dark:text-brand-400 text-xl" />
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">{{ service.title }}</h3>
+            <p class="text-gray-500 dark:text-gray-400 leading-relaxed">{{ service.description }}</p>
+          </div>
         </div>
       </div>
     </div>

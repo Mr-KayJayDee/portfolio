@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website showcasing professional skills, 
 
 ## 🎯 Purpose
 
-This portfolio serves as a professional showcase for **Killian Dal Cin**, a Full Stack Developer specializing in modern web development. The website features:
+This portfolio serves as a professional showcase for **Killian' DAL-CIN**, a Full Stack Developer specializing in modern web development. The website features:
 
 - **Professional Presentation**: Clean, modern design highlighting skills and experience
 - **Project Showcase**: Interactive gallery of completed projects with detailed case studies
@@ -220,7 +220,7 @@ This project is personal portfolio software. Please respect the intellectual pro
 
 ## 📧 Contact
 
-**Killian Dal Cin**
+**Killian' DAL-CIN**
 
 - Email: contact@killiandalcin.fr
 - LinkedIn: [killian-dalcin](https://linkedin.com/in/killian-dal-cin)

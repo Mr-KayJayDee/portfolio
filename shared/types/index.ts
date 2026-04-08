@@ -63,7 +63,6 @@ export interface FAQ {
 
 export interface ContactInfo {
   email: string
-  phone: string
   location: string
 }
 

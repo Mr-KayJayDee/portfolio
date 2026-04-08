@@ -1,4 +1,4 @@
-# Requirements: Portfolio Killian Dalcin — Nuxt 4 Migration
+# Requirements: Portfolio Killian' DAL-CIN — Nuxt 4 Migration
 
 **Defined:** 2026-04-07
 **Core Value:** Chaque page du portfolio doit être crawlable par les moteurs de recherche sans JavaScript côté client

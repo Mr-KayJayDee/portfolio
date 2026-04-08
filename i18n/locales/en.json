@@ -7,7 +7,7 @@
     "fiverr": "Fiverr"
   },
   "footer": {
-    "copyright": "\u00a9 2026 Killian Dalcin",
+    "copyright": "\u00a9 2026 Killian' DAL-CIN",
     "navigation": "Quick Links",
     "services": "Services",
     "legalNotices": "Legal Notices",
@@ -20,36 +20,36 @@
     }
   },
   "a11y": {
-    "logoLabel": "Killian Dalcin \u2014 Full Stack Developer \u2014 Back to homepage",
+    "logoLabel": "Killian' DAL-CIN \u2014 Full Stack Developer \u2014 Back to homepage",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "closeDrawer": "Close menu",
     "langToggle": "Change language \u2014 currently English",
     "themeDark": "Switch to light mode",
     "themeLight": "Switch to dark mode",
-    "gitea": "Killian Dalcin on Gitea (opens in new tab)",
-    "linkedin": "Killian Dalcin on LinkedIn (opens in new tab)",
-    "fiverr": "Killian Dalcin on Fiverr (opens in new tab)"
+    "gitea": "Killian' DAL-CIN on Gitea (opens in new tab)",
+    "linkedin": "Killian' DAL-CIN on LinkedIn (opens in new tab)",
+    "fiverr": "Killian' DAL-CIN on Fiverr (opens in new tab)"
   },
   "seo": {
     "home": {
-      "title": "Killian Dalcin \u2014 Freelance Full Stack Developer",
-      "description": "Portfolio of Killian Dalcin, freelance full stack developer specializing in Vue.js, React and Node.js. High-performance web applications and custom solutions."
+      "title": "Killian' DAL-CIN \u2014 Freelance Full Stack Developer",
+      "description": "Portfolio of Killian' DAL-CIN, freelance full stack developer specializing in Vue.js, React and Node.js. High-performance web applications and custom solutions."
     },
     "projects": {
-      "title": "Projects \u2014 Killian Dalcin",
+      "title": "Projects \u2014 Killian' DAL-CIN",
       "description": "Discover my web development projects: Vue.js applications, Node.js APIs, Discord bots and enterprise solutions."
     },
     "about": {
-      "title": "About \u2014 Killian Dalcin",
-      "description": "Biography and skills of Killian Dalcin, freelance full stack developer based in France."
+      "title": "About \u2014 Killian' DAL-CIN",
+      "description": "Biography and skills of Killian' DAL-CIN, freelance full stack developer based in France."
     },
     "contact": {
-      "title": "Contact \u2014 Killian Dalcin",
-      "description": "Contact Killian Dalcin to discuss your web development project."
+      "title": "Contact \u2014 Killian' DAL-CIN",
+      "description": "Contact Killian' DAL-CIN to discuss your web development project."
     },
     "fiverr": {
-      "title": "Fiverr Services \u2014 Killian Dalcin",
+      "title": "Fiverr Services \u2014 Killian' DAL-CIN",
       "description": "Development services available on Fiverr: Discord bots, Minecraft plugins, web applications."
     }
   },
@@ -131,7 +131,7 @@
     }
   },
   "about": {
-    "title": "About Killian - Full Stack Developer",
+    "title": "About Killian'- Full Stack Developer",
     "subtitle": "Experienced web developer passionate about Vue.js, React, Node.js, and modern JavaScript technologies.",
     "intro": {
       "title": "Professional Full Stack Developer",
@@ -245,6 +245,10 @@
       "title": "They Transformed Their Business With My Services",
       "subtitle": "Join 500+ satisfied entrepreneurs. Average rating 5.0/5.0 across all my services."
     },
+    "faq": {
+      "title": "Fiverr FAQ",
+      "subtitle": "Everything you need to know before ordering my services on Fiverr."
+    },
     "cta": {
       "title": "Stop Searching, You Found THE Right Developer",
       "subtitle": "Every day without action = lost opportunities. Launch your project NOW.",
@@ -263,7 +267,6 @@
     "findMeOn": "Connect on Social Media",
     "methods": {
       "email": "Email Address",
-      "phone": "Phone Number",
       "location": "Location",
       "responseTime": "Response within 24 hours",
       "availability": "Available for remote & freelance"
@@ -285,16 +288,23 @@
       }
     },
     "form": {
+      "title": "Send me a message",
       "name": "Your Name",
       "email": "Email Address",
       "subject": "Project Subject",
       "message": "Project Details",
+      "submit": "Send Message",
       "send": "Send Message",
       "sending": "Sending...",
       "success": "Message sent successfully! I'll respond within 24 hours.",
       "error": "Error sending message. Please try again or email directly.",
       "required": "This field is required",
-      "invalidEmail": "Please enter a valid email address"
+      "invalidEmail": "Please enter a valid email address",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters",
+        "emailInvalid": "Please enter a valid email address",
+        "messageMin": "Message must be at least 10 characters"
+      }
     },
     "info": {
       "title": "Let's Build Something Great",

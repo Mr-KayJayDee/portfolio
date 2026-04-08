@@ -5,40 +5,43 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section class="py-20 md:py-28 px-4">
+  <section class="py-24 md:py-32 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-14">
-        <span class="text-sm font-semibold text-brand-500 dark:text-brand-400 uppercase tracking-wider">{{ t('testimonials.title') }}</span>
-        <h2 class="text-3xl sm:text-4xl font-bold mt-2 text-gray-900 dark:text-white">{{ t('testimonials.title') }}</h2>
-        <p class="text-lg text-gray-500 dark:text-gray-400 mt-3 max-w-2xl mx-auto">{{ t('testimonials.subtitle') }}</p>
+      <div class="text-center mb-16">
+        <span class="font-mono text-sm text-brand-500 dark:text-brand-400 tracking-wider">// testimonials</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-500 bg-clip-text text-transparent">{{ t('testimonials.title') }}</h2>
+        <p class="text-lg text-gray-500 dark:text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">{{ t('testimonials.subtitle') }}</p>
 
         <!-- Stats row -->
-        <div class="flex justify-center gap-10 mt-10">
-          <div class="text-center">
-            <p class="text-4xl font-extrabold text-brand-500 dark:text-brand-400">{{ testimonialsStats.totalReviews }}</p>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ t('testimonials.stats.clients') }}</p>
+        <div class="flex justify-center gap-8 sm:gap-12 mt-12">
+          <div class="text-center group">
+            <p class="text-4xl sm:text-5xl font-black bg-gradient-to-b from-brand-400 to-brand-600 bg-clip-text text-transparent">{{ testimonialsStats.totalReviews }}</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-medium">{{ t('testimonials.stats.clients') }}</p>
           </div>
-          <div class="w-px bg-gray-200 dark:bg-gray-800" />
-          <div class="text-center">
-            <p class="text-4xl font-extrabold text-brand-500 dark:text-brand-400">{{ testimonialsStats.averageRating }}/5</p>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ t('testimonials.stats.rating') }}</p>
+          <div class="w-px bg-gradient-to-b from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
+          <div class="text-center group">
+            <p class="text-4xl sm:text-5xl font-black bg-gradient-to-b from-brand-400 to-brand-600 bg-clip-text text-transparent">{{ testimonialsStats.averageRating }}/5</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-medium">{{ t('testimonials.stats.rating') }}</p>
           </div>
-          <div class="w-px bg-gray-200 dark:bg-gray-800" />
-          <div class="text-center">
-            <p class="text-4xl font-extrabold text-brand-500 dark:text-brand-400">{{ testimonialsStats.projectsCompleted }}</p>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ t('testimonials.stats.projects') }}</p>
+          <div class="w-px bg-gradient-to-b from-transparent via-gray-300 dark:via-gray-700 to-transparent" />
+          <div class="text-center group">
+            <p class="text-4xl sm:text-5xl font-black bg-gradient-to-b from-brand-400 to-brand-600 bg-clip-text text-transparent">{{ testimonialsStats.projectsCompleted }}</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-medium">{{ t('testimonials.stats.projects') }}</p>
           </div>
         </div>
       </div>
 
       <!-- Horizontal scrolling testimonials -->
-      <div class="flex gap-6 overflow-x-auto pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide">
+      <div class="flex gap-5 overflow-x-auto overflow-y-visible pb-8 -mx-4 px-4 pt-2 snap-x snap-mandatory scrollbar-hide">
         <div
           v-for="(testimonial, index) in testimonials"
           :key="index"
-          class="flex-none w-[340px] sm:w-[380px] snap-start"
+          class="flex-none w-[340px] sm:w-[400px] snap-start"
         >
-          <div class="h-full rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 flex flex-col gap-4 transition-all duration-300 hover:border-brand-500/30 hover:shadow-lg hover:shadow-brand-500/5">
+          <div class="h-full relative rounded-2xl border border-gray-200/80 dark:border-gray-800/50 bg-white/80 dark:bg-gray-900/60 backdrop-blur-sm p-7 flex flex-col gap-5 transition-all duration-300 hover:border-brand-500/40 hover:shadow-xl hover:shadow-brand-500/10 hover:-translate-y-1">
+            <!-- Decorative quote mark -->
+            <div class="absolute top-5 right-6 text-6xl font-serif text-brand-500/10 dark:text-brand-400/10 leading-none select-none pointer-events-none" aria-hidden="true">"</div>
+
             <!-- Rating stars -->
             <div class="flex gap-1">
               <UIcon
@@ -51,23 +54,23 @@ const { t } = useI18n()
             </div>
 
             <!-- Quote -->
-            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed flex-1 italic">
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed flex-1 relative z-10">
               "{{ testimonial.content }}"
             </p>
 
             <!-- Author -->
-            <div class="flex items-center gap-3 pt-2 border-t border-gray-100 dark:border-gray-800">
+            <div class="flex items-center gap-3 pt-4 border-t border-gray-100 dark:border-gray-800/60">
               <NuxtImg
                 :src="testimonial.avatar"
                 :alt="testimonial.name"
                 width="40"
                 height="40"
-                class="rounded-full ring-2 ring-gray-100 dark:ring-gray-800"
+                class="rounded-full ring-2 ring-brand-500/20 dark:ring-brand-400/20"
                 loading="lazy"
               />
               <div>
                 <p class="font-semibold text-sm text-gray-900 dark:text-white">{{ testimonial.name }}</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">{{ testimonial.project_type }} - {{ testimonial.platform }}</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400 font-mono">{{ testimonial.project_type }} - {{ testimonial.platform }}</p>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ export type { SiteConfig, ContactInfo, SocialLink, FiverrService, FiverrConfig }
 
 export const siteConfig: SiteConfig = {
   name: 'Killian',
-  title: 'Killian - Full Stack Developer | Vue.js, React, Node.js Expert',
+  title: "Killian' DAL-CIN - Full Stack Developer | Vue.js, React, Node.js Expert",
   description:
     'Professional Full Stack Developer specializing in modern web development with Vue.js, React, Node.js. Expert in Discord bots, web applications, and custom software solutions.',
   author: 'Killian',
@@ -12,7 +12,6 @@ export const siteConfig: SiteConfig = {
 
   contact: {
     email: 'contact@killiandalcin.fr',
-    phone: '+33 6 49 19 38 16',
     location: 'France',
   },
 
@@ -92,7 +91,7 @@ export const siteConfig: SiteConfig = {
     },
     organization: {
       '@type': 'ProfessionalService',
-      name: 'Killian Dalcin - Developpeur Full Stack',
+      name: "Killian' DAL-CIN - Developpeur Full Stack",
       logo: 'https://killiandalcin.fr/logo.webp',
       priceRange: '$$$',
       aggregateRating: {

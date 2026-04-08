@@ -39,7 +39,7 @@ defineExpose({ openGallery })
 <template>
   <UModal v-model:open="isOpen" fullscreen>
     <template #content>
-      <div class="flex flex-col items-center justify-center h-full p-4 gap-4">
+      <div class="flex flex-col items-center justify-center h-full p-4 gap-4" @click.self="isOpen = false">
         <div class="flex items-center justify-between w-full max-w-4xl">
           <h3 class="text-lg font-semibold">{{ projectTitle }}</h3>
           <UButton

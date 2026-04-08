@@ -15,13 +15,13 @@
 - **D-02:** Mobile nav via UDrawer (Nuxt UI v3) — hamburger opens left-sliding drawer
 - **D-03:** Header sticky permanent
 - **D-04:** Language switch = simple text button FR/EN (toggle on click), no dropdown, no flags
-- **D-05:** Footer minimal — single band: copyright © 2026 Killian Dalcin + social icons (GitHub, LinkedIn, Fiverr)
+- **D-05:** Footer minimal — single band: copyright © 2026 Killian' DAL-CIN + social icons (GitHub, LinkedIn, Fiverr)
 - **D-06:** Enrich existing fr.json/en.json with nav, footer, SEO keys — one file per language
 - **D-07:** @nuxtjs/i18n already configured: strategy prefix_except_default, FR default, browser detection + cookie
 - **D-08:** Dark mode default for new visitors
 - **D-09:** Cookie persistence via @nuxtjs/color-mode — no localStorage, no FOUC
 - **D-10:** useSeoMeta() per route — unique title, description, og:title, og:description
-- **D-11:** JSON-LD on homepage: Person + ProfessionalService schema for Killian Dalcin
+- **D-11:** JSON-LD on homepage: Person + ProfessionalService schema for Killian' DAL-CIN
 - **D-12:** og:image dynamic via nuxt-og-image (advanced from SEOV2-01)
 - **D-13:** All public pages in sitemap except 404
 - **D-14:** hreflang FR/EN alternates automatic via @nuxtjs/sitemap + @nuxtjs/i18n integration
@@ -240,7 +240,7 @@ useHead({
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Person',
-        name: 'Killian Dalcin',
+        name: 'Killian' DAL-CIN',
         url: 'https://killiandalcin.fr',
         jobTitle: 'Développeur Full Stack Freelance',
         sameAs: [
@@ -326,7 +326,7 @@ useSeoMeta({
 // nuxt.config.ts
 site: {
   url: 'https://killiandalcin.fr',
-  name: 'Killian Dalcin — Développeur Full Stack',
+  name: 'Killian' DAL-CIN — Développeur Full Stack',
 },
 ```
 
@@ -423,7 +423,7 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://killiandalcin.fr',
-    name: 'Killian Dalcin — Développeur Full Stack',
+    name: 'Killian' DAL-CIN — Développeur Full Stack',
   },
 
   colorMode: {
@@ -549,7 +549,7 @@ useHead({
         {
           '@type': 'Person',
           '@id': 'https://killiandalcin.fr/#person',
-          name: 'Killian Dalcin',
+          name: 'Killian' DAL-CIN',
           url: 'https://killiandalcin.fr',
           jobTitle: 'Développeur Full Stack Freelance',
           email: 'contact@killiandalcin.fr',
@@ -561,7 +561,7 @@ useHead({
         {
           '@type': 'ProfessionalService',
           '@id': 'https://killiandalcin.fr/#service',
-          name: 'Killian Dalcin — Développeur Full Stack',
+          name: 'Killian' DAL-CIN — Développeur Full Stack',
           url: 'https://killiandalcin.fr',
           provider: { '@id': 'https://killiandalcin.fr/#person' },
           priceRange: '€€€',

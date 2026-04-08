@@ -46,7 +46,7 @@ Plans:
 Plans:
 - [x] 02-01-PLAN.md — Design system, color-mode, i18n translations, sitemap config
 - [ ] 02-02-PLAN.md — Header, footer, default layout with nav and toggles
-- [ ] 02-03-PLAN.md — Per-route SEO metadata and JSON-LD structured data
+- [x] 02-03-PLAN.md — Per-route SEO metadata and JSON-LD structured data
 **UI hint**: yes
 
 ### Phase 3: Pages & Ship

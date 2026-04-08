@@ -27,10 +27,10 @@
 
 ### SEO
 
-- [ ] **SEO-01**: Chaque page a un `<title>`, `<meta description>`, `og:title`, `og:description` uniques via `useSeoMeta()`
-- [ ] **SEO-02**: La page d'accueil inclut du JSON-LD structuré (Person / CreativeWork)
+- [x] **SEO-01**: Chaque page a un `<title>`, `<meta description>`, `og:title`, `og:description` uniques via `useSeoMeta()`
+- [x] **SEO-02**: La page d'accueil inclut du JSON-LD structuré (Person / CreativeWork)
 - [x] **SEO-03**: Le sitemap.xml est généré automatiquement avec les alternates i18n (hreflang)
-- [ ] **SEO-04**: Les og:image utilisent des URLs absolues et sont présentes sur chaque page
+- [x] **SEO-04**: Les og:image utilisent des URLs absolues et sont présentes sur chaque page
 
 ### Pages
 
@@ -116,10 +116,10 @@
 | THEME-01 | Phase 2 | Pending |
 | THEME-02 | Phase 2 | Complete |
 | THEME-03 | Phase 2 | Complete |
-| SEO-01 | Phase 2 | Pending |
-| SEO-02 | Phase 2 | Pending |
+| SEO-01 | Phase 2 | Complete |
+| SEO-02 | Phase 2 | Complete |
 | SEO-03 | Phase 2 | Complete |
-| SEO-04 | Phase 2 | Pending |
+| SEO-04 | Phase 2 | Complete |
 | COMP-05 | Phase 2 | Pending |
 | COMP-06 | Phase 2 | Pending |
 | PAGE-01 | Phase 3 | Pending |

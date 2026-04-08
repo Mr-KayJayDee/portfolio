@@ -18,8 +18,15 @@ export default defineNuxtConfig({
     locales: ['fr', 'en'],
     defaultLocale: 'fr'
   },
+  runtimeConfig: {
+    public: {
+      gtag: {
+        id: '',
+      },
+    },
+  },
   gtag: {
-    id: 'G-CDVVNFY6MV',
-    enabled: false
+    id: '',
+    enabled: process.env.NODE_ENV === 'production',
   }
 })

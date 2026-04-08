@@ -6,14 +6,16 @@ import type { Project } from '~~/shared/types'
  * Titles, descriptions, and long descriptions are resolved via i18n keys.
  */
 export function useProjects() {
-  const { t } = useI18n()
+  const { t, te } = useI18n()
 
   const projects = computed<Project[]>(() =>
     projectsData.map((p) => ({
       ...p,
       title: t(`projects.${p.id}.title`),
       description: t(`projects.${p.id}.description`),
-      longDescription: t(`projects.${p.id}.longDescription`) || undefined,
+      longDescription: te(`projects.${p.id}.longDescription`)
+        ? t(`projects.${p.id}.longDescription`)
+        : undefined,
     })),
   )
 

@@ -12,9 +12,12 @@ export default defineNuxtConfig({
     'nuxt-gtag',
     '@nuxt/image'
   ],
-  components: {
-    pathPrefix: false,
-  },
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
   typescript: {
     strict: true
   },

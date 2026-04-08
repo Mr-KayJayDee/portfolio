@@ -29,8 +29,8 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. `npx nuxi typecheck` and `npx eslint .` exit with 0 errors
 **Plans**: 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Nuxt 4, modules, TypeScript strict, interfaces
-- [ ] 01-02-PLAN.md — Migration donnees statiques + useProjects()
+- [x] 01-01-PLAN.md — Scaffold Nuxt 4, modules, TypeScript strict, interfaces
+- [x] 01-02-PLAN.md — Migration donnees statiques + useProjects()
 
 ### Phase 2: SSR Shell
 **Goal**: Every route renders the correct language, theme, and SEO metadata on the server — confirmed by `curl` with no JavaScript
@@ -44,8 +44,8 @@ Plans:
   5. `http://localhost:3000/sitemap.xml` returns a valid XML sitemap with `hreflang` alternates for FR and EN URLs
 **Plans**: 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Nuxt 4, modules, TypeScript strict, interfaces
-- [ ] 01-02-PLAN.md — Migration donnees statiques + useProjects()
+- [x] 01-01-PLAN.md — Scaffold Nuxt 4, modules, TypeScript strict, interfaces
+- [x] 01-02-PLAN.md — Migration donnees statiques + useProjects()
 **UI hint**: yes
 
 ### Phase 3: Pages & Ship

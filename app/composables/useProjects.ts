@@ -11,10 +11,10 @@ export function useProjects() {
   const projects = computed<Project[]>(() =>
     projectsData.map((p) => ({
       ...p,
-      title: t(`projects.${p.id}.title`),
-      description: t(`projects.${p.id}.description`),
-      longDescription: te(`projects.${p.id}.longDescription`)
-        ? t(`projects.${p.id}.longDescription`)
+      title: t(`projectData.${p.id}.title`),
+      description: t(`projectData.${p.id}.description`),
+      longDescription: te(`projectData.${p.id}.longDescription`)
+        ? t(`projectData.${p.id}.longDescription`)
         : undefined,
     })),
   )

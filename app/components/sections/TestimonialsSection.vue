@@ -8,22 +8,22 @@ const { t } = useI18n()
   <section class="py-16 px-4">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold mb-4">{{ t('home.testimonials.title') }}</h2>
-        <p class="text-lg text-muted max-w-2xl mx-auto">{{ t('home.testimonials.subtitle') }}</p>
+        <h2 class="text-3xl font-bold mb-4">{{ t('testimonials.title') }}</h2>
+        <p class="text-lg text-muted max-w-2xl mx-auto">{{ t('testimonials.subtitle') }}</p>
 
         <!-- Stats -->
         <div class="flex justify-center gap-8 mt-8">
           <div class="text-center">
             <p class="text-3xl font-bold text-primary">{{ testimonialsStats.totalReviews }}</p>
-            <p class="text-sm text-muted">{{ t('home.testimonials.stats.clients') }}</p>
+            <p class="text-sm text-muted">{{ t('testimonials.stats.clients') }}</p>
           </div>
           <div class="text-center">
             <p class="text-3xl font-bold text-primary">{{ testimonialsStats.averageRating }}/5</p>
-            <p class="text-sm text-muted">{{ t('home.testimonials.stats.rating') }}</p>
+            <p class="text-sm text-muted">{{ t('testimonials.stats.rating') }}</p>
           </div>
           <div class="text-center">
             <p class="text-3xl font-bold text-primary">{{ testimonialsStats.projectsCompleted }}</p>
-            <p class="text-sm text-muted">{{ t('home.testimonials.stats.projects') }}</p>
+            <p class="text-sm text-muted">{{ t('testimonials.stats.projects') }}</p>
           </div>
         </div>
       </div>

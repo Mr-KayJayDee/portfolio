@@ -428,5 +428,10 @@
         ]
       }
     }
+  },
+  "error": {
+    "notFound": "Oups ! Cette page est introuvable.",
+    "generic": "Une erreur est survenue.",
+    "backHome": "Retour a l'accueil"
   }
 }

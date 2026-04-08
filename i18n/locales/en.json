@@ -428,5 +428,10 @@
         ]
       }
     }
+  },
+  "error": {
+    "notFound": "Oops! This page could not be found.",
+    "generic": "An error occurred.",
+    "backHome": "Back to home"
   }
 }

@@ -34,9 +34,9 @@
 
 ### Pages
 
-- [ ] **PAGE-01**: Page Landing `/` — hero, projets vedettes, services, CTA
-- [ ] **PAGE-02**: Page Projects `/projects` — liste de projets avec filtres (recherche + catégorie)
-- [ ] **PAGE-03**: Page Project Detail `/project/[id]` — détail projet avec galerie modale d'images
+- [x] **PAGE-01**: Page Landing `/` — hero, projets vedettes, services, CTA
+- [x] **PAGE-02**: Page Projects `/projects` — liste de projets avec filtres (recherche + catégorie)
+- [x] **PAGE-03**: Page Project Detail `/project/[id]` — détail projet avec galerie modale d'images
 - [ ] **PAGE-04**: Page About `/about` — biographie, tech stack badges
 - [ ] **PAGE-05**: Page Contact `/contact` — formulaire avec validation + envoi EmailJS
 - [ ] **PAGE-06**: Page Fiverr `/fiverr` — landing services, cards, FAQ accordion, CTA
@@ -122,9 +122,9 @@
 | SEO-04 | Phase 2 | Complete |
 | COMP-05 | Phase 2 | Complete |
 | COMP-06 | Phase 2 | Complete |
-| PAGE-01 | Phase 3 | Pending |
-| PAGE-02 | Phase 3 | Pending |
-| PAGE-03 | Phase 3 | Pending |
+| PAGE-01 | Phase 3 | Complete |
+| PAGE-02 | Phase 3 | Complete |
+| PAGE-03 | Phase 3 | Complete |
 | PAGE-04 | Phase 3 | Pending |
 | PAGE-05 | Phase 3 | Pending |
 | PAGE-06 | Phase 3 | Pending |

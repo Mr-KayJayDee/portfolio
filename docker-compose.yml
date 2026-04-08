@@ -5,12 +5,17 @@ services:
     restart: unless-stopped
     environment:
       - TZ=Europe/Paris
+      - NUXT_SMTP_HOST=${NUXT_SMTP_HOST}
+      - NUXT_SMTP_USER=${NUXT_SMTP_USER}
+      - NUXT_SMTP_PASS=${NUXT_SMTP_PASS}
+      - NUXT_SMTP_TO=${NUXT_SMTP_TO}
+      - NUXT_PUBLIC_GTAG_ID=${NUXT_PUBLIC_GTAG_ID}
     networks:
       - public
     labels:
       - 'traefik.enable=true'
       - 'com.centurylinklabs.watchtower.enable=false'
-      - 'traefik.http.services.portfolio.loadbalancer.server.port=80'
+      - 'traefik.http.services.portfolio.loadbalancer.server.port=3000'
       # Main router (non-www)
       - 'traefik.http.routers.portfolio.rule=Host(`${PORTFOLIO_URL}`)'
       - 'traefik.http.routers.portfolio.entrypoints=websecure'

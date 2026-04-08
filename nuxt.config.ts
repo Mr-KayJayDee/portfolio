@@ -15,8 +15,18 @@ export default defineNuxtConfig({
     strict: true
   },
   i18n: {
-    locales: ['fr', 'en'],
-    defaultLocale: 'fr'
+    strategy: 'prefix_except_default',
+    defaultLocale: 'fr',
+    locales: [
+      { code: 'fr', language: 'fr-FR', file: 'fr.json' },
+      { code: 'en', language: 'en-US', file: 'en.json' },
+    ],
+    langDir: 'locales/',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    },
   },
   runtimeConfig: {
     public: {

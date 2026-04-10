@@ -27,7 +27,10 @@
   3. `package.json` ne contient ni `"latest"` ni `"*"` dans les deps
   4. `siteConfig.seo.organization.aggregateRating.reviewCount` correspond a `testimonials.totalReviews`
   5. 10 requetes POST rapides sur `/api/contact` → les dernieres sont rejetees (rate limit)
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Delete static sitemap, pin deps, fix data inconsistencies
+- [ ] 01-02-PLAN.md — Migrate Dockerfile to pnpm, add contact API rate limiting
 
 ### Phase 2: Content
 **Goal**: Un visiteur comprend immediatement que Killian est dev Hytale, peut voir les services/prix, et lire des temoignages clients
@@ -71,7 +74,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Cleanup & Fixes | 0/? | Not started | - |
+| 1. Cleanup & Fixes | 0/2 | Planning complete | - |
 | 2. Content | 0/? | Not started | - |
 | 3. SEO & i18n | 0/? | Not started | - |
 | 4. Ship | 0/? | Not started | - |

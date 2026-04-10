@@ -58,13 +58,13 @@ export const siteConfig: SiteConfig = {
       },
       {
         id: 'telegram-bot',
-        url: '#',
+        url: 'https://www.fiverr.com/users/mr_kayjaydee',
         image: '/images/fiverr/telegram_bot.webp',
         price: '$20',
       },
       {
         id: 'website-development',
-        url: '#',
+        url: 'https://www.fiverr.com/users/mr_kayjaydee',
         image: '/images/fiverr/website.webp',
         price: '$50',
       },
@@ -96,7 +96,7 @@ export const siteConfig: SiteConfig = {
       priceRange: '$$$',
       aggregateRating: {
         ratingValue: '5',
-        reviewCount: '50',
+        reviewCount: '10',
       },
     },
   },

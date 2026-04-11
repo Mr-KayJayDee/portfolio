@@ -42,7 +42,11 @@ Plans:
   3. `app/data/site.ts` contient `jobTitle: 'Hytale Plugin Developer'`
   4. Les temoignages apparaissent sur la homepage ET la page Hytale
   5. Tout le contenu est bilingue — `curl localhost:3000/en/hytale` retourne du contenu anglais
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 02-01-PLAN.md — Types, data files, site.ts config, i18n keys (foundation)
+- [ ] 02-02-PLAN.md — Hero refonte Hytale, testimonials featured prop, nav link
+- [ ] 02-03-PLAN.md — Hytale page creation with pricing, services, and sections
 **UI hint**: yes
 
 ### Phase 3: SEO & i18n
@@ -75,6 +79,6 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Cleanup & Fixes | 0/2 | Planning complete | - |
-| 2. Content | 0/? | Not started | - |
+| 2. Content | 0/3 | Planning complete | - |
 | 3. SEO & i18n | 0/? | Not started | - |
 | 4. Ship | 0/? | Not started | - |

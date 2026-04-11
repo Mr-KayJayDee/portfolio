@@ -85,10 +85,18 @@ export interface FiverrConfig {
   services: FiverrService[]
 }
 
+export interface PricingTier {
+  id: string
+  priceFixed: string | null
+  priceLabel?: string
+  featured?: boolean
+}
+
 export interface SiteConfig {
   name: string
   title: string
   description: string
+  jobTitle?: string
   author: string
   contact: ContactInfo
   social: SocialLink[]

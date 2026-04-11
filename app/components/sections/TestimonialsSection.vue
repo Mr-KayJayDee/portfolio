@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import { testimonials, testimonialsStats } from '~/data/testimonials'
 
+const props = defineProps<{
+  featured?: boolean
+}>()
+
 const { t } = useI18n()
+
+const displayed = computed(() => props.featured ? testimonials.filter(t => t.featured) : testimonials)
 </script>
 
 <template>
@@ -34,7 +40,7 @@ const { t } = useI18n()
       <!-- Horizontal scrolling testimonials -->
       <div class="flex gap-5 overflow-x-auto overflow-y-visible pb-8 -mx-4 px-4 pt-2 snap-x snap-mandatory scrollbar-hide">
         <div
-          v-for="(testimonial, index) in testimonials"
+          v-for="(testimonial, index) in displayed"
           :key="index"
           class="flex-none w-[340px] sm:w-[400px] snap-start"
         >

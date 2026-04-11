@@ -4,10 +4,11 @@
     "projects": "Projects",
     "about": "About",
     "contact": "Contact",
-    "fiverr": "Fiverr"
+    "fiverr": "Fiverr",
+    "hytale": "Hytale"
   },
   "footer": {
-    "copyright": "\u00a9 2026 Killian' DAL-CIN",
+    "copyright": "© 2026 Killian' DAL-CIN",
     "navigation": "Quick Links",
     "services": "Services",
     "legalNotices": "Legal Notices",
@@ -20,11 +21,11 @@
     }
   },
   "a11y": {
-    "logoLabel": "Killian' DAL-CIN \u2014 Full Stack Developer \u2014 Back to homepage",
+    "logoLabel": "Killian' DAL-CIN — Full Stack Developer — Back to homepage",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "closeDrawer": "Close menu",
-    "langToggle": "Change language \u2014 currently English",
+    "langToggle": "Change language — currently English",
     "themeDark": "Switch to light mode",
     "themeLight": "Switch to dark mode",
     "gitea": "Killian' DAL-CIN on Gitea (opens in new tab)",
@@ -33,32 +34,38 @@
   },
   "seo": {
     "home": {
-      "title": "Killian' DAL-CIN \u2014 Freelance Full Stack Developer",
+      "title": "Killian' DAL-CIN — Freelance Full Stack Developer",
       "description": "Portfolio of Killian' DAL-CIN, freelance full stack developer specializing in Vue.js, React and Node.js. High-performance web applications and custom solutions."
     },
     "projects": {
-      "title": "Projects \u2014 Killian' DAL-CIN",
+      "title": "Projects — Killian' DAL-CIN",
       "description": "Discover my web development projects: Vue.js applications, Node.js APIs, Discord bots and enterprise solutions."
     },
     "about": {
-      "title": "About \u2014 Killian' DAL-CIN",
+      "title": "About — Killian' DAL-CIN",
       "description": "Biography and skills of Killian' DAL-CIN, freelance full stack developer based in France."
     },
     "contact": {
-      "title": "Contact \u2014 Killian' DAL-CIN",
+      "title": "Contact — Killian' DAL-CIN",
       "description": "Contact Killian' DAL-CIN to discuss your web development project."
     },
     "fiverr": {
-      "title": "Fiverr Services \u2014 Killian' DAL-CIN",
+      "title": "Fiverr Services — Killian' DAL-CIN",
       "description": "Development services available on Fiverr: Discord bots, Minecraft plugins, web applications."
+    },
+    "hytale": {
+      "title": "Custom Hytale Plugins | Killian' DAL-CIN",
+      "description": "High-performance custom Hytale plugin development. From simple plugins to complex projects, solutions tailored to your server."
     }
   },
   "home": {
-    "title": "Expert Full Stack Developer for Hire | Vue.js, React & Node.js Specialist",
-    "subtitle": "I turn your ideas into high-performance web apps that drive real results. Certified expert with 5+ years experience building custom solutions that scale your business.",
+    "title": "Hytale Plugin Developer",
+    "subtitle": "High-performance, custom plugins for your Hytale server",
     "cta": {
       "viewProjects": "Explore My Success Stories",
-      "contactMe": "Get Free Quote in 24h"
+      "contactMe": "Get Free Quote in 24h",
+      "discord": "Join on Discord",
+      "contact": "Contact me"
     },
     "featuredProjects": {
       "title": "Web Applications That Deliver Results",
@@ -90,6 +97,16 @@
       "subtitle": "Let's discuss your project requirements and build something amazing together.",
       "startProject": "Start a Conversation",
       "learnMore": "Explore My Success Stories"
+    },
+    "badge": {
+      "available": "Available for projects"
+    },
+    "stats": {
+      "projects": "25+ projects",
+      "rating": "5.0 rating"
+    },
+    "terminal": {
+      "role": "Hytale Plugin Developer"
     }
   },
   "projects": {
@@ -315,9 +332,9 @@
   },
   "projectData": {
     "virtual-tour": {
-      "title": "Virtual Tour - Interactive 360\u00b0 Experience",
-      "description": "My high school teacher and me had an idea to create a Virtual tour with 360\u00b0 videos to allow everyone to visit the school from the web.",
-      "longDescription": "Collaborative project with my high school teacher to create an immersive virtual tour experience of our school. Uses 360\u00b0 videos to provide interactive navigation.",
+      "title": "Virtual Tour - Interactive 360° Experience",
+      "description": "My high school teacher and me had an idea to create a Virtual tour with 360° videos to allow everyone to visit the school from the web.",
+      "longDescription": "Collaborative project with my high school teacher to create an immersive virtual tour experience of our school. Uses 360° videos to provide interactive navigation.",
       "buttons": {
         "visit": "Visit"
       }
@@ -392,8 +409,9 @@
     "subtitle": "Over 10 successfully delivered projects. Discover authentic testimonials from satisfied clients.",
     "stats": {
       "clients": "Satisfied Clients",
-      "rating": "Average Rating",
-      "projects": "Projects Delivered"
+      "rating": "average rating",
+      "projects": "projects delivered",
+      "reviews": "client reviews"
     },
     "ctaTitle": "Join My Satisfied Clients",
     "ctaSubtitle": "Your project deserves the same level of excellence and professionalism.",
@@ -403,7 +421,9 @@
     "card": {
       "featured": "Featured Testimonial",
       "results": "Results achieved:"
-    }
+    },
+    "label": "// testimonials",
+    "empty": "No testimonials available yet."
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -443,5 +463,91 @@
     "notFound": "Oops! This page could not be found.",
     "generic": "An error occurred.",
     "backHome": "Back to home"
+  },
+  "hytale": {
+    "hero": {
+      "label": "// hytale",
+      "title": "Custom Hytale Plugins",
+      "subtitle": "High-performance plugin development for your Hytale server, from design to delivery."
+    },
+    "services": {
+      "label": "// services",
+      "title": "Hytale Expertise",
+      "subtitle": "Solutions tailored to every need",
+      "items": {
+        "plugin": {
+          "title": "Plugin Development",
+          "description": "Custom Hytale plugins, from simple features to complex systems. Performant and optimized code for your server."
+        },
+        "config": {
+          "title": "Server Configuration",
+          "description": "Setup and optimization of your Hytale server. Advanced configuration, plugin integration and maximum performance."
+        },
+        "support": {
+          "title": "Maintenance & Support",
+          "description": "Ongoing support for your plugins and server. Updates, bug fixes and monitoring for a seamless experience."
+        }
+      }
+    },
+    "pricing": {
+      "label": "// pricing",
+      "title": "Pricing",
+      "subtitle": "Transparent pricing for every project",
+      "cta": "Request a quote",
+      "popular": "Popular",
+      "from": "From",
+      "perMonth": "/month",
+      "onQuote": "Custom quote",
+      "simple": {
+        "name": "Simple Plugin",
+        "description": "A basic plugin with simple features",
+        "features": [
+          "Basic features",
+          "Simple configuration",
+          "Documentation included",
+          "30-day support"
+        ]
+      },
+      "complex": {
+        "name": "Complex Plugin",
+        "description": "An advanced plugin with complex systems",
+        "features": [
+          "Advanced systems",
+          "API integration",
+          "Comprehensive testing",
+          "60-day support"
+        ]
+      },
+      "custom": {
+        "name": "Custom Development",
+        "description": "A fully customized project",
+        "features": [
+          "Custom architecture",
+          "Unlimited features",
+          "Priority support",
+          "Maintenance included"
+        ]
+      },
+      "maintenance": {
+        "name": "Maintenance & Support",
+        "description": "Ongoing support for your plugins",
+        "features": [
+          "Regular updates",
+          "Bug fixes",
+          "Technical support",
+          "Monitoring"
+        ]
+      },
+      "web": {
+        "name": "Web Development",
+        "description": "Websites and apps for your community",
+        "features": [
+          "Responsive website",
+          "SEO optimized",
+          "Admin dashboard",
+          "Discord integration"
+        ]
+      }
+    }
   }
 }

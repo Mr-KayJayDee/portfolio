@@ -4,9 +4,10 @@ export type { SiteConfig, ContactInfo, SocialLink, FiverrService, FiverrConfig }
 
 export const siteConfig: SiteConfig = {
   name: 'Killian',
-  title: "Killian' DAL-CIN - Full Stack Developer | Vue.js, React, Node.js Expert",
+  title: "Killian' DAL-CIN - Hytale Plugin Developer | Freelance",
   description:
     'Professional Full Stack Developer specializing in modern web development with Vue.js, React, Node.js. Expert in Discord bots, web applications, and custom software solutions.',
+  jobTitle: 'Hytale Plugin Developer',
   author: 'Killian',
   url: 'https://killiandalcin.fr',
 
@@ -91,12 +92,12 @@ export const siteConfig: SiteConfig = {
     },
     organization: {
       '@type': 'ProfessionalService',
-      name: "Killian' DAL-CIN - Developpeur Full Stack",
+      name: "Killian' DAL-CIN - Hytale Plugin Developer",
       logo: 'https://killiandalcin.fr/logo.webp',
       priceRange: '$$$',
       aggregateRating: {
         ratingValue: '5',
-        reviewCount: '10',
+        reviewCount: '5',
       },
     },
   },

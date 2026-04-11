@@ -63,7 +63,7 @@ useHead({
 
     <!-- Testimonials Section -->
     <div class="relative bg-gray-50/50 dark:bg-gray-900/20">
-      <TestimonialsSection />
+      <TestimonialsSection featured />
     </div>
 
     <!-- FAQ Section -->

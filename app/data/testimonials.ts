@@ -25,6 +25,7 @@ export const testimonials: Testimonial[] = [
       "Travail excellent, Communication au top, Disponible en tout temps, réactif et à l'écoute je le recommande vivement et reviendrai vers lui si je dois refaire un projet similaire !",
     date: '22/04/2023',
     platform: 'Fiverr',
+    featured: true,
     project_type: 'Bot Discord',
     results: ["Prix: Jusqu'à 50€", 'Durée: 4 jours', 'Communication parfaite'],
   },
@@ -51,6 +52,7 @@ export const testimonials: Testimonial[] = [
       'Excellent développeur, la commande fut plus rapide que prévu la communication est instantané et le résultat est parfait. Je recommande fortement et reviendrai sûrement pour des mise à jour !',
     date: '12/11/2022',
     platform: 'Fiverr',
+    featured: true,
     project_type: 'Bot Discord',
     results: [
       'Livraison plus rapide que prévu',
@@ -73,7 +75,7 @@ export const testimonials: Testimonial[] = [
 ]
 
 export const testimonialsStats: TestimonialsStats = {
-  totalReviews: 10,
+  totalReviews: 5,
   averageRating: 5.0,
   projectsCompleted: 25,
 }

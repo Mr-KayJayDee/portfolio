@@ -4,27 +4,28 @@
     "projects": "Projets",
     "about": "A propos",
     "contact": "Contact",
-    "fiverr": "Fiverr"
+    "fiverr": "Fiverr",
+    "hytale": "Hytale"
   },
   "footer": {
-    "copyright": "\u00a9 2026 Killian' DAL-CIN",
+    "copyright": "© 2026 Killian' DAL-CIN",
     "navigation": "Liens Rapides",
     "services": "Services",
-    "legalNotices": "Mentions L\u00e9gales",
-    "privacyPolicy": "Politique de Confidentialit\u00e9",
+    "legalNotices": "Mentions Légales",
+    "privacyPolicy": "Politique de Confidentialité",
     "servicesList": {
-      "webDev": "D\u00e9veloppement Web",
+      "webDev": "Développement Web",
       "mobileApps": "Applications Mobiles",
-      "apiBackend": "D\u00e9veloppement API",
+      "apiBackend": "Développement API",
       "consulting": "Consulting Tech"
     }
   },
   "a11y": {
-    "logoLabel": "Killian' DAL-CIN \u2014 Developpeur Full Stack \u2014 Retour a l'accueil",
+    "logoLabel": "Killian' DAL-CIN — Developpeur Full Stack — Retour a l'accueil",
     "openMenu": "Ouvrir le menu de navigation",
     "closeMenu": "Fermer le menu de navigation",
     "closeDrawer": "Fermer le menu",
-    "langToggle": "Changer la langue \u2014 actuellement Francais",
+    "langToggle": "Changer la langue — actuellement Francais",
     "themeDark": "Activer le mode clair",
     "themeLight": "Activer le mode sombre",
     "gitea": "Gitea de Killian' DAL-CIN (nouvelle fenetre)",
@@ -33,216 +34,232 @@
   },
   "seo": {
     "home": {
-      "title": "Killian' DAL-CIN \u2014 Developpeur Full Stack Freelance",
+      "title": "Killian' DAL-CIN — Developpeur Full Stack Freelance",
       "description": "Portfolio de Killian' DAL-CIN, developpeur full stack freelance specialise en Vue.js, React et Node.js. Applications web performantes et solutions sur-mesure."
     },
     "projects": {
-      "title": "Projets \u2014 Killian' DAL-CIN",
+      "title": "Projets — Killian' DAL-CIN",
       "description": "Decouvrez mes realisations en developpement web : applications Vue.js, API Node.js, bots Discord et solutions d'entreprise."
     },
     "about": {
-      "title": "A propos \u2014 Killian' DAL-CIN",
+      "title": "A propos — Killian' DAL-CIN",
       "description": "Biographie et competences de Killian' DAL-CIN, developpeur full stack freelance base en France."
     },
     "contact": {
-      "title": "Contact \u2014 Killian' DAL-CIN",
+      "title": "Contact — Killian' DAL-CIN",
       "description": "Contactez Killian' DAL-CIN pour discuter de votre projet de developpement web."
     },
     "fiverr": {
-      "title": "Services Fiverr \u2014 Killian' DAL-CIN",
+      "title": "Services Fiverr — Killian' DAL-CIN",
       "description": "Services de developpement disponibles sur Fiverr : bots Discord, plugins Minecraft, applications web."
+    },
+    "hytale": {
+      "title": "Plugins Hytale sur-mesure | Killian' DAL-CIN",
+      "description": "Developpement de plugins Hytale performants et sur-mesure. Du plugin simple au projet complexe, des solutions adaptees a votre serveur."
     }
   },
   "home": {
-    "title": "D\u00e9veloppeur Full Stack Freelance Vue.js, React & Node.js",
-    "subtitle": "Je transforme vos id\u00e9es en applications web performantes qui g\u00e9n\u00e8rent des r\u00e9sultats. Expert certifi\u00e9 avec +5 ans d'exp\u00e9rience, je cr\u00e9e des solutions sur-mesure qui propulsent votre business.",
+    "title": "Hytale Plugin Developer",
+    "subtitle": "Des plugins performants et sur-mesure pour votre serveur Hytale",
     "cta": {
-      "viewProjects": "D\u00e9couvrir Mes R\u00e9alisations",
-      "contactMe": "Devis Gratuit Sous 24h"
+      "viewProjects": "Découvrir Mes Réalisations",
+      "contactMe": "Devis Gratuit Sous 24h",
+      "discord": "Rejoindre sur Discord",
+      "contact": "Me contacter"
     },
     "featuredProjects": {
       "title": "Applications Web Qui Cartonnent",
-      "subtitle": "Portfolio de projets r\u00e9els qui ont transform\u00e9 des id\u00e9es en succ\u00e8s. Applications Vue.js ultra-rapides, plateformes React scalables, API Node.js robustes.",
+      "subtitle": "Portfolio de projets réels qui ont transformé des idées en succès. Applications Vue.js ultra-rapides, plateformes React scalables, API Node.js robustes.",
       "viewAll": "Explorer Tous les Projets"
     },
     "services": {
-      "title": "Services Premium de D\u00e9veloppement Web",
-      "subtitle": "Solutions cl\u00e9s en main qui boostent votre croissance. Technologies de pointe + m\u00e9thodologie \u00e9prouv\u00e9e = succ\u00e8s garanti pour votre projet digital.",
+      "title": "Services Premium de Développement Web",
+      "subtitle": "Solutions clés en main qui boostent votre croissance. Technologies de pointe + méthodologie éprouvée = succès garanti pour votre projet digital.",
       "webDev": {
         "title": "Applications Web Vue.js/React Sur-Mesure",
-        "description": "Cr\u00e9ation d'applications web lightning-fast qui convertissent. SPA modernes, PWA offline-first, e-commerce haute conversion. SEO-friendly d\u00e8s la conception."
+        "description": "Création d'applications web lightning-fast qui convertissent. SPA modernes, PWA offline-first, e-commerce haute conversion. SEO-friendly dès la conception."
       },
       "mobileApps": {
         "title": "Apps Mobiles Cross-Platform Rentables",
-        "description": "Une seule codebase = iOS + Android + Web. React Native pour des apps natives performantes. 60% d'\u00e9conomie vs d\u00e9veloppement natif."
+        "description": "Une seule codebase = iOS + Android + Web. React Native pour des apps natives performantes. 60% d'économie vs développement natif."
       },
       "optimization": {
         "title": "Optimisation Performance & SEO Technique",
-        "description": "Boostez votre visibilit\u00e9 Google et vos conversions. Core Web Vitals optimis\u00e9s, temps de chargement <2s. +250% de trafic organique en moyenne."
+        "description": "Boostez votre visibilité Google et vos conversions. Core Web Vitals optimisés, temps de chargement <2s. +250% de trafic organique en moyenne."
       },
       "maintenance": {
         "title": "Maintenance Proactive & Support 24/7",
-        "description": "Dormez tranquille, je veille sur vos apps. Monitoring temps r\u00e9el, patches s\u00e9curit\u00e9 automatiques, backups quotidiens. 99.9% uptime garanti."
+        "description": "Dormez tranquille, je veille sur vos apps. Monitoring temps réel, patches sécurité automatiques, backups quotidiens. 99.9% uptime garanti."
       }
     },
     "cta2": {
-      "title": "Vous Cherchez un D\u00e9veloppeur Full Stack ?",
+      "title": "Vous Cherchez un Développeur Full Stack ?",
       "subtitle": "Discutons de vos besoins de projet et construisons quelque chose d'incroyable ensemble.",
-      "startProject": "D\u00e9marrer une Conversation",
-      "learnMore": "D\u00e9couvrir Mes Succ\u00e8s"
+      "startProject": "Démarrer une Conversation",
+      "learnMore": "Découvrir Mes Succès"
+    },
+    "badge": {
+      "available": "Disponible pour vos projets"
+    },
+    "stats": {
+      "projects": "25+ projets",
+      "rating": "Note 5.0"
+    },
+    "terminal": {
+      "role": "Hytale Plugin Developer"
     }
   },
   "projects": {
-    "title": "Portfolio de D\u00e9veloppement Web",
-    "subtitle": "Parcourez mes projets de d\u00e9veloppement full stack incluant des applications Vue.js, sites React, API Node.js, bots Discord et solutions d'entreprise.",
+    "title": "Portfolio de Développement Web",
+    "subtitle": "Parcourez mes projets de développement full stack incluant des applications Vue.js, sites React, API Node.js, bots Discord et solutions d'entreprise.",
     "categories": {
       "all": "Tous les Projets",
-      "webdevelopment": "D\u00e9veloppement Web",
-      "botdevelopment": "D\u00e9veloppement de Bot",
+      "webdevelopment": "Développement Web",
+      "botdevelopment": "Développement de Bot",
       "opensource": "Open Source",
       "enterprisesoftware": "Logiciel d'Entreprise",
-      "socialmediabot": "Bots R\u00e9seaux Sociaux",
+      "socialmediabot": "Bots Réseaux Sociaux",
       "automation": "Outils d'Automatisation"
     },
     "buttons": {
       "website": "Site en Direct",
       "repository": "Code Source",
       "npmpackage": "Package NPM",
-      "viewProject": "Voir les D\u00e9tails"
+      "viewProject": "Voir les Détails"
     },
     "projectDetail": {
       "backToProjects": "Retour aux Projets",
-      "viewDemo": "Voir la D\u00e9mo",
+      "viewDemo": "Voir la Démo",
       "sourceCode": "Code Source",
       "share": "Partager",
-      "aboutProject": "\u00c0 propos du Projet",
-      "keyFeatures": "Fonctionnalit\u00e9s Principales",
-      "technologiesUsed": "Technologies Utilis\u00e9es",
+      "aboutProject": "À propos du Projet",
+      "keyFeatures": "Fonctionnalités Principales",
+      "technologiesUsed": "Technologies Utilisées",
       "gallery": "Galerie",
       "projectInfo": "Informations du Projet",
       "date": "Date",
-      "category": "Cat\u00e9gorie",
+      "category": "Catégorie",
       "status": "Statut",
       "relatedProjects": "Projets Similaires"
     },
     "noResults": {
-      "title": "Aucun projet trouv\u00e9",
-      "description": "Essayez de modifier vos crit\u00e8res de recherche ou de filtrage."
+      "title": "Aucun projet trouvé",
+      "description": "Essayez de modifier vos critères de recherche ou de filtrage."
     }
   },
   "about": {
-    "title": "\u00c0 propos de Killian'- D\u00e9veloppeur Full Stack",
-    "subtitle": "D\u00e9veloppeur web exp\u00e9riment\u00e9 passionn\u00e9 par Vue.js, React, Node.js et les technologies JavaScript modernes.",
+    "title": "À propos de Killian'- Développeur Full Stack",
+    "subtitle": "Développeur web expérimenté passionné par Vue.js, React, Node.js et les technologies JavaScript modernes.",
     "intro": {
-      "title": "D\u00e9veloppeur Full Stack Professionnel",
-      "content": "Je suis Killian, un d\u00e9veloppeur full stack exp\u00e9riment\u00e9 sp\u00e9cialis\u00e9 dans les technologies JavaScript. Avec une expertise en Vue.js, React, Node.js et TypeScript, je cr\u00e9e des applications web \u00e9volutives, des API RESTful et des syst\u00e8mes temps r\u00e9el."
+      "title": "Développeur Full Stack Professionnel",
+      "content": "Je suis Killian, un développeur full stack expérimenté spécialisé dans les technologies JavaScript. Avec une expertise en Vue.js, React, Node.js et TypeScript, je crée des applications web évolutives, des API RESTful et des systèmes temps réel."
     },
     "skills": {
-      "title": "Comp\u00e9tences Techniques & Expertise",
+      "title": "Compétences Techniques & Expertise",
       "programming": "Langages de Programmation",
       "frontend": "Technologies Frontend",
       "backend": "Technologies Backend",
       "tools": "DevOps & Outils",
-      "systems": "Syst\u00e8mes d'Exploitation"
+      "systems": "Systèmes d'Exploitation"
     },
     "experience": {
-      "title": "Exp\u00e9rience Professionnelle",
-      "content": "Des ann\u00e9es d'exp\u00e9rience professionnelle en d\u00e9veloppement web construisant des applications d'entreprise, des plateformes e-commerce, des produits SaaS et des solutions logicielles personnalis\u00e9es."
+      "title": "Expérience Professionnelle",
+      "content": "Des années d'expérience professionnelle en développement web construisant des applications d'entreprise, des plateformes e-commerce, des produits SaaS et des solutions logicielles personnalisées."
     },
     "approach": {
-      "title": "Philosophie de D\u00e9veloppement",
-      "subtitle": "Mon approche du d\u00e9veloppement full stack se concentre sur le code propre, l'architecture \u00e9volutive et l'exp\u00e9rience utilisateur exceptionnelle.",
+      "title": "Philosophie de Développement",
+      "subtitle": "Mon approche du développement full stack se concentre sur le code propre, l'architecture évolutive et l'expérience utilisateur exceptionnelle.",
       "performance": {
-        "title": "D\u00e9veloppement Ax\u00e9 Performance",
-        "description": "Code optimis\u00e9, lazy loading, code splitting et strat\u00e9gies de cache. Scores Lighthouse parfaits et m\u00e9triques Core Web Vitals."
+        "title": "Développement Axé Performance",
+        "description": "Code optimisé, lazy loading, code splitting et stratégies de cache. Scores Lighthouse parfaits et métriques Core Web Vitals."
       },
       "architecture": {
-        "title": "Architecture \u00c9volutive",
-        "description": "Microservices, fonctions serverless et mod\u00e8les de conception modulaires. Applications qui \u00e9voluent avec votre entreprise."
+        "title": "Architecture Évolutive",
+        "description": "Microservices, fonctions serverless et modèles de conception modulaires. Applications qui évoluent avec votre entreprise."
       },
       "quality": {
-        "title": "Qualit\u00e9 du Code & Tests",
-        "description": "D\u00e9veloppement pilot\u00e9 par les tests (TDD), tests automatis\u00e9s, int\u00e9gration continue (CI/CD) et revues de code compl\u00e8tes."
+        "title": "Qualité du Code & Tests",
+        "description": "Développement piloté par les tests (TDD), tests automatisés, intégration continue (CI/CD) et revues de code complètes."
       },
       "collaboration": {
         "title": "Collaboration Agile",
-        "description": "Excellente communication, m\u00e9thodologies agiles et gestion de projet transparente. Mises \u00e0 jour r\u00e9guli\u00e8res et r\u00e9solution collaborative de probl\u00e8mes."
+        "description": "Excellente communication, méthodologies agiles et gestion de projet transparente. Mises à jour régulières et résolution collaborative de problèmes."
       }
     },
     "cta": {
-      "title": "Vous Cherchez un D\u00e9veloppeur Full Stack ?",
+      "title": "Vous Cherchez un Développeur Full Stack ?",
       "description": "Discutons de vos besoins de projet et construisons quelque chose d'incroyable ensemble.",
-      "button": "D\u00e9marrer une Conversation"
+      "button": "Démarrer une Conversation"
     }
   },
   "fiverr": {
-    "title": "Services Fiverr Premium - D\u00e9veloppeur Top Rated Seller",
-    "subtitle": "500+ commandes livr\u00e9es. 100% satisfaction client. R\u00e9ponse <1h. Support FR/EN 24/7. Expert certifi\u00e9 en bots Discord, plugins Minecraft et d\u00e9veloppement web.",
+    "title": "Services Fiverr Premium - Développeur Top Rated Seller",
+    "subtitle": "500+ commandes livrées. 100% satisfaction client. Réponse <1h. Support FR/EN 24/7. Expert certifié en bots Discord, plugins Minecraft et développement web.",
     "profileCta": "Commander Maintenant sur Fiverr",
     "stats": {
       "rating": "Note Parfaite 5/5"
     },
     "pricing": {
-      "startingAt": "D\u00e8s"
+      "startingAt": "Dès"
     },
     "services": {
       "title": "Services Premium",
-      "subtitle": "Solutions professionnelles livr\u00e9es en temps record. Chaque service inclut : code source complet, documentation d\u00e9taill\u00e9e, support 30 jours, r\u00e9visions illimit\u00e9es.",
+      "subtitle": "Solutions professionnelles livrées en temps record. Chaque service inclut : code source complet, documentation détaillée, support 30 jours, révisions illimitées.",
       "features": "Ce Qui Est Inclus",
       "orderNow": "Commander Ce Service",
-      "learnMore": "Voir Tous les D\u00e9tails",
+      "learnMore": "Voir Tous les Détails",
       "moreFeatures": "avantages premium inclus",
-      "comingSoon": "Disponible Bient\u00f4t",
-      "available": "Disponible Imm\u00e9diatement"
+      "comingSoon": "Disponible Bientôt",
+      "available": "Disponible Immédiatement"
     },
     "serviceData": {
       "discord-bot": {
         "title": "Bot Discord Ultra-Complet | #1 Best-Seller",
-        "description": "Le bot Discord de vos r\u00eaves, cod\u00e9 par un expert. Transformez votre serveur en communaut\u00e9 ultra-active.",
+        "description": "Le bot Discord de vos rêves, codé par un expert. Transformez votre serveur en communauté ultra-active.",
         "features": [
-          "Syst\u00e8me de mod\u00e9ration IA avanc\u00e9 (anti-spam, anti-raid, auto-mod intelligent)",
+          "Système de modération IA avancé (anti-spam, anti-raid, auto-mod intelligent)",
           "Mini-jeux addictifs : casino, RPG, quiz avec leaderboards globaux",
-          "Lecteur musique HD : Spotify, YouTube, SoundCloud, avec playlist sauvegard\u00e9es",
+          "Lecteur musique HD : Spotify, YouTube, SoundCloud, avec playlist sauvegardées",
           "Interface web moderne pour configuration facile (dashboard React inclus)",
-          "H\u00e9bergement VPS premium OFFERT pendant 3 mois"
+          "Hébergement VPS premium OFFERT pendant 3 mois"
         ]
       },
       "minecraft-plugin": {
         "title": "Plugin Minecraft Java Premium | Spigot/Paper Expert",
-        "description": "Plugins Minecraft sur-mesure qui transforment votre serveur en exp\u00e9rience unique. Compatible 1.8 \u2192 1.20+, optimis\u00e9 pour gros serveurs (1000+ joueurs).",
+        "description": "Plugins Minecraft sur-mesure qui transforment votre serveur en expérience unique. Compatible 1.8 → 1.20+, optimisé pour gros serveurs (1000+ joueurs).",
         "features": [
-          "Gameplay r\u00e9volutionnaire : donjons proc\u00e9duraux, boss custom, sorts magiques",
-          "\u00c9conomie avanc\u00e9e : boutiques GUI, auction house, m\u00e9tiers avec XP",
-          "Syst\u00e8mes de progression : levels, skills, classes RPG personnalisables",
-          "Base de donn\u00e9es optimis\u00e9e MySQL/Redis pour performances maximales",
+          "Gameplay révolutionnaire : donjons procéduraux, boss custom, sorts magiques",
+          "Économie avancée : boutiques GUI, auction house, métiers avec XP",
+          "Systèmes de progression : levels, skills, classes RPG personnalisables",
+          "Base de données optimisée MySQL/Redis pour performances maximales",
           "Multi-serveurs : BungeeCord/Velocity ready avec synchronisation"
         ]
       },
       "telegram-bot": {
         "title": "Bot Telegram Pro Business | Automatisation Puissante",
-        "description": "Bot Telegram professionnel qui booste votre business. Parfait pour e-commerce, support client, communaut\u00e9s.",
+        "description": "Bot Telegram professionnel qui booste votre business. Parfait pour e-commerce, support client, communautés.",
         "features": [
-          "IA conversationnelle : ChatGPT int\u00e9gr\u00e9 pour r\u00e9ponses naturelles",
+          "IA conversationnelle : ChatGPT intégré pour réponses naturelles",
           "E-commerce complet : catalogue produits, panier, paiements Stripe/PayPal",
           "Broadcasting intelligent : segments utilisateurs, A/B testing, analytics",
-          "Multi-langues automatique avec d\u00e9tection et traduction DeepL",
-          "S\u00e9curit\u00e9 maximale : 2FA, encryption, RGPD compliant"
+          "Multi-langues automatique avec détection et traduction DeepL",
+          "Sécurité maximale : 2FA, encryption, RGPD compliant"
         ]
       },
       "website-development": {
         "title": "Site Web Premium Vue.js/React | SEO-First & Ultra-Rapide",
-        "description": "Sites web nouvelle g\u00e9n\u00e9ration qui convertissent. Design premium, performance maximale, SEO optimis\u00e9.",
+        "description": "Sites web nouvelle génération qui convertissent. Design premium, performance maximale, SEO optimisé.",
         "features": [
           "Design UI/UX premium : mockups Figma + animations modernes",
-          "Performance extr\u00eame : chargement <1.5s",
-          "Responsive parfait : test\u00e9 sur 50+ appareils diff\u00e9rents",
-          "SEO surpuissant : schema markup, sitemap, meta optimis\u00e9es",
+          "Performance extrême : chargement <1.5s",
+          "Responsive parfait : testé sur 50+ appareils différents",
+          "SEO surpuissant : schema markup, sitemap, meta optimisées",
           "E-commerce ready : Stripe, PayPal, cryptos (si besoin)"
         ]
       }
     },
     "testimonials": {
-      "title": "Ils Ont Transform\u00e9 Leur Business Avec Mes Services",
+      "title": "Ils Ont Transformé Leur Business Avec Mes Services",
       "subtitle": "Rejoignez 500+ entrepreneurs satisfaits. Note moyenne 5.0/5.0 sur l'ensemble de mes services."
     },
     "faq": {
@@ -250,41 +267,41 @@
       "subtitle": "Tout ce que vous devez savoir avant de commander mes services sur Fiverr."
     },
     "cta": {
-      "title": "Arr\u00eatez de Chercher, Vous Avez Trouv\u00e9 LE Bon D\u00e9veloppeur",
-      "subtitle": "Chaque jour sans agir = opportunit\u00e9s perdues. Lancez votre projet MAINTENANT.",
-      "button": "R\u00e9server Ma Commande Maintenant"
+      "title": "Arrêtez de Chercher, Vous Avez Trouvé LE Bon Développeur",
+      "subtitle": "Chaque jour sans agir = opportunités perdues. Lancez votre projet MAINTENANT.",
+      "button": "Réserver Ma Commande Maintenant"
     }
   },
   "contact": {
-    "title": "Contacter D\u00e9veloppeur Full Stack",
-    "subtitle": "Contactez-moi pour des projets de d\u00e9veloppement web, du travail freelance ou une consultation technique. Estimation de projet et consultation gratuites disponibles.",
+    "title": "Contacter Développeur Full Stack",
+    "subtitle": "Contactez-moi pour des projets de développement web, du travail freelance ou une consultation technique. Estimation de projet et consultation gratuites disponibles.",
     "stats": {
-      "responseTime": "R\u00e9ponse Rapide",
+      "responseTime": "Réponse Rapide",
       "satisfaction": "Satisfaction Client",
-      "collaboration": "Port\u00e9e Mondiale"
+      "collaboration": "Portée Mondiale"
     },
     "quickContact": "Contact Rapide",
-    "findMeOn": "Connectez-vous sur les R\u00e9seaux Sociaux",
+    "findMeOn": "Connectez-vous sur les Réseaux Sociaux",
     "methods": {
       "email": "Adresse Email",
       "location": "Localisation",
-      "responseTime": "R\u00e9ponse sous 24 heures",
+      "responseTime": "Réponse sous 24 heures",
       "availability": "Disponible pour remote & freelance"
     },
     "faq": {
-      "title": "Questions Fr\u00e9quemment Pos\u00e9es",
-      "subtitle": "Questions courantes sur mes services de d\u00e9veloppement web et mon processus de travail.",
+      "title": "Questions Fréquemment Posées",
+      "subtitle": "Questions courantes sur mes services de développement web et mon processus de travail.",
       "responseTime": {
-        "title": "Quel est votre d\u00e9lai de r\u00e9ponse typique ?",
-        "description": "Je r\u00e9ponds \u00e0 toutes les demandes dans les 24 heures. Pour les projets urgents, je suis disponible pour une consultation imm\u00e9diate."
+        "title": "Quel est votre délai de réponse typique ?",
+        "description": "Je réponds à toutes les demandes dans les 24 heures. Pour les projets urgents, je suis disponible pour une consultation immédiate."
       },
       "projectTypes": {
-        "title": "Quels types de projets g\u00e9rez-vous ?",
-        "description": "Applications web full stack, API REST, bots Discord, sites e-commerce, plateformes SaaS et solutions logicielles personnalis\u00e9es."
+        "title": "Quels types de projets gérez-vous ?",
+        "description": "Applications web full stack, API REST, bots Discord, sites e-commerce, plateformes SaaS et solutions logicielles personnalisées."
       },
       "collaboration": {
-        "title": "Travaillez-vous \u00e0 distance ?",
-        "description": "Oui, je travaille avec des clients du monde entier. Collaboration \u00e0 distance via Slack, Discord, Zoom et outils de gestion de projet."
+        "title": "Travaillez-vous à distance ?",
+        "description": "Oui, je travaille avec des clients du monde entier. Collaboration à distance via Slack, Discord, Zoom et outils de gestion de projet."
       }
     },
     "form": {
@@ -292,12 +309,12 @@
       "name": "Votre Nom",
       "email": "Adresse Email",
       "subject": "Sujet du Projet",
-      "message": "D\u00e9tails du Projet",
+      "message": "Détails du Projet",
       "submit": "Envoyer le Message",
       "send": "Envoyer le Message",
       "sending": "Envoi en cours...",
-      "success": "Message envoy\u00e9 avec succ\u00e8s ! Je r\u00e9pondrai dans les 24 heures.",
-      "error": "Erreur lors de l'envoi du message. Veuillez r\u00e9essayer ou envoyer un email directement.",
+      "success": "Message envoyé avec succès ! Je répondrai dans les 24 heures.",
+      "error": "Erreur lors de l'envoi du message. Veuillez réessayer ou envoyer un email directement.",
       "required": "Ce champ est requis",
       "invalidEmail": "Veuillez entrer une adresse email valide",
       "validation": {
@@ -308,70 +325,70 @@
     },
     "info": {
       "title": "Construisons Quelque Chose de Grand",
-      "description": "Que vous ayez besoin d'une application Vue.js, d'un site React, d'une API Node.js ou d'une solution logicielle personnalis\u00e9e, je suis l\u00e0 pour donner vie \u00e0 votre vision.",
+      "description": "Que vous ayez besoin d'une application Vue.js, d'un site React, d'une API Node.js ou d'une solution logicielle personnalisée, je suis là pour donner vie à votre vision.",
       "email": "Email",
       "social": "Profils Sociaux"
     }
   },
   "projectData": {
     "virtual-tour": {
-      "title": "Visite Virtuelle - Exp\u00e9rience 360\u00b0 Interactive",
-      "description": "Mon professeur de lyc\u00e9e et moi avons eu l'id\u00e9e de cr\u00e9er une visite virtuelle avec des vid\u00e9os 360\u00b0 pour permettre \u00e0 tous de visiter l'\u00e9cole depuis le web.",
-      "longDescription": "Projet collaboratif avec mon professeur de lyc\u00e9e pour cr\u00e9er une exp\u00e9rience de visite virtuelle immersive de notre \u00e9tablissement. Utilise des vid\u00e9os 360\u00b0 pour offrir une navigation interactive.",
+      "title": "Visite Virtuelle - Expérience 360° Interactive",
+      "description": "Mon professeur de lycée et moi avons eu l'idée de créer une visite virtuelle avec des vidéos 360° pour permettre à tous de visiter l'école depuis le web.",
+      "longDescription": "Projet collaboratif avec mon professeur de lycée pour créer une expérience de visite virtuelle immersive de notre établissement. Utilise des vidéos 360° pour offrir une navigation interactive.",
       "buttons": {
         "visit": "Visiter"
       }
     },
     "xinko": {
       "title": "Xinko - Bot Discord Polyvalent",
-      "description": "Xinko est un bot polyvalent qui peut vous aider \u00e0 cr\u00e9er et g\u00e9rer vos serveurs Discord avec facilit\u00e9 et plaisir.",
-      "longDescription": "Bot Discord complet con\u00e7u pour simplifier la gestion des serveurs. Xinko offre une large gamme de commandes pour la mod\u00e9ration, le divertissement, l'utilitaire et la gestion communautaire.",
+      "description": "Xinko est un bot polyvalent qui peut vous aider à créer et gérer vos serveurs Discord avec facilité et plaisir.",
+      "longDescription": "Bot Discord complet conçu pour simplifier la gestion des serveurs. Xinko offre une large gamme de commandes pour la modération, le divertissement, l'utilitaire et la gestion communautaire.",
       "buttons": {
         "invite": "Inviter"
       }
     },
     "image-manipulation": {
       "title": "Manipulation d'Images - Package NPM",
-      "description": "Discord Image Generation : Package NPM pour la manipulation d'images bas\u00e9e sur le code. Initialement une API, maintenant open-source.",
-      "longDescription": "Package NPM open-source pour la g\u00e9n\u00e9ration et manipulation d'images programmatique.",
+      "description": "Discord Image Generation : Package NPM pour la manipulation d'images basée sur le code. Initialement une API, maintenant open-source.",
+      "longDescription": "Package NPM open-source pour la génération et manipulation d'images programmatique.",
       "buttons": {
-        "repository": "D\u00e9p\u00f4t",
+        "repository": "Dépôt",
         "npm package": "Package NPM"
       }
     },
     "primate-web-admin": {
       "title": "Primate Web Admin - Interface de Gestion",
-      "description": "Primate Web Admin est une interface Web pour g\u00e9rer Primate qui est un outil de d\u00e9ploiement similaire \u00e0 Munki pour Windows.",
-      "longDescription": "Interface d'administration web moderne pour Primate, un syst\u00e8me de d\u00e9ploiement de logiciels pour environnements Windows.",
+      "description": "Primate Web Admin est une interface Web pour gérer Primate qui est un outil de déploiement similaire à Munki pour Windows.",
+      "longDescription": "Interface d'administration web moderne pour Primate, un système de déploiement de logiciels pour environnements Windows.",
       "buttons": {}
     },
     "instagram-bot": {
-      "title": "Bot Instagram - Automatisation Compl\u00e8te",
-      "description": "Bot Instagram enti\u00e8rement fonctionnel utilisant Insta.js par androz2091. Il poss\u00e8de de nombreuses commandes.",
-      "longDescription": "Bot d'automatisation Instagram d\u00e9velopp\u00e9 avec la biblioth\u00e8que Insta.js d'androz2091.",
+      "title": "Bot Instagram - Automatisation Complète",
+      "description": "Bot Instagram entièrement fonctionnel utilisant Insta.js par androz2091. Il possède de nombreuses commandes.",
+      "longDescription": "Bot d'automatisation Instagram développé avec la bibliothèque Insta.js d'androz2091.",
       "buttons": {
-        "repository": "D\u00e9p\u00f4t"
+        "repository": "Dépôt"
       }
     },
     "crowdin-status-bot": {
       "title": "Bot de Statut Crowdin - Suivi des Traductions",
-      "description": "Un bot qui r\u00e9cup\u00e8re le statut des traductions Crowdin et met \u00e0 jour les messages Discord avec le dernier statut.",
-      "longDescription": "Bot Discord sp\u00e9cialis\u00e9 dans le suivi automatique des projets de traduction Crowdin.",
+      "description": "Un bot qui récupère le statut des traductions Crowdin et met à jour les messages Discord avec le dernier statut.",
+      "longDescription": "Bot Discord spécialisé dans le suivi automatique des projets de traduction Crowdin.",
       "buttons": {
-        "repository": "D\u00e9p\u00f4t"
+        "repository": "Dépôt"
       }
     },
     "flowboard": {
       "title": "FlowBoard - Clone de Trello",
-      "description": "FlowBoard est une solution compl\u00e8te de gestion de projet pour rationaliser les t\u00e2ches, la collaboration d'\u00e9quipe et le suivi des progr\u00e8s.",
-      "longDescription": "FlowBoard r\u00e9volutionne la collaboration d'\u00e9quipe et la gestion de projet avec sa suite compl\u00e8te d'outils.",
+      "description": "FlowBoard est une solution complète de gestion de projet pour rationaliser les tâches, la collaboration d'équipe et le suivi des progrès.",
+      "longDescription": "FlowBoard révolutionne la collaboration d'équipe et la gestion de projet avec sa suite complète d'outils.",
       "buttons": {}
     }
   },
   "common": {
     "loading": "Chargement...",
     "error": "Une erreur s'est produite",
-    "retry": "R\u00e9essayer",
+    "retry": "Réessayer",
     "close": "Fermer",
     "save": "Sauvegarder",
     "cancel": "Annuler",
@@ -381,60 +398,63 @@
     "view": "Voir",
     "back": "Retour",
     "next": "Suivant",
-    "previous": "Pr\u00e9c\u00e9dent",
+    "previous": "Précédent",
     "search": "Rechercher",
     "filter": "Filtrer",
     "sort": "Trier",
-    "reset": "R\u00e9initialiser"
+    "reset": "Réinitialiser"
   },
   "testimonials": {
     "title": "Ce Que Disent Mes Clients",
-    "subtitle": "Plus de 10 projets livr\u00e9s avec succ\u00e8s. D\u00e9couvrez les t\u00e9moignages authentiques de clients satisfaits.",
+    "subtitle": "Plus de 10 projets livrés avec succès. Découvrez les témoignages authentiques de clients satisfaits.",
     "stats": {
       "clients": "Clients Satisfaits",
-      "rating": "Note Moyenne",
-      "projects": "Projets Livr\u00e9s"
+      "rating": "note moyenne",
+      "projects": "projets livres",
+      "reviews": "avis clients"
     },
     "ctaTitle": "Rejoignez Mes Clients Satisfaits",
-    "ctaSubtitle": "Votre projet m\u00e9rite le m\u00eame niveau d'excellence et de professionnalisme.",
-    "ctaText": "D\u00e9marrer Mon Projet",
+    "ctaSubtitle": "Votre projet mérite le même niveau d'excellence et de professionnalisme.",
+    "ctaText": "Démarrer Mon Projet",
     "reviewsLink": "https://www.fiverr.com/mr_kayjaydee",
     "reviewsText": "Voir Tous les Avis",
     "card": {
-      "featured": "T\u00e9moignage Vedette",
-      "results": "R\u00e9sultats obtenus :"
-    }
+      "featured": "Témoignage Vedette",
+      "results": "Résultats obtenus :"
+    },
+    "label": "// temoignages",
+    "empty": "Aucun temoignage disponible pour l'instant."
   },
   "faq": {
-    "title": "Questions Fr\u00e9quentes",
-    "subtitle": "Trouvez rapidement les r\u00e9ponses \u00e0 vos questions les plus courantes",
-    "keyPoints": "Points cl\u00e9s :",
+    "title": "Questions Fréquentes",
+    "subtitle": "Trouvez rapidement les réponses à vos questions les plus courantes",
+    "keyPoints": "Points clés :",
     "homeFaq": {
       "delivery": {
-        "question": "Quels sont vos d\u00e9lais de livraison typiques ?",
-        "answer": "Les d\u00e9lais varient selon la complexit\u00e9 du projet. Bot Discord simple : 3-5 jours. Site vitrine : 1-2 semaines. Application web complexe : 4-8 semaines.",
+        "question": "Quels sont vos délais de livraison typiques ?",
+        "answer": "Les délais varient selon la complexité du projet. Bot Discord simple : 3-5 jours. Site vitrine : 1-2 semaines. Application web complexe : 4-8 semaines.",
         "features": [
-          "Planning d\u00e9taill\u00e9 fourni",
-          "Mises \u00e0 jour quotidiennes",
+          "Planning détaillé fourni",
+          "Mises à jour quotidiennes",
           "Livraison souvent en avance"
         ]
       },
       "maintenance": {
-        "question": "Proposez-vous de la maintenance apr\u00e8s livraison ?",
-        "answer": "Absolument ! Chaque projet inclut une p\u00e9riode de maintenance gratuite. Je propose \u00e9galement des contrats de maintenance mensuels.",
+        "question": "Proposez-vous de la maintenance après livraison ?",
+        "answer": "Absolument ! Chaque projet inclut une période de maintenance gratuite. Je propose également des contrats de maintenance mensuels.",
         "features": [
           "Support gratuit selon le package",
-          "Mises \u00e0 jour de s\u00e9curit\u00e9",
+          "Mises à jour de sécurité",
           "Monitoring 24/7 disponible"
         ]
       },
       "companies": {
         "question": "Travaillez-vous avec des entreprises de toutes tailles ?",
-        "answer": "Oui ! De la startup au grand groupe, j'adapte mes services \u00e0 vos besoins et votre budget.",
+        "answer": "Oui ! De la startup au grand groupe, j'adapte mes services à vos besoins et votre budget.",
         "features": [
           "Solutions sur-mesure",
-          "Tarifs adapt\u00e9s",
-          "Accompagnement personnalis\u00e9"
+          "Tarifs adaptés",
+          "Accompagnement personnalisé"
         ]
       }
     }
@@ -443,5 +463,91 @@
     "notFound": "Oups ! Cette page est introuvable.",
     "generic": "Une erreur est survenue.",
     "backHome": "Retour a l'accueil"
+  },
+  "hytale": {
+    "hero": {
+      "label": "// hytale",
+      "title": "Plugins Hytale sur-mesure",
+      "subtitle": "Developpement de plugins performants pour votre serveur Hytale, de la conception a la livraison."
+    },
+    "services": {
+      "label": "// services",
+      "title": "Expertise Hytale",
+      "subtitle": "Des solutions adaptees a chaque besoin",
+      "items": {
+        "plugin": {
+          "title": "Developpement de Plugins",
+          "description": "Plugins Hytale sur-mesure, des fonctionnalites simples aux systemes complexes. Code performant et optimise pour votre serveur."
+        },
+        "config": {
+          "title": "Configuration Serveur",
+          "description": "Mise en place et optimisation de votre serveur Hytale. Configuration avancee, integration de plugins et performances maximales."
+        },
+        "support": {
+          "title": "Maintenance & Support",
+          "description": "Support continu pour vos plugins et votre serveur. Mises a jour, corrections de bugs et monitoring pour une experience sans faille."
+        }
+      }
+    },
+    "pricing": {
+      "label": "// tarifs",
+      "title": "Tarifs",
+      "subtitle": "Des offres transparentes pour chaque projet",
+      "cta": "Demander un devis",
+      "popular": "Populaire",
+      "from": "A partir de",
+      "perMonth": "/mois",
+      "onQuote": "Sur devis",
+      "simple": {
+        "name": "Plugin Simple",
+        "description": "Un plugin basique avec des fonctionnalites simples",
+        "features": [
+          "Fonctionnalites de base",
+          "Configuration simple",
+          "Documentation incluse",
+          "Support 30 jours"
+        ]
+      },
+      "complex": {
+        "name": "Plugin Complexe",
+        "description": "Un plugin avance avec des systemes complexes",
+        "features": [
+          "Systemes avances",
+          "Integration API",
+          "Tests complets",
+          "Support 60 jours"
+        ]
+      },
+      "custom": {
+        "name": "Developpement Sur-Mesure",
+        "description": "Un projet entierement personnalise",
+        "features": [
+          "Architecture sur-mesure",
+          "Fonctionnalites illimitees",
+          "Support prioritaire",
+          "Maintenance incluse"
+        ]
+      },
+      "maintenance": {
+        "name": "Maintenance & Support",
+        "description": "Support continu pour vos plugins",
+        "features": [
+          "Mises a jour regulieres",
+          "Corrections de bugs",
+          "Support technique",
+          "Monitoring"
+        ]
+      },
+      "web": {
+        "name": "Developpement Web",
+        "description": "Sites web et applications pour votre communaute",
+        "features": [
+          "Site responsive",
+          "SEO optimise",
+          "Dashboard admin",
+          "Integration Discord"
+        ]
+      }
+    }
   }
 }

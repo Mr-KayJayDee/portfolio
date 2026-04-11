@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import { siteConfig } from '~/data/site'
+
 const { t } = useI18n()
 const localePath = useLocalePath()
+
+const discordUrl = siteConfig.social.find(s => s.name === 'Discord')?.url ?? '#'
 </script>
 
 <template>
@@ -27,16 +31,14 @@ const localePath = useLocalePath()
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75" />
               <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500" />
             </span>
-            <span class="text-sm font-medium text-brand-700 dark:text-brand-400">Available for projects</span>
+            <span class="text-sm font-medium text-brand-700 dark:text-brand-400">{{ t('home.badge.available') }}</span>
           </div>
 
           <div class="space-y-4">
             <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
-              <span class="text-gray-900 dark:text-white">{{ t('home.title').split(' ').slice(0, -2).join(' ') }}
-              </span>
               <span
                 class="bg-gradient-to-r from-brand-500 via-brand-400 to-emerald-400 bg-clip-text text-transparent">{{
-                  t('home.title').split(' ').slice(-2).join(' ') }}</span>
+                  t('home.title') }}</span>
             </h1>
             <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed">
               {{ t('home.subtitle') }}
@@ -45,27 +47,23 @@ const localePath = useLocalePath()
 
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-3">
-            <NuxtLink
-              :to="localePath('/projects')"
-              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm transition-all duration-200 shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40"
+            <UButton
+              :to="discordUrl"
+              target="_blank"
+              rel="noopener"
+              color="primary"
+              icon="i-simple-icons-discord"
+              size="lg"
             >
-              {{ t('home.cta.viewProjects') }}
-              <UIcon name="i-lucide-arrow-right" class="w-4 h-4" />
-            </NuxtLink>
-            <NuxtLink
-              :to="localePath('/fiverr')"
-              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-brand-500/50 hover:text-brand-500 font-semibold text-sm transition-all duration-200"
-            >
-              {{ t('nav.fiverr') }}
-              <UIcon name="i-lucide-external-link" class="w-4 h-4" />
-            </NuxtLink>
-            <NuxtLink
+              {{ t('home.cta.discord') }}
+            </UButton>
+            <UButton
               :to="localePath('/contact')"
-              class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-gray-600 dark:text-gray-400 hover:text-brand-500 font-semibold text-sm transition-all duration-200"
+              variant="outline"
+              size="lg"
             >
-              {{ t('home.cta.contactMe') }}
-              <UIcon name="i-lucide-message-circle" class="w-4 h-4" />
-            </NuxtLink>
+              {{ t('home.cta.contact') }}
+            </UButton>
           </div>
         </div>
 
@@ -101,7 +99,7 @@ const localePath = useLocalePath()
                 </div>
                 <div class="pl-6">
                   <span class="text-purple-500 dark:text-purple-400">role</span><span class="text-gray-500">: </span>
-                  <span class="text-amber-600 dark:text-amber-400">'Full Stack Dev'</span><span
+                  <span class="text-amber-600 dark:text-amber-400">'{{ t('home.terminal.role') }}'</span><span
                     class="text-gray-500">,</span>
                 </div>
                 <div class="pl-6">
@@ -144,12 +142,12 @@ const localePath = useLocalePath()
             <div
               class="absolute -top-4 -right-4 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg text-xs font-medium flex items-center gap-2">
               <span class="w-2 h-2 rounded-full bg-brand-500" />
-              <span class="text-gray-700 dark:text-gray-300">50+ projects</span>
+              <span class="text-gray-700 dark:text-gray-300">{{ t('home.stats.projects') }}</span>
             </div>
             <div
               class="absolute -bottom-3 -left-3 px-3 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg text-xs font-medium flex items-center gap-2">
               <UIcon name="i-lucide-star" class="text-yellow-400 w-3.5 h-3.5" />
-              <span class="text-gray-700 dark:text-gray-300">5.0 rating</span>
+              <span class="text-gray-700 dark:text-gray-300">{{ t('home.stats.rating') }}</span>
             </div>
           </div>
         </div>

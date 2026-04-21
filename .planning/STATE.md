@@ -1,15 +1,16 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.1
-milestone_name: SEO Hytale — Autorité & Contenu
-status: In Progress
-last_updated: "2026-04-22T00:30:00.000Z"
+milestone: v1.0
+milestone_name: milestone
+status: Context gathered — ready for /gsd-plan-phase 6
+last_updated: "2026-04-21T22:41:50.383Z"
+last_activity: "2026-04-22 — Phase 6 context captured (bd33e64): grille cards, TOC sticky+drawer, surround() prev/next, draft:true pour test article, nav link Blog"
 progress:
-  total_phases: 4
-  completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
-  percent: 25
+  total_phases: 8
+  completed_phases: 3
+  total_plans: 7
+  completed_plans: 9
+  percent: 100
 ---
 
 # Project State
@@ -26,7 +27,7 @@ Phase: Phase 6 — Blog Pages
 Plan: —
 Status: Context gathered — ready for /gsd-plan-phase 6
 Last activity: 2026-04-22 — Phase 6 context captured (bd33e64): grille cards, TOC sticky+drawer, surround() prev/next, draft:true pour test article, nav link Blog
-Resume file: .planning/phases/06-blog-pages/06-CONTEXT.md
+Resume file: .planning/phases/06-blog-pages/06-UI-SPEC.md
 
 ## Accumulated Context
 

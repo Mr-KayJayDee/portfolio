@@ -24,8 +24,9 @@ progress:
 
 Phase: Phase 6 — Blog Pages
 Plan: —
-Status: Ready to plan Phase 6
-Last activity: 2026-04-22 — Phase 5 verified complete (UAT 7/7 pass after 3 post-UAT fixes)
+Status: Context gathered — ready for /gsd-plan-phase 6
+Last activity: 2026-04-22 — Phase 6 context captured (bd33e64): grille cards, TOC sticky+drawer, surround() prev/next, draft:true pour test article, nav link Blog
+Resume file: .planning/phases/06-blog-pages/06-CONTEXT.md
 
 ## Accumulated Context
 

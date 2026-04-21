@@ -6,7 +6,7 @@ const { data: page } = await useAsyncData('test', () =>
 
 <template>
   <div class="min-h-screen bg-white dark:bg-neutral-950">
-    <div class="mx-auto max-w-3xl px-8 py-16">
+    <div class="mx-auto max-w-6xl px-8 py-16">
       <header class="mb-10">
         <div class="mb-3 text-xs font-semibold uppercase tracking-widest text-neutral-400">
           Renderer Test

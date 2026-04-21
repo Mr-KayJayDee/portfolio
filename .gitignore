@@ -34,3 +34,4 @@ coverage
 .nuxt
 .output
 .env
+.data

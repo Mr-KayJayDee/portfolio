@@ -3,12 +3,14 @@ const { locale } = useI18n()
 const route = useRoute()
 
 const slug = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug
-const path = `/blog/${slug}`
+const isFr = locale.value === 'fr'
+const collection = isFr ? 'blog_fr' : 'blog_en'
+// blog_fr prefix = /blog, blog_en prefix = /en/blog (aligned with content.config.ts)
+const path = isFr ? `/blog/${slug}` : `/en/blog/${slug}`
 
-const { data: page } = await useAsyncData(`blog-${locale.value}-${slug}`, () => {
-  const collection = locale.value === 'fr' ? 'blog_fr' : 'blog_en'
-  return queryCollection(collection).path(path).first()
-})
+const { data: page } = await useAsyncData(`blog-${locale.value}-${slug}`, () =>
+  queryCollection(collection).path(path).first()
+)
 
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Article introuvable' })

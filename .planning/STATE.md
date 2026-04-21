@@ -1,15 +1,15 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-status: Complete
+milestone: v1.1
+milestone_name: SEO Hytale — Autorité & Contenu
+status: In Progress
 last_updated: "2026-04-21T00:00:00.000Z"
 progress:
-  total_phases: 4
-  completed_phases: 4
-  total_plans: 7
-  completed_plans: 7
-  percent: 100
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
@@ -22,10 +22,15 @@ progress:
 
 ## Current Focus
 
-Milestone M1 complet — déployé en production sur killiandalcin.fr
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-04-21 — Milestone v1.1 started
 
-## Session Notes
+## Accumulated Context
 
-- Project initialized 2026-04-10 with codebase mapping + 4-agent research
-- Brownfield: Nuxt 4 SSR portfolio already functional, needs content pivot to Hytale + SEO fixes
-- Phase 1 vérifiée complète le 2026-04-21 (commits appliqués hors GSD tracking)
+- M1 complet — déployé en production sur killiandalcin.fr
+- Stack : Nuxt 4 SSR + Nuxt UI v3 + Tailwind v4 + pnpm
+- Blog/CMS était Out of Scope en M1, promu en priorité principale pour M1.1
+- Renderer markdown doit supporter : syntax highlighting, images, embeds, tables, alerts — utiliser un package existant (ex: @nuxtjs/mdc ou @nuxt/content)
+- Objectif double : ranker sur "Hytale plugin developer" ET capter trafic longue traîne via contenu communauté

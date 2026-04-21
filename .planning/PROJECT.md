@@ -8,6 +8,17 @@ Portfolio professionnel de Killian' Dalcin, developpeur freelance specialise en 
 
 Le portfolio doit positionner Killian comme LE developpeur de plugins Hytale professionnel — pas un "dev web freelance generique" perdu parmi 500 000 autres. Chaque page doit etre crawlable sans JavaScript (SSR), avec un SEO optimise pour le marche Hytale.
 
+## Current Milestone: v1.1 — SEO Hytale — Autorité & Contenu
+
+**Goal:** Dominer les requêtes Hytale sur Google via un blog markdown complet (tutos, guides, news) combiné à un SEO on-page renforcé — deux leviers pour ranker sur les mots-clés directs ET capter le trafic longue traîne.
+
+**Target features:**
+- Blog markdown avec renderer complet (syntax highlighting, images, embeds, tables, alerts)
+- Articles Hytale bilingues FR/EN (tutos, guides, contenus communauté)
+- SEO par article : JSON-LD Article, og:image, canonical, sitemap étendu
+- Cocon sémantique : liens internes blog ↔ page /hytale
+- Open Graph peaufiné par article
+
 ## Requirements
 
 ### Validated
@@ -39,7 +50,7 @@ Le portfolio doit positionner Killian comme LE developpeur de plugins Hytale pro
 ### Out of Scope
 
 - Tests automatises — priorite au shipping, tests si necessaire apres
-- Blog/CMS — pas de contenu dynamique pour l'instant
+- Blog/CMS — promu en Active pour M1.1 (blog markdown statique)
 - Dashboard admin — portfolio statique
 - PWA/Service Workers — pas de besoin offline
 - Pub payante — budget zero

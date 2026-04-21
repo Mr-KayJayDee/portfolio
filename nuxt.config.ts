@@ -34,6 +34,7 @@ export default defineNuxtConfig({
   i18n: {
     strategy: 'prefix',
     defaultLocale: 'fr',
+    baseUrl: 'https://killiandalcin.fr',
     locales: [
       { code: 'fr', language: 'fr-FR', file: 'fr.json' },
       { code: 'en', language: 'en-US', file: 'en.json' },
@@ -42,7 +43,8 @@ export default defineNuxtConfig({
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
+      redirectOn: 'no prefix',
+      fallbackLocale: 'fr',
     },
   },
   runtimeConfig: {
@@ -58,10 +60,6 @@ export default defineNuxtConfig({
   },
   gtag: {
     enabled: !import.meta.dev,
-  },
-  routeRules: {
-    '/blog': { redirect: { to: '/fr/blog', statusCode: 301 } },
-    '/blog/**': { redirect: { to: '/fr/blog', statusCode: 301 } },
   },
   content: {
     build: {

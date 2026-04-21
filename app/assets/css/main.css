@@ -2,6 +2,11 @@
 @import "@nuxt/ui";
 @plugin "@tailwindcss/typography";
 
+/* Offset anchor scroll for sticky header (h-16 = 64px + 16px breathing room) */
+.prose :is(h1, h2, h3, h4, h5, h6) {
+  scroll-margin-top: 5rem;
+}
+
 /* Force Shiki dark theme in all color modes — code blocks always dark */
 .shiki,
 .shiki span {

@@ -8,8 +8,8 @@
 
 ## Phases
 
-- [ ] **Phase 1: Cleanup & Fixes** - Sitemap conflit, Dockerfile pnpm, deps pinning, donnees incoherentes, rate limiting
-- [ ] **Phase 2: Content** - Hero Hytale, page Hytale, pricing, temoignages, jobTitle
+- [x] **Phase 1: Cleanup & Fixes** - Sitemap conflit, Dockerfile pnpm, deps pinning, donnees incoherentes, rate limiting
+- [x] **Phase 2: Content** - Hero Hytale, page Hytale, pricing, temoignages, jobTitle
 - [ ] **Phase 3: SEO & i18n** - Canonical, ogUrl, og:image, JSON-LD, audit i18n, traductions
 - [ ] **Phase 4: Ship** - Dockerfile final, verification production, deploy
 
@@ -78,7 +78,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Cleanup & Fixes | 0/2 | Planning complete | - |
-| 2. Content | 0/3 | Planning complete | - |
+| 1. Cleanup & Fixes | 2/2 | Complete | 2026-04-21 |
+| 2. Content | 3/3 | Complete | 2026-04-21 |
 | 3. SEO & i18n | 0/? | Not started | - |
 | 4. Ship | 0/? | Not started | - |

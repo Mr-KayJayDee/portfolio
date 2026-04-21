@@ -17,32 +17,32 @@ const props = withDefaults(defineProps<Props>(), {
 
 const attrs = useAttrs()
 
-const figureClass = computed(() => {
+// Use <span class="block"> instead of <figure> to avoid block-in-<p> invalid HTML
+// that breaks SSR hydration (browser auto-removes <p> wrapper around block elements).
+const wrapperClass = computed(() => {
   const base = 'not-prose my-6'
 
-  // Si des classes custom sont passées via MDC {.class}, on retire les classes
-  // de layout automatiques — l'utilisateur contrôle tout.
-  if (attrs.class) return base
+  if (attrs.class) return `${base} block`
 
   switch (props.align) {
-    case 'left':  return `${base} float-left mr-6 mb-2 w-1/2 max-w-xs`
-    case 'right': return `${base} float-right ml-6 mb-2 w-1/2 max-w-xs`
-    case 'center': return `${base} mx-auto table`
-    default: return `${base} w-full`
+    case 'left':  return `${base} block float-left mr-6 mb-2 w-1/2 max-w-xs`
+    case 'right': return `${base} block float-right ml-6 mb-2 w-1/2 max-w-xs`
+    case 'center': return `${base} block mx-auto`
+    default: return `${base} block w-full`
   }
 })
 
-const figureStyle = computed(() => {
+const wrapperStyle = computed(() => {
   if (props.width && props.align !== 'full') return `width: ${props.width}px`
   return undefined
 })
 </script>
 
 <template>
-  <figure
+  <span
     v-bind="attrs"
-    :class="figureClass"
-    :style="figureStyle"
+    :class="wrapperClass"
+    :style="wrapperStyle"
   >
     <img
       :src="props.src"
@@ -51,11 +51,11 @@ const figureStyle = computed(() => {
       loading="lazy"
       :class="props.align === 'full' && !attrs.class ? 'w-full rounded-lg' : 'rounded-lg'"
     />
-    <figcaption
+    <span
       v-if="props.caption"
-      class="mt-2 text-center text-xs text-neutral-500 dark:text-neutral-400 italic"
+      class="mt-2 block text-center text-xs text-neutral-500 dark:text-neutral-400 italic"
     >
       {{ props.caption }}
-    </figcaption>
-  </figure>
+    </span>
+  </span>
 </template>

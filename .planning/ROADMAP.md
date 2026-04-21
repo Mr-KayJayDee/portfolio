@@ -115,7 +115,10 @@ Plans:
   2. Un article markdown de test avec un bloc Kotlin est rendu avec coloration syntaxique visible dans le navigateur
   3. Une image referencee dans un article s'affiche via `<NuxtImg>` avec les optimisations (lazy, format webp)
   4. Un tableau markdown et un callout/alert sont rendus avec le style correct
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 05-01-PLAN.md — Installation @nuxt/content, configuration Shiki dual-theme, content.config.ts collections bilingues
+- [ ] 05-02-PLAN.md — Composants MDC ProseImg + Alert, articles de test FR/EN, checkpoint visuel
 **UI hint**: yes
 
 ### Phase 6: Blog Pages
@@ -161,7 +164,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 5. @nuxt/content Setup & Renderer | 0/? | Not started | - |
+| 5. @nuxt/content Setup & Renderer | 0/2 | Not started | - |
 | 6. Blog Pages | 0/? | Not started | - |
 | 7. SEO Blog | 0/? | Not started | - |
 | 8. Content & Cocon Semantique | 0/? | Not started | - |

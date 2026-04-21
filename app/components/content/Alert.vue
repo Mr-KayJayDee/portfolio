@@ -27,7 +27,7 @@ const colorMap = {
     variant="soft"
     class="my-4"
   >
-    <template #description>
+    <template #title>
       <slot />
     </template>
   </UAlert>

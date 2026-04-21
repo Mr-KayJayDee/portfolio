@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<Props>(), {
     :title="props.title"
     :width="props.width"
     :height="props.height"
+    format="webp"
     class="rounded-lg w-full"
-    sizes="sm:600px md:800px lg:1000px"
   />
 </template>

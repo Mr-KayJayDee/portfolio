@@ -7,15 +7,9 @@
   scroll-margin-top: 5rem;
 }
 
-/* Code blocks: always dark regardless of color mode.
-   ProsePre wrapper owns the background (#0d1117).
-   Target pre span directly — .shiki class is absent when ProsePre overrides <pre>. */
-.shiki, pre span {
-  color: var(--shiki-dark) !important;
+/* Code blocks: single dark theme (github-dark), background transparent — ProsePre div owns #0d1117 */
+pre span {
   background-color: transparent !important;
-  font-style: var(--shiki-dark-font-style) !important;
-  font-weight: var(--shiki-dark-font-weight) !important;
-  text-decoration: var(--shiki-dark-text-decoration) !important;
 }
 
 @theme {

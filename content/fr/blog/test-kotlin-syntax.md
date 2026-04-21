@@ -73,7 +73,8 @@ docker build -t portfolio:latest .
 
 Texte qui entoure l'image flottante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 
-<div style="clear:both"></div>
+::clear
+::
 
 **Flottant à droite :**
 
@@ -81,7 +82,8 @@ Texte qui entoure l'image flottante. Lorem ipsum dolor sit amet, consectetur adi
 
 Texte qui entoure l'image flottante à droite. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-<div style="clear:both"></div>
+::clear
+::
 
 **Classes Tailwind directes :**
 

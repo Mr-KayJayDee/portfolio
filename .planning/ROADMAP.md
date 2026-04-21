@@ -97,7 +97,7 @@ Plans:
 
 ## Phases (M1.1)
 
-- [ ] **Phase 5: @nuxt/content Setup & Renderer** - Integration @nuxt/content, markdown renderer complet avec syntax highlighting et images
+- [x] **Phase 5: @nuxt/content Setup & Renderer** - Integration @nuxt/content, markdown renderer complet avec syntax highlighting et images — Completed 2026-04-22 (2/2 plans)
 - [ ] **Phase 6: Blog Pages** - Page listing /blog et page article /blog/[slug] SSR, bilingue, avec TOC et nav prev/next
 - [ ] **Phase 7: SEO Blog** - useSeoMeta par article, JSON-LD Article, sitemap etendu, og:image, BreadcrumbList
 - [ ] **Phase 8: Content & Cocon Semantique** - 2 articles seed Hytale, liens internes blog-hytale

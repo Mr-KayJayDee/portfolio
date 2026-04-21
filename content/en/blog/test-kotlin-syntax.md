@@ -19,7 +19,7 @@ fun createPlugin(name: String): Plugin {
 
 ## Optimized Image
 
-![Test image for NuxtImg in articles](/images/og-image.png)
+![Test image for NuxtImg in articles](/og-image.png)
 
 ## Table
 

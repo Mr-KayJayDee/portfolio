@@ -63,6 +63,11 @@ export default defineNuxtConfig({
   id: '',
   enabled: import.meta.env.NODE_ENV === 'production',
 },
+  vite: {
+    optimizeDeps: {
+      include: ['zod'],
+    },
+  },
   content: {
     build: {
       markdown: {

@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/sitemap',
     'nuxt-gtag',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxt/content'
   ],
   components: [
     {
@@ -61,5 +62,21 @@ export default defineNuxtConfig({
   gtag: {
   id: '',
   enabled: import.meta.env.NODE_ENV === 'production',
-}
+},
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: {
+            default: 'github-light',
+            dark: 'github-dark'
+          },
+          langs: ['kotlin', 'java', 'typescript', 'shell', 'bash', 'json', 'vue', 'html', 'css']
+        }
+      }
+    },
+    experimental: {
+      sqliteConnector: 'native'
+    }
+  }
 })

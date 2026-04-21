@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --color-brand-50: #f0faf0;

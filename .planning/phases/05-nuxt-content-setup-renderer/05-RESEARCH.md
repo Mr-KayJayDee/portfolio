@@ -425,17 +425,17 @@ highlight: {
 
 ---
 
-## Open Questions
+## Open Questions (RESOLVED)
 
-1. **Frontmatter schema définitif**
-   - Ce qu'on sait : `title`, `description`, `date` sont nécessaires pour Phase 6 (listing)
-   - Ce qui est flou : `tags` (array ou string?), `image` (path relatif ou absolu?), `author`
-   - Recommandation : Définir un schema minimal dans `content.config.ts` avec `z.string().optional()` pour les champs non-critiques — peut s'étendre en Phase 7
+1. **Frontmatter schema définitif** — RESOLVED
+   - `tags`: `z.array(z.string()).optional()` dans content.config.ts (array, pas string)
+   - `image`: chemin relatif depuis `public/` (ex: `/images/og-image.png`) — string optionnel
+   - `author`: implicite depuis `site.ts` (pas dans le frontmatter de cette phase — ajouté en Phase 7 si besoin)
 
-2. **Prefix des collections i18n**
-   - Ce qu'on sait : `prefix_except_default` avec `defaultLocale: 'fr'` → les URLs FR sont sans `/fr/`
-   - Ce qui est flou : Le `source.prefix` dans content.config.ts doit-il matcher exactement le path i18n ?
-   - Recommandation : Tester avec l'article de validation que `queryCollection('blog_fr').path('/blog/test-kotlin-syntax').first()` retourne le bon article
+2. **Prefix des collections i18n** — RESOLVED
+   - `source.prefix` pour `blog_fr` : `/blog` (FR est la locale par défaut, pas de préfixe `/fr/` grâce à `prefix_except_default`)
+   - `source.prefix` pour `blog_en` : `/en/blog` (EN est préfixé)
+   - Aligné avec la strategy `prefix_except_default` de `@nuxtjs/i18n`
 
 ---
 

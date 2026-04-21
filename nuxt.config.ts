@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     name: "Killian' DAL-CIN - Developpeur Full Stack"
   },
   i18n: {
-  strategy: 'prefix_except_default',
+  strategy: 'prefix',
   defaultLocale: 'fr',
   baseUrl: 'https://killiandalcin.fr',
   locales: [

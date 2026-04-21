@@ -12,7 +12,7 @@ export default defineContentConfig({
   collections: {
     blog_fr: defineCollection({
       type: 'page',
-      source: { include: 'fr/blog/**/*.md', prefix: '/blog' },
+      source: { include: 'fr/blog/**/*.md', prefix: '/fr/blog' },
       schema: blogSchema,
     }),
     blog_en: defineCollection({

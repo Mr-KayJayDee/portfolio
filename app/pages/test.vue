@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('test', () =>
-  queryCollection('blog_fr').path('/blog/test-kotlin-syntax').first()
+  queryCollection('blog_fr').path('/fr/blog/test-kotlin-syntax').first()
 )
 </script>
 

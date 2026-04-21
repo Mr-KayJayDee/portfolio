@@ -7,11 +7,13 @@
   scroll-margin-top: 5rem;
 }
 
-/* Force Shiki dark theme in all color modes — code blocks always dark */
+/* Code blocks: always dark regardless of color mode.
+   Background is overridden by ProsePre wrapper (#0d1117),
+   only token colors come from Shiki dark variables. */
 .shiki,
 .shiki span {
   color: var(--shiki-dark) !important;
-  background-color: var(--shiki-dark-bg) !important;
+  background-color: transparent !important;
   font-style: var(--shiki-dark-font-style) !important;
   font-weight: var(--shiki-dark-font-weight) !important;
   text-decoration: var(--shiki-dark-text-decoration) !important;

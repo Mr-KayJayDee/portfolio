@@ -64,6 +64,9 @@ export default defineNuxtConfig({
   id: '',
   enabled: import.meta.env.NODE_ENV === 'production',
 },
+  routeRules: {
+    '/blog/**': { redirect: { to: '/fr/blog/**', statusCode: 301 } },
+  },
   vite: {
     optimizeDeps: {
       include: ['zod'],

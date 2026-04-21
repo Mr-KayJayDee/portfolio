@@ -1,4 +1,6 @@
 <script setup lang="ts">
+defineOptions({ inheritAttrs: false })
+
 interface Props {
   src: string
   alt?: string
@@ -13,34 +15,41 @@ const props = withDefaults(defineProps<Props>(), {
   align: 'full',
 })
 
+const attrs = useAttrs()
+
 const figureClass = computed(() => {
   const base = 'not-prose my-6'
+
+  // Si des classes custom sont passées via MDC {.class}, on retire les classes
+  // de layout automatiques — l'utilisateur contrôle tout.
+  if (attrs.class) return base
+
   switch (props.align) {
-    case 'left':
-      return `${base} float-left mr-6 mb-2 w-1/2 max-w-xs`
-    case 'right':
-      return `${base} float-right ml-6 mb-2 w-1/2 max-w-xs`
-    case 'center':
-      return `${base} mx-auto table`
-    default:
-      return `${base} w-full`
+    case 'left':  return `${base} float-left mr-6 mb-2 w-1/2 max-w-xs`
+    case 'right': return `${base} float-right ml-6 mb-2 w-1/2 max-w-xs`
+    case 'center': return `${base} mx-auto table`
+    default: return `${base} w-full`
   }
 })
 
-const imgClass = computed(() => {
-  const base = 'rounded-lg'
-  return props.align === 'full' ? `${base} w-full` : `${base} w-full`
+const figureStyle = computed(() => {
+  if (props.width && props.align !== 'full') return `width: ${props.width}px`
+  return undefined
 })
 </script>
 
 <template>
-  <figure :class="figureClass" :style="props.width && props.align !== 'full' ? `width: ${props.width}px` : undefined">
+  <figure
+    v-bind="attrs"
+    :class="figureClass"
+    :style="figureStyle"
+  >
     <img
       :src="props.src"
       :alt="props.alt"
       :title="props.title || props.caption"
       loading="lazy"
-      :class="imgClass"
+      :class="props.align === 'full' && !attrs.class ? 'w-full rounded-lg' : 'rounded-lg'"
     />
     <figcaption
       v-if="props.caption"

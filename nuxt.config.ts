@@ -1,18 +1,15 @@
 export default defineNuxtConfig({
   compatibilityDate: '2026-04-21',
-  future: {
-    compatibilityVersion: 4
-  },
   ssr: true,
   css: ['~/assets/css/main.css'],
   modules: [
     '@nuxt/ui',
-    '@nuxtjs/i18n',
+    '@nuxt/image',
+    '@nuxt/content',
     '@nuxt/eslint',
+    '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
     'nuxt-gtag',
-    '@nuxt/image',
-    '@nuxt/content'
   ],
   components: [
     {
@@ -21,68 +18,67 @@ export default defineNuxtConfig({
     },
   ],
   typescript: {
-    strict: true
+    strict: true,
   },
   colorMode: {
     preference: 'dark',
     fallback: 'dark',
     storage: 'cookie',
     storageKey: 'nuxt-color-mode',
-    classSuffix: ''
+    classSuffix: '',
   },
   site: {
     url: 'https://killiandalcin.fr',
-    name: "Killian' DAL-CIN - Developpeur Full Stack"
+    name: "Killian' DAL-CIN - Developpeur Full Stack",
   },
   i18n: {
-  strategy: 'prefix',
-  defaultLocale: 'fr',
-  baseUrl: 'https://killiandalcin.fr',
-  locales: [
-    { code: 'fr', language: 'fr-FR', file: 'fr.json' },
-    { code: 'en', language: 'en-US', file: 'en.json' },
-  ],
-  langDir: 'locales/',
-  detectBrowserLanguage: {
-    useCookie: true,
-    cookieKey: 'i18n_redirected',
-    redirectOn: 'root',
+    strategy: 'prefix',
+    defaultLocale: 'fr',
+    locales: [
+      { code: 'fr', language: 'fr-FR', file: 'fr.json' },
+      { code: 'en', language: 'en-US', file: 'en.json' },
+    ],
+    langDir: 'locales/',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    },
   },
-},
   runtimeConfig: {
-  smtpHost: '',
-  smtpUser: '',
-  smtpPass: '',
-  smtpTo: '',
-  public: {
-    gtag: {
-      id: '',
+    smtpHost: '',
+    smtpUser: '',
+    smtpPass: '',
+    smtpTo: '',
+    public: {
+      gtag: {
+        id: '',
+      },
     },
   },
-},
   gtag: {
-  id: '',
-  enabled: import.meta.env.NODE_ENV === 'production',
-},
-  routeRules: {
-    '/blog/**': { redirect: { to: '/fr/blog/**', statusCode: 301 } },
+    enabled: !import.meta.dev,
   },
-  vite: {
-    optimizeDeps: {
-      include: ['zod'],
-    },
+  routeRules: {
+    '/blog': { redirect: { to: '/fr/blog', statusCode: 301 } },
+    '/blog/**': { redirect: { to: '/fr/blog', statusCode: 301 } },
   },
   content: {
     build: {
       markdown: {
         highlight: {
           theme: 'github-dark',
-          langs: ['kotlin', 'java', 'typescript', 'shell', 'bash', 'json', 'vue', 'html', 'css']
-        }
-      }
+          langs: ['kotlin', 'java', 'typescript', 'shell', 'bash', 'json', 'vue', 'html', 'css'],
+        },
+      },
     },
     experimental: {
-      sqliteConnector: 'native'
-    }
-  }
+      sqliteConnector: 'native',
+    },
+  },
+  vite: {
+    optimizeDeps: {
+      include: ['zod'],
+    },
+  },
 })

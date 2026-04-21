@@ -50,7 +50,7 @@ const wrapperStyle = computed(() => {
       :title="props.title || props.caption"
       loading="lazy"
       :class="props.align === 'full' && !attrs.class ? 'w-full rounded-lg' : 'rounded-lg'"
-    />
+    >
     <span
       v-if="props.caption"
       class="mt-2 block text-center text-xs text-neutral-500 dark:text-neutral-400 italic"

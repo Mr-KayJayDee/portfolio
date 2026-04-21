@@ -33,7 +33,8 @@ const resolvedSecondaryText = computed(() => props.secondaryText || t('home.cta2
     <div class="max-w-5xl mx-auto">
       <div class="relative overflow-hidden rounded-3xl px-8 py-20 sm:px-16 sm:py-24 text-center border border-gray-200/60 dark:border-gray-800/40 bg-gray-50 dark:bg-gray-900">
         <!-- Subtle dot pattern -->
-        <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]" aria-hidden="true"
+        <div
+class="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]" aria-hidden="true"
           style="background-image: radial-gradient(circle, currentColor 1px, transparent 1px); background-size: 24px 24px;" />
         <!-- Brand glow -->
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-500/8 dark:bg-brand-500/15 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />

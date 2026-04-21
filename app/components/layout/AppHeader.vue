@@ -34,14 +34,16 @@ function isActive(path: string): boolean {
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <NuxtLink :to="localePath('/')" :aria-label="t('a11y.logoLabel')" class="flex items-center gap-2.5 shrink-0">
-          <NuxtImg src="/images/logo.webp" alt="Killian' DAL-CIN" width="36" height="36" loading="eager"
+          <NuxtImg
+src="/images/logo.webp" alt="Killian' DAL-CIN" width="36" height="36" loading="eager"
             class="rounded-lg" />
           <span class="text-base font-semibold tracking-tight text-gray-900 dark:text-white">Killian'</span>
         </NuxtLink>
 
         <!-- Desktop nav -->
         <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
-          <NuxtLink v-for="link in navLinks" :key="link.key" :to="localePath(link.path)"
+          <NuxtLink
+v-for="link in navLinks" :key="link.key" :to="localePath(link.path)"
             :aria-current="isActive(link.path) ? 'page' : undefined"
             class="px-3 py-2 text-sm font-medium rounded-lg transition-colors" :class="[
               isActive(link.path)
@@ -60,13 +62,15 @@ function isActive(path: string): boolean {
           </UButton>
 
           <!-- Theme toggle -->
-          <UButton variant="ghost" color="neutral" size="sm"
+          <UButton
+variant="ghost" color="neutral" size="sm"
             :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
             :aria-label="colorMode.value === 'dark' ? t('a11y.themeDark') : t('a11y.themeLight')"
             @click="toggleTheme" />
 
           <!-- Mobile hamburger -->
-          <UButton variant="ghost" color="neutral" size="sm" icon="i-lucide-menu" class="md:hidden"
+          <UButton
+variant="ghost" color="neutral" size="sm" icon="i-lucide-menu" class="md:hidden"
             :aria-label="t('a11y.openMenu')" @click="mobileOpen = true" />
         </div>
       </div>
@@ -83,7 +87,8 @@ function isActive(path: string): boolean {
 
       <template #body>
         <nav class="flex flex-col gap-1" aria-label="Mobile navigation">
-          <NuxtLink v-for="link in navLinks" :key="link.key" :to="localePath(link.path)"
+          <NuxtLink
+v-for="link in navLinks" :key="link.key" :to="localePath(link.path)"
             :aria-current="isActive(link.path) ? 'page' : undefined"
             class="px-4 py-3 text-base font-medium rounded-lg transition-colors" :class="[
               isActive(link.path)
@@ -100,7 +105,8 @@ function isActive(path: string): boolean {
           <UButton variant="ghost" color="neutral" :aria-label="t('a11y.langToggle')" @click="toggleLocale">
             {{ locale === 'fr' ? 'EN' : 'FR' }}
           </UButton>
-          <UButton variant="ghost" color="neutral" :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
+          <UButton
+variant="ghost" color="neutral" :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
             :aria-label="colorMode.value === 'dark' ? t('a11y.themeDark') : t('a11y.themeLight')"
             @click="toggleTheme" />
         </div>

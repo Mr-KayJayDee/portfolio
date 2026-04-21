@@ -1,20 +1,32 @@
 import nodemailer from 'nodemailer'
+import { z } from 'zod'
+
+const contactSchema = z.object({
+  name: z.string().min(2).max(100),
+  email: z.string().email().max(200),
+  message: z.string().min(10).max(5000),
+})
+
+const htmlEscapes: Record<string, string> = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;',
+}
+
+function escapeHtml(value: string): string {
+  return value.replace(/[&<>"']/g, (c) => htmlEscapes[c] ?? c)
+}
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
+  const parsed = contactSchema.safeParse(body)
+  if (!parsed.success) {
+    throw createError({ statusCode: 400, message: 'Invalid payload' })
+  }
+  const { name, email, message } = parsed.data
   const config = useRuntimeConfig(event)
-
-  // Server-side validation (T-03-01)
-  const { name, email, message } = body
-  if (!name || typeof name !== 'string' || name.length < 2 || name.length > 100) {
-    throw createError({ statusCode: 400, message: 'Invalid name' })
-  }
-  if (!email || typeof email !== 'string' || !email.includes('@') || email.length > 200) {
-    throw createError({ statusCode: 400, message: 'Invalid email' })
-  }
-  if (!message || typeof message !== 'string' || message.length < 10 || message.length > 5000) {
-    throw createError({ statusCode: 400, message: 'Invalid message' })
-  }
 
   const transporter = nodemailer.createTransport({
     host: config.smtpHost,
@@ -26,20 +38,9 @@ export default defineEventHandler(async (event) => {
     },
   })
 
-  // Escape HTML to prevent XSS in email body (T-03-02)
-  const escapedName = name.replace(/[&<>"']/g, (c: string) => {
-    const map: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }
-    return map[c] ?? c
-  })
-  const escapedMessage = message.replace(/[&<>"']/g, (c: string) => {
-    const map: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }
-    return map[c] ?? c
-  })
-
-  const escapedEmail = email.replace(/[&<>"']/g, (c: string) => {
-    const map: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }
-    return map[c] ?? c
-  })
+  const escapedName = escapeHtml(name)
+  const escapedEmail = escapeHtml(email)
+  const escapedMessage = escapeHtml(message)
 
   const dateStr = new Date().toLocaleString('fr-FR', {
     day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit',

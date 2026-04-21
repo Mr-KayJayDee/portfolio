@@ -19,7 +19,8 @@ const { data: page } = await useAsyncData('test', () =>
         </p>
       </header>
 
-      <article class="prose prose-neutral dark:prose-invert max-w-none
+      <article
+class="prose prose-neutral dark:prose-invert max-w-none
         prose-headings:font-semibold
         prose-code:before:content-none prose-code:after:content-none
         prose-pre:p-0 prose-pre:bg-transparent">

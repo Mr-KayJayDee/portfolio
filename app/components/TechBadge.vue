@@ -35,8 +35,9 @@ const techData = computed((): Technology => {
 
   let found = allTechs.find((t) => t.name.toLowerCase() === techName.toLowerCase())
 
-  if (!found && techMapping[techName]) {
-    found = allTechs.find((t) => t.name.toLowerCase() === techMapping[techName].toLowerCase())
+  const mapped = techMapping[techName]
+  if (!found && mapped) {
+    found = allTechs.find((t) => t.name.toLowerCase() === mapped.toLowerCase())
   }
 
   return found ?? { name: techName, image: '', level: 'Intermediate' as const }

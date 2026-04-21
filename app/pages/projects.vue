@@ -122,7 +122,7 @@ function resetFilters() {
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">{{ t('projects.noResults.title') }}</h3>
           <p class="text-gray-500 dark:text-gray-400 mb-8 max-w-md mx-auto leading-relaxed">{{ t('projects.noResults.description') }}</p>
-          <UButton @click="resetFilters" variant="soft" size="md" icon="i-lucide-rotate-ccw">
+          <UButton variant="soft" size="md" icon="i-lucide-rotate-ccw" @click="resetFilters">
             {{ t('common.reset') }}
           </UButton>
         </div>

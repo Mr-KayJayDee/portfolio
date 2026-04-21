@@ -46,8 +46,8 @@ defineExpose({ openGallery })
             icon="i-lucide-x"
             variant="ghost"
             size="lg"
-            @click="isOpen = false"
             :aria-label="'Close gallery'"
+            @click="isOpen = false"
           />
         </div>
 

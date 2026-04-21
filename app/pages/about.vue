@@ -2,7 +2,6 @@
 import { techStack } from '~/data/techstack'
 
 const { t } = useI18n()
-const localePath = useLocalePath()
 
 useSeoMeta({
   title: () => t('seo.about.title'),

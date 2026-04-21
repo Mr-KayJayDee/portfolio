@@ -33,7 +33,8 @@ const props = withDefaults(defineProps<Props>(), {
         />
       </svg>
     </summary>
-    <div class="px-4 py-3 prose prose-neutral dark:prose-invert max-w-none
+    <div
+class="px-4 py-3 prose prose-neutral dark:prose-invert max-w-none
                 prose-code:before:content-none prose-code:after:content-none
                 prose-pre:p-0 prose-pre:bg-transparent text-sm">
       <slot />

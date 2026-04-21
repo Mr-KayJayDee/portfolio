@@ -11,7 +11,8 @@ const discordUrl = siteConfig.social.find(s => s.name === 'Discord')?.url ?? '#'
   <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-white dark:bg-gray-950">
     <!-- Dot grid background pattern -->
     <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]" aria-hidden="true">
-      <div class="absolute inset-0"
+      <div
+class="absolute inset-0"
         style="background-image: radial-gradient(circle, currentColor 1px, transparent 1px); background-size: 32px 32px;" />
     </div>
 

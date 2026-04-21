@@ -6,19 +6,17 @@ interface Props {
   width?: string | number
   height?: string | number
 }
-const props = withDefaults(defineProps<Props>(), {
-  alt: '',
-})
+const props = withDefaults(defineProps<Props>(), { alt: '' })
 </script>
 
 <template>
-  <NuxtImg
+  <img
     :src="props.src"
     :alt="props.alt"
     :title="props.title"
     :width="props.width"
     :height="props.height"
-    format="webp"
-    class="rounded-lg w-full"
+    loading="lazy"
+    class="not-prose my-6 w-full rounded-lg"
   />
 </template>

@@ -82,3 +82,86 @@ Plans:
 | 2. Content | 3/3 | Complete | 2026-04-21 |
 | 3. SEO & i18n | 1/1 | Complete | 2026-04-21 |
 | 4. Ship | 1/1 | Complete | 2026-04-21 |
+
+---
+
+---
+
+# Roadmap: Portfolio Killian' Dalcin — M1.1
+
+**Milestone:** M1.1 — SEO Hytale — Autorité & Contenu
+**Granularity:** Standard
+**Coverage:** 13/13 requirements mapped
+
+---
+
+## Phases (M1.1)
+
+- [ ] **Phase 5: @nuxt/content Setup & Renderer** - Integration @nuxt/content, markdown renderer complet avec syntax highlighting et images
+- [ ] **Phase 6: Blog Pages** - Page listing /blog et page article /blog/[slug] SSR, bilingue, avec TOC et nav prev/next
+- [ ] **Phase 7: SEO Blog** - useSeoMeta par article, JSON-LD Article, sitemap etendu, og:image, BreadcrumbList
+- [ ] **Phase 8: Content & Cocon Semantique** - 2 articles seed Hytale, liens internes blog-hytale
+
+---
+
+## Phase Details (M1.1)
+
+### Phase 5: @nuxt/content Setup & Renderer
+**Goal**: Le systeme de contenu markdown est installe et rend fidelement le contenu technique — blocs de code colores, images optimisees, tables, alerts — sans configuration supplementaire dans les phases suivantes
+**Depends on**: Phase 4 (M1 complete)
+**Requirements**: BLOG-01, BLOG-04, BLOG-05
+**Success Criteria** (what must be TRUE):
+  1. `@nuxt/content` est installe et configure dans `nuxt.config.ts` — `pnpm dev` demarre sans erreur
+  2. Un article markdown de test avec un bloc Kotlin est rendu avec coloration syntaxique visible dans le navigateur
+  3. Une image referencee dans un article s'affiche via `<NuxtImg>` avec les optimisations (lazy, format webp)
+  4. Un tableau markdown et un callout/alert sont rendus avec le style correct
+**Plans**: TBD
+**UI hint**: yes
+
+### Phase 6: Blog Pages
+**Goal**: Un visiteur peut naviguer vers /blog, parcourir la liste des articles, ouvrir un article, voir sa table des matieres et naviguer vers l'article precedent/suivant — le tout en SSR et en FR ou EN
+**Depends on**: Phase 5
+**Requirements**: BLOG-02, BLOG-03, BLOG-06
+**Success Criteria** (what must be TRUE):
+  1. `curl localhost:3000/blog` retourne du HTML SSR avec une liste d'articles (titre, description, date, tags)
+  2. `curl localhost:3000/blog/[slug]` retourne le contenu de l'article rendu en HTML, pas de SPA shell vide
+  3. La page article affiche une table des matieres generee depuis les headings du markdown
+  4. Des liens "Article precedent" et "Article suivant" sont presents en bas de chaque article
+  5. `curl localhost:3000/en/blog` retourne le listing en anglais — les articles ont leur version EN
+**Plans**: TBD
+**UI hint**: yes
+
+### Phase 7: SEO Blog
+**Goal**: Chaque page blog est indexable avec des meta tags complets, un JSON-LD Article valide, et les URLs /blog figurent dans le sitemap — Google peut crawler et comprendre le contenu sans ambiguite
+**Depends on**: Phase 6
+**Requirements**: SEO-10, SEO-11, SEO-12, SEO-13, SEO-15
+**Success Criteria** (what must be TRUE):
+  1. `curl localhost:3000/blog/[slug]` retourne `<meta property="og:title">`, `<meta property="og:description">` et `<meta property="og:image">` uniques dans le HTML
+  2. Le meme curl retourne un JSON-LD de type `Article` avec `author`, `datePublished`, `headline` remplis
+  3. `curl localhost:3000/sitemap.xml` contient les URLs `/blog/[slug]` et `/en/blog/[slug]`
+  4. `og:image` pointe vers l'image de l'article ou vers un fallback branded — jamais vers og-image.png generique
+  5. La page article contient un JSON-LD `BreadcrumbList` : Accueil → Blog → Titre de l'article
+**Plans**: TBD
+
+### Phase 8: Content & Cocon Semantique
+**Goal**: Le blog est lance avec au moins 2 articles Hytale de qualite, et un visiteur qui arrive sur /hytale decouvre les articles recents — le cocon semantique entre blog et page hytale est etabli
+**Depends on**: Phase 7
+**Requirements**: BLOG-07, SEO-14
+**Success Criteria** (what must be TRUE):
+  1. `/blog` liste au moins 2 articles avec le tag "hytale", avec titres, descriptions et dates reels
+  2. Chaque article blog contient au moins un lien interne vers `/hytale` dans le corps du texte
+  3. La page `/hytale` affiche une section "Articles recents" avec liens vers les 2 articles seed
+  4. Les articles existent en FR et EN — `curl localhost:3000/en/blog` les liste en anglais
+**Plans**: TBD
+**UI hint**: yes
+
+---
+
+## Progress (M1.1)
+
+| Phase | Plans Complete | Status | Completed |
+|-------|----------------|--------|-----------|
+| 5. @nuxt/content Setup & Renderer | 0/? | Not started | - |
+| 6. Blog Pages | 0/? | Not started | - |
+| 7. SEO Blog | 0/? | Not started | - |
+| 8. Content & Cocon Semantique | 0/? | Not started | - |

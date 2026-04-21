@@ -5,7 +5,7 @@ milestone_name: SEO Hytale — Autorité & Contenu
 status: In Progress
 last_updated: "2026-04-21T00:00:00.000Z"
 progress:
-  total_phases: 0
+  total_phases: 4
   completed_phases: 0
   total_plans: 0
   completed_plans: 0
@@ -22,15 +22,18 @@ progress:
 
 ## Current Focus
 
-Phase: Not started (defining requirements)
+Phase: Phase 5 — @nuxt/content Setup & Renderer
 Plan: —
-Status: Defining requirements
-Last activity: 2026-04-21 — Milestone v1.1 started
+Status: Roadmap defined, ready to plan Phase 5
+Last activity: 2026-04-21 — M1.1 roadmap created (phases 5–8)
 
 ## Accumulated Context
 
-- M1 complet — déployé en production sur killiandalcin.fr
+- M1 complet — déployé en production sur killiandalcin.fr (phases 1–4)
 - Stack : Nuxt 4 SSR + Nuxt UI v3 + Tailwind v4 + pnpm
 - Blog/CMS était Out of Scope en M1, promu en priorité principale pour M1.1
-- Renderer markdown doit supporter : syntax highlighting, images, embeds, tables, alerts — utiliser un package existant (ex: @nuxtjs/mdc ou @nuxt/content)
+- Renderer markdown doit supporter : syntax highlighting, images, embeds, tables, alerts — utiliser @nuxt/content
 - Objectif double : ranker sur "Hytale plugin developer" ET capter trafic longue traîne via contenu communauté
+- Phase 5 ajoute @nuxt/content comme dépendance — vérifier compatibilité Nuxt 4 / compatibilityVersion 4
+- Articles bilingues : structure FR/EN dans content/ (ex: content/fr/blog/, content/en/blog/)
+- og:image par article : image frontmatter ou fallback branded — jamais l'og-image.png générique M1

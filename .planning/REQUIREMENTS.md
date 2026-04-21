@@ -92,16 +92,16 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BLOG-01 | TBD | Pending |
-| BLOG-02 | TBD | Pending |
-| BLOG-03 | TBD | Pending |
-| BLOG-04 | TBD | Pending |
-| BLOG-05 | TBD | Pending |
-| BLOG-06 | TBD | Pending |
-| BLOG-07 | TBD | Pending |
-| SEO-10 | TBD | Pending |
-| SEO-11 | TBD | Pending |
-| SEO-12 | TBD | Pending |
-| SEO-13 | TBD | Pending |
-| SEO-14 | TBD | Pending |
-| SEO-15 | TBD | Pending |
+| BLOG-01 | Phase 5 | Pending |
+| BLOG-04 | Phase 5 | Pending |
+| BLOG-05 | Phase 5 | Pending |
+| BLOG-02 | Phase 6 | Pending |
+| BLOG-03 | Phase 6 | Pending |
+| BLOG-06 | Phase 6 | Pending |
+| SEO-10 | Phase 7 | Pending |
+| SEO-11 | Phase 7 | Pending |
+| SEO-12 | Phase 7 | Pending |
+| SEO-13 | Phase 7 | Pending |
+| SEO-15 | Phase 7 | Pending |
+| BLOG-07 | Phase 8 | Pending |
+| SEO-14 | Phase 8 | Pending |

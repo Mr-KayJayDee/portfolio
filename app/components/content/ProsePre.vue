@@ -31,7 +31,7 @@ const props = withDefaults(defineProps<Props>(), {
 
     <!-- Code content -->
     <div class="overflow-x-auto">
-      <pre class="m-0 bg-transparent p-4 text-sm leading-relaxed"><slot /></pre>
+      <pre class="shiki m-0 bg-transparent p-4 text-sm leading-relaxed"><slot /></pre>
     </div>
   </div>
 </template>

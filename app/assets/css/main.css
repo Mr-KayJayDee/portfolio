@@ -8,10 +8,9 @@
 }
 
 /* Code blocks: always dark regardless of color mode.
-   Background is overridden by ProsePre wrapper (#0d1117),
-   only token colors come from Shiki dark variables. */
-.shiki,
-.shiki span {
+   ProsePre wrapper owns the background (#0d1117).
+   Target pre span directly — .shiki class is absent when ProsePre overrides <pre>. */
+.shiki, pre span {
   color: var(--shiki-dark) !important;
   background-color: transparent !important;
   font-style: var(--shiki-dark-font-style) !important;

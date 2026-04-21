@@ -59,7 +59,12 @@ Plans:
   3. `curl localhost:3000/en/` retourne du HTML anglais sans hardcoded French strings
   4. Aucun composant ne contient de chaine en dur (grep pour strings hors `t()` dans les templates)
   5. Les traductions FR sonnent naturel — pas de calque anglais
-**Plans**: TBD
+**Plans:** 4 plans
+Plans:
+- [ ] 06-01-PLAN.md — Content schema Zod extension (draft/wordCount/minutes) + Nitro reading-time hook + draft:true sur test articles
+- [ ] 06-02-PLAN.md — i18n keys blog.*/nav.blog/a11y.blog* + lien Blog dans AppHeader + BlogCard.vue unifié (default + compact)
+- [ ] 06-03-PLAN.md — Page listing app/pages/blog/index.vue (hero + grid + empty state, SSR bilingue)
+- [ ] 06-04-PLAN.md — BlogToc.vue + BlogPrevNext.vue + enrichissement app/pages/blog/[slug].vue (breadcrumb + header + TOC + surround)
 
 ### Phase 4: Ship
 **Goal**: Le site est deployable en production via Docker et passe tous les checks
@@ -70,7 +75,12 @@ Plans:
   2. Le container sert le site SSR sur le port attendu
   3. `pnpm typecheck` et `pnpm lint` passent avec 0 erreurs
   4. `curl` sur chaque page retourne `<title>`, `<meta description>`, `og:title` dans le HTML brut
-**Plans**: TBD
+**Plans:** 4 plans
+Plans:
+- [ ] 06-01-PLAN.md — Content schema Zod extension (draft/wordCount/minutes) + Nitro reading-time hook + draft:true sur test articles
+- [ ] 06-02-PLAN.md — i18n keys blog.*/nav.blog/a11y.blog* + lien Blog dans AppHeader + BlogCard.vue unifié (default + compact)
+- [ ] 06-03-PLAN.md — Page listing app/pages/blog/index.vue (hero + grid + empty state, SSR bilingue)
+- [ ] 06-04-PLAN.md — BlogToc.vue + BlogPrevNext.vue + enrichissement app/pages/blog/[slug].vue (breadcrumb + header + TOC + surround)
 
 ---
 
@@ -131,7 +141,12 @@ Plans:
   3. La page article affiche une table des matieres generee depuis les headings du markdown
   4. Des liens "Article precedent" et "Article suivant" sont presents en bas de chaque article
   5. `curl localhost:3000/en/blog` retourne le listing en anglais — les articles ont leur version EN
-**Plans**: TBD
+**Plans:** 4 plans
+Plans:
+- [ ] 06-01-PLAN.md — Content schema Zod extension (draft/wordCount/minutes) + Nitro reading-time hook + draft:true sur test articles
+- [ ] 06-02-PLAN.md — i18n keys blog.*/nav.blog/a11y.blog* + lien Blog dans AppHeader + BlogCard.vue unifié (default + compact)
+- [ ] 06-03-PLAN.md — Page listing app/pages/blog/index.vue (hero + grid + empty state, SSR bilingue)
+- [ ] 06-04-PLAN.md — BlogToc.vue + BlogPrevNext.vue + enrichissement app/pages/blog/[slug].vue (breadcrumb + header + TOC + surround)
 **UI hint**: yes
 
 ### Phase 7: SEO Blog
@@ -144,7 +159,12 @@ Plans:
   3. `curl localhost:3000/sitemap.xml` contient les URLs `/blog/[slug]` et `/en/blog/[slug]`
   4. `og:image` pointe vers l'image de l'article ou vers un fallback branded — jamais vers og-image.png generique
   5. La page article contient un JSON-LD `BreadcrumbList` : Accueil → Blog → Titre de l'article
-**Plans**: TBD
+**Plans:** 4 plans
+Plans:
+- [ ] 06-01-PLAN.md — Content schema Zod extension (draft/wordCount/minutes) + Nitro reading-time hook + draft:true sur test articles
+- [ ] 06-02-PLAN.md — i18n keys blog.*/nav.blog/a11y.blog* + lien Blog dans AppHeader + BlogCard.vue unifié (default + compact)
+- [ ] 06-03-PLAN.md — Page listing app/pages/blog/index.vue (hero + grid + empty state, SSR bilingue)
+- [ ] 06-04-PLAN.md — BlogToc.vue + BlogPrevNext.vue + enrichissement app/pages/blog/[slug].vue (breadcrumb + header + TOC + surround)
 
 ### Phase 8: Content & Cocon Semantique
 **Goal**: Le blog est lance avec au moins 2 articles Hytale de qualite, et un visiteur qui arrive sur /hytale decouvre les articles recents — le cocon semantique entre blog et page hytale est etabli
@@ -155,7 +175,12 @@ Plans:
   2. Chaque article blog contient au moins un lien interne vers `/hytale` dans le corps du texte
   3. La page `/hytale` affiche une section "Articles recents" avec liens vers les 2 articles seed
   4. Les articles existent en FR et EN — `curl localhost:3000/en/blog` les liste en anglais
-**Plans**: TBD
+**Plans:** 4 plans
+Plans:
+- [ ] 06-01-PLAN.md — Content schema Zod extension (draft/wordCount/minutes) + Nitro reading-time hook + draft:true sur test articles
+- [ ] 06-02-PLAN.md — i18n keys blog.*/nav.blog/a11y.blog* + lien Blog dans AppHeader + BlogCard.vue unifié (default + compact)
+- [ ] 06-03-PLAN.md — Page listing app/pages/blog/index.vue (hero + grid + empty state, SSR bilingue)
+- [ ] 06-04-PLAN.md — BlogToc.vue + BlogPrevNext.vue + enrichissement app/pages/blog/[slug].vue (breadcrumb + header + TOC + surround)
 **UI hint**: yes
 
 ---

@@ -552,6 +552,11 @@
           "Discord integration"
         ]
       }
+    },
+    "recentArticles": {
+      "title": "Recent articles",
+      "subtitle": "Latest writing on Hytale plugin development",
+      "viewAll": "View all articles"
     }
   },
   "blog": {

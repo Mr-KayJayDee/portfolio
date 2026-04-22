@@ -552,6 +552,11 @@
           "Integration Discord"
         ]
       }
+    },
+    "recentArticles": {
+      "title": "Articles récents",
+      "subtitle": "Les dernières publications sur le développement de plugins Hytale",
+      "viewAll": "Voir tous les articles"
     }
   },
   "blog": {

@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Phase 6 — Plan 06-02 shipped (2/4), ready for Plan 06-03
-last_updated: "2026-04-22T09:25:00.000Z"
+status: Plan 06-02 shipped — i18n FR+EN complet, nav link Blog en place, BlogCard.vue (variant default+compact) auto-importable, typecheck vert
+last_updated: "2026-04-22T08:40:12.762Z"
 last_activity: 2026-04-22
 progress:
   total_phases: 8
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 15
-  completed_plans: 11
-  percent: 73
+  completed_plans: 13
+  percent: 87
 ---
 
 # Project State

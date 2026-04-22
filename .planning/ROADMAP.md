@@ -143,10 +143,10 @@ Plans:
   5. `curl localhost:3000/en/blog` retourne le listing en anglais — les articles ont leur version EN
 **Plans:** 4 plans
 Plans:
-- [ ] 06-01-PLAN.md — Content schema Zod extension (draft/wordCount/minutes) + Nitro reading-time hook + draft:true sur test articles
-- [ ] 06-02-PLAN.md — i18n keys blog.*/nav.blog/a11y.blog* + lien Blog dans AppHeader + BlogCard.vue unifié (default + compact)
-- [ ] 06-03-PLAN.md — Page listing app/pages/blog/index.vue (hero + grid + empty state, SSR bilingue)
-- [ ] 06-04-PLAN.md — BlogToc.vue + BlogPrevNext.vue + enrichissement app/pages/blog/[slug].vue (breadcrumb + header + TOC + surround)
+- [x] 06-01-PLAN.md — Content schema Zod extension (draft/wordCount/minutes) + Nitro reading-time hook + draft:true sur test articles
+- [x] 06-02-PLAN.md — i18n keys blog.*/nav.blog/a11y.blog* + lien Blog dans AppHeader + BlogCard.vue unifié (default + compact)
+- [x] 06-03-PLAN.md — Page listing app/pages/blog/index.vue (hero + grid + empty state, SSR bilingue)
+- [x] 06-04-PLAN.md — BlogToc.vue + BlogPrevNext.vue + enrichissement app/pages/blog/[slug].vue (breadcrumb + header + TOC + surround)
 **UI hint**: yes
 
 ### Phase 7: SEO Blog
@@ -190,6 +190,6 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 5. @nuxt/content Setup & Renderer | 2/2 | Complete | 2026-04-22 |
-| 6. Blog Pages | 2/4 | In progress | - |
+| 6. Blog Pages | 4/4 | Complete | 2026-04-22 |
 | 7. SEO Blog | 0/? | Not started | - |
 | 8. Content & Cocon Semantique | 0/? | Not started | - |

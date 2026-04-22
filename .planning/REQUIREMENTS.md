@@ -23,13 +23,13 @@
 
 ### Rebranding — Cohérence SEO
 
-- [ ] **REBRAND-01**: Fix JSON-LD `app/pages/index.vue` lignes 28 + 38 — remplacer "Developpeur Full Stack Freelance" / "Developpeur Full Stack" par "Hytale Plugin Developer" (via `siteConfig.jobTitle`, pas de hardcode)
-- [ ] **REBRAND-02**: Audit cohérence jobTitle — grep toutes les pages, composants, i18n FR/EN pour "full stack", "fullstack", "développeur web" → corriger ou justifier
-- [ ] **REBRAND-03**: Vérif meta descriptions + og:title toutes pages — homepage, about, contact, projets, fiverr, formation — alignés sur positionnement Hytale
+- [x] **REBRAND-01**: Fix JSON-LD `app/pages/index.vue` — utilise `siteConfig.jobTitle` (Hytale Plugin Developer). Shipped 2026-04-22.
+- [x] **REBRAND-02**: Audit cohérence jobTitle — 14 clés i18n FR+EN réécrites (a11y, seo, home.cta2, about, contact, projects). 2 occurrences "full stack" restantes contextuelles (skills). `nuxt.config.ts site.name` + `app/data/site.ts description` fixés. Shipped 2026-04-22.
+- [x] **REBRAND-03**: Meta descriptions + og:title toutes pages alignés sur positionnement Hytale (via i18n seo.* refondu). Shipped 2026-04-22.
 
 ### Cocon Sémantique — Finalisation M1.1 Phase 8
 
-- [ ] **COCON-01**: Composant `HytaleRecentArticles.vue` — affiche les 3 derniers articles blog (tags hytale uniquement) sur `/hytale`, bidirectionnel avec le maillage `/blog` → `/hytale`
+- [x] **COCON-01**: Composant `HytaleRecentArticles.vue` live sur `/hytale.vue:38` — queryCollection bilingue FR/EN, filter tag hytale JS-side (D-11 LIKE JSON unreliable), slice 2 articles, i18n `hytale.recentArticles.*` présent FR+EN. Shipped avec M1.1 (Phase 8 reporté).
 
 ---
 

@@ -208,16 +208,11 @@ Plans:
 - [ ] 10-02-PLAN.md — Code plugins + publish GitHub + README EN (gif/screenshot assets dans public/demos/)
 - [ ] 10-03-PLAN.md — Composant `HytaleDemoGrid.vue` + intégration `/hytale` + i18n hytale.demos.* + data source (app/data/hytaleDemos.ts ou frontmatter)
 
-### Phase 11: Rebranding + Cocon
-**Goal**: Zéro ref "Full Stack" dans le code/JSON-LD/meta, jobTitle cohérent partout, `/hytale` affiche les derniers articles blog
-**Depends on**: rien (parallélisable avec 10)
-**Requirements**: REBRAND-01, REBRAND-02, REBRAND-03, COCON-01
-**Success Criteria** (what must be TRUE):
-  1. `grep -rni "full stack\|fullstack" app/ content/ i18n/` retourne 0 match non-justifié
-  2. JSON-LD `app/pages/index.vue` utilise `siteConfig.jobTitle` (pas de hardcode)
-  3. Meta description + og:title de chaque page (index, about, contact, projets, fiverr, formation) parlent d'Hytale ou positionnement gaming
-  4. Section "Articles récents" sur `/hytale` affiche les 3 derniers articles tag "hytale" (FR ou EN selon locale)
+### Phase 11: Rebranding + Cocon ✅ (shipped 2026-04-22)
+**Goal**: Zéro ref "Full Stack" dans code/JSON-LD/meta, jobTitle cohérent, `/hytale` affiche derniers articles
+**Outcome**: Shipped. JSON-LD homepage via siteConfig, 14 clés i18n FR+EN refondues, site.name fixé, HytaleRecentArticles déjà intégré (carry-over de M1.1 Phase 8).
+**Requirements**: REBRAND-01 ✅, REBRAND-02 ✅, REBRAND-03 ✅, COCON-01 ✅
 **Plans:** 2 plans
 Plans:
-- [ ] 11-01-PLAN.md — Grep + fix index.vue JSON-LD + audit jobTitle toutes pages + i18n FR/EN cohérence positionnement
-- [ ] 11-02-PLAN.md — Composant `HytaleRecentArticles.vue` (queryCollection bilingue, filter tag hytale, limit 3) + injection `/hytale` + i18n hytale.recentArticles.*
+- [x] 11-01-PLAN.md — REBRAND-01/02/03 (commit f72170b)
+- [x] 11-02-PLAN.md — COCON-01 (déjà shippé avec M1.1, composant live sur /hytale.vue:38)

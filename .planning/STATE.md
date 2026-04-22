@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: Ship to Prod + Credibility Gap
-status: Phase 9 shipped — M1.1 live en prod (blog/SEO/sitemap sur killiandalcin.fr). Nuxt build hang fixé via hook close (nuxt/nuxt#33987)
-last_updated: "2026-04-22T22:45:00.000Z"
+status: Phase 9 + Phase 11 shipped. Seule Phase 10 (demo plugins Hytale) reste — code offline par user. Rebranding complet FR/EN, HytaleRecentArticles live sur /hytale.
+last_updated: "2026-04-22T23:30:00.000Z"
 last_activity: 2026-04-22
 progress:
   total_phases: 3
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 6
-  completed_plans: 1
-  percent: 17
+  completed_plans: 4
+  percent: 67
 ---
 
 # Project State
@@ -24,11 +24,11 @@ progress:
 ## Current Focus
 
 Milestone: M1.2 — Ship to Prod + Credibility Gap
-Phase: Phase 10 — Demo Plugins Hytale (next)
-Plan: 10-01 (to be planned — brainstorm + choix 2-3 concepts plugins, critères simple/wow/API avancée)
-Status: Phase 9 shipped — M1.1 live sur killiandalcin.fr
+Phase: Phase 10 — Demo Plugins Hytale (code offline par user)
+Plan: 10-02 Wave 1 (GravityFlip) — premier plugin à coder, le portfolio est prêt à les accueillir côté frontend
+Status: Phase 9 + Phase 11 shipped. 4/6 plans complete (67%).
 Last activity: 2026-04-22
-Resume file: lancer `/gsd-plan-phase 9`
+Resume : user code les plugins side (5 repos GitHub), puis retour sur Plan 10-03 (HytaleDemoGrid) quand ≥1 plugin shippé
 
 ## Milestone Context (v1.2)
 

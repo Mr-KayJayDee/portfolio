@@ -6,6 +6,9 @@ const blogSchema = z.object({
   date: z.string(),
   tags: z.array(z.string()).optional(),
   image: z.string().optional(),
+  draft: z.boolean().optional().default(false),
+  wordCount: z.number().optional(),
+  minutes: z.number().optional(),
 })
 
 export default defineContentConfig({

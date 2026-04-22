@@ -1,6 +1,6 @@
 ---
 title: "Hytale plugin development in 2026: state of the art and outlook"
-description: "A 2026 snapshot of the Hytale plugin ecosystem: tech stack, modern patterns, and what's next for the community."
+description: "A 2026 snapshot of the Hytale plugin ecosystem: the Java choice, Hypixel's official API, modern patterns, and what's next."
 date: "2026-04-21"
 tags: ["hytale", "industry", "analysis"]
 draft: false
@@ -8,70 +8,93 @@ draft: false
 
 ## Where Hytale stands in 2026
 
-A few years ago, "Hytale plugin development" meant hacking on preview builds, re-reading SDK release notes three times before touching an API, and praying that an event class wouldn't rename itself next week. In 2026, the texture has changed: the official SDK has stabilized, production-grade patterns have emerged, and the line between community server and indie commercial studio has blurred.
+A few years ago, "Hytale plugin development" meant hacking on preview builds, re-reading release notes three times before touching an API, and praying that an event class wouldn't rename itself next week. In 2026, the texture has changed: Hytale has entered early access, Hypixel has shipped its official plugin API (package `com.hypixel.hytale.plugin`), and the community has converged around a maintained GitHub plugin template and a community GitBook that acts as the reference documentation while the official one is still being written.
 
-I've been building [Hytale plugins on commission](/en/hytale) since the early betas, and what I see on client codebases looks less and less like hobbyist scripting. Servers that want a real audience — player-driven economies, competitive PvP, structured roleplay — now demand the same rigor as any serious server-side Kotlin codebase: tests, CI, versioning, reviews.
+I've been building [Hytale plugins on commission](/en/hytale) since the early previews, and what I see on client codebases looks less and less like hobbyist scripting. Servers aiming at a real audience — player-driven economies, competitive PvP, structured roleplay — now demand the same rigor as any serious server-side JVM codebase: tests, CI, versioning, reviews.
 
-The thesis of this post is simple: 2026 is the year Hytale plugin development becomes a real craft, with its own conventions, tooling, and pitfalls. Here's what I'm seeing in production, what works, and what we should stop doing.
+The thesis of this post is simple: 2026 is the year Hytale stops being a speculation target and becomes a concrete dev platform, with its official language (Java), its API conventions, and its first stabilized patterns. Here's what I'm seeing.
 
-## The 2026 stack: Kotlin, coroutines, and mature tooling
+## The Java choice and what it signals
 
-Kotlin is the lingua franca on the plugin side. Residual Java survives in older codebases ported from other ecosystems, but any new serious project starts in Kotlin/JVM. The tooling follows suit: Gradle Kotlin DSL is the norm, IntelliJ IDEA is the reference IDE, and the JUnit 5 + MockK testing chain covers most unit and integration needs.
+Hypixel made the call: the Hytale plugin API is in **Java**, not Kotlin. That decision, readable both in the official template at `hytalemodding.dev` and in the community GitBook, is deliberate and coherent. The `JavaPlugin` base class (package `com.hypixel.hytale.plugin`) visually echoes the pattern every dev coming from Bukkit/Spigot recognizes at first glance: `onEnable()`, `onDisable()`, listener registration via `getServer().getPluginManager()`. The resemblance isn't accidental — it's an onboarding choice. A seasoned Paper dev can read the template and be productive in a few hours.
 
-The most visible shift is the systematic adoption of coroutines for anything I/O-shaped. Old Bukkit-era reflexes — everything synchronous on the main thread, a manual `Thread` here and there for the slow stuff — have given way to dedicated scopes, cleanly cancelled on plugin shutdown.
+Another strong signal: the constructor signature is **mandatory** (`public YourPlugin(@Nonnull JavaPluginInit init)`), and the manifest lives in a `manifest.json` (not `plugin.yml`) with capitalized fields (`Group`, `Name`, `Main`, `Version`, `Authors`, `ServerVersion`). These are the two places where Hypixel intentionally diverges from Bukkit legacy — enough to stake its own identity, not enough to lose the existing dev base.
 
-Here's a pattern I push on client projects: an event handler that fires an async profile lookup without ever blocking the main tick.
+The Java 25 assumed by the docs also lets the API lean on modern language features. Records for event modeling, sealed interfaces for closed hierarchies, pattern matching in switch expressions, and virtual threads (stable since Java 21) for async I/O without pulling in a coroutine library. It's a 2026 Java, not a 2016 Java — and it shows in the quality of API signatures the community documents.
 
-```kotlin
-package com.example.ecoplugin
+## A modern plugin skeleton
 
-import io.hytale.api.HytalePlugin
-import io.hytale.api.event.EventHandler
-import io.hytale.api.event.player.PlayerJoinEvent
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.cancel
-import kotlinx.coroutines.launch
+Here's the kind of skeleton I push on client projects that start ambitious: a plugin that leans on records, sealed interfaces, and virtual threads to handle I/O without ever blocking the server tick.
 
-class EcoPlugin : HytalePlugin() {
-    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+```java
+package com.example.ecoplugin;
 
-    @EventHandler
-    fun onJoin(event: PlayerJoinEvent) {
-        scope.launch {
-            val profile = profileRepo.fetch(event.player.uuid)
-            event.player.sendMessage("Welcome back, balance: ${profile.balance}")
-        }
+import com.hypixel.hytale.plugin.JavaPlugin;
+import com.hypixel.hytale.plugin.JavaPluginInit;
+import jakarta.annotation.Nonnull;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class EcoPlugin extends JavaPlugin {
+
+    // Closed, modeled type — no stringly-typed enum
+    sealed interface EcoEvent permits Deposit, Withdraw, Transfer {}
+    record Deposit(String playerId, long amount) implements EcoEvent {}
+    record Withdraw(String playerId, long amount) implements EcoEvent {}
+    record Transfer(String from, String to, long amount) implements EcoEvent {}
+
+    // Virtual threads: an "infinite" pool for I/O, near-zero cost per task
+    private final ExecutorService io = Executors.newVirtualThreadPerTaskExecutor();
+
+    public EcoPlugin(@Nonnull JavaPluginInit init) {
+        super(init);
     }
 
-    override fun onDisable() {
-        scope.cancel()
+    @Override
+    public void onEnable() {
+        getLogger().info("EcoPlugin enabled");
+        getServer().getPluginManager().registerEvents(new EcoListener(this), this);
+    }
+
+    @Override
+    public void onDisable() {
+        io.shutdown();
+    }
+
+    public void dispatch(EcoEvent event) {
+        io.submit(() -> {
+            switch (event) {
+                case Deposit d    -> getLogger().info("deposit "  + d.amount() + " for " + d.playerId());
+                case Withdraw w   -> getLogger().info("withdraw " + w.amount() + " for " + w.playerId());
+                case Transfer t   -> getLogger().info("transfer " + t.amount() + " " + t.from() + "→" + t.to());
+            }
+        });
     }
 }
 ```
 
-Three details matter: the `SupervisorJob` that stops one bad coroutine from killing its siblings, the `Dispatchers.IO` that keeps us off the default pool, and the `scope.cancel()` in `onDisable()` that leaves the JVM clean on reload. Nothing revolutionary — just the baseline coroutine hygiene the ecosystem finally internalized.
+Three things are worth pausing on. First, the **sealed interface** `EcoEvent` with its three records: the compiler checks switch-expression exhaustiveness, and adding a new event type breaks compilation exactly where it should — the kind of safety net Kotlin already offered with `sealed class`, and that Java eventually brought back cleanly. Second, the **records**: zero boilerplate, structural equality by default, immutability, perfect readability. Third, `newVirtualThreadPerTaskExecutor()`: an executor that spawns one virtual thread per task, effectively free, ideal for I/O that must never touch the main server tick.
 
 ::alert{type="tip"}
-**Heads-up** — The public Hytale API is still evolving; exact class names (`HytalePlugin`, `PlayerJoinEvent`) may shift between major versions. The pattern — lifecycle-aware scope, I/O dispatcher, cancel on shutdown — stays valid regardless of naming.
+**Heads-up** — Exact event class names (`PlayerJoinEvent`, etc.) may still move during early access. The pattern — virtual-thread executor for I/O, records for immutable data, sealed interface for event hierarchies — remains valid regardless of the final naming.
 ::
 
 ## Modern patterns: what replaced the Bukkit-era bad habits
 
 The three practice shifts I see most clearly on serious codebases:
 
-**Explicit dependency injection.** No more global singletons reached from anywhere. Either a small container like `Koin`, or manual constructor injection. Event handlers receive their collaborators instead of grabbing them from a static field — which makes the code testable without monkey-patching.
+**Explicit dependency injection.** No more global singletons reached from anywhere. Either a small container (Guice is still popular on the Java side), or manual constructor injection. Listeners receive their collaborators instead of grabbing them from a static field — which makes the code testable without monkey-patching.
 
-**Handler / business logic separation.** An `@EventHandler` becomes a thin adapter: it pulls the relevant data off the event, calls a pure business service, and applies the result. The logic lives in classes you can test without instantiating half the SDK.
+**Listener / business logic separation.** An `@EventHandler` becomes a thin adapter: it pulls the relevant data off the event, calls a pure business service, and applies the result. The logic lives in classes you can test without instantiating half the SDK.
 
-**Typed configuration.** No more manual YAML parsing into `Map<String, Any>`. `kotlinx.serialization` deserializes into a data class, and any missing or wrongly typed key blows up at load — not three days later in production when a player finally triggers that code path.
+**Typed configuration.** No more manual parsing into `Map<String, Object>`. Jackson or Gson deserializes into records, and any missing or wrongly typed key blows up at load — not three days later in production when a player finally triggers that code path.
 
-**Tests.** Unit tests on business logic, integration tests on handlers with a mocked SDK. This is no longer eccentric; it's what separates a commercial plugin from a weekend script.
+**Tests.** JUnit 5 on business logic, integration tests on listeners with a mocked SDK (Mockito). This is no longer eccentric — it's what separates a commercial plugin from a weekend script.
 
-## Ecosystem: libraries and SDKs that matter
+## Ecosystem: libraries and resources that matter
 
-The official Hytale SDK is the foundation. Around it, the ecosystem is more fragmented than Paper/Spigot at comparable maturity, but a few active GitHub hubs and dev Discords do the curation: Kotlin-idiomatic wrappers on Java-first APIs, DSLs for command configuration, persistence helpers.
+The official Hypixel API is the foundation. Around it, the ecosystem is younger than Paper/Spigot at comparable maturity, but two hubs carry their weight: `hytalemodding.dev` (maintained plugin template, FR+EN guides) and the GitBook at `britakee-studios.gitbook.io/hytale-modding-documentation` (the most up-to-date community documentation while the official one is still being written). Between the two, a motivated dev has everything needed to start cleanly.
 
 Recurring anti-patterns I find during client codebase audits: handlers doing blocking I/O on the main thread, shared global state without synchronization, config stored in untyped `HashMap`, zero structured logging. None of it is new — they're the same wounds as any JVM plugin ecosystem, with the same cure: discipline, typing, isolation.
 
@@ -79,16 +102,16 @@ Recurring anti-patterns I find during client codebase audits: handlers doing blo
 
 A few trends I'd bet on for the next 12-18 months:
 
-**Client-side scripting.** If the platform extends its client-side hooks as it has hinted, a whole class of cosmetic / UX plugins becomes feasible without server-side hacks. Worth watching.
+**Official documentation catching up.** The official Hypixel GitBook is still being written; as it fills in, expect the event naming, command APIs, and packaging conventions to converge further.
 
-**Stricter packaging formats.** Published plugins are starting to look like proper Gradle artifacts: rich metadata, declared dependencies, signatures. Distribution platforms are catching up.
+**Signature gameplay loops emerging.** Hytale in early access is surfacing the first big server experiences — cross-world economies, persistent mini-games, competitive modes. The plugins powering them are the labs where tomorrow's patterns will be forged.
 
-**Professionalization of monetization.** One-shot commissions remain dominant, but I'm seeing rev-share arrangements on monetized servers, annual maintenance contracts, and B2B licensing for complex features. If you want to outsource an ambitious plugin instead of stacking it on an internal backlog, I offer [Hytale plugin development on commission](/en/hytale) — modern patterns and typed config included by default.
+**Professionalization of monetization.** One-shot commissions remain dominant, but I'm seeing rev-share arrangements on monetized servers, annual maintenance contracts, and B2B licensing for complex features. If you want to outsource an ambitious plugin instead of stacking it on an internal backlog, I offer [Hytale plugin development on commission](/en/hytale) — modern patterns and mastery of the official API included by default.
 
-**Debug / profiling tooling.** Still the poor cousin. The best teams write their own; expect public libraries to fill that gap.
+**Debug / profiling tooling.** Still the poor cousin. The best teams write their own; expect public libraries to fill that gap as early access progresses.
 
 ## Conclusion
 
-2026 isn't the year of a Hytale revolution — it's the year of consolidation. The patterns exist, the tooling is there, the expectations of serious servers have moved up a notch. The "weekend script" plugin will keep existing and delighting its authors, but the tier above — plugins you sell, maintain, and integrate into a commercial server — now follows the same standards as any serious Kotlin service.
+2026 isn't the year of a Hytale revolution — it's the year of consolidation. The official API is here, Java is locked in as the reference language, and modern features (records, sealed, virtual threads) give the language an expressiveness that fully justifies the choice. Community tooling and documentation cover the gaps the official docs still leave.
 
-For developers on the fence: this is the moment. The API has settled, the community knows what it's doing, and servers are hungry. What was an obscure hobby three years ago has become a legitimate technical niche — with all the rigor that implies, but also all the opportunity.
+For developers on the fence: this is the moment. The API has a clear identity, the community knows what it's doing, and early-access servers are hungry. What was an obscure hobby three years ago has become a legitimate technical niche — with all the rigor that implies, but also all the opportunity.

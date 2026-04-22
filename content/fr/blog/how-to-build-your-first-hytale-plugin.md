@@ -1,160 +1,166 @@
 ---
 title: "Créer son premier plugin Hytale : guide pas à pas"
-description: "Apprends à coder ton premier plugin Hytale en Kotlin : setup, event listener, et commande custom — avec le code source complet."
+description: "Apprends à coder ton premier plugin Hytale en Java : setup IntelliJ + Gradle, manifest.json, event listener — avec le code source complet."
 date: "2026-04-22"
-tags: ["hytale", "tutorial", "kotlin"]
+tags: ["hytale", "tutorial", "java"]
 draft: false
 ---
 
 ## Pourquoi Hytale, pourquoi maintenant
 
-La première fois que j'ai branché un serveur Hytale en local, j'ai compris que cette plateforme allait rejouer exactement ce que Minecraft a fait avec Bukkit en 2012 — sauf qu'en 2026, on démarre avec Kotlin, une API typée, et un SDK pensé dès le jour 1 pour les développeurs de plugins. Autrement dit : fenêtre d'opportunité grande ouverte pour qui veut se positionner tôt.
+La première fois que j'ai branché un serveur Hytale en local, j'ai compris que cette plateforme allait rejouer exactement ce que Minecraft a fait avec Bukkit en 2012 — sauf qu'en 2026, on démarre avec Java 25, une API officielle fournie par Hypixel, et un template GitHub maintenu par la communauté HytaleModding. Autrement dit : fenêtre d'opportunité grande ouverte pour qui veut se positionner tôt, pendant l'early access.
 
-Dans ce guide, je te montre comment j'ai construit mon premier plugin Hytale : un module minimal qui écoute l'arrivée d'un joueur et ajoute une commande `/hello`. Rien de spectaculaire, mais c'est exactement le squelette dont tu as besoin pour itérer sur des features plus ambitieuses. Si tu préfères déléguer et faire [commissionner un plugin Hytale sur-mesure](/hytale) plutôt que de l'écrire toi-même, c'est aussi une option — mais si tu es là, tu as probablement envie de mettre les mains dedans.
+Dans ce guide, je te montre comment j'ai construit mon premier plugin Hytale : un module minimal qui écoute l'arrivée d'un joueur et loggue l'événement. Rien de spectaculaire, mais c'est exactement le squelette dont tu as besoin pour itérer sur des features plus ambitieuses. Si tu préfères déléguer et faire [commissionner un plugin Hytale sur-mesure](/hytale) plutôt que de l'écrire toi-même, c'est aussi une option — mais si tu es là, tu as probablement envie de mettre les mains dedans.
 
 ::alert{type="info"}
-**Note API** — Les noms d'API cités ici sont basés sur la documentation publique du SDK Hytale 2026. Ils peuvent évoluer au lancement officiel — adapte selon la doc la plus récente au moment où tu lis ceci.
+**Note API** — Hytale est en early access en 2026. L'API plugin (package `com.hypixel.hytale.plugin`) est officiellement fournie par Hypixel, mais la doc officielle GitBook est encore en cours de rédaction. Les ressources communautaires de référence sont `hytalemodding.dev` et `britakee-studios.gitbook.io/hytale-modding-documentation`. Les noms d'events exacts peuvent évoluer — adapte selon la doc la plus récente au moment où tu lis ceci.
 ::
 
 ## Prérequis
 
 Avant de cloner quoi que ce soit, assure-toi d'avoir :
 
-- **JDK 17+** (je recommande Temurin 21 — le SDK Hytale 2026 tourne dessus sans broncher)
-- **IntelliJ IDEA Community Edition** — gratuit, et l'intégration Gradle + Kotlin y est excellente
-- **Gradle 8.x** (IntelliJ le bundle, pas besoin de l'installer séparément)
-- Des bases solides en **Kotlin** : classes, lambdas, annotations, nullabilité
+- **JDK 25** — la version assumée par la doc plugin Hytale actuelle. Temurin fait très bien l'affaire.
+- **IntelliJ IDEA Community Edition** — gratuit, c'est l'IDE recommandé par HytaleModding, et l'intégration Gradle + Java y est irréprochable
+- **Gradle** (bundlé par IntelliJ, pas besoin d'install séparée)
+- Des bases solides en **Java moderne** : classes, annotations, génériques, lambdas
 
-Je pars du principe que tu as déjà un serveur Hytale local qui démarre. Si ce n'est pas le cas, la doc officielle du serveur est ton point de départ — ce guide se concentre sur le plugin, pas sur l'hébergement.
+Je pars du principe que tu as déjà un serveur Hytale local qui démarre. Si ce n'est pas le cas, le template plugin disponible sur `hytalemodding.dev` te pointe vers la bonne version serveur à utiliser — ce guide se concentre sur le plugin, pas sur l'hébergement.
 
 ## Scaffold du projet
 
-L'arborescence minimale ressemble à ceci :
+Le plus simple est de partir du template officiel HytaleModding. L'arborescence minimale ressemble à ceci :
 
 ```
 my-first-plugin/
-├── build.gradle.kts
-├── src/
-│   └── main/
-│       ├── kotlin/
-│       │   └── com/example/myplugin/
-│       │       └── MyPlugin.kt
-│       └── resources/
-│           └── plugin.toml
+├── build.gradle
+├── settings.gradle
+├── gradle.properties
+└── src/
+    └── main/
+        ├── java/
+        │   └── com/example/myplugin/
+        │       └── MyPlugin.java
+        └── resources/
+            └── manifest.json
 ```
 
-Le fichier `build.gradle.kts` minimal que j'utilise :
+Le `settings.gradle` déclare simplement le nom du projet :
 
-```kotlin
-plugins {
-    kotlin("jvm") version "2.0.0"
-    id("com.github.johnrengelman.shadow") version "8.1.1"
-}
+```groovy
+rootProject.name = 'my-first-plugin'
+```
 
-repositories {
-    mavenCentral()
-    maven("https://repo.hytale.io/public")
-}
+Le `gradle.properties` fixe le group et la version :
 
-dependencies {
-    compileOnly("io.hytale:hytale-api:1.0.0")
-}
+```properties
+group=com.example
+version=1.0.0
+```
 
-tasks {
-    build { dependsOn("shadowJar") }
+Le fichier `manifest.json` — **c'est ce fichier qui remplace le `plugin.yml` du monde Bukkit** — déclare ton plugin au serveur Hytale. Il vit dans `src/main/resources/` et contient au minimum :
+
+```json
+{
+  "Group": "com.example",
+  "Name": "MyFirstPlugin",
+  "Main": "com.example.myplugin.MyPlugin",
+  "Version": "1.0.0",
+  "Description": "Mon premier plugin Hytale",
+  "Authors": ["toi"],
+  "ServerVersion": "*"
 }
 ```
 
-Le manifest `plugin.toml` déclare ton plugin au serveur :
-
-```toml
-name = "MyPlugin"
-version = "0.1.0"
-main = "com.example.myplugin.MyPlugin"
-authors = ["toi"]
-```
-
-C'est tout. Aucun boilerplate ne t'attend avant de pouvoir écrire la première ligne utile.
+Pas de boilerplate inutile. Le champ `Main` doit pointer vers la classe qui étend `JavaPlugin` — c'est littéralement la seule configuration obligatoire côté runtime.
 
 ## Premier event listener — le cœur du plugin
 
-Voici la classe principale. C'est le fichier sur lequel tu vas passer le plus de temps dans les premières semaines, donc prends-le au sérieux :
+Voici la classe principale. Elle étend `JavaPlugin` du package officiel `com.hypixel.hytale.plugin`, avec la signature de constructeur **exactement** telle qu'exigée par l'API :
 
-```kotlin
-package com.example.myplugin
+```java
+package com.example.myplugin;
 
-import io.hytale.api.HytalePlugin
-import io.hytale.api.event.EventHandler
-import io.hytale.api.event.player.PlayerJoinEvent
+import com.hypixel.hytale.plugin.JavaPlugin;
+import com.hypixel.hytale.plugin.JavaPluginInit;
+import jakarta.annotation.Nonnull;
 
-class MyPlugin : HytalePlugin() {
+public class MyPlugin extends JavaPlugin {
 
-    override fun onEnable() {
-        logger.info("MyPlugin enabled")
-        server.events.register(this)
+    public MyPlugin(@Nonnull JavaPluginInit init) {
+        super(init);
     }
 
-    override fun onDisable() {
-        logger.info("MyPlugin disabled — cleaning up")
+    @Override
+    public void onEnable() {
+        getLogger().info("MyPlugin enabled");
+        getServer().getPluginManager().registerEvents(new JoinListener(), this);
     }
 
-    @EventHandler
-    fun onPlayerJoin(event: PlayerJoinEvent) {
-        val player = event.player
-        player.sendMessage("Welcome to the server, ${player.name}!")
-        logger.info("Player ${player.name} joined at ${event.timestamp}")
+    @Override
+    public void onDisable() {
+        getLogger().info("MyPlugin disabled — cleaning up");
     }
 }
 ```
 
 Décortique rapidement :
 
-- `HytalePlugin` est la classe de base fournie par l'API. Elle expose `logger`, `server`, et les hooks de cycle de vie (`onEnable` / `onDisable`).
-- `server.events.register(this)` indique au serveur que cette instance contient des méthodes `@EventHandler`. Sans cette ligne, ton listener ne sera jamais appelé — erreur classique que j'ai faite la première fois.
-- L'annotation `@EventHandler` marque la méthode comme cible d'un event. Le type `PlayerJoinEvent` en paramètre fait office de filtre : seul cet event déclenche la méthode.
-- `event.player` expose un objet `Player` avec `sendMessage`, `teleport`, `inventory`, etc.
+- `JavaPlugin` est la classe de base fournie par l'API Hypixel. Elle expose `getLogger()`, `getServer()`, et les hooks de cycle de vie (`onEnable` / `onDisable`).
+- Le **constructeur avec `@Nonnull JavaPluginInit init`** est obligatoire — sans cette signature exacte, le plugin manager ne parvient pas à instancier ta classe au chargement. C'est l'erreur que j'ai faite la première fois : oublier le constructeur et passer 30 minutes à debugger un `NoSuchMethodException`.
+- `getServer().getPluginManager().registerEvents(...)` enregistre un listener externe auprès du serveur. L'API est volontairement proche de Bukkit dans sa forme — les devs qui viennent de Spigot/Paper retrouvent leurs repères, même si le package et l'implémentation sont propres à Hypixel.
 
-Compile, démarre le serveur, connecte-toi : tu devrais voir le message de bienvenue dans le chat. Si ce n'est pas le cas, vérifie les logs serveur — une `ClassNotFoundException` est généralement un souci de shadow jar mal configuré.
+Le listener lui-même vit dans une classe séparée — plus propre et plus testable :
 
-## Ajouter une commande custom
+```java
+package com.example.myplugin;
 
-Écouter des events, c'est la moitié du job. L'autre moitié, c'est de laisser les joueurs interagir avec ton plugin via des commandes. Ajoute cette méthode dans la même classe :
+import com.hypixel.hytale.plugin.event.EventHandler;
+import com.hypixel.hytale.plugin.event.Listener;
+import com.hypixel.hytale.plugin.event.player.PlayerJoinEvent;
 
-```kotlin
-import io.hytale.api.command.Command
-import io.hytale.api.command.CommandSender
+public class JoinListener implements Listener {
 
-@Command(name = "hello", description = "Says hello back")
-fun onHelloCommand(sender: CommandSender, args: List<String>) {
-    val target = args.firstOrNull() ?: sender.name
-    sender.sendMessage("Hello, $target!")
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event) {
+        var player = event.getPlayer();
+        player.sendMessage("Welcome to the server, " + player.getName() + "!");
+    }
 }
 ```
 
-Tu peux maintenant taper `/hello` ou `/hello Killian` en jeu. L'annotation `@Command` enregistre la commande automatiquement — pas besoin de l'inscrire dans `plugin.toml`. Si tu veux de la validation stricte sur les arguments, `CommandSender` expose `hasPermission(node)` pour restreindre l'accès.
+::alert{type="warning"}
+**Noms d'events approximatifs** — `PlayerJoinEvent` est un nom plausible et conforme au style Bukkit-like que la doc laisse entrevoir, mais tous les events exacts ne sont pas encore catalogués publiquement. Vérifie la classe exacte disponible dans ta version du SDK Hytale avant d'expédier en prod.
+::
+
+Compile, démarre le serveur, connecte-toi : tu devrais voir le message de bienvenue dans le chat. Si ce n'est pas le cas, vérifie les logs serveur — un `NoSuchMethodException` sur le constructeur est quasi certain si tu as oublié la signature `(@Nonnull JavaPluginInit init)`.
 
 ## Build + deploy local
 
 Le cycle que je fais 20 fois par jour :
 
 ```bash
-./gradlew shadowJar
-cp build/libs/my-first-plugin-all.jar ~/hytale-server/plugins/
-# Puis dans la console serveur :
-> reload MyPlugin
+./gradlew build
+cp build/libs/my-first-plugin-1.0.0.jar ~/hytale-server/plugins/
+# Puis redémarre le serveur, ou utilise la commande de reload disponible
 ```
 
-Le flag `shadowJar` empaquette toutes tes dépendances runtime dans un seul `.jar`, ce qui évite les galères de classpath. Sur des plugins plus ambitieux — persistance SQLite, API REST embarquée, intégrations Discord — c'est vite indispensable. Si ce genre de scope te parle mais que tu préfères déléguer la partie développement, tu peux toujours [commissionner un plugin Hytale sur-mesure](/hytale) auprès de quelqu'un qui fait ça au quotidien.
+Le `.jar` généré par `./gradlew build` dans `build/libs/` est directement déposable dans le dossier `plugins/` de ton serveur Hytale. Le nom suit le pattern `{rootProject.name}-{version}.jar` défini dans tes fichiers Gradle. Si ton plugin grossit — persistance, intégrations externes, libs tierces — tu passeras sur un `shadowJar` pour embarquer les dépendances, mais pour un premier plugin la config de base suffit largement. Si ce genre de scope te parle mais que tu préfères déléguer la partie développement, tu peux toujours [commissionner un plugin Hytale sur-mesure](/hytale) auprès de quelqu'un qui fait ça au quotidien.
 
 ## Prochaines étapes
 
 Une fois ton premier plugin qui tourne, les pistes naturelles sont :
 
-- Écouter plus d'events : `BlockBreakEvent`, `PlayerChatEvent`, `EntityDamageEvent` — la liste complète est dans le package `io.hytale.api.event`.
-- Persister de la donnée : commence avec un simple `JsonFile` dans le dossier plugin, passe à SQLite quand tu dépasses 50 Ko de state.
-- Ajouter des permissions : l'API Hytale embarque un système de nodes type `myplugin.admin.reload` qui s'intègre avec les groupes serveur.
-- Profiler tes handlers : un event listener lent impacte directement le TPS du serveur. `logger.info` avec timestamps est ton premier outil, puis Flight Recorder pour le sérieux.
+- Écouter plus d'events — la liste exacte des classes d'events disponibles est à récupérer via l'auto-complétion IntelliJ sur le package `com.hypixel.hytale.plugin.event`.
+- Persister de la donnée : commence avec un simple fichier JSON dans le dossier du plugin, passe à SQLite quand tu dépasses 50 Ko de state.
+- Structurer ton code : un plugin qui grossit mérite une séparation claire listener / service / repository dès que tu passes les 300 lignes.
+- Profiler tes handlers : un event listener lent impacte directement le TPS du serveur. `getLogger().info` avec timestamps est ton premier outil, puis Flight Recorder quand tu passes en prod.
+
+## Pour aller plus loin
+
+- [hytalemodding.dev](https://hytalemodding.dev) — template plugin et guides FR+EN
+- [britakee-studios.gitbook.io/hytale-modding-documentation](https://britakee-studios.gitbook.io/hytale-modding-documentation) — GitBook communautaire, la source la plus à jour sur l'API
 
 ## Conclusion
 
-Un plugin Hytale, c'est essentiellement une classe Kotlin qui hérite de `HytalePlugin`, enregistre des listeners, et expose des commandes. Tout le reste — persistance, UI, intégrations — se construit sur ce socle de 50 lignes. Si tu as suivi jusqu'ici, tu as déjà la base technique pour livrer n'importe quelle idée que tu as en tête. Code un premier truc moche, fais-le tourner, itère. C'est toujours comme ça que ça commence.
+Un plugin Hytale, c'est essentiellement une classe Java qui étend `JavaPlugin`, expose le bon constructeur, enregistre des listeners via le `PluginManager`, et se décrit dans un `manifest.json`. Tout le reste — persistance, intégrations, UI — se construit sur ce socle de 50 lignes. Si tu as suivi jusqu'ici, tu as déjà la base technique pour livrer n'importe quelle idée que tu as en tête pendant l'early access. Code un premier truc moche, fais-le tourner, itère. C'est toujours comme ça que ça commence.

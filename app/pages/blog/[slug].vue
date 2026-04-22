@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { KILLIAN_PERSON_ID } from '~/utils/seo-person'
+import { resolveOgImage } from '~/utils/resolve-og-image'
+
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
@@ -35,6 +38,16 @@ const { data: surround } = await useAsyncData(
         })
           .where('draft', '=', false)
           .order('date', 'DESC'),
+  { watch: [locale] },
+)
+
+// Détecter la version dans l'autre langue (pour og:locale:alternate, D-15, Pitfall 7)
+const { data: altExists } = await useAsyncData(
+  `blog-alt-${locale.value}-${slug}`,
+  () =>
+    isFr.value
+      ? queryCollection('blog_en').path(`/en/blog/${slug}`).first()
+      : queryCollection('blog_fr').path(`/fr/blog/${slug}`).first(),
   { watch: [locale] },
 )
 
@@ -78,6 +91,13 @@ const readingMinutes = computed(() => {
   return useReadingTime(page.value?.description ?? '')
 })
 
+const SITE_URL = 'https://killiandalcin.fr'
+const ogImage = computed(() => resolveOgImage(page.value as { image?: string } | null))
+const canonicalUrl = computed(() => `${SITE_URL}${localePath('/blog/' + slug)}`)
+const publishedIso = computed(() => page.value?.date)
+const modifiedIso = computed(() => page.value?.updated ?? page.value?.date) // D-13
+const inLanguageTag = computed(() => (isFr.value ? 'fr-FR' : 'en-US')) as unknown as ComputedRef<'fr-FR'>
+
 interface TocLink {
   id: string
   depth: number
@@ -96,7 +116,37 @@ useSeoMeta({
   ogTitle: () => page.value?.title,
   ogDescription: () => page.value?.description,
   ogType: 'article',
+  ogImage,
+  ogUrl: canonicalUrl,
+  ogLocale: () => (isFr.value ? 'fr_FR' : 'en_US'),
+  ogLocaleAlternate: () => (altExists.value ? [isFr.value ? 'en_US' : 'fr_FR'] : []),
+  twitterCard: 'summary_large_image',
+  twitterImage: ogImage,
+  articlePublishedTime: publishedIso,
+  articleModifiedTime: modifiedIso,
+  articleAuthor: () => ["Killian' Dal-Cin"],
 })
+
+useSchemaOrg([
+  defineArticle({
+    headline: () => page.value?.title,
+    description: () => page.value?.description,
+    image: ogImage,
+    datePublished: publishedIso,
+    dateModified: modifiedIso,
+    inLanguage: inLanguageTag,
+    author: { '@id': KILLIAN_PERSON_ID },
+    publisher: { '@id': KILLIAN_PERSON_ID },
+    mainEntityOfPage: canonicalUrl,
+  }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: () => t('blog.breadcrumb.home'), item: () => localePath('/') },
+      { name: () => t('blog.breadcrumb.blog'), item: () => localePath('/blog') },
+      { name: () => page.value?.title ?? '' },
+    ],
+  }),
+])
 </script>
 
 <template>

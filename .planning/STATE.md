@@ -2,8 +2,8 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Plan 06-02 shipped — i18n FR+EN complet, nav link Blog en place, BlogCard.vue (variant default+compact) auto-importable, typecheck vert
-last_updated: "2026-04-22T08:40:12.762Z"
+status: Plan 07-02 shipped — page /blog/[slug] enrichie useSeoMeta D-15 + useSchemaOrg Article+Breadcrumb (author @id=#killian), resolveOgImage helper + fallback og-blog-default.jpg, typecheck vert, curl SSR validé
+last_updated: "2026-04-22T11:20:00.000Z"
 last_activity: 2026-04-22
 progress:
   total_phases: 8
@@ -23,11 +23,11 @@ progress:
 
 ## Current Focus
 
-Phase: Phase 6 — Blog Pages
-Plan: 06-03 (next — Wave 3, listing page /blog)
-Status: Plan 06-02 shipped — i18n FR+EN complet, nav link Blog en place, BlogCard.vue (variant default+compact) auto-importable, typecheck vert
+Phase: Phase 7 — SEO Blog
+Plan: 07-03 (next — Wave 2, blog index/tags SEO)
+Status: Plan 07-02 shipped — /blog/[slug] SEO complet (useSeoMeta D-15 + Article/BreadcrumbList JSON-LD), resolveOgImage helper + fallback og-blog-default.jpg, typecheck vert
 Last activity: 2026-04-22
-Resume file: .planning/phases/06-blog-pages/06-03-PLAN.md
+Resume file: .planning/phases/07-seo-blog/07-03-PLAN.md
 
 ## Accumulated Context
 
@@ -47,3 +47,5 @@ Resume file: .planning/phases/06-blog-pages/06-03-PLAN.md
 - **Gotcha 06-01 (convention)** : Dans un plugin Nitro, importer depuis `app/utils/` se fait via `~/utils/...` (et non `~~/app/utils/...`). Nuxt 4 mappe `~/` → `app/` par défaut. Vérifié par typecheck vert sur server/plugins/reading-time.ts.
 - **Plan 06-02 shipped (2026-04-22)** : i18n `nav.blog` + 3 clés `a11y.blog*` (avec interpolation `{title}`) + bloc `blog.*` 14 clés (title, subtitle, stats.*, readingTime, prevArticle/nextArticle, backToBlog, toc.title, emptyState.*, breadcrumb.*) ajoutés dans fr.json + en.json. AppHeader.vue navLinks : `{ key: 'blog', path: '/blog' }` inséré entre hytale et projects (ligne 11, ordre D-15 respecté). `app/components/BlogCard.vue` créé (192 lignes, auto-importé Nuxt) : variant `default` (listing) avec cover conditional + tag UBadge + date Intl.DateTimeFormat + h2 + description line-clamp-2 + reading-time (minutes hook || useReadingTime fallback) + extra tags pills + full-card NuxtLink SEO + Schema.org BlogPosting markup ; variant `compact` (prev/next, D-09/D-10) : no image + label row avec UIcon arrow directionnelle + h3 + date + NuxtLink aria-label interpolé `a11y.blogPrev`/`a11y.blogNext`. Typecheck exit 0.
 - **Gotcha 06-02 (slug derivation)** : Les articles @nuxt/content ont un `path` de forme `/fr/blog/my-slug`. Dans BlogCard.vue, on extrait le slug via `article.path.split('/').filter(Boolean).pop()` puis on reconstruit `localePath('/blog/' + slug)` — locale-agnostique. Évite de demander un champ `slug` explicite dans le frontmatter (cohérent convention @nuxt/content : path dérivé du nom de fichier).
+- **Plan 07-02 shipped (2026-04-22)** : `app/utils/resolve-og-image.ts` (préfixe https://killiandalcin.fr + fallback /og-blog-default.jpg) + `public/og-blog-default.jpg` (placeholder copié depuis og-image.png — design branded 1200×630 en follow-up backlog) + `app/pages/blog/[slug].vue` enrichi : imports KILLIAN_PERSON_ID+resolveOgImage, useAsyncData altExists (détecte pair bilingue FR/EN), computeds ogImage/canonicalUrl/publishedIso/modifiedIso/inLanguageTag, useSeoMeta étendu 5→14 clés (D-15 complet : ogImage, ogUrl, ogLocale, ogLocaleAlternate conditionnel, twitterCard, twitterImage, articlePublishedTime, articleModifiedTime, articleAuthor string[]), useSchemaOrg([defineArticle {author/publisher @id=#killian}, defineBreadcrumb 3 items]). Curl /fr/blog/{slug} valide : og:image absolu, article:published_time, JSON-LD Article + BreadcrumbList.
+- **Gotcha 07-02 (typings nuxt-schema-org)** : `defineArticle.inLanguage` inféré `ComputedRef<MaybeFalsy<'fr-FR'>>` (narrow) refuse une union `'fr-FR' | 'en-US'`. Cast localisé `as unknown as ComputedRef<'fr-FR'>` suffit — runtime émet correctement les deux valeurs selon locale. `articleAuthor` de useSeoMeta attend `string[]`, pas `string` (packaging @unhead récent).

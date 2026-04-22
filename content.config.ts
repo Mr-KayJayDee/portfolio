@@ -4,6 +4,7 @@ const blogSchema = z.object({
   title: z.string(),
   description: z.string(),
   date: z.string(),
+  updated: z.string().optional(),
   tags: z.array(z.string()).optional(),
   image: z.string().optional(),
   draft: z.boolean().optional().default(false),

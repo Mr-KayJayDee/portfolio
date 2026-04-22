@@ -29,6 +29,7 @@
     "@nuxt/eslint": "^1.15.2",
     "@tailwindcss/typography": "^0.5.19",
     "@types/nodemailer": "^8.0.0",
+    "nuxt-schema-org": "^6.0.4",
     "tailwindcss": "^4.2.3",
     "typescript": "~5.9.0",
     "vue-tsc": "^3.2.6"

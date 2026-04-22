@@ -15,15 +15,17 @@ Block custom qui définit une zone. Toute entité qui entre a sa gravité invers
 
 ---
 
-## 2. FireballStaff (~1j)
-**Repo :** `hytale-fireball-staff`
-**Catégorie marché :** Magie (1 seul plugin payant recensé sur BBB — quasi-vide)
+## 2. ChainLightning Sceptre (~1j)
+**Repo :** `hytale-chain-lightning`
+**Catégorie marché :** Magie (1 seul plugin payant sur BBB — quasi-vide). **Différentiation vs Wan's Wonder Weapons (342K free)** : ce n'est pas un projectile classique, c'est une mécanique de chaînage visuellement unique.
 
-Bâton magique qui lance des fireballs explosives avec traînée de feu qui persiste 3s au sol, knockback, et particules orange vives.
-- Item custom `fireball_staff` avec cooldown 2s
-- `PlayerInteractEvent` right-click → `launchProjectile(Fireball)` avec vecteur du look
-- `ProjectileHitEvent` → `createExplosion(loc, 1.5f, false)` + `block.setType(FIRE)` sur zone 3x3 pour 3s (scheduler revert)
-- Particules `FLAME` + `LAVA` le long de la trajectoire
+Bâton magique : cible un mob → la foudre saute de cible en cible (max 5 targets dans un rayon de 8 blocs entre chaque saut), avec dégâts dégressifs et traînées électriques visibles.
+- Item custom `chain_lightning_sceptre` cooldown 4s
+- Ray-cast 25 blocs → find first entity
+- BFS entity graph : chaque cible ajoute la suivante la plus proche (radius 8), skip déjà-hit, max 5 chaînes
+- Damage dégressif : 8, 6, 4, 3, 2 HP
+- Particles `ELECTRIC_SPARK` + `END_ROD` en ligne entre chaque paire de cibles
+- Son `lightning_bolt` atténué à chaque saut
 
 ---
 
@@ -74,6 +76,7 @@ Saut en hauteur (>5 blocs chute) → impact au sol = onde de choc circulaire qui
 - **README chaque repo** : hero gif 5-10s, tagline EN, features, install, commands, lien portfolio
 - **Distribution** : GitHub public (kayjaydee/hytale-*) + release jar attachée à chaque tag v0.x.0. **Pas Fiverr** (destruction positionnement selon analyse de marché)
 - **Cible contenu** : 1 gif par plugin à poster sur Twitter/Discord HytaleModding, + portfolio killiandalcin.fr/hytale section "Live Demos"
-- **Ordre de ship suggéré** : GravityFlip (#1) d'abord (le plus rapide + impact visuel max), puis FireballStaff (#2) + EarthquakeSlam (#5) pour compléter le trio visuellement fort, puis ShadowClone (#3) et GrapplingHook (#4) comme mécaniques plus avancées
+- **Ordre de ship suggéré** : GravityFlip (#1) d'abord (le plus rapide + impact visuel max), puis ChainLightning Sceptre (#2) + EarthquakeSlam (#5) pour compléter le trio visuellement fort, puis ShadowClone (#3) et GrapplingHook (#4) comme mécaniques plus avancées
+- **Audit concurrence** : Aucun des 5 plugins ne duplique les dominants gratuits cités dans l'analyse (BetterMap 502K, EyeSpy 407K, Wan's Wonder Weapons 342K, RPG Leveling 277K, MMO Skill Tree 251K, Spellbook 181K). FireballStaff remplacé par ChainLightning Sceptre pour éviter le conflit direct avec Wan's (custom weapons génériques)
 
 **Effort total estimé : ~6.5 jours** (vs. 10j des 5 précédents). Rééquilibrage vers catégories sous-servies quand possible sans sacrifier le "wow rapide".

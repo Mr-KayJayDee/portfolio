@@ -99,12 +99,13 @@ Block "wanted board" : right-click pour poser une prime en gold sur un joueur. T
 - `PlayerDeathEvent` → check si target matches, payout killer via economy API
 - 1.5j. Social gameplay driver, catégorie PvP rare.
 
-### 12. TreasureHunt Map ⭐⭐
-Parchemin "treasure map" généré aléatoirement → révèle coordonnées (brouillées) d'un chest enterré avec loot table custom.
-- Commande admin `/treasuremap give <player>` → génère coords random dans biome config
-- Map item avec waypoint hidden (texte "~ 300 blocks north")
-- Chest spawn placeholder, `PlayerInteractEvent` au bon endroit = reveal
-- 1j. Exploration gameplay, compatible MMORPG.
+### 12. EchoLocation Sonar ⭐⭐⭐
+Item "sonar crystal" → burst visuel radial qui révèle pendant 5s la position de tous les mobs dans 15 blocs (outline brillant) + les aggro vers toi.
+- Item `sonar_crystal` charge 5 uses, cooldown 10s
+- Scan `world.getNearbyEntities` radius 15
+- Glow effect via `entity.setGlowing(true)` pendant 5s (scheduler revert)
+- Aggro force : pour chaque hostile, `mob.setTarget(player)` + particles `SOUL_FIRE_FLAME` en cercle
+- 1j. Exploration + combat setup, unique visuel (pas dans baseline, pas de conflit BetterMap).
 
 ---
 
@@ -245,12 +246,13 @@ HP bar visible au-dessus des teammates de ta party (hologram per-player). Change
 - Couleur : vert > 60%, jaune > 30%, rouge sinon
 - 1j. QoL MMO, catégorie party sous-servie.
 
-### 30. StatBoost Food ⭐⭐
-Food custom avec buffs stats (+damage 15% 5 min, +speed 10%, +luck 5%). Système de cooking/crafting inclus.
-- Items custom via YAML config
-- `PlayerItemConsumeEvent` + apply buffs via potion effects avec NBT marqueur
-- Alternative aux soupes vanilla, RPG-friendly
-- 1j. Content supporting plugin, compatible MMO servers.
+### 30. Storm Seal Talisman ⭐⭐⭐
+Talisman qui charge l'énergie pendant les orages (visible jauge hologram au-dessus du joueur). Clic droit = décharge AoE de foudre dans 8 blocs. Accumulation passive.
+- Item `storm_seal` persistent avec PDC `charge: Float`
+- `WeatherChangeEvent` STORM → tick task augmente charge + 0.1/seconde si le joueur est outdoor
+- Hologram jauge au-dessus du joueur quand charge > 0 (scheduler update)
+- Clic droit si charge ≥ 0.5 → `world.strikeLightningEffect()` × 3 aléatoire dans radius 8 + damage AoE, reset charge
+- 1.5j. Unique (pas de "food buff" vanilla-like, pas de conflit Wan's Wonder Weapons ni RPG Leveling). Weather interaction rare.
 
 ---
 
@@ -258,8 +260,11 @@ Food custom avec buffs stats (+damage 15% 5 min, +speed 10%, +luck 5%). Système
 
 - Concepts tirés d'analyse de marché (avril 2026) rééquilibrés vers catégories sous-servies : **magie, quêtes, patches/anti-triche, intégrations Discord** sont les zones vides prioritaires
 - Tous les concepts restent **1-2 jours max**, **gif-friendly**, alignés avec le principe "wow + dev rapide"
+- **Audit concurrence gratuite** : aucun concept ne duplique les dominants cités dans l'analyse (BetterMap 502K maps, EyeSpy 407K spy, Wan's Wonder Weapons 342K custom weapons, RPG Leveling 277K, MMO Skill Tree 251K, Advanced Item Info 232K, Overstacked 209K stacks, Simply Trash 192K, Vein Mining 184K, Spellbook 181K magic framework).
+  - **TreasureHunt Map** (version ancienne) remplacé par **EchoLocation Sonar** (#12) → évite conflit BetterMap
+  - **StatBoost Food** (version ancienne) remplacé par **Storm Seal Talisman** (#30) → évite conflit Wan's Wonder Weapons + RPG Leveling
 - Plusieurs concepts sont complémentaires → bundles possibles (ex: FrostBreath + LightningWand + HealingAura = "Spell Pack" $15)
-- Les 5 plugins actifs pour Phase 10 restent dans `PLUGINS.md` (GravityFlip, FireballStaff, ShadowClone, GrapplingHook, EarthquakeSlam)
+- Les 5 plugins actifs pour Phase 10 restent dans `PLUGINS.md` (GravityFlip, ChainLightning Sceptre, ShadowClone, GrapplingHook, EarthquakeSlam)
 
 ## Pipeline Suggéré (post Phase 10)
 

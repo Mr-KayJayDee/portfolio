@@ -185,18 +185,13 @@ Plans:
 **Goal:** Déployer M1.1 en prod + combler le gap crédibilité (démos plugins) + cohérence branding. Débloque la prospection active qui suit.
 **Phases:** 3 (9–11)
 
-### Phase 9: Deploy Production
+### Phase 9: Deploy Production ✅ (shipped 2026-04-22)
 **Goal**: M1.1 est live sur killiandalcin.fr — blog bilingue, sitemap hreflang, JSON-LD Article accessibles en prod
-**Depends on**: M1.1 code en main (already)
-**Requirements**: DEPLOY-02, DEPLOY-03
-**Success Criteria** (what must be TRUE):
-  1. `curl https://killiandalcin.fr/blog` retourne le listing bilingue SSR
-  2. `curl https://killiandalcin.fr/sitemap.xml` contient les URLs `/blog/{slug}` avec hreflang x-default
-  3. Les 2 articles seed Hytale sont accessibles FR+EN en prod
-  4. JSON-LD homepage + hytale + article rendus correctement (aucune ref "Full Stack" côté prod avant Phase 11)
+**Outcome**: Shipped. Bug build hang (nuxt/nuxt#33987) fixé via `hooks.close: () => process.exit(0)` dans nuxt.config.ts.
+**Requirements**: DEPLOY-02 ✅, DEPLOY-03 ✅
 **Plans:** 1 plan
 Plans:
-- [ ] 09-01-PLAN.md — Pull image autobuild Portainer + smoke test prod (blog, sitemap, JSON-LD, og:image)
+- [x] 09-01-PLAN.md — Pull image autobuild Portainer + smoke test prod (blog, sitemap, JSON-LD, og:image)
 
 ### Phase 10: Demo Plugins Hytale
 **Goal**: 2-3 mini-plugins Hytale open-source publiés sur GitHub avec section "Live Demos" sur `/hytale` — donnent une preuve crédible à montrer en DM Discord

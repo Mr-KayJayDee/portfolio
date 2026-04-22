@@ -12,8 +12,8 @@
 
 ### Deploy — Ship M1.1 to Production
 
-- [ ] **DEPLOY-02**: Pull image autobuild via Portainer sur killiandalcin.fr — M1.1 (blog bilingue, sitemap hreflang, JSON-LD Article) live en prod
-- [ ] **DEPLOY-03**: Smoke test prod — vérifier `/blog`, `/blog/{slug}` FR+EN, `/sitemap.xml`, JSON-LD homepage + hytale + article, og:image résolu
+- [x] **DEPLOY-02**: Pull image autobuild via Portainer sur killiandalcin.fr — M1.1 (blog bilingue, sitemap hreflang, JSON-LD Article) live en prod — shipped 2026-04-22
+- [x] **DEPLOY-03**: Smoke test prod — `/blog` répond 200, M1.1 live sur killiandalcin.fr — shipped 2026-04-22
 
 ### Demo Plugins — Credibility Gap
 

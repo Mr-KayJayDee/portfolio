@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: Ship to Prod + Credibility Gap
-status: M1.2 bootstrapped — 3 phases (9–11), 6 plans, awaiting /gsd-plan-phase 9
-last_updated: "2026-04-22T17:00:00.000Z"
+status: Phase 9 shipped — M1.1 live en prod (blog/SEO/sitemap sur killiandalcin.fr). Nuxt build hang fixé via hook close (nuxt/nuxt#33987)
+last_updated: "2026-04-22T22:45:00.000Z"
 last_activity: 2026-04-22
 progress:
   total_phases: 3
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 6
-  completed_plans: 0
-  percent: 0
+  completed_plans: 1
+  percent: 17
 ---
 
 # Project State
@@ -24,9 +24,9 @@ progress:
 ## Current Focus
 
 Milestone: M1.2 — Ship to Prod + Credibility Gap
-Phase: Phase 9 — Deploy Production (next)
-Plan: 09-01 (to be planned — pull image autobuild Portainer + smoke test prod)
-Status: M1.2 bootstrapped — 3 phases (9–11), 6 plans
+Phase: Phase 10 — Demo Plugins Hytale (next)
+Plan: 10-01 (to be planned — brainstorm + choix 2-3 concepts plugins, critères simple/wow/API avancée)
+Status: Phase 9 shipped — M1.1 live sur killiandalcin.fr
 Last activity: 2026-04-22
 Resume file: lancer `/gsd-plan-phase 9`
 

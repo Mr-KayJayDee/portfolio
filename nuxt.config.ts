@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
+    'nuxt-schema-org',
     'nuxt-gtag',
   ],
   components: [
@@ -30,6 +31,9 @@ export default defineNuxtConfig({
   site: {
     url: 'https://killiandalcin.fr',
     name: "Killian' DAL-CIN - Developpeur Full Stack",
+  },
+  sitemap: {
+    sources: ['/api/__sitemap__/urls'],
   },
   i18n: {
     strategy: 'prefix',

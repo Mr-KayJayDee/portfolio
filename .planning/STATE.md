@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Plan 07-04 shipped — endpoint Nitro /api/__sitemap__/urls bilingue (draft-filtered, alternates hreflang x-default), validé curl /sitemap.xml
-last_updated: "2026-04-22T12:00:00.000Z"
+status: Plan 07-04 shipped — endpoint Nitro sitemap bilingue (draft-filtered + hreflang x-default), SEO-12 complet
+last_updated: "2026-04-22T16:39:45.338Z"
 last_activity: 2026-04-22
 progress:
   total_phases: 8
-  completed_phases: 4
-  total_plans: 15
-  completed_plans: 14
-  percent: 93
+  completed_phases: 5
+  total_plans: 18
+  completed_plans: 17
+  percent: 94
 ---
 
 # Project State

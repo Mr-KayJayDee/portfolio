@@ -110,7 +110,7 @@ Plans:
 - [x] **Phase 5: @nuxt/content Setup & Renderer** - Integration @nuxt/content, markdown renderer complet avec syntax highlighting et images — Completed 2026-04-22 (2/2 plans)
 - [x] **Phase 6: Blog Pages** - Page listing /blog et page article /blog/[slug] SSR, bilingue, avec TOC et nav prev/next — Completed 2026-04-22 (4/4 plans)
 - [x] **Phase 7: SEO Blog** - useSeoMeta par article, JSON-LD Article, sitemap etendu, og:image, BreadcrumbList — Completed 2026-04-22 (4/4 plans)
-- [ ] **Phase 8: Content & Cocon Semantique** - 2 articles seed Hytale, liens internes blog-hytale
+- [x] **Phase 8: Content & Cocon Semantique** - 2 articles seed Hytale, liens internes blog-hytale — Completed 2026-04-22 (3/3 plans)
 
 ---
 
@@ -191,4 +191,4 @@ Plans:
 | 5. @nuxt/content Setup & Renderer | 2/2 | Complete | 2026-04-22 |
 | 6. Blog Pages | 4/4 | Complete | 2026-04-22 |
 | 7. SEO Blog | 4/4 | Complete | 2026-04-22 |
-| 8. Content & Cocon Semantique | 0/? | Not started | - |
+| 8. Content & Cocon Semantique | 3/3 | Complete | 2026-04-22 |

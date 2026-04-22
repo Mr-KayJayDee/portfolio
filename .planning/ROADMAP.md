@@ -175,12 +175,11 @@ Plans:
   2. Chaque article blog contient au moins un lien interne vers `/hytale` dans le corps du texte
   3. La page `/hytale` affiche une section "Articles recents" avec liens vers les 2 articles seed
   4. Les articles existent en FR et EN — `curl localhost:3000/en/blog` les liste en anglais
-**Plans:** 4 plans
+**Plans:** 3 plans
 Plans:
-- [ ] 06-01-PLAN.md — Content schema Zod extension (draft/wordCount/minutes) + Nitro reading-time hook + draft:true sur test articles
-- [ ] 06-02-PLAN.md — i18n keys blog.*/nav.blog/a11y.blog* + lien Blog dans AppHeader + BlogCard.vue unifié (default + compact)
-- [ ] 06-03-PLAN.md — Page listing app/pages/blog/index.vue (hero + grid + empty state, SSR bilingue)
-- [ ] 06-04-PLAN.md — BlogToc.vue + BlogPrevNext.vue + enrichissement app/pages/blog/[slug].vue (breadcrumb + header + TOC + surround)
+- [ ] 08-01-PLAN.md — Scaffold HytaleRecentArticles.vue (queryCollection bilingue + filtre tag hytale + limit 2) + injection hytale.vue + i18n hytale.recentArticles.*
+- [ ] 08-02-PLAN.md — Article seed tutorial how-to-build-your-first-hytale-plugin (FR+EN, draft:false, bloc Kotlin, liens inline /hytale)
+- [ ] 08-03-PLAN.md — Article seed autorité hytale-plugin-development-2026 (FR+EN, draft:false, bloc Kotlin coroutines, liens inline /hytale)
 **UI hint**: yes
 
 ---

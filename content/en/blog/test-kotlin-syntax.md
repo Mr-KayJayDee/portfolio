@@ -3,6 +3,7 @@ title: "Markdown Format Guide"
 description: "Complete reference of all elements and components available in articles"
 date: "2026-04-21"
 tags: ["guide", "markdown", "mdc"]
+draft: true
 ---
 
 ## Basic Typography

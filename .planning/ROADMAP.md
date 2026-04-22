@@ -189,7 +189,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 5. @nuxt/content Setup & Renderer | 0/2 | Not started | - |
-| 6. Blog Pages | 0/? | Not started | - |
+| 5. @nuxt/content Setup & Renderer | 2/2 | Complete | 2026-04-22 |
+| 6. Blog Pages | 1/4 | In progress | - |
 | 7. SEO Blog | 0/? | Not started | - |
 | 8. Content & Cocon Semantique | 0/? | Not started | - |

@@ -33,14 +33,42 @@ const uniqueTags = computed(() => {
 
 const totalLanguages = 2 // FR + EN — valeur fixe (UI-SPEC)
 
-// SEO minimal Phase 6 — Phase 7 enrichira avec JSON-LD + og:image par article
+// SEO enrichi Phase 7 (Plan 07-03) — D-16 og:image fallback + JSON-LD CollectionPage + Breadcrumb
+// Note: fallback hardcodé en attendant resolveOgImage helper de 07-02 (même Wave 2, parallèle)
+const SITE_URL = 'https://killiandalcin.fr'
+const OG_FALLBACK = 'https://killiandalcin.fr/og-blog-default.jpg'
+const ogImage = OG_FALLBACK
+const canonicalUrl = computed(() => `${SITE_URL}${localePath('/blog')}`)
+
 useSeoMeta({
   title: () => t('blog.title'),
   description: () => t('blog.subtitle'),
   ogTitle: () => t('blog.title'),
   ogDescription: () => t('blog.subtitle'),
   ogType: 'website',
+  ogImage,
+  ogUrl: canonicalUrl,
+  ogLocale: () => (isFr.value ? 'fr_FR' : 'en_US'),
+  ogLocaleAlternate: () => [isFr.value ? 'en_US' : 'fr_FR'],
+  twitterCard: 'summary_large_image',
+  twitterImage: ogImage,
 })
+
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'CollectionPage',
+    name: () => t('blog.title'),
+    description: () => t('blog.subtitle'),
+    inLanguage: isFr.value ? 'fr-FR' : 'en-US',
+    url: canonicalUrl,
+  }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: () => t('blog.breadcrumb.home'), item: () => localePath('/') },
+      { name: () => t('blog.breadcrumb.blog'), item: () => localePath('/blog') },
+    ],
+  }),
+])
 </script>
 
 <template>

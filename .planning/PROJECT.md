@@ -8,16 +8,25 @@ Portfolio professionnel de Killian' Dalcin, developpeur freelance specialise en 
 
 Le portfolio doit positionner Killian comme LE developpeur de plugins Hytale professionnel — pas un "dev web freelance generique" perdu parmi 500 000 autres. Chaque page doit etre crawlable sans JavaScript (SSR), avec un SEO optimise pour le marche Hytale.
 
-## Current Milestone: v1.1 — SEO Hytale — Autorité & Contenu
+## Current State
 
-**Goal:** Dominer les requêtes Hytale sur Google via un blog markdown complet (tutos, guides, news) combiné à un SEO on-page renforcé — deux leviers pour ranker sur les mots-clés directs ET capter le trafic longue traîne.
+**Shipped:** v1.1 (2026-04-22) — SEO Hytale — Autorité & Contenu
+- Blog markdown bilingue FR/EN live avec 2 articles seed Hytale (Java API réelle)
+- SEO blog complet : JSON-LD Article/Breadcrumb/CollectionPage, sitemap hreflang x-default, og:image résolu
+- Cocon sémantique bidirectionnel `/blog` ↔ `/hytale` établi
 
-**Target features:**
-- Blog markdown avec renderer complet (syntax highlighting, images, embeds, tables, alerts)
-- Articles Hytale bilingues FR/EN (tutos, guides, contenus communauté)
-- SEO par article : JSON-LD Article, og:image, canonical, sitemap étendu
-- Cocon sémantique : liens internes blog ↔ page /hytale
-- Open Graph peaufiné par article
+**Prior milestones:** v1.0 (2026-04-21) — Portfolio Hytale-first SSR déployé. Voir `.planning/milestones/`.
+
+## Next Milestone
+
+*No active milestone.* Candidats identifiés :
+- Asset branded `/og-blog-default.jpg` 1200×630 (design)
+- Page `/blog/tags/[tag]` (SEO long-tail dès 10+ articles)
+- og:image dynamique Satori
+- Analytics blog (reading completion, conversions CTA /hytale)
+- Pipeline éditorial continu (3-5 articles supplémentaires)
+
+Lancer `/gsd-new-milestone` pour définir v1.2.
 
 ## Requirements
 

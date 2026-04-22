@@ -97,24 +97,14 @@ Plans:
 
 ---
 
-# Roadmap: Portfolio Killian' Dalcin — M1.1
+# Archived Milestones
 
-**Milestone:** M1.1 — SEO Hytale — Autorité & Contenu
-**Granularity:** Standard
-**Coverage:** 13/13 requirements mapped
+- **M1.1 — SEO Hytale — Autorité & Contenu** — ✅ Shipped 2026-04-22 (phases 5–8, 13 plans) — see [v1.1-ROADMAP.md](./milestones/v1.1-ROADMAP.md)
 
 ---
 
-## Phases (M1.1)
-
-- [x] **Phase 5: @nuxt/content Setup & Renderer** - Integration @nuxt/content, markdown renderer complet avec syntax highlighting et images — Completed 2026-04-22 (2/2 plans)
-- [x] **Phase 6: Blog Pages** - Page listing /blog et page article /blog/[slug] SSR, bilingue, avec TOC et nav prev/next — Completed 2026-04-22 (4/4 plans)
-- [x] **Phase 7: SEO Blog** - useSeoMeta par article, JSON-LD Article, sitemap etendu, og:image, BreadcrumbList — Completed 2026-04-22 (4/4 plans)
-- [x] **Phase 8: Content & Cocon Semantique** - 2 articles seed Hytale, liens internes blog-hytale — Completed 2026-04-22 (3/3 plans)
-
----
-
-## Phase Details (M1.1)
+<details>
+<summary>M1.1 phase details (collapsed)</summary>
 
 ### Phase 5: @nuxt/content Setup & Renderer
 **Goal**: Le systeme de contenu markdown est installe et rend fidelement le contenu technique — blocs de code colores, images optimisees, tables, alerts — sans configuration supplementaire dans les phases suivantes
@@ -184,11 +174,10 @@ Plans:
 
 ---
 
-## Progress (M1.1)
+</details>
 
-| Phase | Plans Complete | Status | Completed |
-|-------|----------------|--------|-----------|
-| 5. @nuxt/content Setup & Renderer | 2/2 | Complete | 2026-04-22 |
-| 6. Blog Pages | 4/4 | Complete | 2026-04-22 |
-| 7. SEO Blog | 4/4 | Complete | 2026-04-22 |
-| 8. Content & Cocon Semantique | 3/3 | Complete | 2026-04-22 |
+---
+
+## Next Milestone
+
+*No active milestone — run `/gsd-new-milestone` to define v1.2.*

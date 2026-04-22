@@ -42,32 +42,10 @@
 
 ---
 
-## v1.1 Requirements (M1.1 — SEO Hytale — Autorité & Contenu)
+## v1.1 Requirements (M1.1 — Shipped 2026-04-22)
 
-### Blog — Système
-
-- [ ] **BLOG-01**: Intégration `@nuxt/content` ou équivalent — renderer markdown complet (syntax highlighting, images, embeds, tables, callouts/alerts)
-- [ ] **BLOG-02**: Page listing `/blog` — liste de tous les articles avec titre, description, date, tags, SSR
-- [ ] **BLOG-03**: Page article `/blog/[slug]` — rendu SSR complet, table des matières, navigation prev/next
-- [ ] **BLOG-04**: Blocs de code avec syntax highlighting (Kotlin, Java, TypeScript, Shell prioritaires pour Hytale)
-- [ ] **BLOG-05**: Support images dans articles — images optimisées avec `<NuxtImg>` ou `<nuxt-img>`
-
-### Blog — Contenu
-
-- [ ] **BLOG-06**: Articles bilingues FR/EN — structure i18n dans le système de contenu
-- [ ] **BLOG-07**: Au moins 2 articles seed Hytale au lancement (ex: "How to build your first Hytale plugin", "Hytale plugin development in 2026")
-
-### SEO — Blog
-
-- [ ] **SEO-10**: `useSeoMeta()` par article — title, description, og:title, og:description, og:image uniques
-- [ ] **SEO-11**: JSON-LD `Article` par billet de blog — author, datePublished, dateModified, headline
-- [x] **SEO-12**: Sitemap étendu — URLs `/blog/[slug]` et `/en/blog/[slug]` incluses automatiquement
-- [ ] **SEO-13**: Open Graph image par article — og:image spécifique (image de l'article ou fallback branded)
-
-### SEO — Cocon sémantique
-
-- [ ] **SEO-14**: Liens internes structurés — articles de blog pointent vers `/hytale`, page `/hytale` liste les articles récents
-- [ ] **SEO-15**: BreadcrumbList JSON-LD sur les pages blog (Accueil → Blog → Article)
+All 13 requirements (BLOG-01..07, SEO-10..15) validated and shipped.
+→ See archived: [v1.1-REQUIREMENTS.md](./milestones/v1.1-REQUIREMENTS.md)
 
 ## Future Requirements (backlog)
 
@@ -90,18 +68,4 @@
 
 ## Traceability v1.1
 
-| Requirement | Phase | Status |
-|-------------|-------|--------|
-| BLOG-01 | Phase 5 | Pending |
-| BLOG-04 | Phase 5 | Pending |
-| BLOG-05 | Phase 5 | Pending |
-| BLOG-02 | Phase 6 | Pending |
-| BLOG-03 | Phase 6 | Pending |
-| BLOG-06 | Phase 6 | Pending |
-| SEO-10 | Phase 7 | Pending |
-| SEO-11 | Phase 7 | Pending |
-| SEO-12 | Phase 7 | Done (07-04) |
-| SEO-13 | Phase 7 | Pending |
-| SEO-15 | Phase 7 | Pending |
-| BLOG-07 | Phase 8 | Pending |
-| SEO-14 | Phase 8 | Pending |
+All v1.1 requirements shipped — see [v1.1-REQUIREMENTS.md](./milestones/v1.1-REQUIREMENTS.md) for phase mapping and outcomes.

@@ -8,6 +8,7 @@ const mobileOpen = ref(false)
 const navLinks = computed(() => [
   { key: 'home', path: '/' },
   { key: 'hytale', path: '/hytale' },
+  { key: 'blog', path: '/blog' },
   { key: 'projects', path: '/projects' },
   { key: 'about', path: '/about' },
   { key: 'contact', path: '/contact' },

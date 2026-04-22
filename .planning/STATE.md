@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Phase 6 — Plan 06-01 shipped (1/4), ready for Plan 06-02
-last_updated: "2026-04-22T09:10:00.000Z"
+status: Phase 6 — Plan 06-02 shipped (2/4), ready for Plan 06-03
+last_updated: "2026-04-22T09:25:00.000Z"
 last_activity: 2026-04-22
 progress:
   total_phases: 8
   completed_phases: 3
   total_plans: 15
-  completed_plans: 10
-  percent: 66
+  completed_plans: 11
+  percent: 73
 ---
 
 # Project State
@@ -24,10 +24,10 @@ progress:
 ## Current Focus
 
 Phase: Phase 6 — Blog Pages
-Plan: 06-02 (next — Wave 1 also, components UI + i18n locales)
-Status: Plan 06-01 shipped — schema + reading-time hook + drafts en place, typecheck vert, cache @nuxt/content vidé
+Plan: 06-03 (next — Wave 3, listing page /blog)
+Status: Plan 06-02 shipped — i18n FR+EN complet, nav link Blog en place, BlogCard.vue (variant default+compact) auto-importable, typecheck vert
 Last activity: 2026-04-22
-Resume file: .planning/phases/06-blog-pages/06-02-PLAN.md
+Resume file: .planning/phases/06-blog-pages/06-03-PLAN.md
 
 ## Accumulated Context
 
@@ -45,3 +45,5 @@ Resume file: .planning/phases/06-blog-pages/06-02-PLAN.md
 - **Plan 06-01 shipped (2026-04-22)** : blogSchema étendu (draft.default(false) + wordCount.optional + minutes.optional), Nitro hook `content:file:afterParse` injecte wordCount+minutes (200 wpm, floor 1 min) sur chaque `.md` via `countWordsInMinimalBody`, composable fallback `useReadingTime(number|string)` auto-importé, articles `test-kotlin-syntax.md` (FR+EN) marqués `draft: true` — exclus des listings `where('draft', '=', false)` mais accessibles par URL directe. Cache `node_modules/.cache/content` + `.nuxt` vidés.
 - **Gotcha 06-01** : Le hook `content:file:afterParse` exige que `wordCount`/`minutes` soient déclarés dans le schema Zod (`.optional()` sans default) sinon ils sont strippés avant persistance DB — les propriétés injectées par hook ne sont queryables que si le schema les expose.
 - **Gotcha 06-01 (convention)** : Dans un plugin Nitro, importer depuis `app/utils/` se fait via `~/utils/...` (et non `~~/app/utils/...`). Nuxt 4 mappe `~/` → `app/` par défaut. Vérifié par typecheck vert sur server/plugins/reading-time.ts.
+- **Plan 06-02 shipped (2026-04-22)** : i18n `nav.blog` + 3 clés `a11y.blog*` (avec interpolation `{title}`) + bloc `blog.*` 14 clés (title, subtitle, stats.*, readingTime, prevArticle/nextArticle, backToBlog, toc.title, emptyState.*, breadcrumb.*) ajoutés dans fr.json + en.json. AppHeader.vue navLinks : `{ key: 'blog', path: '/blog' }` inséré entre hytale et projects (ligne 11, ordre D-15 respecté). `app/components/BlogCard.vue` créé (192 lignes, auto-importé Nuxt) : variant `default` (listing) avec cover conditional + tag UBadge + date Intl.DateTimeFormat + h2 + description line-clamp-2 + reading-time (minutes hook || useReadingTime fallback) + extra tags pills + full-card NuxtLink SEO + Schema.org BlogPosting markup ; variant `compact` (prev/next, D-09/D-10) : no image + label row avec UIcon arrow directionnelle + h3 + date + NuxtLink aria-label interpolé `a11y.blogPrev`/`a11y.blogNext`. Typecheck exit 0.
+- **Gotcha 06-02 (slug derivation)** : Les articles @nuxt/content ont un `path` de forme `/fr/blog/my-slug`. Dans BlogCard.vue, on extrait le slug via `article.path.split('/').filter(Boolean).pop()` puis on reconstruit `localePath('/blog/' + slug)` — locale-agnostique. Évite de demander un champ `slug` explicite dans le frontmatter (cohérent convention @nuxt/content : path dérivé du nom de fichier).

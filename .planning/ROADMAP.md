@@ -161,10 +161,10 @@ Plans:
   5. La page article contient un JSON-LD `BreadcrumbList` : Accueil → Blog → Titre de l'article
 **Plans:** 4 plans
 Plans:
-- [ ] 06-01-PLAN.md — Content schema Zod extension (draft/wordCount/minutes) + Nitro reading-time hook + draft:true sur test articles
-- [ ] 06-02-PLAN.md — i18n keys blog.*/nav.blog/a11y.blog* + lien Blog dans AppHeader + BlogCard.vue unifié (default + compact)
-- [ ] 06-03-PLAN.md — Page listing app/pages/blog/index.vue (hero + grid + empty state, SSR bilingue)
-- [ ] 06-04-PLAN.md — BlogToc.vue + BlogPrevNext.vue + enrichissement app/pages/blog/[slug].vue (breadcrumb + header + TOC + surround)
+- [ ] 07-01-PLAN.md — Install nuxt-schema-org + schema updated + definePerson/defineWebSite global + sitemap.sources
+- [ ] 07-02-PLAN.md — resolveOgImage helper + og-blog-default.jpg + [slug].vue useSeoMeta enrichi + defineArticle/defineBreadcrumb
+- [ ] 07-03-PLAN.md — index.vue useSeoMeta enrichi + defineWebPage(CollectionPage) + defineBreadcrumb
+- [ ] 07-04-PLAN.md — server/api/__sitemap__/urls.ts (bilingue, draft:false, alternates hreflang, lastmod=updated||date)
 
 ### Phase 8: Content & Cocon Semantique
 **Goal**: Le blog est lance avec au moins 2 articles Hytale de qualite, et un visiteur qui arrive sur /hytale decouvre les articles recents — le cocon semantique entre blog et page hytale est etabli

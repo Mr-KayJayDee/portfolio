@@ -1,8 +1,37 @@
 # Requirements: Portfolio Killian' Dalcin
 
 **Defined:** 2026-04-10
-**Updated:** 2026-04-21 (v1.1 added)
+**Updated:** 2026-04-22 (v1.2 active)
 **Core Value:** Positionner Killian comme dev Hytale #1, crawlable sans JS, SEO optimise
+
+---
+
+## v1.2 Requirements (M1.2 — Active) — Ship to Prod + Credibility Gap
+
+**Goal:** Débloquer la prospection active en déployant M1.1 en prod + combler le gap crédibilité (démos plugins) + finaliser cohérence branding.
+
+### Deploy — Ship M1.1 to Production
+
+- [ ] **DEPLOY-02**: Pull image autobuild via Portainer sur killiandalcin.fr — M1.1 (blog bilingue, sitemap hreflang, JSON-LD Article) live en prod
+- [ ] **DEPLOY-03**: Smoke test prod — vérifier `/blog`, `/blog/{slug}` FR+EN, `/sitemap.xml`, JSON-LD homepage + hytale + article, og:image résolu
+
+### Demo Plugins — Credibility Gap
+
+- [ ] **DEMO-01**: 2-3 mini-plugins Hytale open-source publiés sur GitHub — critères : simples à coder (1-3j chacun), effet wahou visuel, poussent Hytale au max de ses capacités. Chaque repo avec README EN pro (installation, features, screenshots/gif).
+- [ ] **DEMO-02**: Section "Live Demos" sur `/hytale` — liste les plugins démo avec screenshot/gif, description 1-2 phrases, lien GitHub, tag techno (Java/Kotlin). Composant `HytaleDemoGrid.vue`.
+- [ ] **DEMO-03**: Recherche + idéation plugins — choix des 2-3 concepts (brainstorm guidé, critères : feasibility 1-3j, wow factor, showcase API Hytale avancée)
+
+### Rebranding — Cohérence SEO
+
+- [ ] **REBRAND-01**: Fix JSON-LD `app/pages/index.vue` lignes 28 + 38 — remplacer "Developpeur Full Stack Freelance" / "Developpeur Full Stack" par "Hytale Plugin Developer" (via `siteConfig.jobTitle`, pas de hardcode)
+- [ ] **REBRAND-02**: Audit cohérence jobTitle — grep toutes les pages, composants, i18n FR/EN pour "full stack", "fullstack", "développeur web" → corriger ou justifier
+- [ ] **REBRAND-03**: Vérif meta descriptions + og:title toutes pages — homepage, about, contact, projets, fiverr, formation — alignés sur positionnement Hytale
+
+### Cocon Sémantique — Finalisation M1.1 Phase 8
+
+- [ ] **COCON-01**: Composant `HytaleRecentArticles.vue` — affiche les 3 derniers articles blog (tags hytale uniquement) sur `/hytale`, bidirectionnel avec le maillage `/blog` → `/hytale`
+
+---
 
 ## v1 Requirements (M1 — Complété 2026-04-21)
 

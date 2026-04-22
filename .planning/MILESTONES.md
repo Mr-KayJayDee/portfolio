@@ -17,9 +17,8 @@
 ## M1.1 — SEO Hytale — Autorité & Contenu
 
 **Version:** v1.1
-**Completed:** 2026-04-22
-**Phases:** 4 (5–8)
-**Plans:** 13
+**Completed:** 2026-04-22 (partial — Phase 8 composant HytaleRecentArticles reporté en M1.2)
+**Phases:** 4 (5–8), Plans 17/18
 **Archive:** [v1.1-ROADMAP.md](./milestones/v1.1-ROADMAP.md) · [v1.1-REQUIREMENTS.md](./milestones/v1.1-REQUIREMENTS.md)
 
 **Delivered:**
@@ -28,4 +27,19 @@
 - SEO par article : useSeoMeta enrichi, JSON-LD Article/Breadcrumb/CollectionPage, og:image résolu
 - Sitemap dynamique avec hreflang x-default (endpoint Nitro)
 - 2 articles seed Hytale publiés FR+EN (API Java réelle `com.hypixel.hytale.plugin`)
-- Section "Articles récents" dynamique sur `/hytale` (cocon sémantique bidirectionnel)
+
+**Carried to M1.2:** Composant HytaleRecentArticles (finalisation cocon sémantique — Phase 11)
+
+## M1.2 — Ship to Prod + Credibility Gap
+
+**Version:** v1.2
+**Started:** 2026-04-22
+**Status:** Active
+**Phases:** 3 (9–11), Plans: 6
+
+**Goal:** Débloquer la prospection active en déployant M1.1 en prod, combler le gap crédibilité (démos plugins open-source), finaliser cohérence branding Hytale.
+
+**Planned:**
+- Phase 9 : Deploy prod via Portainer (M1.1 live sur killiandalcin.fr)
+- Phase 10 : 2-3 mini-plugins Hytale open-source (GitHub public + README EN + section Live Demos sur `/hytale`)
+- Phase 11 : Fix JSON-LD `index.vue` (REBRAND-01..03) + composant `HytaleRecentArticles` (COCON-01)

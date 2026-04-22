@@ -10,23 +10,25 @@ Le portfolio doit positionner Killian comme LE developpeur de plugins Hytale pro
 
 ## Current State
 
-**Shipped:** v1.1 (2026-04-22) — SEO Hytale — Autorité & Contenu
-- Blog markdown bilingue FR/EN live avec 2 articles seed Hytale (Java API réelle)
-- SEO blog complet : JSON-LD Article/Breadcrumb/CollectionPage, sitemap hreflang x-default, og:image résolu
-- Cocon sémantique bidirectionnel `/blog` ↔ `/hytale` établi
+**Active:** v1.2 (started 2026-04-22) — Ship to Prod + Credibility Gap
+- Ship-first : déployer M1.1 en prod (blog/SEO/sitemap pas encore live)
+- Combler le gap crédibilité : 2-3 plugins Hytale démo open-source (effet wahou)
+- Finaliser cohérence branding : fix JSON-LD homepage, HytaleRecentArticles, audit jobTitle
 
-**Prior milestones:** v1.0 (2026-04-21) — Portfolio Hytale-first SSR déployé. Voir `.planning/milestones/`.
+**Shipped:**
+- v1.1 (2026-04-22) — SEO Hytale — Autorité & Contenu (blog bilingue, JSON-LD, sitemap hreflang)
+- v1.0 (2026-04-21) — Portfolio Hytale-first SSR déployé
 
-## Next Milestone
+Voir `.planning/milestones/` pour archives.
 
-*No active milestone.* Candidats identifiés :
-- Asset branded `/og-blog-default.jpg` 1200×630 (design)
-- Page `/blog/tags/[tag]` (SEO long-tail dès 10+ articles)
-- og:image dynamique Satori
-- Analytics blog (reading completion, conversions CTA /hytale)
-- Pipeline éditorial continu (3-5 articles supplémentaires)
+## Why v1.2 Now
 
-Lancer `/gsd-new-milestone` pour définir v1.2.
+Le portfolio est prêt techniquement mais :
+1. M1.1 n'est pas déployée en prod → SEO Hytale invisible
+2. Zéro démo plugin concret à montrer en DM Discord (blocker business #1 selon plan stratégique)
+3. Incohérence JSON-LD `index.vue` (encore "Developpeur Full Stack")
+
+Objectif : débloquer la prospection active (5-10h/sem Discord + DMs) qui vient après.
 
 ## Requirements
 
@@ -45,16 +47,13 @@ Lancer `/gsd-new-milestone` pour définir v1.2.
 - ✓ useSeoMeta() par route avec title, description, og:tags bilingues — existant
 - ✓ Dockerfile SSR multi-stage node:22-alpine — existant
 
-### Active
+### Active (v1.2)
 
-- [ ] Refonte Hero — positionner "Hytale Plugin Developer" en premier plan, pas "Full Stack Developer"
-- [ ] Page Hytale dediee — services plugin dev, demos (placeholders), offre maintenance recurrente
-- [ ] Section pricing/services — grille tarifaire visible (plugin simple, complexe, sur-mesure, maintenance, web)
-- [ ] Temoignages clients — section avis sur page d'accueil et page Hytale
-- [ ] Audit et correction i18n — traductions FR/EN completes et naturelles (certaines traductions sont approximatives)
-- [ ] Correction concerns codebase — og:image hardcodee, sitemap statique obsolete, email validation serveur, flowboard features non-i18n
-- [ ] Page 404 personnalisee — verifier que error.vue fonctionne correctement avec i18n
-- [ ] SEO consolide — canonical links, ogUrl par page, og:image dynamique par projet
+- [ ] **DEPLOY**: Pull image autobuild Portainer → M1.1 live sur killiandalcin.fr (blog, sitemap, JSON-LD)
+- [ ] **DEMO-1**: 2-3 mini-plugins Hytale open-source, simples à coder mais effet wahou (GitHub public + README EN)
+- [ ] **DEMO-2**: Section "Live Demos" sur `/hytale` listant les plugins démo (screenshots, lien GitHub, lien code)
+- [ ] **REBRAND**: Fix JSON-LD `app/pages/index.vue` (Developpeur Full Stack → Hytale Plugin Developer) + audit cohérence jobTitle toutes pages
+- [ ] **COCON**: Composant `HytaleRecentArticles` sur `/hytale` (tire derniers articles blog, renforce maillage interne)
 
 ### Out of Scope
 
@@ -103,4 +102,4 @@ Lancer `/gsd-new-milestone` pour définir v1.2.
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-04-10 after initialization*
+*Last updated: 2026-04-22 — M1.2 bootstrap*

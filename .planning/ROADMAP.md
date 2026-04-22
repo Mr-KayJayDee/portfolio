@@ -178,6 +178,51 @@ Plans:
 
 ---
 
-## Next Milestone
+## M1.2 — Ship to Prod + Credibility Gap (Active)
 
-*No active milestone — run `/gsd-new-milestone` to define v1.2.*
+**Version:** v1.2
+**Started:** 2026-04-22
+**Goal:** Déployer M1.1 en prod + combler le gap crédibilité (démos plugins) + cohérence branding. Débloque la prospection active qui suit.
+**Phases:** 3 (9–11)
+
+### Phase 9: Deploy Production
+**Goal**: M1.1 est live sur killiandalcin.fr — blog bilingue, sitemap hreflang, JSON-LD Article accessibles en prod
+**Depends on**: M1.1 code en main (already)
+**Requirements**: DEPLOY-02, DEPLOY-03
+**Success Criteria** (what must be TRUE):
+  1. `curl https://killiandalcin.fr/blog` retourne le listing bilingue SSR
+  2. `curl https://killiandalcin.fr/sitemap.xml` contient les URLs `/blog/{slug}` avec hreflang x-default
+  3. Les 2 articles seed Hytale sont accessibles FR+EN en prod
+  4. JSON-LD homepage + hytale + article rendus correctement (aucune ref "Full Stack" côté prod avant Phase 11)
+**Plans:** 1 plan
+Plans:
+- [ ] 09-01-PLAN.md — Pull image autobuild Portainer + smoke test prod (blog, sitemap, JSON-LD, og:image)
+
+### Phase 10: Demo Plugins Hytale
+**Goal**: 2-3 mini-plugins Hytale open-source publiés sur GitHub avec section "Live Demos" sur `/hytale` — donnent une preuve crédible à montrer en DM Discord
+**Depends on**: Phase 9 (pas techniquement, mais prospection = après déploiement)
+**Requirements**: DEMO-01, DEMO-02, DEMO-03
+**Success Criteria** (what must be TRUE):
+  1. 2-3 repos GitHub publics avec README EN pro (installation, features, screenshot/gif)
+  2. Chaque plugin poussé jusqu'à un effet wahou visuel ou gameplay (pas juste "hello world")
+  3. Section `/hytale` affiche les démos via composant `HytaleDemoGrid.vue` — card avec screenshot, description, lien GitHub
+  4. Tooling build plugin Hytale documenté au moins une fois dans un README (Kotlin ou Java)
+**Plans:** 3 plans
+Plans:
+- [ ] 10-01-PLAN.md — Brainstorm + choix 2-3 concepts plugins (critères : 1-3j de code, wow factor, API Hytale avancée) + spec rapide chaque plugin
+- [ ] 10-02-PLAN.md — Code plugins + publish GitHub + README EN (gif/screenshot assets dans public/demos/)
+- [ ] 10-03-PLAN.md — Composant `HytaleDemoGrid.vue` + intégration `/hytale` + i18n hytale.demos.* + data source (app/data/hytaleDemos.ts ou frontmatter)
+
+### Phase 11: Rebranding + Cocon
+**Goal**: Zéro ref "Full Stack" dans le code/JSON-LD/meta, jobTitle cohérent partout, `/hytale` affiche les derniers articles blog
+**Depends on**: rien (parallélisable avec 10)
+**Requirements**: REBRAND-01, REBRAND-02, REBRAND-03, COCON-01
+**Success Criteria** (what must be TRUE):
+  1. `grep -rni "full stack\|fullstack" app/ content/ i18n/` retourne 0 match non-justifié
+  2. JSON-LD `app/pages/index.vue` utilise `siteConfig.jobTitle` (pas de hardcode)
+  3. Meta description + og:title de chaque page (index, about, contact, projets, fiverr, formation) parlent d'Hytale ou positionnement gaming
+  4. Section "Articles récents" sur `/hytale` affiche les 3 derniers articles tag "hytale" (FR ou EN selon locale)
+**Plans:** 2 plans
+Plans:
+- [ ] 11-01-PLAN.md — Grep + fix index.vue JSON-LD + audit jobTitle toutes pages + i18n FR/EN cohérence positionnement
+- [ ] 11-02-PLAN.md — Composant `HytaleRecentArticles.vue` (queryCollection bilingue, filter tag hytale, limit 3) + injection `/hytale` + i18n hytale.recentArticles.*

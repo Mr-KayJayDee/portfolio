@@ -1,6 +1,13 @@
 export default defineNuxtConfig({
   compatibilityDate: '2026-04-21',
   ssr: true,
+  // Workaround for nuxt/nuxt#33987: esbuild zombie from fontless (@nuxt/ui → @nuxt/fonts)
+  // keeps the Node process alive after "Build complete!", causing Docker builds to hang.
+  hooks: {
+    close: () => {
+      process.exit(0)
+    },
+  },
   css: ['~/assets/css/main.css'],
   modules: [
     '@nuxt/ui',

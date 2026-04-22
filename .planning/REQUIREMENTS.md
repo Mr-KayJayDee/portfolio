@@ -61,7 +61,7 @@
 
 - [ ] **SEO-10**: `useSeoMeta()` par article — title, description, og:title, og:description, og:image uniques
 - [ ] **SEO-11**: JSON-LD `Article` par billet de blog — author, datePublished, dateModified, headline
-- [ ] **SEO-12**: Sitemap étendu — URLs `/blog/[slug]` et `/en/blog/[slug]` incluses automatiquement
+- [x] **SEO-12**: Sitemap étendu — URLs `/blog/[slug]` et `/en/blog/[slug]` incluses automatiquement
 - [ ] **SEO-13**: Open Graph image par article — og:image spécifique (image de l'article ou fallback branded)
 
 ### SEO — Cocon sémantique
@@ -100,7 +100,7 @@
 | BLOG-06 | Phase 6 | Pending |
 | SEO-10 | Phase 7 | Pending |
 | SEO-11 | Phase 7 | Pending |
-| SEO-12 | Phase 7 | Pending |
+| SEO-12 | Phase 7 | Done (07-04) |
 | SEO-13 | Phase 7 | Pending |
 | SEO-15 | Phase 7 | Pending |
 | BLOG-07 | Phase 8 | Pending |

@@ -164,7 +164,7 @@ Plans:
 - [ ] 07-01-PLAN.md — Install nuxt-schema-org + schema updated + definePerson/defineWebSite global + sitemap.sources
 - [ ] 07-02-PLAN.md — resolveOgImage helper + og-blog-default.jpg + [slug].vue useSeoMeta enrichi + defineArticle/defineBreadcrumb
 - [ ] 07-03-PLAN.md — index.vue useSeoMeta enrichi + defineWebPage(CollectionPage) + defineBreadcrumb
-- [ ] 07-04-PLAN.md — server/api/__sitemap__/urls.ts (bilingue, draft:false, alternates hreflang, lastmod=updated||date)
+- [x] 07-04-PLAN.md — server/api/__sitemap__/urls.ts (bilingue, draft:false, alternates hreflang, lastmod=updated||date)
 
 ### Phase 8: Content & Cocon Semantique
 **Goal**: Le blog est lance avec au moins 2 articles Hytale de qualite, et un visiteur qui arrive sur /hytale decouvre les articles recents — le cocon semantique entre blog et page hytale est etabli

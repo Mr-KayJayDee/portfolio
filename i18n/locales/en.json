@@ -22,7 +22,7 @@
     }
   },
   "a11y": {
-    "logoLabel": "Killian' DAL-CIN — Full Stack Developer — Back to homepage",
+    "logoLabel": "Killian' DAL-CIN — Hytale Plugin Developer — Back to homepage",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "closeDrawer": "Close menu",
@@ -38,20 +38,20 @@
   },
   "seo": {
     "home": {
-      "title": "Killian' DAL-CIN — Freelance Full Stack Developer",
-      "description": "Portfolio of Killian' DAL-CIN, freelance full stack developer specializing in Vue.js, React and Node.js. High-performance web applications and custom solutions."
+      "title": "Killian' DAL-CIN — Hytale Plugin Developer & Freelance Web Dev",
+      "description": "Portfolio of Killian' DAL-CIN, Hytale plugin developer and freelance web developer. Custom Java plugins for Hytale servers, gaming websites, Vue.js/Node.js applications."
     },
     "projects": {
       "title": "Projects — Killian' DAL-CIN",
-      "description": "Discover my web development projects: Vue.js applications, Node.js APIs, Discord bots and enterprise solutions."
+      "description": "Discover my work: custom Hytale plugins, Vue.js applications, Node.js APIs, Discord bots, and gaming server websites."
     },
     "about": {
       "title": "About — Killian' DAL-CIN",
-      "description": "Biography and skills of Killian' DAL-CIN, freelance full stack developer based in France."
+      "description": "Biography and skills of Killian' DAL-CIN, Hytale plugin developer and freelance web developer based in France."
     },
     "contact": {
       "title": "Contact — Killian' DAL-CIN",
-      "description": "Contact Killian' DAL-CIN to discuss your web development project."
+      "description": "Contact Killian' DAL-CIN to discuss your Hytale plugin or web development project."
     },
     "fiverr": {
       "title": "Fiverr Services — Killian' DAL-CIN",
@@ -97,8 +97,8 @@
       }
     },
     "cta2": {
-      "title": "Looking for a Full Stack Developer?",
-      "subtitle": "Let's discuss your project requirements and build something amazing together.",
+      "title": "Need a Hytale Plugin or Web App Built?",
+      "subtitle": "Let's discuss your project and build something amazing together.",
       "startProject": "Start a Conversation",
       "learnMore": "Explore My Success Stories"
     },
@@ -115,7 +115,7 @@
   },
   "projects": {
     "title": "Web Development Portfolio",
-    "subtitle": "Browse my full stack development projects featuring Vue.js applications, React websites, Node.js APIs, Discord bots, and enterprise software solutions.",
+    "subtitle": "Browse my work: custom Hytale plugins, Vue.js applications, React websites, Node.js APIs, Discord bots, and enterprise software.",
     "categories": {
       "all": "All Projects",
       "webdevelopment": "Web Development",
@@ -152,11 +152,11 @@
     }
   },
   "about": {
-    "title": "About Killian'- Full Stack Developer",
-    "subtitle": "Experienced web developer passionate about Vue.js, React, Node.js, and modern JavaScript technologies.",
+    "title": "About Killian' — Hytale Plugin Developer & Web Dev",
+    "subtitle": "Developer specializing in custom Hytale plugins (Java) and modern web applications (Vue.js, React, Node.js).",
     "intro": {
-      "title": "Professional Full Stack Developer",
-      "content": "I'm Killian, an experienced full stack developer specializing in JavaScript technologies. With expertise in Vue.js, React, Node.js, and TypeScript, I create scalable web applications, RESTful APIs, and real-time systems."
+      "title": "Hytale Plugin Developer & Full Stack Web Developer",
+      "content": "I'm Killian, a self-taught developer with 7+ years of experience. I build custom Hytale plugins in Java for server owners who want to stand out, and I craft high-performance web applications in Vue.js, React, and Node.js for gaming projects and professional sites."
     },
     "skills": {
       "title": "Technical Skills & Expertise",
@@ -172,7 +172,7 @@
     },
     "approach": {
       "title": "Development Philosophy",
-      "subtitle": "My approach to full stack development focuses on clean code, scalable architecture, and exceptional user experience.",
+      "subtitle": "Whether building Hytale plugins or web apps, my approach focuses on clean code, scalable architecture, and exceptional user experience.",
       "performance": {
         "title": "Performance-First Development",
         "description": "Optimized code, lazy loading, code splitting, and caching strategies. Achieving perfect Lighthouse scores and Core Web Vitals metrics."
@@ -191,8 +191,8 @@
       }
     },
     "cta": {
-      "title": "Looking for a Full Stack Developer?",
-      "description": "Let's discuss your project requirements and build something amazing together.",
+      "title": "Need a Hytale Plugin or Web App Built?",
+      "description": "Let's discuss your project and build something amazing together.",
       "button": "Start a Conversation"
     }
   },
@@ -277,8 +277,8 @@
     }
   },
   "contact": {
-    "title": "Contact Full Stack Developer",
-    "subtitle": "Get in touch for web development projects, freelance work, or technical consultation. Free project estimation and consultation available.",
+    "title": "Contact Killian' — Hytale Plugin Developer",
+    "subtitle": "Reach out for a custom Hytale plugin, a gaming server website, or any web development project. Free project estimation within 24h.",
     "stats": {
       "responseTime": "Quick Response",
       "satisfaction": "Client Satisfaction",
@@ -301,7 +301,7 @@
       },
       "projectTypes": {
         "title": "What types of projects do you handle?",
-        "description": "Full stack web applications, REST APIs, Discord bots, e-commerce sites, SaaS platforms, and custom software solutions."
+        "description": "Custom Hytale plugins (Java), gaming server websites, full stack web applications, REST APIs, Discord bots, e-commerce, and SaaS solutions."
       },
       "collaboration": {
         "title": "Do you work remotely?",

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { homeFAQs } from '~/data/faq'
+import { siteConfig } from '~/data/site'
 
 const { t } = useI18n()
 
@@ -24,9 +25,9 @@ useHead({
           {
             '@type': 'Person',
             name: "Killian' DAL-CIN",
-            url: 'https://killiandalcin.fr',
-            jobTitle: 'Developpeur Full Stack Freelance',
-            email: 'contact@killiandalcin.fr',
+            url: siteConfig.url,
+            jobTitle: siteConfig.jobTitle,
+            email: siteConfig.contact.email,
             sameAs: [
               'https://linkedin.com/in/killian-dal-cin',
               'https://www.fiverr.com/users/mr_kayjaydee',
@@ -35,14 +36,14 @@ useHead({
           },
           {
             '@type': 'ProfessionalService',
-            name: "Killian' DAL-CIN - Developpeur Full Stack",
-            url: 'https://killiandalcin.fr',
-          logo: 'https://killiandalcin.fr/images/logo.webp',
-          priceRange: '$$$',
-          areaServed: 'Worldwide',
+            name: `Killian' DAL-CIN - ${siteConfig.jobTitle}`,
+            url: siteConfig.url,
+            logo: 'https://killiandalcin.fr/images/logo.webp',
+            priceRange: '$$$',
+            areaServed: 'Worldwide',
           },
         ],
-}),
+      }),
     },
   ],
 })

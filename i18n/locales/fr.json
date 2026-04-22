@@ -22,7 +22,7 @@
     }
   },
   "a11y": {
-    "logoLabel": "Killian' DAL-CIN — Developpeur Full Stack — Retour a l'accueil",
+    "logoLabel": "Killian' DAL-CIN — Hytale Plugin Developer — Retour a l'accueil",
     "openMenu": "Ouvrir le menu de navigation",
     "closeMenu": "Fermer le menu de navigation",
     "closeDrawer": "Fermer le menu",
@@ -38,20 +38,20 @@
   },
   "seo": {
     "home": {
-      "title": "Killian' DAL-CIN — Developpeur Full Stack Freelance",
-      "description": "Portfolio de Killian' DAL-CIN, developpeur full stack freelance specialise en Vue.js, React et Node.js. Applications web performantes et solutions sur-mesure."
+      "title": "Killian' DAL-CIN — Hytale Plugin Developer & Dev Web Freelance",
+      "description": "Portfolio de Killian' DAL-CIN, developpeur de plugins Hytale et developpeur web freelance. Plugins Java sur-mesure, sites pour serveurs gaming, applications Vue.js et Node.js."
     },
     "projects": {
       "title": "Projets — Killian' DAL-CIN",
-      "description": "Decouvrez mes realisations en developpement web : applications Vue.js, API Node.js, bots Discord et solutions d'entreprise."
+      "description": "Decouvrez mes realisations : plugins Hytale sur-mesure, applications Vue.js, API Node.js, bots Discord et sites pour serveurs gaming."
     },
     "about": {
       "title": "A propos — Killian' DAL-CIN",
-      "description": "Biographie et competences de Killian' DAL-CIN, developpeur full stack freelance base en France."
+      "description": "Biographie et competences de Killian' DAL-CIN, developpeur de plugins Hytale et dev web freelance base en France."
     },
     "contact": {
       "title": "Contact — Killian' DAL-CIN",
-      "description": "Contactez Killian' DAL-CIN pour discuter de votre projet de developpement web."
+      "description": "Contactez Killian' DAL-CIN pour discuter de votre plugin Hytale ou de votre projet de developpement web."
     },
     "fiverr": {
       "title": "Services Fiverr — Killian' DAL-CIN",
@@ -97,8 +97,8 @@
       }
     },
     "cta2": {
-      "title": "Vous Cherchez un Développeur Full Stack ?",
-      "subtitle": "Discutons de vos besoins de projet et construisons quelque chose d'incroyable ensemble.",
+      "title": "Un Plugin Hytale ou une App Web à Développer ?",
+      "subtitle": "Discutons de vos besoins et construisons quelque chose d'incroyable ensemble.",
       "startProject": "Démarrer une Conversation",
       "learnMore": "Découvrir Mes Succès"
     },
@@ -115,7 +115,7 @@
   },
   "projects": {
     "title": "Portfolio de Développement Web",
-    "subtitle": "Parcourez mes projets de développement full stack incluant des applications Vue.js, sites React, API Node.js, bots Discord et solutions d'entreprise.",
+    "subtitle": "Parcourez mes projets : plugins Hytale, applications Vue.js, sites React, API Node.js, bots Discord et solutions d'entreprise.",
     "categories": {
       "all": "Tous les Projets",
       "webdevelopment": "Développement Web",
@@ -152,11 +152,11 @@
     }
   },
   "about": {
-    "title": "À propos de Killian'- Développeur Full Stack",
-    "subtitle": "Développeur web expérimenté passionné par Vue.js, React, Node.js et les technologies JavaScript modernes.",
+    "title": "À propos de Killian' — Hytale Plugin Developer & Dev Web",
+    "subtitle": "Développeur spécialisé en plugins Hytale (Java) et applications web modernes (Vue.js, React, Node.js).",
     "intro": {
-      "title": "Développeur Full Stack Professionnel",
-      "content": "Je suis Killian, un développeur full stack expérimenté spécialisé dans les technologies JavaScript. Avec une expertise en Vue.js, React, Node.js et TypeScript, je crée des applications web évolutives, des API RESTful et des systèmes temps réel."
+      "title": "Hytale Plugin Developer & Développeur Web Full Stack",
+      "content": "Je suis Killian, développeur autodidacte avec 7+ ans d'expérience. Je développe des plugins Hytale sur-mesure en Java pour les server owners qui veulent se démarquer, et je crée des applications web performantes en Vue.js, React et Node.js pour les projets gaming et sites pros."
     },
     "skills": {
       "title": "Compétences Techniques & Expertise",
@@ -172,7 +172,7 @@
     },
     "approach": {
       "title": "Philosophie de Développement",
-      "subtitle": "Mon approche du développement full stack se concentre sur le code propre, l'architecture évolutive et l'expérience utilisateur exceptionnelle.",
+      "subtitle": "Mon approche, que ce soit sur les plugins Hytale ou les apps web, se concentre sur le code propre, l'architecture évolutive et l'expérience utilisateur exceptionnelle.",
       "performance": {
         "title": "Développement Axé Performance",
         "description": "Code optimisé, lazy loading, code splitting et stratégies de cache. Scores Lighthouse parfaits et métriques Core Web Vitals."
@@ -191,8 +191,8 @@
       }
     },
     "cta": {
-      "title": "Vous Cherchez un Développeur Full Stack ?",
-      "description": "Discutons de vos besoins de projet et construisons quelque chose d'incroyable ensemble.",
+      "title": "Un Plugin Hytale ou une App Web à Développer ?",
+      "description": "Discutons de vos besoins et construisons quelque chose d'incroyable ensemble.",
       "button": "Démarrer une Conversation"
     }
   },
@@ -277,8 +277,8 @@
     }
   },
   "contact": {
-    "title": "Contacter Développeur Full Stack",
-    "subtitle": "Contactez-moi pour des projets de développement web, du travail freelance ou une consultation technique. Estimation de projet et consultation gratuites disponibles.",
+    "title": "Contacter Killian' — Hytale Plugin Developer",
+    "subtitle": "Contactez-moi pour un plugin Hytale sur-mesure, un site pour serveur gaming, ou tout projet de développement web. Devis gratuit sous 24h.",
     "stats": {
       "responseTime": "Réponse Rapide",
       "satisfaction": "Satisfaction Client",
@@ -301,7 +301,7 @@
       },
       "projectTypes": {
         "title": "Quels types de projets gérez-vous ?",
-        "description": "Applications web full stack, API REST, bots Discord, sites e-commerce, plateformes SaaS et solutions logicielles personnalisées."
+        "description": "Plugins Hytale (Java), sites pour serveurs gaming, applications web full stack, API REST, bots Discord, e-commerce et SaaS sur-mesure."
       },
       "collaboration": {
         "title": "Travaillez-vous à distance ?",

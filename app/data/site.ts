@@ -6,7 +6,7 @@ export const siteConfig: SiteConfig = {
   name: 'Killian',
   title: "Killian' DAL-CIN - Hytale Plugin Developer | Freelance",
   description:
-    'Professional Full Stack Developer specializing in modern web development with Vue.js, React, Node.js. Expert in Discord bots, web applications, and custom software solutions.',
+    'Hytale Plugin Developer & Web Developer. Custom Java plugins for Hytale servers, gaming websites, Discord bots, and full-stack web applications.',
   jobTitle: 'Hytale Plugin Developer',
   author: 'Killian',
   url: 'https://killiandalcin.fr',

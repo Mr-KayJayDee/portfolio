@@ -37,7 +37,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://killiandalcin.fr',
-    name: "Killian' DAL-CIN - Developpeur Full Stack",
+    name: "Killian' DAL-CIN - Hytale Plugin Developer",
   },
   sitemap: {
     sources: ['/api/__sitemap__/urls'],

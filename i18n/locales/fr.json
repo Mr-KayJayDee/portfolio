@@ -5,7 +5,8 @@
     "about": "A propos",
     "contact": "Contact",
     "fiverr": "Fiverr",
-    "hytale": "Hytale"
+    "hytale": "Hytale",
+    "blog": "Blog"
   },
   "footer": {
     "copyright": "© 2026 Killian' DAL-CIN",
@@ -30,7 +31,10 @@
     "themeLight": "Activer le mode sombre",
     "gitea": "Gitea de Killian' DAL-CIN (nouvelle fenetre)",
     "linkedin": "LinkedIn de Killian' DAL-CIN (nouvelle fenetre)",
-    "fiverr": "Fiverr de Killian' DAL-CIN (nouvelle fenetre)"
+    "fiverr": "Fiverr de Killian' DAL-CIN (nouvelle fenetre)",
+    "blogTocToggle": "Afficher le sommaire",
+    "blogPrev": "Article précédent : {title}",
+    "blogNext": "Article suivant : {title}"
   },
   "seo": {
     "home": {
@@ -548,6 +552,31 @@
           "Integration Discord"
         ]
       }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles techniques, retours d'expérience et guides pratiques sur le développement de plugins Hytale et l'écosystème web.",
+    "stats": {
+      "articles": "Articles",
+      "tags": "Tags",
+      "languages": "Langues"
+    },
+    "readingTime": "{minutes} min de lecture",
+    "prevArticle": "Article précédent",
+    "nextArticle": "Article suivant",
+    "backToBlog": "Retour au blog",
+    "toc": {
+      "title": "Sommaire"
+    },
+    "emptyState": {
+      "title": "Bientôt des articles Hytale",
+      "description": "Le blog se prépare. Les premiers articles sur le développement de plugins Hytale arrivent bientôt.",
+      "cta": "Me contacter"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "blog": "Blog"
     }
   }
 }

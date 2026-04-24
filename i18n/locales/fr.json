@@ -417,48 +417,48 @@
       "perMonth": "/mois",
       "onQuote": "Sur devis",
       "simple": {
-        "name": "Plugin Express",
-        "description": "Petit plugin livré en 1-2 jours. Idéal pour une feature ciblée sur serveur en croissance.",
+        "name": "Plugin Essentiel",
+        "description": "1 fonctionnalité ciblée, jusqu'à 8h de dev. Parfait pour ajouter une brique à votre serveur sans casser la tirelire.",
         "features": [
-          "Livraison en 1-2 jours ouvrés",
-          "1 fonctionnalité bien scopée",
-          "Code commenté + README",
+          "1 feature bien scopée",
+          "Livraison sous 3-5 jours",
+          "Config YAML claire",
           "Support inclus 30 jours"
         ]
       },
       "complex": {
-        "name": "Projet Sur-Mesure",
-        "description": "Système complet multi-fonctionnalités pour serveur RPG/MMO. 2 à 6 semaines, livré par sprints.",
+        "name": "Système Sur-Mesure",
+        "description": "Plugin moyen (shop, quête, système de rangs) avec GUI in-game. Jusqu'à 20h de dev, livré en 1-2 semaines.",
         "features": [
-          "Architecture modulaire Kotlin/Java",
-          "Plusieurs plugins intégrés",
-          "Tests + documentation technique",
-          "Support inclus 60 jours"
+          "GUI in-game soignée",
+          "Persistence + reload à chaud",
+          "Tests + README dev",
+          "Support inclus 45 jours"
         ]
       },
       "custom": {
-        "name": "Système MMO Complet",
-        "description": "Infrastructure MMO complète : économie cross-server, framework de quêtes, proxy réseau. 4-8 semaines.",
+        "name": "Module Flagship",
+        "description": "Système MMO custom pour serveur ambitieux (Runeteria / Hytown tier). 2-4 semaines, sur devis après cadrage.",
         "features": [
-          "Stack MMO de bout en bout",
-          "Intégration avec votre codebase",
-          "Performance profilée en prod",
-          "Transfert de connaissances inclus"
+          "Spec détaillée co-construite",
+          "Intégration codebase existante",
+          "Tests charge + profilage",
+          "Transfert de connaissances"
         ]
       },
       "maintenance": {
         "name": "Retainer Mensuel",
-        "description": "4 à 8 heures par semaine dédiées à votre serveur. Suivi breaking changes API Hytale, features continues.",
+        "description": "Environ 12h par mois dédiées à votre serveur : patches API Hytale, fixes, petites features. File prioritaire.",
         "features": [
-          "4-8h/sem selon formule",
+          "~12h/mois flexibles",
           "Suivi patches Hytale inclus",
           "Priorité sur les urgences",
-          "Communication Discord directe"
+          "Canal Discord dédié"
         ]
       },
       "web": {
         "name": "Site Gaming / Serveur",
-        "description": "Site vitrine ou plateforme complète pour votre serveur : vote-rewards, dashboard admin, monétisation.",
+        "description": "Landing ou site complet pour votre serveur : vote-rewards, dashboard admin, SEO optimisé Nuxt/Vue.",
         "features": [
           "Nuxt/Vue SSR — SEO optimisé",
           "Vote-reward multi-listes",
@@ -466,6 +466,10 @@
           "Intégration Discord webhook"
         ]
       }
+    },
+    "pricingNote": {
+      "hourly": "Hors packages : 45€/h HT, minimum 1h (spot fixes, audits).",
+      "flagshipCta": "Flagship : sur devis après cadrage de 30 minutes."
     },
     "recentArticles": {
       "title": "Articles récents",

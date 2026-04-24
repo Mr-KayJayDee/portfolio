@@ -417,48 +417,48 @@
       "perMonth": "/month",
       "onQuote": "Custom quote",
       "simple": {
-        "name": "Express Plugin",
-        "description": "Small plugin delivered in 1-2 days. Perfect for a focused feature on a growing server.",
+        "name": "Essential Plugin",
+        "description": "1 focused feature, up to 8h of dev. Perfect for adding a piece to your server without breaking the bank.",
         "features": [
-          "Delivered in 1-2 business days",
           "1 well-scoped feature",
-          "Commented code + README",
+          "Delivered in 3-5 days",
+          "Clear YAML config",
           "30-day support included"
         ]
       },
       "complex": {
-        "name": "Scoped Project",
-        "description": "Full multi-feature system for RPG/MMO servers. Delivered in sprints over 2 to 6 weeks.",
+        "name": "Custom System",
+        "description": "Medium plugin (shop, quest, rank system) with in-game GUI. Up to 20h of dev, delivered in 1-2 weeks.",
         "features": [
-          "Modular Kotlin/Java architecture",
-          "Multiple integrated plugins",
-          "Tests + technical documentation",
-          "60-day support included"
+          "Polished in-game GUI",
+          "Persistence + hot-reload",
+          "Tests + dev README",
+          "45-day support included"
         ]
       },
       "custom": {
-        "name": "Full MMO System",
-        "description": "End-to-end MMO infrastructure: cross-server economy, quest framework, network proxy. 4-8 weeks.",
+        "name": "Flagship Module",
+        "description": "Custom MMO system for ambitious servers (Runeteria / Hytown tier). 2-4 weeks, quote-based after scoping.",
         "features": [
-          "End-to-end MMO stack",
-          "Integration with your codebase",
-          "Production-profiled performance",
-          "Knowledge transfer included"
+          "Co-built detailed spec",
+          "Existing codebase integration",
+          "Load tests + profiling",
+          "Knowledge transfer session"
         ]
       },
       "maintenance": {
         "name": "Monthly Retainer",
-        "description": "4 to 8 hours per week dedicated to your server. Hytale API breaking-change tracking, continuous feature work.",
+        "description": "About 12h per month dedicated to your server: Hytale API patches, fixes, small features. Priority queue.",
         "features": [
-          "4-8h/week depending on tier",
+          "~12h/month flexible",
           "Hytale patch tracking included",
           "Priority on urgent issues",
-          "Direct Discord communication"
+          "Dedicated Discord channel"
         ]
       },
       "web": {
         "name": "Gaming / Server Website",
-        "description": "Showcase site or full platform for your server: vote-rewards, admin dashboard, monetization.",
+        "description": "Landing or full website for your server: vote-rewards, admin dashboard, SEO-optimized Nuxt/Vue.",
         "features": [
           "Nuxt/Vue SSR — SEO-optimized",
           "Multi-list vote-rewards",
@@ -466,6 +466,10 @@
           "Discord webhook integration"
         ]
       }
+    },
+    "pricingNote": {
+      "hourly": "Outside packages: €45/h excl. VAT, 1h minimum (spot fixes, audits).",
+      "flagshipCta": "Flagship: custom quote after a 30-minute scoping call."
     },
     "recentArticles": {
       "title": "Recent articles",

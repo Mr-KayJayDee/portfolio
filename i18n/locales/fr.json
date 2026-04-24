@@ -4,7 +4,6 @@
     "projects": "Projets",
     "about": "A propos",
     "contact": "Contact",
-    "fiverr": "Fiverr",
     "hytale": "Hytale",
     "blog": "Blog"
   },
@@ -31,7 +30,6 @@
     "themeLight": "Activer le mode sombre",
     "gitea": "Gitea de Killian' DAL-CIN (nouvelle fenetre)",
     "linkedin": "LinkedIn de Killian' DAL-CIN (nouvelle fenetre)",
-    "fiverr": "Fiverr de Killian' DAL-CIN (nouvelle fenetre)",
     "blogTocToggle": "Afficher le sommaire",
     "blogPrev": "Article précédent : {title}",
     "blogNext": "Article suivant : {title}"
@@ -52,10 +50,6 @@
     "contact": {
       "title": "Contact — Killian' DAL-CIN",
       "description": "Contactez Killian' DAL-CIN pour discuter de votre plugin Hytale ou de votre projet de developpement web."
-    },
-    "fiverr": {
-      "title": "Services Fiverr — Killian' DAL-CIN",
-      "description": "Services de developpement disponibles sur Fiverr : bots Discord, plugins Minecraft, applications web."
     },
     "hytale": {
       "title": "Plugins Hytale sur-mesure | Killian' DAL-CIN",
@@ -194,86 +188,6 @@
       "title": "Un Plugin Hytale ou une App Web à Développer ?",
       "description": "Discutons de vos besoins et construisons quelque chose d'incroyable ensemble.",
       "button": "Démarrer une Conversation"
-    }
-  },
-  "fiverr": {
-    "title": "Services Fiverr Premium - Développeur Top Rated Seller",
-    "subtitle": "500+ commandes livrées. 100% satisfaction client. Réponse <1h. Support FR/EN 24/7. Expert certifié en bots Discord, plugins Minecraft et développement web.",
-    "profileCta": "Commander Maintenant sur Fiverr",
-    "stats": {
-      "rating": "Note Parfaite 5/5"
-    },
-    "pricing": {
-      "startingAt": "Dès"
-    },
-    "services": {
-      "title": "Services Premium",
-      "subtitle": "Solutions professionnelles livrées en temps record. Chaque service inclut : code source complet, documentation détaillée, support 30 jours, révisions illimitées.",
-      "features": "Ce Qui Est Inclus",
-      "orderNow": "Commander Ce Service",
-      "learnMore": "Voir Tous les Détails",
-      "moreFeatures": "avantages premium inclus",
-      "comingSoon": "Disponible Bientôt",
-      "available": "Disponible Immédiatement"
-    },
-    "serviceData": {
-      "discord-bot": {
-        "title": "Bot Discord Ultra-Complet | #1 Best-Seller",
-        "description": "Le bot Discord de vos rêves, codé par un expert. Transformez votre serveur en communauté ultra-active.",
-        "features": [
-          "Système de modération IA avancé (anti-spam, anti-raid, auto-mod intelligent)",
-          "Mini-jeux addictifs : casino, RPG, quiz avec leaderboards globaux",
-          "Lecteur musique HD : Spotify, YouTube, SoundCloud, avec playlist sauvegardées",
-          "Interface web moderne pour configuration facile (dashboard React inclus)",
-          "Hébergement VPS premium OFFERT pendant 3 mois"
-        ]
-      },
-      "minecraft-plugin": {
-        "title": "Plugin Minecraft Java Premium | Spigot/Paper Expert",
-        "description": "Plugins Minecraft sur-mesure qui transforment votre serveur en expérience unique. Compatible 1.8 → 1.20+, optimisé pour gros serveurs (1000+ joueurs).",
-        "features": [
-          "Gameplay révolutionnaire : donjons procéduraux, boss custom, sorts magiques",
-          "Économie avancée : boutiques GUI, auction house, métiers avec XP",
-          "Systèmes de progression : levels, skills, classes RPG personnalisables",
-          "Base de données optimisée MySQL/Redis pour performances maximales",
-          "Multi-serveurs : BungeeCord/Velocity ready avec synchronisation"
-        ]
-      },
-      "telegram-bot": {
-        "title": "Bot Telegram Pro Business | Automatisation Puissante",
-        "description": "Bot Telegram professionnel qui booste votre business. Parfait pour e-commerce, support client, communautés.",
-        "features": [
-          "IA conversationnelle : ChatGPT intégré pour réponses naturelles",
-          "E-commerce complet : catalogue produits, panier, paiements Stripe/PayPal",
-          "Broadcasting intelligent : segments utilisateurs, A/B testing, analytics",
-          "Multi-langues automatique avec détection et traduction DeepL",
-          "Sécurité maximale : 2FA, encryption, RGPD compliant"
-        ]
-      },
-      "website-development": {
-        "title": "Site Web Premium Vue.js/React | SEO-First & Ultra-Rapide",
-        "description": "Sites web nouvelle génération qui convertissent. Design premium, performance maximale, SEO optimisé.",
-        "features": [
-          "Design UI/UX premium : mockups Figma + animations modernes",
-          "Performance extrême : chargement <1.5s",
-          "Responsive parfait : testé sur 50+ appareils différents",
-          "SEO surpuissant : schema markup, sitemap, meta optimisées",
-          "E-commerce ready : Stripe, PayPal, cryptos (si besoin)"
-        ]
-      }
-    },
-    "testimonials": {
-      "title": "Ils Ont Transformé Leur Business Avec Mes Services",
-      "subtitle": "Rejoignez 500+ entrepreneurs satisfaits. Note moyenne 5.0/5.0 sur l'ensemble de mes services."
-    },
-    "faq": {
-      "title": "Questions Frequentes Fiverr",
-      "subtitle": "Tout ce que vous devez savoir avant de commander mes services sur Fiverr."
-    },
-    "cta": {
-      "title": "Arrêtez de Chercher, Vous Avez Trouvé LE Bon Développeur",
-      "subtitle": "Chaque jour sans agir = opportunités perdues. Lancez votre projet MAINTENANT.",
-      "button": "Réserver Ma Commande Maintenant"
     }
   },
   "contact": {
@@ -420,8 +334,8 @@
     "ctaTitle": "Rejoignez Mes Clients Satisfaits",
     "ctaSubtitle": "Votre projet mérite le même niveau d'excellence et de professionnalisme.",
     "ctaText": "Démarrer Mon Projet",
-    "reviewsLink": "https://www.fiverr.com/mr_kayjaydee",
-    "reviewsText": "Voir Tous les Avis",
+    "reviewsLink": "/contact",
+    "reviewsText": "Démarrer Une Conversation",
     "card": {
       "featured": "Témoignage Vedette",
       "results": "Résultats obtenus :"
@@ -495,61 +409,61 @@
     },
     "pricing": {
       "label": "// tarifs",
-      "title": "Tarifs",
-      "subtitle": "Des offres transparentes pour chaque projet",
+      "title": "Tarifs transparents, tiers adaptés à votre serveur",
+      "subtitle": "De l'express 1-2 jours au système MMO complet sur mesure. Sans surprise, devis sous 24h.",
       "cta": "Demander un devis",
-      "popular": "Populaire",
-      "from": "A partir de",
+      "popular": "Le plus choisi",
+      "from": "À partir de",
       "perMonth": "/mois",
       "onQuote": "Sur devis",
       "simple": {
-        "name": "Plugin Simple",
-        "description": "Un plugin basique avec des fonctionnalites simples",
+        "name": "Plugin Express",
+        "description": "Petit plugin livré en 1-2 jours. Idéal pour une feature ciblée sur serveur en croissance.",
         "features": [
-          "Fonctionnalites de base",
-          "Configuration simple",
-          "Documentation incluse",
-          "Support 30 jours"
+          "Livraison en 1-2 jours ouvrés",
+          "1 fonctionnalité bien scopée",
+          "Code commenté + README",
+          "Support inclus 30 jours"
         ]
       },
       "complex": {
-        "name": "Plugin Complexe",
-        "description": "Un plugin avance avec des systemes complexes",
+        "name": "Projet Sur-Mesure",
+        "description": "Système complet multi-fonctionnalités pour serveur RPG/MMO. 2 à 6 semaines, livré par sprints.",
         "features": [
-          "Systemes avances",
-          "Integration API",
-          "Tests complets",
-          "Support 60 jours"
+          "Architecture modulaire Kotlin/Java",
+          "Plusieurs plugins intégrés",
+          "Tests + documentation technique",
+          "Support inclus 60 jours"
         ]
       },
       "custom": {
-        "name": "Developpement Sur-Mesure",
-        "description": "Un projet entierement personnalise",
+        "name": "Système MMO Complet",
+        "description": "Infrastructure MMO complète : économie cross-server, framework de quêtes, proxy réseau. 4-8 semaines.",
         "features": [
-          "Architecture sur-mesure",
-          "Fonctionnalites illimitees",
-          "Support prioritaire",
-          "Maintenance incluse"
+          "Stack MMO de bout en bout",
+          "Intégration avec votre codebase",
+          "Performance profilée en prod",
+          "Transfert de connaissances inclus"
         ]
       },
       "maintenance": {
-        "name": "Maintenance & Support",
-        "description": "Support continu pour vos plugins",
+        "name": "Retainer Mensuel",
+        "description": "4 à 8 heures par semaine dédiées à votre serveur. Suivi breaking changes API Hytale, features continues.",
         "features": [
-          "Mises a jour regulieres",
-          "Corrections de bugs",
-          "Support technique",
-          "Monitoring"
+          "4-8h/sem selon formule",
+          "Suivi patches Hytale inclus",
+          "Priorité sur les urgences",
+          "Communication Discord directe"
         ]
       },
       "web": {
-        "name": "Developpement Web",
-        "description": "Sites web et applications pour votre communaute",
+        "name": "Site Gaming / Serveur",
+        "description": "Site vitrine ou plateforme complète pour votre serveur : vote-rewards, dashboard admin, monétisation.",
         "features": [
-          "Site responsive",
-          "SEO optimise",
-          "Dashboard admin",
-          "Integration Discord"
+          "Nuxt/Vue SSR — SEO optimisé",
+          "Vote-reward multi-listes",
+          "Dashboard admin server-owner",
+          "Intégration Discord webhook"
         ]
       }
     },

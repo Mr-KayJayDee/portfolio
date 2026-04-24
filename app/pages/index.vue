@@ -30,7 +30,6 @@ useHead({
             email: siteConfig.contact.email,
             sameAs: [
               'https://linkedin.com/in/killian-dal-cin',
-              'https://www.fiverr.com/users/mr_kayjaydee',
               'https://gitea.kamisama.ovh/kayjaydee',
             ],
           },

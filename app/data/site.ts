@@ -1,6 +1,6 @@
-import type { SiteConfig, ContactInfo, SocialLink, FiverrService, FiverrConfig } from '~~/shared/types'
+import type { SiteConfig, ContactInfo, SocialLink } from '~~/shared/types'
 
-export type { SiteConfig, ContactInfo, SocialLink, FiverrService, FiverrConfig }
+export type { SiteConfig, ContactInfo, SocialLink }
 
 export const siteConfig: SiteConfig = {
   name: 'Killian',
@@ -42,36 +42,6 @@ export const siteConfig: SiteConfig = {
     },
   ],
 
-  fiverr: {
-    profileUrl: 'https://www.fiverr.com/users/mr_kayjaydee',
-    services: [
-      {
-        id: 'discord-bot',
-        url: 'https://www.fiverr.com/s/rEDa84j',
-        image: '/images/fiverr/discord_bot.webp',
-        price: '$25',
-      },
-      {
-        id: 'minecraft-plugin',
-        url: 'https://www.fiverr.com/s/xXVY20Q',
-        image: '/images/fiverr/minecraft_plugin.webp',
-        price: '$50',
-      },
-      {
-        id: 'telegram-bot',
-        url: 'https://www.fiverr.com/users/mr_kayjaydee',
-        image: '/images/fiverr/telegram_bot.webp',
-        price: '$20',
-      },
-      {
-        id: 'website-development',
-        url: 'https://www.fiverr.com/users/mr_kayjaydee',
-        image: '/images/fiverr/website.webp',
-        price: '$50',
-      },
-    ],
-  },
-
   seo: {
     defaultImage: '/portfolio-preview.webp',
     twitterHandle: '@killiandalcin',
@@ -79,15 +49,14 @@ export const siteConfig: SiteConfig = {
     alternateLocales: ['fr_FR'],
     internalLinks: {
       priority: [
-        { url: '/fiverr', text: 'Services Fiverr', priority: 0.9 },
+        { url: '/hytale', text: 'Hytale Plugin Development', priority: 0.9 },
         { url: '/projects', text: 'Portfolio', priority: 0.8 },
         { url: '/contact', text: 'Contact', priority: 0.8 },
       ],
       services: [
-        { url: '/fiverr#discord-bot', text: 'Bot Discord' },
-        { url: '/fiverr#minecraft-plugin', text: 'Plugin Minecraft' },
-        { url: '/fiverr#telegram-bot', text: 'Bot Telegram' },
-        { url: '/fiverr#website-development', text: 'Developpement Web' },
+        { url: '/hytale#pricing', text: 'Hytale Pricing' },
+        { url: '/hytale', text: 'Custom Plugin Development' },
+        { url: '/contact', text: 'Request a Quote' },
       ],
     },
     organization: {

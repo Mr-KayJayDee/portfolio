@@ -73,18 +73,6 @@ export interface SocialLink {
   username?: string
 }
 
-export interface FiverrService {
-  id: string
-  url: string
-  image: string
-  price: string
-}
-
-export interface FiverrConfig {
-  profileUrl: string
-  services: FiverrService[]
-}
-
 export interface PricingTier {
   id: string
   priceFixed: string | null
@@ -100,7 +88,6 @@ export interface SiteConfig {
   author: string
   contact: ContactInfo
   social: SocialLink[]
-  fiverr: FiverrConfig
   url: string
   seo: {
     defaultImage: string

@@ -5,7 +5,6 @@ const localePath = useLocalePath()
 const socialLinks = [
   { name: 'gitea', url: 'https://gitea.kamisama.ovh/kayjaydee', icon: 'simple-icons:gitea', ariaKey: 'a11y.gitea' },
   { name: 'linkedin', url: 'https://linkedin.com/in/killian-dal-cin', icon: 'simple-icons:linkedin', ariaKey: 'a11y.linkedin' },
-  { name: 'fiverr', url: 'https://www.fiverr.com/users/mr_kayjaydee', icon: 'simple-icons:fiverr', ariaKey: 'a11y.fiverr' },
 ]
 
 const quickLinks = computed(() => [
@@ -13,7 +12,6 @@ const quickLinks = computed(() => [
   { key: 'projects', path: '/projects' },
   { key: 'about', path: '/about' },
   { key: 'contact', path: '/contact' },
-  { key: 'fiverr', path: '/fiverr' },
 ])
 </script>
 

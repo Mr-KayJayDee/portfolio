@@ -4,7 +4,6 @@
     "projects": "Projects",
     "about": "About",
     "contact": "Contact",
-    "fiverr": "Fiverr",
     "hytale": "Hytale",
     "blog": "Blog"
   },
@@ -31,7 +30,6 @@
     "themeLight": "Switch to dark mode",
     "gitea": "Killian' DAL-CIN on Gitea (opens in new tab)",
     "linkedin": "Killian' DAL-CIN on LinkedIn (opens in new tab)",
-    "fiverr": "Killian' DAL-CIN on Fiverr (opens in new tab)",
     "blogTocToggle": "Show table of contents",
     "blogPrev": "Previous article: {title}",
     "blogNext": "Next article: {title}"
@@ -52,10 +50,6 @@
     "contact": {
       "title": "Contact — Killian' DAL-CIN",
       "description": "Contact Killian' DAL-CIN to discuss your Hytale plugin or web development project."
-    },
-    "fiverr": {
-      "title": "Fiverr Services — Killian' DAL-CIN",
-      "description": "Development services available on Fiverr: Discord bots, Minecraft plugins, web applications."
     },
     "hytale": {
       "title": "Custom Hytale Plugins | Killian' DAL-CIN",
@@ -194,86 +188,6 @@
       "title": "Need a Hytale Plugin or Web App Built?",
       "description": "Let's discuss your project and build something amazing together.",
       "button": "Start a Conversation"
-    }
-  },
-  "fiverr": {
-    "title": "Premium Fiverr Services - Top Rated Developer",
-    "subtitle": "500+ orders delivered. 100% satisfaction rate. <1h response time. 24/7 support. Certified expert in Discord bots, Minecraft plugins & web development.",
-    "profileCta": "Order Now on Fiverr",
-    "stats": {
-      "rating": "Perfect 5/5 Rating"
-    },
-    "pricing": {
-      "startingAt": "From"
-    },
-    "services": {
-      "title": "Premium Services",
-      "subtitle": "Professional solutions delivered in record time. Every service includes: full source code, detailed documentation, 30-day support, unlimited revisions.",
-      "features": "What's Included",
-      "orderNow": "Order This Service",
-      "learnMore": "View All Details",
-      "moreFeatures": "premium benefits included",
-      "comingSoon": "Available Soon",
-      "available": "Available Now"
-    },
-    "serviceData": {
-      "discord-bot": {
-        "title": "All-In-One Discord Bot | #1 Best-Seller",
-        "description": "The Discord bot of your dreams, coded by an expert. Transform your server into an ultra-active community.",
-        "features": [
-          "Advanced AI moderation system (anti-spam, anti-raid, smart auto-mod)",
-          "Addictive mini-games: casino, RPG, quiz with global leaderboards",
-          "HD music player: Spotify, YouTube, SoundCloud with saved playlists",
-          "Modern web interface for easy configuration (React dashboard included)",
-          "FREE premium VPS hosting for 3 months"
-        ]
-      },
-      "minecraft-plugin": {
-        "title": "Premium Minecraft Java Plugin | Spigot/Paper Expert",
-        "description": "Custom Minecraft plugins that transform your server into a unique experience. Compatible 1.8 to 1.20+, optimized for large servers (1000+ players).",
-        "features": [
-          "Revolutionary gameplay: procedural dungeons, custom bosses, magic spells",
-          "Advanced economy: GUI shops, auction house, jobs with XP system",
-          "Progression systems: levels, skills, customizable RPG classes",
-          "Optimized MySQL/Redis database for maximum performance",
-          "Multi-server ready: BungeeCord/Velocity with synchronization"
-        ]
-      },
-      "telegram-bot": {
-        "title": "Pro Business Telegram Bot | Powerful Automation",
-        "description": "Professional Telegram bot that boosts your business. Perfect for e-commerce, customer support, communities.",
-        "features": [
-          "Conversational AI: integrated ChatGPT for natural responses",
-          "Complete e-commerce: product catalog, cart, Stripe/PayPal payments",
-          "Smart broadcasting: user segments, A/B testing, analytics",
-          "Automatic multi-language with DeepL detection and translation",
-          "Maximum security: 2FA, encryption, GDPR compliant"
-        ]
-      },
-      "website-development": {
-        "title": "Premium Vue.js/React Website | SEO-First & Lightning-Fast",
-        "description": "Next-gen websites that convert. Premium design, maximum performance, SEO optimized.",
-        "features": [
-          "Premium UI/UX design: Figma mockups + modern animations",
-          "Extreme performance: <1.5s load time",
-          "Perfect responsive: tested on 50+ different devices",
-          "Supercharged SEO: schema markup, sitemap, optimized meta",
-          "E-commerce ready: Stripe, PayPal, crypto (if needed)"
-        ]
-      }
-    },
-    "testimonials": {
-      "title": "They Transformed Their Business With My Services",
-      "subtitle": "Join 500+ satisfied entrepreneurs. Average rating 5.0/5.0 across all my services."
-    },
-    "faq": {
-      "title": "Fiverr FAQ",
-      "subtitle": "Everything you need to know before ordering my services on Fiverr."
-    },
-    "cta": {
-      "title": "Stop Searching, You Found THE Right Developer",
-      "subtitle": "Every day without action = lost opportunities. Launch your project NOW.",
-      "button": "Book My Order Now"
     }
   },
   "contact": {
@@ -420,8 +334,8 @@
     "ctaTitle": "Join My Satisfied Clients",
     "ctaSubtitle": "Your project deserves the same level of excellence and professionalism.",
     "ctaText": "Start My Project",
-    "reviewsLink": "https://www.fiverr.com/mr_kayjaydee",
-    "reviewsText": "View All Reviews",
+    "reviewsLink": "/contact",
+    "reviewsText": "Start a Conversation",
     "card": {
       "featured": "Featured Testimonial",
       "results": "Results achieved:"
@@ -495,61 +409,61 @@
     },
     "pricing": {
       "label": "// pricing",
-      "title": "Pricing",
-      "subtitle": "Transparent pricing for every project",
+      "title": "Transparent pricing, tiers built for your server",
+      "subtitle": "From 1-2 day express plugins to complete bespoke MMO systems. No surprises, quote within 24h.",
       "cta": "Request a quote",
-      "popular": "Popular",
+      "popular": "Most picked",
       "from": "From",
       "perMonth": "/month",
       "onQuote": "Custom quote",
       "simple": {
-        "name": "Simple Plugin",
-        "description": "A basic plugin with simple features",
+        "name": "Express Plugin",
+        "description": "Small plugin delivered in 1-2 days. Perfect for a focused feature on a growing server.",
         "features": [
-          "Basic features",
-          "Simple configuration",
-          "Documentation included",
-          "30-day support"
+          "Delivered in 1-2 business days",
+          "1 well-scoped feature",
+          "Commented code + README",
+          "30-day support included"
         ]
       },
       "complex": {
-        "name": "Complex Plugin",
-        "description": "An advanced plugin with complex systems",
+        "name": "Scoped Project",
+        "description": "Full multi-feature system for RPG/MMO servers. Delivered in sprints over 2 to 6 weeks.",
         "features": [
-          "Advanced systems",
-          "API integration",
-          "Comprehensive testing",
-          "60-day support"
+          "Modular Kotlin/Java architecture",
+          "Multiple integrated plugins",
+          "Tests + technical documentation",
+          "60-day support included"
         ]
       },
       "custom": {
-        "name": "Custom Development",
-        "description": "A fully customized project",
+        "name": "Full MMO System",
+        "description": "End-to-end MMO infrastructure: cross-server economy, quest framework, network proxy. 4-8 weeks.",
         "features": [
-          "Custom architecture",
-          "Unlimited features",
-          "Priority support",
-          "Maintenance included"
+          "End-to-end MMO stack",
+          "Integration with your codebase",
+          "Production-profiled performance",
+          "Knowledge transfer included"
         ]
       },
       "maintenance": {
-        "name": "Maintenance & Support",
-        "description": "Ongoing support for your plugins",
+        "name": "Monthly Retainer",
+        "description": "4 to 8 hours per week dedicated to your server. Hytale API breaking-change tracking, continuous feature work.",
         "features": [
-          "Regular updates",
-          "Bug fixes",
-          "Technical support",
-          "Monitoring"
+          "4-8h/week depending on tier",
+          "Hytale patch tracking included",
+          "Priority on urgent issues",
+          "Direct Discord communication"
         ]
       },
       "web": {
-        "name": "Web Development",
-        "description": "Websites and apps for your community",
+        "name": "Gaming / Server Website",
+        "description": "Showcase site or full platform for your server: vote-rewards, admin dashboard, monetization.",
         "features": [
-          "Responsive website",
-          "SEO optimized",
-          "Admin dashboard",
-          "Discord integration"
+          "Nuxt/Vue SSR — SEO-optimized",
+          "Multi-list vote-rewards",
+          "Admin dashboard for server owner",
+          "Discord webhook integration"
         ]
       }
     },

@@ -31,6 +31,9 @@ useHead({
   <div>
     <HytaleHeroSection />
     <HytaleServicesSection />
+    <div class="relative bg-gray-50/50 dark:bg-gray-900/20">
+      <HytaleDemoGrid />
+    </div>
     <HytalePricingSection />
     <div class="relative bg-gray-50/50 dark:bg-gray-900/20">
       <TestimonialsSection />

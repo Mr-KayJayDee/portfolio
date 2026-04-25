@@ -4,6 +4,67 @@ import type { Project } from '~~/shared/types'
 // Titles and descriptions are resolved via i18n keys: projects.${id}.title, projects.${id}.description
 export const projects: Omit<Project, 'title' | 'description' | 'longDescription'>[] = [
   {
+    id: 'votepipe',
+    image: '/images/projects/votepipe.svg',
+    technologies: ['Java 25', 'Hytale Plugin API', 'TypeScript', 'SaaS', 'HTTPS Webhooks', 'Votifier RSA/HMAC'],
+    category: 'Hytale Plugin',
+    date: '2026',
+    featured: true,
+    buttons: [
+      {
+        title: 'Website',
+        link: 'https://votepipe.com',
+      },
+      {
+        title: 'Modtale',
+        link: 'https://modtale.net/mod/votepipe',
+      },
+      {
+        title: 'CurseForge',
+        link: 'https://www.curseforge.com/hytale/mods/votepipe',
+      },
+      {
+        title: 'Documentation',
+        link: 'https://votepipe.com/docs',
+      },
+    ],
+  },
+  {
+    id: 'gravity-flip',
+    image: '/images/projects/gravityflip.png',
+    technologies: ['Java 25', 'Hytale Plugin API', 'Gradle Shadow', 'JUnit 5'],
+    category: 'Hytale Plugin',
+    date: '2026',
+    featured: true,
+    buttons: [
+      {
+        title: 'Modtale',
+        link: 'https://modtale.net/mod/gravity-flip',
+      },
+      {
+        title: 'CurseForge',
+        link: 'https://curseforge.com/hytale/mods/gravity-flip',
+      },
+    ],
+  },
+  {
+    id: 'playhours',
+    image: '/images/projects/playhours.png',
+    technologies: ['Java 17', 'Forge 1.20.1', 'LuckPerms', 'TOML Config'],
+    category: 'Minecraft Mod',
+    date: '2025',
+    buttons: [
+      {
+        title: 'CurseForge',
+        link: 'https://www.curseforge.com/minecraft/mc-mods/playhours',
+      },
+      {
+        title: 'Repository',
+        link: 'https://gitea.kamisama.ovh/kayjaydee/PlayHours',
+      },
+    ],
+  },
+  {
     id: 'virtual-tour',
     image: '/images/virtualtour.webp',
     technologies: ['Vue.js', 'Three.js', 'WebGL', 'Node.js'],
@@ -22,7 +83,6 @@ export const projects: Omit<Project, 'title' | 'description' | 'longDescription'
     technologies: ['Node.js', 'Discord.js', 'MongoDB', 'Express'],
     category: 'Bot Development',
     date: '2023',
-    featured: true,
     buttons: [
       {
         title: 'Invite',
@@ -36,7 +96,6 @@ export const projects: Omit<Project, 'title' | 'description' | 'longDescription'
     technologies: ['JavaScript', 'Node.js', 'Canvas', 'npm'],
     category: 'Open Source',
     date: '2022',
-    featured: true,
     buttons: [
       {
         title: 'Repository',

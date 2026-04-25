@@ -9,14 +9,15 @@
   },
   "footer": {
     "copyright": "© 2026 Killian' DAL-CIN",
+    "tagline": "Hytale Plugin Developer & Freelance Web Dev. Custom Java plugins, gaming server websites, production-grade Vue/Nuxt apps.",
     "navigation": "Quick Links",
     "services": "Services",
     "legalNotices": "Legal Notices",
     "privacyPolicy": "Privacy Policy",
     "servicesList": {
-      "webDev": "Web Development",
-      "mobileApps": "Mobile Apps",
-      "apiBackend": "API Development",
+      "hytalePlugins": "Hytale Plugins (Java)",
+      "webDev": "Web Sites & Apps",
+      "retainer": "Monthly Retainer",
       "consulting": "Tech Consulting"
     }
   },
@@ -66,20 +67,20 @@
       "contact": "Contact me"
     },
     "featuredProjects": {
-      "title": "Web Applications That Deliver Results",
-      "subtitle": "Portfolio of real projects that transformed ideas into success. Lightning-fast Vue.js apps, scalable React platforms, robust Node.js APIs.",
+      "title": "Hytale plugins & web apps running in production",
+      "subtitle": "Portfolio of real projects, in production, used by real players and clients. Java 25 Hytale plugins, Vue/Nuxt apps, SaaS, Discord bots — not proofs-of-concept, actual shipping.",
       "viewAll": "Explore All Projects"
     },
     "services": {
-      "title": "Premium Web Development Services",
-      "subtitle": "Turnkey solutions that boost your growth. Cutting-edge technologies + proven methodology = guaranteed success for your digital project.",
-      "webDev": {
-        "title": "Custom Vue.js/React Web Applications",
-        "description": "Lightning-fast web apps that convert visitors into customers. Modern SPAs, offline-first PWAs, high-conversion e-commerce. SEO-friendly from day one."
+      "title": "Premium Hytale & Web Services",
+      "subtitle": "Custom Hytale plugins, high-performance web apps, gaming SaaS. Stack: Java 25 + Vue/Nuxt + Node.js. Transparent pricing (€149-€790), quote within 24h.",
+      "hytalePlugins": {
+        "title": "Custom Hytale Plugins (Java)",
+        "description": "From essential plugin to full MMO system. Wand-based regions, votes & rewards, economy, quests, mini-games. Stack: Java 25 + Hytale Plugin API + Gradle Shadow."
       },
-      "mobileApps": {
-        "title": "Cost-Effective Cross-Platform Mobile Apps",
-        "description": "One codebase = iOS + Android + Web. React Native for performant native apps. 60% cost savings vs native development."
+      "webDev": {
+        "title": "Vue.js / Nuxt / React Web Apps",
+        "description": "Gaming server websites, SaaS platforms, e-commerce. SEO-optimized Nuxt 4 SSR, admin dashboards, Tebex/Discord integrations. Lighthouse 95+, <2s load times."
       },
       "optimization": {
         "title": "Performance & Technical SEO Optimization",
@@ -112,6 +113,8 @@
     "subtitle": "Browse my work: custom Hytale plugins, Vue.js applications, React websites, Node.js APIs, Discord bots, and enterprise software.",
     "categories": {
       "all": "All Projects",
+      "hytaleplugin": "Hytale Plugin",
+      "minecraftmod": "Minecraft Mod",
       "webdevelopment": "Web Development",
       "botdevelopment": "Bot Development",
       "opensource": "Open Source",
@@ -249,6 +252,35 @@
     }
   },
   "projectData": {
+    "votepipe": {
+      "title": "VotePipe — Hytale Vote Rewards SaaS",
+      "description": "Unified SaaS platform that combines Webhook (V1 RSA, V2 HMAC) and Votifier to handle votes from all 7 major Hytale server lists in a single plugin. Visual reward builder, automatic delivery, no port forwarding needed.",
+      "longDescription": "The only Hytale plugin that runs Webhook and Votifier through one unified pipeline. Free / Pro / Network tiers with web dashboard (app.votepipe.com), visual reward builder, streaks, milestones, lucky tiers. Stack: Java 25 plugin + TypeScript backend + SaaS dashboard. Outbound-only secure cloud architecture.",
+      "buttons": {
+        "website": "Official Site",
+        "modtale": "Modtale",
+        "curseforge": "CurseForge",
+        "documentation": "Documentation"
+      }
+    },
+    "gravity-flip": {
+      "title": "GravityFlip — Hytale Anti-Gravity Regions",
+      "description": "Hytale plugin that creates custom anti-gravity zones with an in-game wand. Walk on ceilings, floating items, drifting mobs — all configurable without touching files.",
+      "longDescription": "Wand-based region builder for Hytale servers. Corners are set with left/right click, JSON persistence is automatic, 10x/sec tick loop, configurable vertical force and grace period. Visual modes: outline / particles / hidden. Built on Hytale Plugin API + Java 25 + Gradle Shadow.",
+      "buttons": {
+        "modtale": "Modtale",
+        "curseforge": "CurseForge"
+      }
+    },
+    "playhours": {
+      "title": "PlayHours — Forge Server Hours Enforcement",
+      "description": "Forge 1.20.1 mod that enforces per-day open windows, blocks logins outside hours, warns at 15/10/5/1 min, auto-kicks at close, handles holidays, whitelist/blacklist, force modes, LuckPerms integration.",
+      "longDescription": "Minecraft server mod for time-gated access: per-day schedules, midnight-spanning, date exceptions, dynamic MOTD, multi-language (EN/FR), LuckPerms or vanilla ops permissions. Perfect for educational servers, family servers, or maintenance windows.",
+      "buttons": {
+        "curseforge": "CurseForge",
+        "repository": "Repository"
+      }
+    },
     "virtual-tour": {
       "title": "Virtual Tour - Interactive 360° Experience",
       "description": "My high school teacher and me had an idea to create a Virtual tour with 360° videos to allow everyone to visit the school from the web.",
@@ -470,6 +502,22 @@
     "pricingNote": {
       "hourly": "Outside packages: €45/h excl. VAT, 1h minimum (spot fixes, audits).",
       "flagshipCta": "Flagship: custom quote after a 30-minute scoping call."
+    },
+    "demos": {
+      "label": "// live-demos",
+      "title": "Live plugins, production-grade code",
+      "subtitle": "No marketing promises. These are the Hytale plugins I publicly maintain — usable today on any Hytale server.",
+      "featured": "Featured",
+      "viewSite": "View site",
+      "footnote": "Every plugin is built in-house, production-tested, and ships with full documentation.",
+      "votepipe": {
+        "title": "VotePipe — Vote Rewards SaaS",
+        "tagline": "Hytale plugin + SaaS dashboard that unifies Webhook and Votifier across the 7 major vote lists. No port forwarding, automatic delivery, visual reward builder."
+      },
+      "gravity-flip": {
+        "title": "GravityFlip Region",
+        "tagline": "Drop a wand, set 2 corners, gravity flips inside the zone. Ceiling-walking and floating items live in 5 minutes of setup."
+      }
     },
     "recentArticles": {
       "title": "Recent articles",

@@ -9,15 +9,16 @@
   },
   "footer": {
     "copyright": "© 2026 Killian' DAL-CIN",
+    "tagline": "Hytale Plugin Developer & Dev Web Freelance. Plugins Java sur-mesure, sites pour serveurs gaming, applications Vue/Nuxt en production.",
     "navigation": "Liens Rapides",
     "services": "Services",
     "legalNotices": "Mentions Légales",
     "privacyPolicy": "Politique de Confidentialité",
     "servicesList": {
-      "webDev": "Développement Web",
-      "mobileApps": "Applications Mobiles",
-      "apiBackend": "Développement API",
-      "consulting": "Consulting Tech"
+      "hytalePlugins": "Plugins Hytale (Java)",
+      "webDev": "Sites & Apps Web",
+      "retainer": "Retainer Mensuel",
+      "consulting": "Conseil Tech"
     }
   },
   "a11y": {
@@ -66,20 +67,20 @@
       "contact": "Me contacter"
     },
     "featuredProjects": {
-      "title": "Applications Web Qui Cartonnent",
-      "subtitle": "Portfolio de projets réels qui ont transformé des idées en succès. Applications Vue.js ultra-rapides, plateformes React scalables, API Node.js robustes.",
+      "title": "Plugins Hytale & Apps Web qui tournent en prod",
+      "subtitle": "Portfolio de projets réels, en production, utilisés par de vrais joueurs et clients. Plugins Hytale Java 25, applications Vue.js/Nuxt, SaaS, bots Discord — pas du proof-of-concept, du shipping.",
       "viewAll": "Explorer Tous les Projets"
     },
     "services": {
-      "title": "Services Premium de Développement Web",
-      "subtitle": "Solutions clés en main qui boostent votre croissance. Technologies de pointe + méthodologie éprouvée = succès garanti pour votre projet digital.",
-      "webDev": {
-        "title": "Applications Web Vue.js/React Sur-Mesure",
-        "description": "Création d'applications web lightning-fast qui convertissent. SPA modernes, PWA offline-first, e-commerce haute conversion. SEO-friendly dès la conception."
+      "title": "Services Premium Hytale & Web",
+      "subtitle": "Plugins Hytale custom, applications web haute performance, SaaS gaming. Stack Java 25 + Vue/Nuxt + Node.js. Tarifs transparents (149€-790€), devis sous 24h.",
+      "hytalePlugins": {
+        "title": "Plugins Hytale Custom (Java)",
+        "description": "Du plugin essentiel au système MMO complet. Wand-based regions, votes & rewards, économie, quêtes, mini-jeux. Stack Java 25 + Hytale Plugin API + Gradle Shadow."
       },
-      "mobileApps": {
-        "title": "Apps Mobiles Cross-Platform Rentables",
-        "description": "Une seule codebase = iOS + Android + Web. React Native pour des apps natives performantes. 60% d'économie vs développement natif."
+      "webDev": {
+        "title": "Applications Web Vue.js / Nuxt / React",
+        "description": "Sites pour serveurs gaming, SaaS, e-commerce. SSR Nuxt 4 SEO-optimisé, dashboards admin, intégrations Tebex/Discord. Lighthouse 95+, chargement <2s."
       },
       "optimization": {
         "title": "Optimisation Performance & SEO Technique",
@@ -112,6 +113,8 @@
     "subtitle": "Parcourez mes projets : plugins Hytale, applications Vue.js, sites React, API Node.js, bots Discord et solutions d'entreprise.",
     "categories": {
       "all": "Tous les Projets",
+      "hytaleplugin": "Plugin Hytale",
+      "minecraftmod": "Mod Minecraft",
       "webdevelopment": "Développement Web",
       "botdevelopment": "Développement de Bot",
       "opensource": "Open Source",
@@ -249,6 +252,35 @@
     }
   },
   "projectData": {
+    "votepipe": {
+      "title": "VotePipe — SaaS Vote Rewards Hytale",
+      "description": "Plateforme SaaS unifiée qui combine Webhook (V1 RSA, V2 HMAC) et Votifier pour récupérer les votes des 7 grandes listes Hytale en un seul plugin. Visual reward builder, livraison automatique, aucun port à ouvrir.",
+      "longDescription": "Le seul plugin Hytale qui fait passer Webhook et Votifier dans un pipeline unifié. Tarifs Free / Pro / Network avec dashboard web (app.votepipe.com), reward builder visuel, streaks, milestones, lucky tiers. Stack : Java 25 plugin + backend TypeScript + dashboard SaaS. Architecture cloud sécurisée — outbound-only.",
+      "buttons": {
+        "website": "Site Officiel",
+        "modtale": "Modtale",
+        "curseforge": "CurseForge",
+        "documentation": "Documentation"
+      }
+    },
+    "gravity-flip": {
+      "title": "GravityFlip — Régions Anti-Gravité Hytale",
+      "description": "Plugin Hytale qui crée des zones d'anti-gravité custom avec un wand in-game. Marche sur le plafond, items qui flottent, mobs flottants — tout configurable sans toucher aux fichiers.",
+      "longDescription": "Wand-based region builder pour serveurs Hytale. Les corners se définissent en clic gauche/droit, persistance JSON automatique, tick loop 10x/sec, force verticale et grace period configurables. Mode visuel outline / particles / hidden. Construit sur Hytale Plugin API + Java 25 + Gradle Shadow.",
+      "buttons": {
+        "modtale": "Modtale",
+        "curseforge": "CurseForge"
+      }
+    },
+    "playhours": {
+      "title": "PlayHours — Forge Server Hours Enforcement",
+      "description": "Mod Forge 1.20.1 qui force des horaires d'ouverture par jour, blocage de connexion hors heures, warns 15/10/5/1 min, auto-kick à la fermeture, gestion des jours fériés, whitelist/blacklist, force modes, intégration LuckPerms.",
+      "longDescription": "Mod serveur Minecraft pour gérer l'accès aux horaires : schedules per-day, midnight-spanning, exceptions de dates, MOTD dynamique, multi-langues (EN/FR), permissions LuckPerms ou ops vanilla. Parfait pour serveurs scolaires, familiaux, ou avec maintenance windows.",
+      "buttons": {
+        "curseforge": "CurseForge",
+        "repository": "Dépôt"
+      }
+    },
     "virtual-tour": {
       "title": "Visite Virtuelle - Expérience 360° Interactive",
       "description": "Mon professeur de lycée et moi avons eu l'idée de créer une visite virtuelle avec des vidéos 360° pour permettre à tous de visiter l'école depuis le web.",
@@ -470,6 +502,22 @@
     "pricingNote": {
       "hourly": "Hors packages : 45€/h HT, minimum 1h (spot fixes, audits).",
       "flagshipCta": "Flagship : sur devis après cadrage de 30 minutes."
+    },
+    "demos": {
+      "label": "// live-demos",
+      "title": "Plugins live, code en production",
+      "subtitle": "Pas de promesses marketing. Voici les plugins Hytale que je maintiens publiquement, utilisables aujourd'hui sur n'importe quel serveur Hytale.",
+      "featured": "À la une",
+      "viewSite": "Voir le site",
+      "footnote": "Chaque plugin est build maison, testé en production, et livré avec sa documentation.",
+      "votepipe": {
+        "title": "VotePipe — SaaS Vote Rewards",
+        "tagline": "Plugin Hytale + dashboard SaaS qui unifie Webhook et Votifier sur les 7 grandes listes de votes. Sans port à ouvrir, livraison automatique, reward builder visuel."
+      },
+      "gravity-flip": {
+        "title": "GravityFlip Region",
+        "tagline": "Pose un wand, définis 2 corners, gravité inversée dans la zone. Marche-au-plafond et items qui flottent en 5 minutes de setup."
+      }
     },
     "recentArticles": {
       "title": "Articles récents",

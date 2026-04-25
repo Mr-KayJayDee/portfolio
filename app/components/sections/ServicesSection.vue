@@ -3,14 +3,14 @@ const { t } = useI18n()
 
 const services = computed(() => [
   {
+    icon: 'i-lucide-package',
+    title: t('home.services.hytalePlugins.title'),
+    description: t('home.services.hytalePlugins.description'),
+  },
+  {
     icon: 'i-lucide-monitor',
     title: t('home.services.webDev.title'),
     description: t('home.services.webDev.description'),
-  },
-  {
-    icon: 'i-lucide-smartphone',
-    title: t('home.services.mobileApps.title'),
-    description: t('home.services.mobileApps.description'),
   },
   {
     icon: 'i-lucide-zap',

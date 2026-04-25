@@ -28,7 +28,7 @@ src="/images/logo.webp" alt="Killian' DAL-CIN" width="36" height="36" loading="l
             <span class="text-lg font-bold text-gray-900 dark:text-white">Killian' DAL-CIN</span>
           </NuxtLink>
           <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-xs">
-            Full Stack Developer &amp; Hytale Plugin Developer. Building modern web experiences and game plugins.
+            {{ t('footer.tagline') }}
           </p>
         </div>
 
@@ -49,13 +49,13 @@ v-for="link in quickLinks" :key="link.key" :to="localePath(link.path)"
         <!-- Services links -->
         <div>
           <h3 class="font-mono text-xs text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-5">
-            Services
+            {{ t('footer.services') }}
           </h3>
           <nav class="flex flex-col gap-3">
-            <span class="text-sm text-gray-600 dark:text-gray-400">Web Development</span>
-            <span class="text-sm text-gray-600 dark:text-gray-400">Hytale Plugins</span>
-            <span class="text-sm text-gray-600 dark:text-gray-400">Consulting</span>
-            <span class="text-sm text-gray-600 dark:text-gray-400">Maintenance</span>
+            <span class="text-sm text-gray-600 dark:text-gray-400">{{ t('footer.servicesList.hytalePlugins') }}</span>
+            <span class="text-sm text-gray-600 dark:text-gray-400">{{ t('footer.servicesList.webDev') }}</span>
+            <span class="text-sm text-gray-600 dark:text-gray-400">{{ t('footer.servicesList.retainer') }}</span>
+            <span class="text-sm text-gray-600 dark:text-gray-400">{{ t('footer.servicesList.consulting') }}</span>
           </nav>
         </div>
 

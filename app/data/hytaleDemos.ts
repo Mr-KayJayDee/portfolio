@@ -31,4 +31,22 @@ export const hytaleDemos: HytaleDemo[] = [
     tech: ['Java 25', 'Gradle Shadow', 'Hytale API'],
     status: 'live',
   },
+  {
+    id: 'async',
+    image: '/images/projects/async.png',
+    modtale: 'https://modtale.net/mod/async',
+    curseforge: 'https://www.curseforge.com/hytale/mods/async',
+    github: 'https://github.com/Mr-KayJayDee/async',
+    tech: ['Kotlin 2.2', 'Coroutines', 'JDK 25', 'Hytale API'],
+    status: 'live',
+    featured: true,
+  },
+  {
+    id: 'chain-lightning',
+    image: '/images/projects/chain-lightning.png',
+    modtale: 'https://modtale.net/mod/chain-lightning-sceptre',
+    curseforge: 'https://www.curseforge.com/hytale/mods/chain-lightning-sceptre',
+    tech: ['Java 25', 'JUnit 5', 'Hytale API'],
+    status: 'live',
+  },
 ]

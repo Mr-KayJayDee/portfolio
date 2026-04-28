@@ -114,6 +114,7 @@
     "categories": {
       "all": "Tous les Projets",
       "hytaleplugin": "Plugin Hytale",
+      "hytalelibrary": "Librairie Hytale",
       "minecraftmod": "Mod Minecraft",
       "webdevelopment": "Développement Web",
       "botdevelopment": "Développement de Bot",
@@ -267,6 +268,26 @@
       "title": "GravityFlip — Régions Anti-Gravité Hytale",
       "description": "Plugin Hytale qui crée des zones d'anti-gravité custom avec un wand in-game. Marche sur le plafond, items qui flottent, mobs flottants — tout configurable sans toucher aux fichiers.",
       "longDescription": "Wand-based region builder pour serveurs Hytale. Les corners se définissent en clic gauche/droit, persistance JSON automatique, tick loop 10x/sec, force verticale et grace period configurables. Mode visuel outline / particles / hidden. Construit sur Hytale Plugin API + Java 25 + Gradle Shadow.",
+      "buttons": {
+        "modtale": "Modtale",
+        "curseforge": "CurseForge"
+      }
+    },
+    "async": {
+      "title": "Async — Coroutines pour l'ECS per-world de Hytale",
+      "description": "Bibliothèque Kotlin qui remplace le pattern CompletableFuture + world.execute par un seul appel suspending. Scopes player/world/plugin, trois dispatchers, DSL ECS suspending.",
+      "longDescription": "Async résout le modèle thread per-world de Hytale : chaque monde tourne sur son thread, toucher un composant ailleurs throw, et un I/O bloquant sur le thread world freeze tous les joueurs. La lib expose des dispatchers (World, HytaleIO, Scheduled), des registres de scopes (PlayerScopes, WorldScopes, PluginScopes) avec annulation automatique au disconnect, et un DSL read/modify suspending. Construit en Kotlin 2.2, cible JVM 24, split modulaire (core / ecs / binding / dist) pour garder la logique testable sans serveur Hytale.",
+      "buttons": {
+        "modtale": "Modtale",
+        "curseforge": "CurseForge",
+        "github": "GitHub",
+        "gitea": "Gitea"
+      }
+    },
+    "chain-lightning": {
+      "title": "ChainLightning Sceptre — Wand Magique Hytale",
+      "description": "Plugin Hytale qui lance un éclair en chaîne au clic droit — le bolt rebondit sur jusqu'à 5 ennemis proches dans un rayon de 8 blocs, avec damage falloff par hop et un cooldown de 4 secondes.",
+      "longDescription": "Sceptre magique pour serveurs Hytale. Chain resolver pur Java découplé de Hytale via petites interfaces (RayCaster, EntitySource, ChainEntity), testé en JUnit 5 sans serveur. Construit sur Hytale Plugin API + Java 25 + Gradle Shadow.",
       "buttons": {
         "modtale": "Modtale",
         "curseforge": "CurseForge"
@@ -517,6 +538,14 @@
       "gravity-flip": {
         "title": "GravityFlip Region",
         "tagline": "Pose un wand, définis 2 corners, gravité inversée dans la zone. Marche-au-plafond et items qui flottent en 5 minutes de setup."
+      },
+      "chain-lightning": {
+        "title": "ChainLightning Sceptre",
+        "tagline": "Clic droit sur un mob et l'éclair rebondit sur jusqu'à 5 ennemis dans un rayon de 8 blocs. Damage falloff par hop, chain resolver JUnit-testé."
+      },
+      "async": {
+        "title": "Async — Coroutines Kotlin pour l'ECS Hytale",
+        "tagline": "Un seul appel suspending remplace le boilerplate CompletableFuture + world.execute. Scopes player/world/plugin, trois dispatchers, annulation auto au disconnect."
       }
     },
     "recentArticles": {

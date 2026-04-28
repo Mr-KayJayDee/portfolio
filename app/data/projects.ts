@@ -48,6 +48,50 @@ export const projects: Omit<Project, 'title' | 'description' | 'longDescription'
     ],
   },
   {
+    id: 'async',
+    image: '/images/projects/async.png',
+    technologies: ['Kotlin 2.2', 'Coroutines', 'JDK 25', 'Hytale Plugin API', 'Gradle Shadow', 'JUnit 5'],
+    category: 'Hytale Library',
+    date: '2026',
+    featured: true,
+    buttons: [
+      {
+        title: 'Modtale',
+        link: 'https://modtale.net/mod/async',
+      },
+      {
+        title: 'CurseForge',
+        link: 'https://www.curseforge.com/hytale/mods/async',
+      },
+      {
+        title: 'GitHub',
+        link: 'https://github.com/Mr-KayJayDee/async',
+      },
+      {
+        title: 'Gitea',
+        link: 'https://gitea.kamisama.ovh/kayjaydee/async',
+      },
+    ],
+  },
+  {
+    id: 'chain-lightning',
+    image: '/images/projects/chain-lightning.png',
+    technologies: ['Java 25', 'Hytale Plugin API', 'Gradle Shadow', 'JUnit 5'],
+    category: 'Hytale Plugin',
+    date: '2026',
+    featured: true,
+    buttons: [
+      {
+        title: 'Modtale',
+        link: 'https://modtale.net/mod/chain-lightning-sceptre',
+      },
+      {
+        title: 'CurseForge',
+        link: 'https://www.curseforge.com/hytale/mods/chain-lightning-sceptre',
+      },
+    ],
+  },
+  {
     id: 'playhours',
     image: '/images/projects/playhours.png',
     technologies: ['Java 17', 'Forge 1.20.1', 'LuckPerms', 'TOML Config'],

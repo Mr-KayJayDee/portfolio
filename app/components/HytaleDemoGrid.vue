@@ -120,6 +120,16 @@ const { t } = useI18n()
                 size="sm"
                 icon="i-simple-icons-github"
               />
+              <UButton
+                v-if="demo.gitea"
+                :to="demo.gitea"
+                target="_blank"
+                rel="noopener noreferrer"
+                color="neutral"
+                variant="outline"
+                size="sm"
+                icon="i-simple-icons-gitea"
+              />
             </div>
           </div>
         </UCard>

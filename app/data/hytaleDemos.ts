@@ -4,6 +4,7 @@ export interface HytaleDemo {
   id: string
   image: string
   github?: string
+  gitea?: string
   curseforge?: string
   modtale?: string
   website?: string
@@ -28,6 +29,8 @@ export const hytaleDemos: HytaleDemo[] = [
     image: '/images/projects/gravityflip.png',
     modtale: 'https://modtale.net/mod/gravity-flip',
     curseforge: 'https://curseforge.com/hytale/mods/gravity-flip',
+    github: 'https://github.com/Mr-KayJayDee/hytale-gravity-flip',
+    gitea: 'https://gitea.kamisama.ovh/kayjaydee/hytale-gravity-flip',
     tech: ['Java 25', 'Gradle Shadow', 'Hytale API'],
     status: 'live',
   },
@@ -37,6 +40,7 @@ export const hytaleDemos: HytaleDemo[] = [
     modtale: 'https://modtale.net/mod/async',
     curseforge: 'https://www.curseforge.com/hytale/mods/async',
     github: 'https://github.com/Mr-KayJayDee/async',
+    gitea: 'https://gitea.kamisama.ovh/kayjaydee/async',
     tech: ['Kotlin 2.2', 'Coroutines', 'JDK 25', 'Hytale API'],
     status: 'live',
     featured: true,
@@ -46,6 +50,8 @@ export const hytaleDemos: HytaleDemo[] = [
     image: '/images/projects/chain-lightning.png',
     modtale: 'https://modtale.net/mod/chain-lightning-sceptre',
     curseforge: 'https://www.curseforge.com/hytale/mods/chain-lightning-sceptre',
+    github: 'https://github.com/Mr-KayJayDee/hytale-chain-lightning',
+    gitea: 'https://gitea.kamisama.ovh/kayjaydee/hytale-chain-lightning',
     tech: ['Java 25', 'JUnit 5', 'Hytale API'],
     status: 'live',
   },

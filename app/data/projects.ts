@@ -45,6 +45,14 @@ export const projects: Omit<Project, 'title' | 'description' | 'longDescription'
         title: 'CurseForge',
         link: 'https://curseforge.com/hytale/mods/gravity-flip',
       },
+      {
+        title: 'GitHub',
+        link: 'https://github.com/Mr-KayJayDee/hytale-gravity-flip',
+      },
+      {
+        title: 'Gitea',
+        link: 'https://gitea.kamisama.ovh/kayjaydee/hytale-gravity-flip',
+      },
     ],
   },
   {
@@ -88,6 +96,14 @@ export const projects: Omit<Project, 'title' | 'description' | 'longDescription'
       {
         title: 'CurseForge',
         link: 'https://www.curseforge.com/hytale/mods/chain-lightning-sceptre',
+      },
+      {
+        title: 'GitHub',
+        link: 'https://github.com/Mr-KayJayDee/hytale-chain-lightning',
+      },
+      {
+        title: 'Gitea',
+        link: 'https://gitea.kamisama.ovh/kayjaydee/hytale-chain-lightning',
       },
     ],
   },

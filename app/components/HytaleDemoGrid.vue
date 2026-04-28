@@ -2,6 +2,7 @@
 import { hytaleDemos } from '~/data/hytaleDemos'
 
 const { t } = useI18n()
+const localePath = useLocalePath()
 </script>
 
 <template>
@@ -76,6 +77,15 @@ const { t } = useI18n()
             </div>
 
             <div class="flex flex-wrap gap-2 mt-2">
+              <UButton
+                :to="localePath(`/project/${demo.id}`)"
+                color="primary"
+                variant="soft"
+                size="sm"
+                trailing-icon="i-lucide-arrow-right"
+              >
+                {{ t('projects.buttons.viewProject') }}
+              </UButton>
               <UButton
                 v-if="demo.website"
                 :to="demo.website"

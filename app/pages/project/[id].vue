@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const { t } = useI18n()
+const localePath = useLocalePath()
 const { findById, projects } = useProjects()
 
 const project = findById(route.params.id as string)
@@ -52,7 +53,7 @@ useSeoMeta({
             variant="solid"
             color="neutral"
             icon="i-lucide-arrow-left"
-            to="/projects"
+            :to="localePath('/projects')"
             size="sm"
             class="shadow-lg backdrop-blur-sm"
           >
@@ -215,7 +216,7 @@ useSeoMeta({
                 <NuxtLink
                   v-for="related in relatedProjects"
                   :key="related.id"
-                  :to="`/project/${related.id}`"
+                  :to="localePath(`/project/${related.id}`)"
                   class="flex gap-3 p-3 rounded-xl border border-transparent hover:border-brand-500/20 hover:bg-brand-500/5 transition-all duration-200 group"
                 >
                   <NuxtImg

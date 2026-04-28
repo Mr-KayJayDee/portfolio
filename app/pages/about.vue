@@ -2,6 +2,7 @@
 import { techStack } from '~/data/techstack'
 
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 useSeoMeta({
   title: () => t('seo.about.title'),
@@ -180,9 +181,9 @@ const approachCards = computed(() => [
       :title="t('about.cta.title')"
       :subtitle="t('about.cta.description')"
       :primary-text="t('about.cta.button')"
-      primary-to="/contact"
+      :primary-to="localePath('/contact')"
       :secondary-text="t('home.cta.viewProjects')"
-      secondary-to="/projects"
+      :secondary-to="localePath('/projects')"
     />
   </div>
 </template>

@@ -7,6 +7,7 @@ interface Props {
 
 const props = defineProps<Props>()
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 const translatedCategory = computed(() => {
   if (!props.project.category) return ''
@@ -22,7 +23,7 @@ const translatedCategory = computed(() => {
     itemtype="https://schema.org/CreativeWork"
   >
     <!-- Image -->
-    <NuxtLink :to="`/project/${project.id}`" class="block relative overflow-hidden">
+    <NuxtLink :to="localePath(`/project/${project.id}`)" class="block relative overflow-hidden">
       <NuxtImg
         :src="project.image"
         :alt="`${project.title} - ${project.description.slice(0, 60)}...`"
@@ -81,7 +82,7 @@ const translatedCategory = computed(() => {
 
     <!-- Hidden SEO link -->
     <NuxtLink
-      :to="`/project/${project.id}`"
+      :to="localePath(`/project/${project.id}`)"
       class="absolute inset-0 z-10"
       :aria-label="`${t('projects.buttons.viewProject')} - ${project.title}`"
       itemprop="url"

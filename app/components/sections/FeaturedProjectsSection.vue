@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const { featuredProjects } = useProjects()
+const localePath = useLocalePath()
 </script>
 
 <template>
@@ -13,7 +14,7 @@ const { featuredProjects } = useProjects()
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-500 bg-clip-text text-transparent">{{ t('home.featuredProjects.title') }}</h2>
           <p class="text-lg text-gray-500 dark:text-gray-400 mt-4 max-w-2xl leading-relaxed">{{ t('home.featuredProjects.subtitle') }}</p>
         </div>
-        <UButton to="/projects" variant="ghost" trailing-icon="i-lucide-arrow-right" class="shrink-0 self-start md:self-auto group">
+        <UButton :to="localePath('/projects')" variant="ghost" trailing-icon="i-lucide-arrow-right" class="shrink-0 self-start md:self-auto group">
           {{ t('home.cta.viewProjects') }}
         </UButton>
       </div>

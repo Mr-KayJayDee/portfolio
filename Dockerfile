@@ -1,9 +1,9 @@
 # Stage 1: Build
-FROM node:22-alpine AS builder
+FROM node:26.12.1-alpine AS builder
 WORKDIR /app
 
-# Install pnpm via corepack
-RUN corepack enable && corepack prepare pnpm@latest --activate
+# Install pnpm (corepack n'est plus fourni depuis Node 25)
+RUN npm install -g pnpm@10
 
 # Copy manifests first for layer caching
 COPY package.json pnpm-lock.yaml ./
@@ -16,7 +16,7 @@ COPY . .
 RUN pnpm build
 
 # Stage 2: Runtime
-FROM node:22-alpine AS runner
+FROM node:26.12.1-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
